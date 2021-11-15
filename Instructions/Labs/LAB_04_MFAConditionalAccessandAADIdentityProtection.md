@@ -102,7 +102,9 @@ In this task, you will create a new Azure AD tenant.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-1. On the blade displaying **Overview** of your current Azure AD tenant, click **+ Create a tenant**.
+1. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage Tenants**.
+
+1. On the **Switch tenant** blade, select **+ Create**.
 
 1. On the **Basics** tab of the **Create a tenant** blade, ensure that the option **Azure Active Directory** is selected and click **Next: Configuration >**.
 
@@ -131,7 +133,7 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 
     >**Note**: You may need to refresh the browser window if the **AdatumLab500-04** entry does not appear in the **Directory + subscription** filter list.
 
-1. On the **AdatumLab500-04** blade, in the **Manage** section, click **Licenses**.
+1. Select **Azure Active Directory**, on the **AdatumLab500-04** blade, in the **Manage** section, click **Licenses**.
 
 1. On the **Licenses \| Overview** blade, in the **Manage** section, click **All products** and then click **+ Try / Buy**.
 
