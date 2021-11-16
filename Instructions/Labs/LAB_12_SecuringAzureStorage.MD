@@ -214,7 +214,7 @@ In this task, you will create a storage account with a file share and obtain the
     |Setting|Value|
     |---|---|
     |Name|**my-file-share**|
-    |Quota|**10**|
+    |Tier|**transaction optimized**|
 
 1. On the **New file share** blade, click **Create**.
 
