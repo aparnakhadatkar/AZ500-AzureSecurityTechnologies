@@ -1,5 +1,3 @@
-
-
 # Lab 07: Network Security Groups and Application Security Groups
 # Student lab manual
 
@@ -45,7 +43,7 @@ In this task, you will create a virtual network to use with the network and appl
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual networks** and press the **Enter** key.
 
-1. On the **Virtual networks** blade, click **+ Add**.
+1. On the **Virtual networks** blade, click **+ Create**.
 
 1. On the **Basics** tab of the **Create virtual network** blade, specify the following settings (leave others with their default values) and click **Next: IP Addresses**:
 
@@ -73,7 +71,7 @@ In this task, you will create an application security group.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Application security groups** and press the **Enter** key.
 
-1. On the **Application security groups** blade, click **+ Add**.
+1. On the **Application security groups** blade, click **+ Create**.
 
 1. On the **Basics** tab of the **Create an application security group** blade, specify the following settings: 
 
@@ -87,7 +85,7 @@ In this task, you will create an application security group.
 
 1. Click **Review + create** and then click **Create**.
 
-1. Navigate back to the **Application security groups** blade and click **+ Add**.
+1. Navigate back to the **Application security groups** blade and click **+ Create**.
 
 1. On the **Basics** tab of the **Create an application security group** blade, specify the following settings: 
 
@@ -107,7 +105,7 @@ In this task, you will create a network security group.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Network security groups** and press the **Enter** key.
 
-1. On the **Network security groups** blade, click **+ Add**.
+1. On the **Network security groups** blade, click **+ Create**.
 
 1. On the **Basics** tab of the **Create network security group** blade, specify the following settings: 
 
@@ -182,7 +180,7 @@ In this task, you will create a virtual machine to use as a web server.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
-1. On the **Virtual machines** blade, click **+ Add** and, in the dropdown list, click **+ Virtual machine**.
+1. On the **Virtual machines** blade, click **+ Create** and, in the dropdown list, click **+ Virtual machine**.
 
 1. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
@@ -192,7 +190,7 @@ In this task, you will create a virtual machine to use as a web server.
    |Resource group|**AZ500LAB07**|
    |Virtual machine name|**myVmWeb**|
    |Region|**(US)East US**|
-   |Image|**Windows Server 2019 Datacenter Gen 1**|
+   |Image|**Windows Server 2019 Datacenter - Gen 2**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
    |Password|**Pa55w.rd1234**|
@@ -207,13 +205,11 @@ In this task, you will create a virtual machine to use as a web server.
 
 1. Under **NIC network security group** select **None**.
 
-1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, specify the following settings
+1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, verify the following setting:
 
    |Setting|Value|
    |---|---|
    |Boot diagnostics|**Enabled with managed storage account (recommended)**|
-   |Enable OS guest diagnostics|**Enable the check box**|
-   |Diagnostics storage account|the default value|
 
 1. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful and click **Create**.
 
@@ -221,7 +217,7 @@ In this task, you will create a virtual machine to use as a web server.
 
 In this task, you will create a virtual machine to use as a management server.
 
-1. In the Azure portal, navigate back to the **Virtual machines** blade, click **+ Add**, and, in the dropdown list, click **+ Virtual machine**.
+1. In the Azure portal, navigate back to the **Virtual machines** blade, click **+ Create**, and, in the dropdown list, click **+ Virtual machine**.
 
 1. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
@@ -231,7 +227,7 @@ In this task, you will create a virtual machine to use as a management server.
    |Resource group|**AZ500LAB07**|
    |Virtual machine name|**myVMMgmt**|
    |Region|(US)East US|
-   |Image|**Windows Server 2019 Datacenter Gen 1**|
+   |Image|**Windows Server 2019 Datacenter - Gen 2**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
    |Password|**Pa55w.rd1234**|
@@ -251,8 +247,6 @@ In this task, you will create a virtual machine to use as a management server.
    |Setting|Value|
    |---|---|
    |Boot diagnostics|**Enabled with managed storage account (recommended)**|
-   |Enable OS guest diagnostics|**Enable the check box**|
-   |Diagnostics storage account|the default value|
 
 1. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful and click **Create**.
 
@@ -313,4 +307,4 @@ In this task, you will test the network traffic filters. You should be able to R
 
     >**Note**: The browser page should display the default IIS welcome page because port 80 is allowed inbound from the internet based on the setting of the **myAsgWebServers** application security group. The network interface of the myVMWeb Azure VM is associated with that application security group. 
 
-> Result: You have validated that the NSG and ASG configuration is working and traffic is being correctly managed. 
+> Result: You have validated that the NSG and ASG configuration is working and traffic is being correctly managed.
