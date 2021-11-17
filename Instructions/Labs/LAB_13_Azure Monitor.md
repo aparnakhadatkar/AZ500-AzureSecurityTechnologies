@@ -161,6 +161,21 @@ In this task, you will run a log search on your data collection.
     >**Note**: Since this virtual machine was just created, there may not be any data yet. 
 
     >**Note**: You have the option of displaying data in different formats. You also have the option of creating an alert rule based on the results of the query.
+    
+    >**Note**: You can generate some additional load on the Azure VM you deployed earlier in this lab by using the following steps:	
+    1. Navigate to the Azure VM blade.	
+    
+    1. On the Azure VM blade, in the **Operations** section, select **Run command**, on the **Run Command Script** blade, type the following script, and click **Run**:	
+    
+    1. 	
+       ```cmd	
+       cmd	
+       :loop	
+       dir c:\ /s > SWAP	
+       goto loop	
+       ```	
+       	
+    1. Switch back ot the Log Analytics blade and re-run the query. You might need to wait a few minutes for data to be collected and re-run the query again.
 
 > Results: You used a Log Analytics workspace to configure data sources and query logs. 
  
