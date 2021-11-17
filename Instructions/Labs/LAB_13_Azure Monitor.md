@@ -78,7 +78,7 @@ In this task, you will create a Log Analytics workspace.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Log Analytics workspaces** and press the **Enter** key.
 
-1. On the **Log Analytics workspaces** blade, click **+ Add**.
+1. On the **Log Analytics workspaces** blade, click **+ Create**.
 
 1. On the **Basics** tab of the **Create Log Analytics workspace** blade, specify the following settings (leave others with their default values):
 
@@ -145,14 +145,11 @@ In this task, you will run a log search on your data collection.
 
 1. On the Log Analytics workspace blade, in the **General** section, click **Logs**.
 
-1. On the Logs blade, click **Get started**.  
+1. If needed, close the **Welcome to Log Analysis** window. 	
 
-1. On the **Example queries** pane, clear the **Log Analytics** filter, scroll down to the bottom of the list of resource types, and click **Virtual machine**
-    
-    >**Note**: If you dont see **Virtual machine**, click Resource Type filter and select **Virtual machines**
-
-1. Review the list of predefined queries, identify the one you want to test, and click the corresponding **Run** button.
-
+1. On the **Queries** pane, in the **All Queries** column, scroll down to the bottom of the list of resource types, and click **Virtual machines**	
+    	
+1. Review the list of predefined queries, select **Memory and CPU usage**, and click the corresponding **Run** button.
     >**Note**: You can start with the query **Virtual machine available memory**. If you don't get any results check the scope is set to virtual machine
 
 1. The query will automatically open in a new query tab. 
