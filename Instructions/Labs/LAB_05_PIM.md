@@ -1,5 +1,3 @@
-
-
 # Lab 05: Azure AD Privileged Identity Management
 # Student lab manual
 
@@ -41,6 +39,8 @@ In this task, you will make a user eligible for an Azure AD directory role.
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
     >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role.
+    
+    >**Note**: If you still don't see the AdatumLab500-04 entry, click on the Switch Diretory link, select the AdatumLab500-04 line and click the Switch button.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure AD Privileged Identity Management** and press the **Enter** key.
 
@@ -50,7 +50,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. On the **AdatumLab500-04 \| Roles** blade, click **+ Add assignments**.
 
-1. On the **Add assignments** blade, in the **Select a role** drop-down, select **Billing Administrator**.
+1. On the **Add assignments** blade, in the **Select role** drop-down, select **Billing Administrator**.
 
 1. Click the **No member selected** link, on the **Select a member** blade, click **aaduser2**, and then click **Select**.
 
@@ -120,7 +120,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. Review the **Assignment type** settings and click **Assign**.
 
-    >**Note**: User aaduser2 is now permanently assigned the Security Administrator role.
+    >**Note**: User aaduser2 is now permanently eligible for the Security Administrator role.
 	
 ### Exercise 2 - Activate PIM roles with and without approval
 
@@ -155,9 +155,7 @@ In this task, you will activate a role that does not require approval.
 
     >**Note**: When you activate a role in PIM, it can take up to 10 minutes for the activation to take effect. 
 	
-    >**Note**: This role does not require approval, so you will be able to sign out and log back in to begin using the activated role. 
-
-1. Sign out and sign back into the Azure portal by using the **aaduser2** user account.
+    >**Note**: Once your role assignment is active, your browser will refresh (If anything goes wrong, simply sign out and sign back into the Azure portal by using the **aaduser2** user account).
 
 1. Navigate back to the **Azure AD Privileged Identity Management** blade and, in the **Tasks** section, click **My roles**.
 
@@ -169,7 +167,7 @@ In this task, you will activate a role that does not require approval.
 
 1.  In the list of **Active Assignments**, in the row representing the Billing Administrator role, click the **Deactivate** link.
 
-1.  On the **Deactivate - Billing Administrator** blade, click **Deactivate** again to confirm the your intent.
+1.  On the **Deactivate - Billing Administrator** blade, click **Deactivate** again to confirm.
 
 
 #### Task 2: Activate a role that requires approval. 
@@ -178,7 +176,7 @@ In this task, you will activate a role that requires approval.
 
 1. In the InPrivate browser window, in the Azure portal, while signed in as the **aaduser2** user, navigate back to the **Privileged Identity Management \| Quick start** blade. 
 
-1. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **My roles**.
+1. On the **Privileged Identity Management \| Quick start** blade, in the **Manage** section, click **My roles**.
 
 1. On the **My roles \| Azure AD roles** blade, in the list of **Eligible assignments**, in the row displaying the **Global Reader** role, click **Activate**. 
 
@@ -252,12 +250,14 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 1. Sign-in to the Azure portal **`https://portal.azure.com/`** using your account.
 
     >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role.
+    
+    >**Note**: If you still don't see the AdatumLab500-04 entry, click on the Switch Diretory link, select the AdatumLab500-04 line and click the Switch button.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure AD Privileged Identity Management** and press the **Enter** key.
 
 1. Navigate to the **Azure AD Privileged Identity Management** blade. 
 
-1. On the **Privileged Identity Management \| Quick start** blade, in the **Manage** section, click **Azure AD Roles**.
+1. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **Azure AD Roles**.
 
 1. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click **Access reviews**.
 
@@ -279,13 +279,13 @@ In this task, you will reduce the risk associated with "stale" role assignments.
  
     >**Note**: It will take about a minute for the review to deploy and appear on the **AdatumLab500-04 \| Access reviews** blade. You might have to refresh the web page. The review status will be **Active**. 
 
-1. On the **AdatumLab500-04 \| Access reviews** blade, under the **Global Admin Review** header, click the **Global Reader** entry. 
+1. On the **AdatumLab500-04 \| Access reviews** blade, under the **Global Reader Review** header, click the **Global Reader** entry. 
 
 1. On the **Global Reader Review** blade, examine the **Overview** page and note that the **Progress** charts shows a single users in the **Not reviewed** category. 
 
 1. On the **Global Reader Review** blade, in the **Manage** section, click **Results**. Note that aaduser2 is listed as having access to this role.
 
-1. Click **aaduser2** to view a detailed audit log with entries representing PIM activities that involve that user.
+1. Click **view** on **aaduser2** line to view a detailed audit log with entries representing PIM activities that involve that user.
 
 1. Navigate back to the **AdatumLab500-04 \| Access reviews** blade.
 
@@ -319,7 +319,6 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
     >**Note**: Audit history is available for all privileged role assignments and activations within the past 30 days.
 
-1. Notice you can retrieve detailed information, including **Time**, **Requestor**, **Action**, **Resource name**, **Scope** and **Subject**. 
+1. Notice you can retrieve detailed information, including **Time**, **Requestor**, **Action**, **Resource name**, **Scope**, **Primary Target** and **Subject**. 
 
-> Result: You have configured an access review and reviewed audit information. 
-
+> Result: You have configured an access review and reviewed audit information.
