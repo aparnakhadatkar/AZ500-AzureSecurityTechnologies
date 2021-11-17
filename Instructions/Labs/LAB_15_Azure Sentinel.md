@@ -206,13 +206,13 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 #### Task 6: Invoke an incident and review the associated actions.
 
-1. In the Azure portal, navigate to the **Security Center \| Overview** blade.
+1. In the Azure portal, navigate to the **Microsoft Defender for Cloud \| Overview** blade.
 
-    >**Note**: Check your secure score. By now it should have updated. 
+1. On the **Microsoft Defender for Cloud \| Overview** blade, under **Cloud Security** select **Workload protections** section.
 
-1. On the **Security Center \| Azure Defender** blade, click **Just-in-time vm access** section.
+1. On the **Microsoft Defender for Cloud \| Workload protections** blade under **Advanaced protection** select **Just-in-time VM access**.
 
-1. On the **Security Center \| Just in time VM access** blade, on the right hand side of the row referencing the **myVM** virtual machine, click the **ellipses** button,  click **Remove** and then click **Yes**.
+1. On the **Just in time VM access** blade, under the **Configured** blade, on the right hand side of the row referencing the **myVM** virtual machine, click the **ellipses** button,  click **Remove** and then click **Yes**.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Activity log** and press the **Enter** key.
 
