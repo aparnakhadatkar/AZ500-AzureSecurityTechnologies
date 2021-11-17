@@ -43,7 +43,7 @@ In this task, you will create a virtual network.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual networks** and press the **Enter** key.
 
-1. On the **Virtual Networks** blade, click **+ New**.
+1. On the **Virtual Networks** blade, click **+ Create**.
 
 1. On the **Basics** tab of the **Create virtual network** blade, specify the following settings (leave others with their default values) and click **Next: IP Addresses**:
 
@@ -95,7 +95,7 @@ In this task, you will create a network security group with two outbound securit
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Network security groups** and press the **Enter** key.
 
-1. On the **Network security groups** blade, click **+ Add**.
+1. On the **Network security groups** blade, click **+ Create**.
 
 1. On the **Basics** tab of the **Create network security group** blade, specify the following settings: 
 
@@ -184,7 +184,7 @@ In this task, you will create a storage account with a file share and obtain the
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Storage accounts** and press the **Enter** key.
 
-1. On the **Storage accounts** blade, click **+ New**.
+1. On the **Storage accounts** blade, click **+ Create**.
 
 1. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
 
@@ -195,6 +195,7 @@ In this task, you will create a storage account with a file share and obtain the
     |Storage account name|storage[DeploymentID]|
     |Location|**(US) EastUS**|
     |Performance|**Standard**|
+    |Account kind|**StorageV2 (general purpose v2)**|
     |Replication|**Locally redundant storage (LRS)**|
 
 1. On the **Basics** tab of the **Create storage account** blade, click **Review + Create**, wait for the validation process to complete, and click **Create**.
@@ -229,8 +230,8 @@ In this task, you will create a storage account with a file share and obtain the
     >**Note**: Record this script. You will need this in a later in this lab in order to map the file share from the Azure virtual machine on the **Private** subnet.
 
 1. Navigate back to the storage account blade, then in the **Security + networking** section, click **Networking**.
-
-1. Select the **Selected networks** option and click the **+ Add existing virtual network** link. 
+	
+1. Under **Firewalls and virtual networks** blade, select the **Selected networks** option and click the **+ Add existing virtual network** link.
 
 1. On the **Add networks** blade, specify the following settings:
 
@@ -254,7 +255,7 @@ In this task, you will create two virtual machines one in the Private subnet and
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
-1. On the **Virtual machines** blade, click **+ Add** and, in the dropdown list, click **+ Virtual machine**.
+1. On the **Virtual machines** blade, click **+ Create** and, in the dropdown list, click **+ Virtual machine**.
 
 1. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
@@ -264,7 +265,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Resource group|**AZ500LAB12**|
     |Virtual machine name|**myVmPrivate**|
     |Region|**(US)East US**|
-    |Image|**Windows Server 2019 Datacenter Gen 1**|
+    |Image|**Windows Server 2019 Datacenter - Gen 2**|
     |Username|**localadmin**|
     |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
@@ -285,7 +286,7 @@ In this task, you will create two virtual machines one in the Private subnet and
 
 1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, accept the default settings and click **Review + create**.
 
-1. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful andf click **Create**.
+1. On the **Review + create** blade, ensure that validation was successful and click **Create**.
 
     >**Note**: The second virtual machine will be connected to the Public subnet.
 
@@ -299,7 +300,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Resource group|**AZ500LAB12**|
     |Virtual machine name|**myVmPublic**|
     |Region|**(US)East US**|
-    |Image|**Windows Server 2019 Datacenter Gen 1**|
+    |Image|**Windows Server 2019 Datacenter - Gen 2**|
     |Username|**localadmin**|
     |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
@@ -320,7 +321,7 @@ In this task, you will create two virtual machines one in the Private subnet and
 
 1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, accept the default settings and click **Review + create**.
 
-1. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful andf click **Create**.
+1. On the **Review + create** blade, ensure that validation was successful and click **Create**.
 
     >**Note**: You can continue to the next task once the deployment of the **myVMPrivate** Azure VM is completed.
 
@@ -414,5 +415,3 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
 1. Terminate the Remote Desktop session to the **myVMPublic** Azure VM.
 
     >**Note**: At this point, you have confirmed that the virtual machine in the Public subnet cannot access the storage account, but has access to the internet.
-
- 
