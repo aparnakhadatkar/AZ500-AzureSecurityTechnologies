@@ -22,8 +22,8 @@ In this lab, you will complete the following exercises:
 
 ## Lab files:
 
-- **\\Allfiles\\Labs\\04\\az-500-04_azuredeploy.json**
-- **\\Allfiles\\Labs\\04\\az-500-04_azuredeploy.parameters.json** 
+- **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.json**
+- **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.parameters.json** 
 
 ### Exercise 1: Deploy an Azure VM by using an Azure Resource Manager template
 
@@ -47,7 +47,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
 1. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
 
-1. On the **Edit template** blade, click **Load file**, locate the **\\Allfiles\\Labs\\04\\az-500-04_azuredeploy.json** file and click **Open**.
+1. On the **Edit template** blade, click **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.json** file and click **Open**.
 
     >**Note**: Review the content of the template and note that it deploys an Azure VM hosting Windows Server 2019 Datacenter.
 
@@ -55,7 +55,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
 1. Back on the **Custom deployment** blade, click **Edit parameters**.
 
-1. On the **Edit parameters** blade, click **Load file**, locate the **\\Allfiles\\Labs\\04\\az-500-04_azuredeploy.parameters.json** file and click **Open**.
+1. On the **Edit parameters** blade, click **Load file**, locate the **\C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.parameters.json** file and click **Open**.
 
     >**Note**: Review the content of the parameters file noting the adminUsername and adminPassword values.
 
