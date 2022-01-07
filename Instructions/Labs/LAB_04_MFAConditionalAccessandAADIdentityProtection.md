@@ -55,7 +55,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
 1. Back on the **Custom deployment** blade, click **Edit parameters**.
 
-1. On the **Edit parameters** blade, click **Load file**, locate the **\C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.parameters.json** file and click **Open**.
+1. On the **Edit parameters** blade, click **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.parameters.json** file and click **Open**.
 
     >**Note**: Review the content of the parameters file noting the adminUsername and adminPassword values.
 
