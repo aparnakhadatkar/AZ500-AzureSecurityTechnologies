@@ -36,11 +36,12 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Defender for Cloud** and press the **Enter** key.
 
-1. On the **Microsoft Defender for Cloud \| Getting started** blade, click **Upgrade** and then click **Install agents**.
-     
-1. On the **Microsoft Defender for Cloud \| Getting started** blade, in the vertical menu on the left side, in the **Management** section, click **Pricing & settings**.
+1. On the **Microsoft Defender for Cloud \| Getting started** blade, click **Upgrade** and then click **Install agents tab** scroll down and click **Install agents**.
 
-1. On the **Microsoft Defender for Cloud \| Pricing & settings** blade, click the entry representing your subscription and, on the **Settings \| Azure Defender plans** blade, ensure that **Azure Defender on** is selected. 
+     
+1. On the **Microsoft Defender for Cloud \| Getting started** blade, in the vertical menu on the left side, in the **Management** section, click **PEnvironment Settings**.
+
+1. On the **Microsoft Defender for Cloud \| Environment Settings** blade, click the entry representing your subscription and, on the **Settings \| Azure Defender plans** blade, ensure that **Azure Defender on** is selected. 
 
     >**Note**: Review all the features that are available as part of Azure Defender tier and ensure that Azure Defender turned on for each resource type. 
 
@@ -64,7 +65,7 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
     >**Note**: Microsoft Defender for Cloud provides many insights into virtual machines including system update status, OS security configurations, and endpoint protection.
 
-1. Navigate back to the **Microsoft Defender for Cloud \| Pricing & settings** blade and click the entry representing the Log Analytics workspace you created in the previous lab.
+1. Navigate back to the **Microsoft Defender for Cloud \| Environment Settings** blade and click the entry representing the Log Analytics workspace you created in the previous lab.
 
 1. On the **Settings \| Azure Defender plans** blade, ensure that **Azure Defender on** is selected and click **Save**.
 
