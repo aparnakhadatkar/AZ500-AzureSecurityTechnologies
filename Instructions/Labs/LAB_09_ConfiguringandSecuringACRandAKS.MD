@@ -122,7 +122,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Kubernetes services** and press the **Enter** key.
 
-1. On the **Kubernetes services** blade, click **+ Create** and, in the drop-down menu, click **+ Add Kubernetes cluster**
+1. On the **Kubernetes services** blade, click **+ Create** and, in the drop-down menu, click **+ Create Kubernetes cluster**
 
 1. On the **Basics** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
 
@@ -142,7 +142,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
     |Enable virtual nodes|cleared checkbox|
     |VM scale sets|cleared checkbox|
 	
-1. Click **Next: Authentication >**, on the **Authentication** tab of the **Create Kubernetes cluster** blade, accept the defaults, and click **Next: Networking >**. 
+1. Click **Next: Access >**, on the **Access** tab of the **Create Kubernetes cluster** blade, accept the defaults, and click **Next: Networking >**. 
 
 1. On the **Networking** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
 
