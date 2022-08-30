@@ -255,7 +255,7 @@ In this task, you will create two virtual machines one in the Private subnet and
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
-1. On the **Virtual machines** blade, click **+ Create** and, in the dropdown list, click **+ Virtual machine**.
+1. On the **Virtual machines** blade, click **+ Create** and, in the dropdown list, click **+ Azure Virtual machine**.
 
 1. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
@@ -265,7 +265,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Resource group|**AZ500LAB12**|
     |Virtual machine name|**myVmPrivate**|
     |Region|**(US)East US**|
-    |Image|**Windows Server 2019 Datacenter - Gen 2**|
+    |Image|**Windows Server 2022 Datacenter: Azure Edition - Gen 2**|
     |Username|**localadmin**|
     |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
@@ -290,7 +290,7 @@ In this task, you will create two virtual machines one in the Private subnet and
 
     >**Note**: The second virtual machine will be connected to the Public subnet.
 
-1. On the **Virtual machines** blade, click **+ Add** and, in the dropdown list, click **+ Virtual machine**.
+1. On the **Virtual machines** blade, click **+ Add** and, in the dropdown list, click **+ Azure Virtual machine**.
 
 1. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
@@ -300,7 +300,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Resource group|**AZ500LAB12**|
     |Virtual machine name|**myVmPublic**|
     |Region|**(US)East US**|
-    |Image|**Windows Server 2019 Datacenter - Gen 2**|
+    |Image|**Windows Server 2022 Datacenter: Azure Edition - Gen 2**|
     |Username|**localadmin**|
     |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
