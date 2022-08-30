@@ -72,13 +72,10 @@ In this task, you will use a template to deploy the lab infrastructure.
 
 1. On the **AZ500LAB11** blade, click the entry representing the newly created SQL Server.
 
-1. On the server blade, in the **Security** section, click **Security Center**.
+1. On the SQL server blade, in the **Security** section, click **Microsoft Defender for Cloud**, select **Enable Microsoft Defender for SQL**.
+      >**Note**: Wait until notification indicates Azure Defender for SQL has been successfully enabled.
 
-1. Set the **AZURE DEFENDER FOR SQL** switch to **ON**.
-
-      >**Note**: Wait until enabling Azure Defender for SQL takes effect.
-
-1. In the **Azure Defender for SQL: Enabled at the server-level (Configure)** parameter, click **(configure)**.   
+1. On the SQL server blade, in the **Security** section, on the **Microsoft Defender for Cloud** page, in the **Microsoft Defender for SQL: Enabled at the server-level (Configure)** parameter, click **(configure)**. 
     
 1. On the **Server Settings** blade, review the information about pricing and the trial period, **VULNERABILITY ASSESSMENT SETTINGS** and **ADVANCED THREAT PROTECTION SETTINGS**.
 
