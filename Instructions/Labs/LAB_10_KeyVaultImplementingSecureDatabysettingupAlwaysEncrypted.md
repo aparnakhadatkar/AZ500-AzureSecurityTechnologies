@@ -118,7 +118,7 @@ In this task, you will create an Azure Key Vault resource. You will also configu
     |Setting|Value|
     |----|----|
     |Configure from template (optional)|**Key, Secret, & Certificate Management**|
-    |Key permissions|click **Select all** resulting in **16 selected** permissions|
+    |Key permissions|click **Select all** resulting in **20 selected** permissions|
     |Secret permissions|click **Select all** resulting in total of **8 selected** permissions|
     |Certification permissions|click **Select all** resulting in total of **16 selected** permissions|
     |Select principal|click **None selected**, on the **Principal** blade, select your user account, and click **Select**|
