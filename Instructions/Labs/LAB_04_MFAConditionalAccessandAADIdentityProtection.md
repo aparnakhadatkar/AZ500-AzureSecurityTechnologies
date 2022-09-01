@@ -102,9 +102,7 @@ In this task, you will create a new Azure AD tenant.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-1. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage Tenants**.
-
-1. On the **Switch tenant** blade, select **+ Create**.
+1. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage tenants**, and then on the next screen, click **+ Create**.
 
 1. On the **Basics** tab of the **Create a tenant** blade, ensure that the option **Azure Active Directory** is selected and click **Next: Configuration >**.
 
@@ -129,12 +127,11 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 
 1. In the Azure portal, in the toolbar, click the **Directory + subscription** icon, located to the right of the Cloud Shell icon. 
 
-1. In the **Directory + subscription** blade, click the newly created tenant, **AdatumLab500-04**.
+1. In the **Directory + subscription** blade, click the newly created tenant, **AdatumLab500-04** and click the **Switch** button to set it as the current directory.
 
     >**Note**: You may need to refresh the browser window if the **AdatumLab500-04** entry does not appear in the **Directory + subscription** filter list.
 
-1. Select **Azure Active Directory**, on the **AdatumLab500-04** blade, in the **Manage** section, click **Licenses**.
-
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key. On the **AdatumLab500-04** blade, in the **Manage** section, click **Licenses**.
 1. On the **Licenses \| Overview** blade, in the **Manage** section, click **All products** and then click **+ Try / Buy**.
 
 1. On the **Activate** blade, in the Azure AD Premium P2 section, click **Free Trial** and then click **Activate**.
@@ -211,13 +208,11 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 1. On the **Licenses \| Overview** blade, click **All products**, select the **Azure Active Directory Premium P2** checkbox, and click **+ Assign**.
 
-1. On the **Assign licenses** blade, click **Users**.
+1. On the **Assign licenses** blade, click **+ Add users and groups**.
 
 1. On the **Users** blade, select **aaduser1**, **aaduser2**, **aaduser3**, and your user account and click **Select**.
 
-1. Back on the **Assign licenses** blade, click **Assignment options**, ensure that all options are enabled, and click **OK**.
-
-1. Back on the **Assign licenses** blade, click **Assign**.
+1. Back on the **Assign licenses** blade, click **Assignment options**, ensure that all options are enabled, click **Review + asssign**, click **Assign**.
 
 1. Sign out from the Azure portal and sign back in using the same account. This step is necessary in order for the license assignment to take effect.
 
