@@ -271,7 +271,7 @@ In this task, you will reduce the risk associated with "stale" role assignments.
    |Start Date|today's date| 
    |Frequency|**One time**|
    |End Date|end of the current month|
-   |Review role membership|**Global Reader**|
+   |Role, Select Privileged Role(s)|**Global Reader**|
    |Reviewers|**Selected users**|
    |Select reviewers|your account|
 
