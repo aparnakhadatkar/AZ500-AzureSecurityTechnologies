@@ -236,9 +236,9 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
 1. On the **multi-factor authentication** page, click the **service settings** tab. Review **verification options**. Note that **Text message to phone**, **Notification through mobile app**, and **Verification code from mobile app or hardware token** are enabled. Click **Save** and then click **close**.
 
-1. Switch to the **users** tab,click **multi-factor authentication** in the top right, it will redirect to multifactor user page, Select **aaduser1** and click **Enable**.
+1. Switch to the **users** tab, click **aaduser1** entry, click the **Enable** link, and, when prompted, click **enable multi-factor auth**.
 
-1. In the multifactor user page, Notice the **Multi-Factor Auth status** column for **aaduser1** is now **Enabled**.
+1. Notice the **Multi-Factor Auth status** column for **aaduser1** is now **Enabled**.
 
 1. again Click **aaduser1** and notice that, at this point, you also have the **Enforce** option. 
 
@@ -296,7 +296,7 @@ In this task, you will validate the MFA configuration by testing sign in of the 
 
 1. On the **Keep your account secure** page, ensure that the verification was successful and click **Next**.
 
-1. On the **Keep your account secure** page, click **Done**.
+1. On the **Keep your account secure** page, click **I want to use a different method**, select **Email** from the drop down list, click **Confirm**, provide the  email address you intend to use, and click **Next**. Once you receive the corresponding email, identify the code in the email body, provide it, and then click **Done**.
 
 1. When prompted, change your password. Make sure to record the new password.
 
@@ -332,11 +332,11 @@ In this task, you will review conditional access policy settings and create a po
 
    - In the **Name** text box, type **AZ500Policy1**
 	
-   - Click **Users and groups**, select the **Users and Groups** checkbox, on the **Select** blade, click **aaduser2**, and click **Select**.
+   - Click **Users or workload identities selected**. On the right side under the What does this policy apply to >> Users and groups >> Include >> Enable **Select users and groups** >> select the **Users and Groups** checkbox, on the **Select** blade, click **aaduser2**, and click **Select**.
 	
-   - Click **Cloud apps or actions**, click **Select apps**, on the **Select** blade, click **Microsoft Azure Management**, and click **Select**. 
-
-    >**Note**: Review the warning that this policy impacts access to the Azure Portal.
+   - Click **Cloud apps or actions**, click **Select apps**, on the **Select** blade, click **Microsoft Azure Management**, and click **Select**.
+    
+   >**Note**: Review the warning that this policy impacts access to the Azure Portal.
 	
    - Click **Conditions**, click **Sign-in risk**, on the **Sign-in risk** blade, review the risk levels but do not make any changes and close the **Sign-in risk** blade.
 	
@@ -418,7 +418,7 @@ In this task, you will view the Azure AD Identity Protection options in the Azur
 
 1. On the **Security \| Getting started** blade, in the **Protect** section, click **Identity Protection**.
 
-1. On the **Identity Protection \| Overview** blade, review the **Protect**, **Report**, and **Notify** options. 
+1. On the **Identity Protection \| Overview** blade, review the **New risky users detected** and **New risky sign-ins detected** charts and other information about risky users.  
 
 #### Task 2: Configure a user risk policy
 
