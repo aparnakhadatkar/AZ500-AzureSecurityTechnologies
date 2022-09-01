@@ -230,7 +230,7 @@ In this task, you will create the Service Desk group and assign Dylan to the gro
 1. In the Bash session within the Cloud Shell pane, run the following to obtain the objectId property of the user account of Dylan Williams: 
 
     ```cli
-    OBJECTID=$(echo $USER | jq '.[].objectId' | tr -d '"')
+    OBJECTID=$(echo $USER | jq '.[].id' | tr -d '"')
     ```
 
 1. In the Bash session within the Cloud Shell pane, run the following to add the user account of Dylan to the Service Desk group: 
@@ -290,9 +290,9 @@ In this exercise, you will complete the following tasks:
 
    |Setting|Value|
    |---|---|
-   |Role|**Virtual Machine Contributor**|
-   |Assign access to|**User, group, or service principal**|
-   |Select|**Service Desk**|
+   |Role in the search tab|**Virtual Machine Contributor**|
+   |Assign access to (Under Members Pane)|**User, group, or service principal**|
+   |Select (+Select Members)|**Service Desk**|
 
 1. Choose **Save** to create the role assignment.
 
