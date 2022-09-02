@@ -48,7 +48,7 @@ In this task, you will identify a DNS name for your Azure VM deployment.
     Test-AzDnsAvailability -DomainNameLabel <custom-label> -Location '<location>'
     ```
 
-    >**Note**: Replace the `<custom-label>` placeholder with a valid DNS name that is likely to be globlly unique. Replace the `<location>` placeholder with the name of the region into which you want to deploy the Azure VM that will host the Active Directory domain controller you will use in this lab.
+    >**Note**: Replace the `<custom-label>` placeholder with a valid DNS name that is likely to be globally unique. Replace the `<location>` placeholder with the name of the region into which you want to deploy the Azure VM that will host the Active Directory domain controller you will use in this lab.
 
     >**Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
 
@@ -107,9 +107,7 @@ In this task, you will create a new Azure AD tenant to use in this lab.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-1. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage Tenants**.
-
-1. On the **Switch tenant** blade, select **+ Create**.
+1. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage tenants**, and then on the next screen, click **+ Create**.
 
 1. On the **Basics** tab of the **Create a tenant** blade, ensure that the option **Azure Active Directory** is selected and click **Next: Configuration >**.
 
@@ -135,7 +133,7 @@ In this task, you will add your custom DNS name to the new Azure AD tenant.
 
 1. In the Azure portal, in the toolbar, click the **Directory + subscription** icon, located to the right of the Cloud Shell icon. 
 
-1. In the **Directory + subscription** blade, click the newly created tenant, **AdatumSync**.
+1. In the **Directory + subscription** blade, select the newly created tenant **AdatumSync** line and click the **Switch** button.
 
     >**Note**: You may need to refresh the browser window if the **AdatumSync** entry does not appear in the **Directory + subscription** filter list.
 
