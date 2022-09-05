@@ -147,7 +147,7 @@ In this task, you will test the Delete lock. You should be able to modify the st
 
    >**Note**:  By using Resource Locks you can implement an extra line of defense against accidental or malicious changes and/or deletion of the most important resources. Resource locks can be removed by any user with the **Owner** role, but doing so requires a conscious effort. Locks supplement Role Based Access Control. 
 
-> Results: In this exercise, you learned to use Resource Manager locks to protect resources from modification and accidental deletion.
+
 
 1. In the Azure portal, navigate back to the blade displaying properties of the newly created storage account.
 
@@ -155,3 +155,4 @@ In this task, you will test the Delete lock. You should be able to modify the st
 
 1. On the **Locks** blade, click on the **Delete** icon on the far right of the **Delete Lock** entry.
 
+   > Results: In this exercise, you learned to use Resource Manager locks to protect resources from modification and accidental deletion.
