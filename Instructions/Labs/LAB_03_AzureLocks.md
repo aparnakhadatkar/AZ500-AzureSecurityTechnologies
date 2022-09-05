@@ -149,3 +149,9 @@ In this task, you will test the Delete lock. You should be able to modify the st
 
 > Results: In this exercise, you learned to use Resource Manager locks to protect resources from modification and accidental deletion.
 
+1. In the Azure portal, navigate back to the blade displaying properties of the newly created storage account.
+
+1. In the **Settings** section , select **Locks**.  
+
+1. On the **Locks** blade, click on the **Delete** icon on the far right of the **Delete Lock** entry.
+
