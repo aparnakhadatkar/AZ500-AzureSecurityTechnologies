@@ -25,15 +25,15 @@ In this lab, you will complete the following exercise:
 
 In this exercise, you will complete the following tasks:
 
-- Task 1: Create a resource group with a storage account.
+- Task 1: Create a storage account.
 - Task 2: Add a ReadOnly lock on the storage account. 
 - Task 3: Test the ReadOnly lock. 
 - Task 4: Remove the ReadOnly lock and create a Delete lock.
 - Task 5: Test the Delete lock.
 
-#### Task 1: Create a resource group with a storage account.
+#### Task 1: Create a storage account.
 
-In this task, you will create a resource group and storage account for the lab. 
+In this task, you will create a storage account for the lab. 
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
