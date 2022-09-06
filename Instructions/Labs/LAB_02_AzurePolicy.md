@@ -24,39 +24,16 @@ In this lab, you will complete the following:
 
 In this exercise, you will complete the following tasks:
 
-- Task 1: Create an Azure resource group. 
-- Task 2: Create an Allowed Locations policy assignment.
-- Task 3: Verify the Allowed Locations policy assignment is working. 
+- Task 1: Create an Allowed Locations policy assignment.
+- Task 2: Verify the Allowed Locations policy assignment is working. 
 
-#### Task 1: Create a resource group for the lab. 
+#### Task 1: Create an Allowed Locations policy assignment.
 
-In this task, you will create a resource group for the lab. 
+In this task, you will create an Allowed Locations policy assignment and specify which Azure regions the policy can use. 
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
     >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
-
-1. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, select **PowerShell** and **Create storage**.
-
-1. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
-
-1. In the PowerShell session within the Cloud Shell pane, run the following to create a resource group (verify with your instructor regarding the value of the location parameter):
-
-    ```powershell
-    New-AzResourceGroup -Name AZ500LAB02 -Location 'East US'
-    ```
-
-1. In the PowerShell session within the Cloud Shell pane, run the following to list resource groups to verify that the new resource group was created:
-
-    ```powershell
-    Get-AzResourceGroup | format-table
-    ```
-
-1. Close the **Cloud Shell**.
-
-#### Task 2: Create an Allowed Locations policy assignment.
-
-In this task, you will create an Allowed Locations policy assignment and specify which Azure regions the policy can use. 
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Policy** and press the **Enter** key.
 
@@ -103,7 +80,7 @@ In this task, you will create an Allowed Locations policy assignment and specify
 
    >**Note**: The reason the Azure policy assignment might take up to 30 minutes to take effect is that is has to replicate globally. Typically this takes only a few minutes.  If the next task fails, simply wait a few minutes and attempt its steps again.
 
-#### Task 3: Test the Allowed Locations policy assignment
+#### Task 2: Test the Allowed Locations policy assignment
 
 In this task, you will test the Allowed Locations policy assignment. 
 
