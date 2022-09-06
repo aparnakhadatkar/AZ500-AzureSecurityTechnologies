@@ -8,9 +8,7 @@ You have been asked to create a proof of concept showing how Azure users and gro
 - Create a Senior Admins group containing the user account of Joseph Price as its member.
 - Create a Junior Admins group containing the user account of Isabel Garcia as its member.
 - Create a Service Desk group containing the user account of Dylan Williams as its member.
-- Assign the Virtual Machine Contributor role to the Service Desk group. 
-
-> For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
+- Assign the Virtual Machine Contributor role to the Service Desk group.  
 
 ## Lab objectives
 
