@@ -10,8 +10,6 @@ You have been asked to create a proof of concept showing how resource locks can 
 - create a ReadOnly lock
 
 - create a Delete lock
-
-> For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
  
 ## Lab objectives
 
