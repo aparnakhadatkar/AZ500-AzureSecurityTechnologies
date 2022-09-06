@@ -43,12 +43,6 @@ In this task, you will create a resource group and storage account for the lab.
 
 1. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
-1. In the PowerShell session within the Cloud Shell pane, run the following to create a resource group (verify with your instructor regarding the value of the location parameter):
-
-    ```powershell
-    New-AzResourceGroup -Name AZ500LAB03 -Location 'EastUS'
-    ```
-
 1. In the PowerShell session within the Cloud Shell pane, run the following to create a storage account in the newly created resource group:
     
     ```powershell
