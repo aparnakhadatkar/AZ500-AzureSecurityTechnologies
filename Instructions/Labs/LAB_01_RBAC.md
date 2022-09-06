@@ -254,31 +254,12 @@ In this task, you will create the Service Desk group and assign Dylan to the gro
 
 #### Estimated timing: 10 minutes
 
-In this exercise, you will complete the following tasks:
+In this exercise, you will complete the following task:
 
-- Task 1: Create a resource group. 
-- Task 2: Assign the Service Desk Virtual Machine Contributor permissions to the resource group.  
+- Task 1: Assign the Service Desk Virtual Machine Contributor permissions to the resource group.  
+- 
 
-#### Task 1: Create a resource group
-
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
-
-1. On the **Resource groups** blade, click **+ Create** and specify the following settings:
-
-   |Setting|Value|
-   |---|---|
-   |Subscription name|the name of your Azure subscription|
-   |Resource group name|**AZ500Lab01**|
-   |Location|**East US**|
-
-1. Click **Review + create** and then **Create**.
-
-   >**Note**: Wait for the resource group to deploy. Use the **Notification** icon (top right) to track progress of the deployment status.
-
-1. Back on the **Resource groups** blade, refresh the page and verify your new resource group appears in the list of resource groups.
-
-
-#### Task 2: Assign the Service Desk Virtual Machine Contributor permissions. 
+#### Task 1: Assign the Service Desk Virtual Machine Contributor permissions. 
 
 1. On the **Resource groups** blade, click the **AZ500LAB01** resource group entry.
 
