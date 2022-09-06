@@ -256,8 +256,7 @@ In this task, you will create the Service Desk group and assign Dylan to the gro
 
 In this exercise, you will complete the following task:
 
-- Task 1: Assign the Service Desk Virtual Machine Contributor permissions to the resource group.  
-- 
+- Task 1: Assign the Service Desk Virtual Machine Contributor permissions to the resource group.   
 
 #### Task 1: Assign the Service Desk Virtual Machine Contributor permissions. 
 
