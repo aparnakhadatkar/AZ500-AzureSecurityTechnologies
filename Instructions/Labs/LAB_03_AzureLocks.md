@@ -131,15 +131,15 @@ In this task, you will test the Delete lock. You should be able to modify the st
 
 1. In the **Settings** section of the storage account blade, click **Configuration**.
 
-1. Set the **Secure transfer required** option to **Disabled** and then click **Save**.
+2. Set the **Secure transfer required** option to **Disabled** and then click **Save**.
 
    >**Note**:  This time, the change should be successful.
 
-1. On the storage account blade, select **Overview** and, on the **Overview** blade, click **Delete**.
+3. On the storage account blade, select **Overview** and, on the **Overview** blade, click **Delete**.
 
-1. On the **Delete storage account** blade, type in the name of the storage account to confirm that you intend to proceed and then click **Delete**.
+4. On the **Delete storage account** blade, type in the name of the storage account to confirm that you intend to proceed and then click **Delete**.
 
-1. Review the notification that resembles the following text: 
+5. Review the notification that resembles the following text: 
 
 	> **'xxxxxx' can't be deleted because this resource or its parent has a delete lock. Locks must be removed before this resource can be deleted"**
 
@@ -149,10 +149,10 @@ In this task, you will test the Delete lock. You should be able to modify the st
 
 
 
-1. In the Azure portal, navigate back to the blade displaying properties of the newly created storage account.
+6. In the Azure portal, navigate back to the blade displaying properties of the newly created storage account.
 
-1. In the **Settings** section , select **Locks**.  
+7. In the **Settings** section , select **Locks**.  
 
-1. On the **Locks** blade, click on the **Delete** icon on the far right of the **Delete Lock** entry.
+8. On the **Locks** blade, click on the **Delete** icon on the far right of the **Delete Lock** entry.
 
    > Results: In this exercise, you learned to use Resource Manager locks to protect resources from modification and accidental deletion.
