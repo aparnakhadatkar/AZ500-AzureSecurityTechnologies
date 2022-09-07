@@ -42,7 +42,7 @@ In this task, you will use a template to deploy the lab infrastructure.
 
     >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and press the **Enter** key.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and hit **Enter** key.
 
 1. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
 
@@ -52,7 +52,7 @@ In this task, you will use a template to deploy the lab infrastructure.
 
 1. On the **Edit template** blade, click **Save**.
 
-1. On the **Custom deployment** blade, ensure that the following settings are configured (leave any others with their default values):
+1. On the **Custom deployment** blade, ensure that the following settings are configured (leave rest with the default values):
 
    |Setting|Value|
    |---|---|
@@ -79,7 +79,7 @@ In this task, you will use a template to deploy the lab infrastructure.
     
 1. On the **Server Settings** blade, review the information about pricing and the trial period, **VULNERABILITY ASSESSMENT SETTINGS** and **ADVANCED THREAT PROTECTION SETTINGS**.
 
-1. Back to **Security Center** blade, review **Recommandations** and **Security incidents and alerts**.
+1. Back to **Security Center** blade, review **Recommendations** and **Security incidents and alerts**.
 
       >**Note**: It may take 10-15 minutes for recommendations to appear on the **Security Center** blade. Rather than waiting, proceed to the next task but consider returning to this blade once you complete all the remaining tasks.
 
@@ -134,9 +134,7 @@ In this task, you will first configure server level auditing and then configure 
 
 1. On the **Create storage account** blade, in the **Name** box, type a globally unique name consisting of between 3 and 24 lower case letters and digits, click **OK**, 	
 
-1. Back on the **Auditing** blade, set **Retention (days)** to **5** and click **OK**. 	
-
-1. Back on the **Auditing** blade, under **Advanced properties** set **Retention (days)** to **5** and click **OK**.
+1. Back on the **Auditing** blade, under **Advanced properties** set **Retention (days)** to **5** and click **save**.
 
     >**Note**: If you receive an error message regarding invalid storage container path then the storage account may not have have been provisioned yet. Wait a few minutes, click **Storage account**, on the **Choose storage account** blade, select the newly created storage account and back on the Auditing blade, click **Save**.
 
