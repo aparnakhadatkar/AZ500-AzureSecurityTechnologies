@@ -45,19 +45,19 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
 
     >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and press the **Enter** key.
+2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and press the **Enter** key.
 
-1. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
+3. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
 
-1. On the **Edit template** blade, click **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.json** file and click **Open**.
+4. On the **Edit template** blade, click **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.json** file and click **Open**.
 
-1. On the **Edit template** blade, click **Save**.
+5. On the **Edit template** blade, click **Save**.
 
-1. On the **Custom deployment** blade, under **Deployment Scope** ensure that the following settings are configured (leave any others with their default values):
+6. On the **Custom deployment** blade, under **Deployment Scope** ensure that the following settings are configured (leave any others with their default values):
 
    |Setting|Value|
    |---|---|
-   |Subscription|the name of the Azure subscription you will be using in this lab|
+   |Subscription|Let it be default|
    |Resource group|click **Create new** and type the name **AZ500LAB10**|
    |Location|**(US) East US**|
    |Admin Username|**Student**|
@@ -67,11 +67,11 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
 
     >**Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
 
-1. Click the **Review and Create** button, and confirm the deployment by clicking the **Create** button. 
+7. Click the **Review and Create** button, and confirm the deployment by clicking the **Create** button. 
 
     >**Note**: This initiates the deployment of the Azure VM and Azure SQL Database required for this lab. 
 
-    >**Note**: Do not wait for the ARM template deployment to be completed, but instead continue to the next exercise. The deployment might take between **20-25 minutes**. 
+    >**Note**: Do not wait for the ARM template deployment to be completed, continue on to the next exercise. The deployment might take upto **20-25 minutes**. 
 
 ### Exercise 2: Configure the Key Vault resource with a key and a secret
 
@@ -244,7 +244,7 @@ In this task, you will enable a client application to access the Azure SQL Datab
     |Setting|Value|
     |----|----|
     |Description|**Key1**|
-    |Expires|**in 12 months**|
+    |Expires|**12 months**|
 	
 1. Click **Add** to update the application credentials.
 
@@ -385,7 +385,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
 1. On the **Introduction** page, click **Next**.
 
-1. On the **Column Selection** page, select the **SSN** and **Birthdate** columnts, set the **Encryption Type** of the **SSN** column to **Deterministic** and of the **Birthdate** column to **Randomized**, and click **Next**.
+1. On the **Column Selection** page, select the **SSN** and **Birthdate** columns, set the **Encryption Type** of the **SSN** column to **Deterministic** and of the **Birthdate** column to **Randomized**, and click **Next**.
 
 1. On the **Master Key Configuration** page, select **Azure Key Vault**, click **Sign in**, when prompted, authenticate by using the same user account you used to provision the Azure Key Vault instance earlier in this lab, ensure that that Key Vault appears in the **Select an Azure Key Vault** drop down list, and click **Next**.
 
@@ -394,6 +394,8 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 1. On the **Summary** page, click **Finish** to proceed with the encryption. When prompted, sign in again by using the same user account you used to provision the Azure Key Vault instance earlier in this lab.
 
 1. Once the encryption process is complete, on the **Results** page, click **Close**.
+	
+    >**Note**: Process may take upto 5 minutes.
 
 1. In the **SQL Server Management Studio** console, in the **Object Explorer** pane, under the **medical** node, expand the **Security** and **Always Encrypted Keys** subnodes. 
 
@@ -404,21 +406,19 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
 In this exercise, you will complete the following tasks:
 
-- Task 1: Run a data-driven application to demonstrate the use of Azure Key Vault in encrypting the Azure SQL database
-
 #### Task 1: Run a data-driven application to demonstrate the use of Azure Key Vault in encrypting the Azure SQL database
 
 You will create a Console application using Visual Studio to load data into the encrypted columns and then access that data securely using a connection string that accesses the key in the Key Vault.
 
 1. From the RDP session to the **az500-10-vm1**, launch **Visual Studio 2019** from the **Start menu**.
 
-1. Switch to the window displaying Visual Studio 2019 welcome message, click the **Sign in** button and, when prompted, provide the credntials you used to authenticate to the Azure subscription you are using in this lab.
+1. Switch to the window displaying Visual Studio 2019 welcome message, click the **Sign in** button and, when prompted, provide the credentials you used to authenticate to the Azure subscription you are using in this lab. 
 
 1. On the **Get started** page, click **Create a new project**. 
 
 1. In the list of project templates, search for **Console App (.NET Framework)**, in the list of results, click **Console App (.NET Framework)** for **C#**, and click **Next**.
 
-1. On the **Configure your new project** page, specify the following settings (leave other settings with their default values):
+1. On the **Configure your new project** page, specify the following settings (leave other settings with their default values) and click on **create**
 
     |Setting|Value|
     |---|---|
@@ -439,7 +439,7 @@ You will create a Console application using Visual Studio to load data into the 
     ```powershell
     Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
     ```
-    
+
 1. Navigate to **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\\10\\program.cs**, open it in Notepad, and copy its content into Clipboard.
 
 1. Switch to the Visual Studio console, in the **Solution Explorer** window, click **Program.cs** and replace its content with the code you copied into Clipboard.
