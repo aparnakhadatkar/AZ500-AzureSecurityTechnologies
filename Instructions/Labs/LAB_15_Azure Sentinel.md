@@ -1,6 +1,6 @@
 
 
-# Lab 15: Azure Sentinel
+# Lab 15: Microsoft Sentinel
 # Student lab manual
 
 ## Lab scenario
@@ -23,7 +23,7 @@ In this lab, you will complete the following exercise:
 
 - **\\C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\\15\\changeincidentseverity.json**
 
-### Exercise 1: Implement Azure Sentinel
+### Exercise 1: Implement Microsoft Sentinel
 
 ### Estimated timing: 30 minutes
 
@@ -36,7 +36,7 @@ In this exercise, you will complete the following tasks:
 - Task 5: Create a custom alert and configure the playbook as an automated response.
 - Task 6: Invoke an incident and review the associated actions.
 
-#### Task 1: On-board Azure Sentinel
+#### Task 1: On-board Microsoft Sentinel
 
 In this task, you will on-board Azure Sentinel and connect the Log Analytics workspace. 
 
@@ -44,21 +44,21 @@ In this task, you will on-board Azure Sentinel and connect the Log Analytics wor
 
     >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Sentinel** and press the **Enter** key.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Sentinel** and press the **Enter** key.
 	
-1. On the **Azure Sentinel** blade, click **+ Create**.	
+1. On the **Microsoft Sentinel** blade, click **+ Create**.	
 
-1. On the **Add Azure Sentinel to a workspace** blade, select the Log Analytics workspace you created in the Azure Monitor lab and click **Add**.
+1. On the **Add Microsoft Sentinel to a workspace** blade, select the Log Analytics workspace you created in the Azure Monitor lab and click **Add**.
 
-    >**Note**: Azure Sentinel has very specific requirements for workspaces. For example, workspaces created by Azure Security Center can not be used. Read more at [Quickstart: On-board Azure Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/quickstart-onboard)
+    >**Note**: Microsoft Sentinel has very specific requirements for workspaces. For example, workspaces created by Azure Security Center can not be used. Read more at [Quickstart: On-board Azure Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/quickstart-onboard)
 	
-#### Task 2: Configure Azure Sentinel to use the Azure Activity data connector. 
+#### Task 2: Configure Microsoft Sentinel to use the Azure Activity data connector. 
 
 In this task, you will configure Sentinel to use the Azure Activity data connector.  
 
-1. In the Azure portal, on the **Azure Sentinel \| Overview** blade, in the **Configuration** section, click **Data connectors**. 
+1. In the Azure portal, on the **Microsoft Sentinel \| Overview** blade, in the **Configuration** section, click **Data connectors**. 
 
-1. On the **Azure Sentinel \| Data connectors** blade, review the list of available connectors, type **Azure** into the search bar and select the entry representing the **Azure Activity** connector (hide the menu bar on the left using \<< if needed), review its description and status, and then click **Open connector page**.
+1. On the **Microsoft Sentinel \| Data connectors** blade, review the list of available connectors, type **Azure** into the search bar and select the entry representing the **Azure Activity** connector (hide the menu bar on the left using \<< if needed), review its description and status, and then click **Open connector page**.
 
 1. On the **Azure Activity** blade the **Instructions** tab should be selected, note the **Prerequisites** and scroll down to the **Configuration**. Take note of the information describing the connector update. Your Azure Pass subscription never used the legacy connection method so you can skip step 1 (the **Disconnect All** button will be grayed out) and proceed to step 2.
 
@@ -66,9 +66,9 @@ In this task, you will configure Sentinel to use the Azure Activity data connect
 
 1. On the **Configure Azure Activity logs to stream to specified Log Analytics workspace** (Assign Policy page) **Basics** tab, click the **Scope elipsis (...)** button. In the **Scope** page choose your Azure Pass subscription from the drop-down subscription list and click the **Select** button at the bottom of the page.
 
-    >**Note**: *Do not* choose a Resource Group
+    >**Note**: *Do not* select a Resource Group
 
-1. Click the **Next** button at the bottom of the **Basics** tab to proceed to the **Parameters** tab. On the **Parameters** tab click the **Primary Log Analytics workspace elipsis (...)** button. In the **Primary Log Analytics workspace** page, make sure your Azure pass subscription is selected and use the **workspaces** drop-down to select the Log Analytics workspace you are using for Sentinel. When done click the **Select** button at the bottom of the page.
+1. Click the **Next** button at the bottom of the **Basics** tab and proceed to the **Parameters** tab. On the **Parameters** tab click the **Primary Log Analytics workspace elipsis (...)** button. In the **Primary Log Analytics workspace** page, make sure your Azure pass subscription is selected and use the **workspaces** drop-down to select the Log Analytics workspace you are using for Sentinel. When done click the **Select** button at the bottom of the page.
 
 1. Click the **Next** button at the bottom of the **Parameters** tab to proceed to the **Remediation** tab. On the **Remediation** tab select the **Create a remediation task** checkbox. This will enable the "Configure Azure Activity logs to stream to specified Log Analytics workspace" in the **Policy to remediate** drop-down. In the **System assigned identity location** drop-down, select the region (East US for example) you selected earlier for your Log Analytics workspace.
 
@@ -210,7 +210,7 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 1. On the **Microsoft Defender for Cloud \| Overview** blade, under **Cloud Security** select **Workload protections** section.
 
-1. On the **Microsoft Defender for Cloud \| Workload protections** blade under **Advanaced protection** select **Just-in-time VM access**.
+1. On the **Microsoft Defender for Cloud \| Workload protections** blade under **Advanced protection** select **Just-in-time VM access**.
 
 1. On the **Just in time VM access** blade, under the **Configured** blade, on the right hand side of the row referencing the **myVM** virtual machine, click the **ellipses** button,  click **Remove** and then click **Yes**.
 
