@@ -5,7 +5,7 @@
 
 ## Lab scenario
 
-You have been asked to create a proof of concept of Azure Sentinel-based threat detection and response. Specifically, you want to:
+You have been asked to create a proof of concept of Microsoft Sentinel-based threat detection and response. Specifically, you want to:
 
 - Start collecting data from Azure Activity and Security Center.
 - Add built in and custom alerts 
@@ -17,7 +17,7 @@ You have been asked to create a proof of concept of Azure Sentinel-based threat 
 
 In this lab, you will complete the following exercise:
 
-- Exercise 1: Implement Azure Sentinel
+- Exercise 1: Implement Microsoft Sentinel
 
 ## Lab files:
 
@@ -29,7 +29,7 @@ In this lab, you will complete the following exercise:
 
 In this exercise, you will complete the following tasks:
 
-- Task 1: On-board Azure Sentinel
+- Task 1: On-board Microsoft Sentinel
 - Task 2: Connect Azure Activity to Sentinel
 - Task 3: Create a rule that uses the Azure Activity data connector. 
 - Task 4: Create a playbook
@@ -38,7 +38,7 @@ In this exercise, you will complete the following tasks:
 
 #### Task 1: On-board Microsoft Sentinel
 
-In this task, you will on-board Azure Sentinel and connect the Log Analytics workspace. 
+In this task, you will on-board Microsoft Sentinel and connect the Log Analytics workspace. 
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
@@ -86,9 +86,9 @@ In this task, you will configure Sentinel to use the Azure Activity data connect
 
 In this task, you will review and create a rule that uses the Azure Activity data connector. 
 
-1. On the **Azure Sentinel \| Configuration** blade, click **Analytics**. 
+1. On the **Microsoft Sentinel \| Configuration** blade, click **Analytics**. 
 
-1. On the **Azure Sentinel \| Analytics** blade, click the **Rule templates** tab. 
+1. On the **Microsoft Sentinel \| Analytics** blade, click the **Rule templates** tab. 
 
     >**Note**: Review the types of rules you can create. Each rule is associated with a specific Data Source.
 
@@ -112,7 +112,7 @@ In this task, you will review and create a rule that uses the Azure Activity dat
 
 #### Task 4: Create a playbook
 
-In this task, you will create a playbook. A security playbook is a collection of tasks that can be invoked by Azure Sentinel in response to an alert. 
+In this task, you will create a playbook. A security playbook is a collection of tasks that can be invoked by Microsoft Sentinel in response to an alert. 
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and press the **Enter** key.
 
@@ -164,11 +164,11 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 #### Task 5 Create a custom alert and configure a playbook as an automated response
 
-1. In the Azure portal, navigate back to the **Azure Sentinel \| Overview** blade.
+1. In the Azure portal, navigate back to the **Microsoft Sentinel \| Overview** blade.
 
-1. On the the **Azure Sentinel \| Overview** blade, in the **Configuration** section, click **Analytics**.
+1. On the the **Microsoft Sentinel \| Overview** blade, in the **Configuration** section, click **Analytics**.
 
-1. On the **Azure Sentinel \| Analytics** blade, click **+ Create** and, in the drop-down menu, click **Scheduled query rule**. 
+1. On the **Microsoft Sentinel \| Analytics** blade, click **+ Create** and, in the drop-down menu, click **Scheduled query rule**. 
 
 1. On the **General** tab of the **Analytic rule wizard - Create new rule** blade, specify the following settings (leave others with their default values):
 
@@ -220,19 +220,19 @@ In this task, you will create a playbook. A security playbook is a collection of
 
     >**Note**: This may take a minute to appear. 
 
-1. In the Azure portal, navigate back to the **Azure Sentinel \| Overview** blade.
+1. In the Azure portal, navigate back to the **Microsoft Sentinel \| Overview** blade.
 
-1. On the **Azure Sentinel \| Overview** blade, review the dashboard and verify that it displays an alert corresponding to the deletion of the Just in time VM access policy.
+1. On the **Microsoft Sentinel \| Overview** blade, review the dashboard and verify that it displays an alert corresponding to the deletion of the Just in time VM access policy.
 
-    >**Note**: It can take up to 5 minutes for alerts to appear on the **Azure Sentinel \| Overview** blade. If you are not seeing an alert at that point, run the query rule referenced in the previous task to verify that the Just In Time access policy deletion activity has been propagated to the Log Analytics workspace associated with your Azure Sentinel instance. If that is not the case, re-create the Just in time VM access policy and delete it again.
+    >**Note**: It can take up to 5 minutes for alerts to appear on the **Microsoft Sentinel \| Overview** blade. If you are not seeing an alert at that point, run the query rule referenced in the previous task to verify that the Just In Time access policy deletion activity has been propagated to the Log Analytics workspace associated with your Azure Sentinel instance. If that is not the case, re-create the Just in time VM access policy and delete it again.
 
-1. On the **Azure Sentinel \| Overview** blade, in the **Threat Management** section, click **Incidents**.
+1. On the **Microsoft Sentinel \| Overview** blade, in the **Threat Management** section, click **Incidents**.
 
 1. Verify that the blade displays an incident with either medium or high severity level.
 
-    >**Note**: It can take up to 5 minutes for the incident to appear on the **Azure Sentinel \| Incidents** blade. 
+    >**Note**: It can take up to 5 minutes for the incident to appear on the **Microsoft Sentinel \| Incidents** blade. 
 
-    >**Note**: Review the **Azure Sentinel \| Playbooks** blade. You will find there the count of succesfull and failed runs.
+    >**Note**: Review the **Microsoft Sentinel \| Playbooks** blade. You will find there the count of succesfull and failed runs.
 
     >**Note**: You have the option of assigning a different severity level and status to an incident.
 
