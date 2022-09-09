@@ -117,25 +117,26 @@ In this task, you will configure collection of the Windows System log and severa
 
 1. In the Azure portal, navigate back to the Log Analytics workspace you created earlier in this exercise.
 
-1. On the Log Analytics workspace blade, in the **Settings** section, click **Agents configuration**.
+1. On the Log Analytics workspace blade, in the **Settings** section, click **Legacy agents management**.
 
-1. On the **Agents configuration** blade, review the configurable settings including Windows Event Logs, Windows Performance Counters, Linux Performance Counters, IIS Logs, and Syslog. 
+1. On the **Legacy agents management** blade, review the configurable settings including Windows Event Logs, Windows Performance Counters, Linux Performance Counters, IIS Logs, and Syslog. 
 
-1. Ensure that **Windows Event Logs** is selected, click **+ Add windows event log**, in the listing of event log types, select **System** and then click **+**.
+1. Under tab **Windows event logs**, click on **+ Add windows event log**, in the listing of event log types, select **System**.
 
     >**Note**: This is how you add event logs to the workspace. Other choices include, for example, **Hardware events** or **Key Management Service**.  
 
-1. Deselect the **Information** checkbox, leaving the **Error** and **Warning** check boxes selected.
+1. Unselect the **Information** checkbox, leaving the **Error** and **Warning** check boxes selected.
 
-1. Click **Windows Performance Counters**, click **+ Add performance counter**, review the listing of available performance counters, and add the following ones:
+1. Click **Windows Performance Counters**, click **+ Add performance counter**, review the listing of available performance counters, and add the following:
 
-    - Process(*)\ %Processor Time
+    - Memory(\*)\Available Memory Mbytes
+    - Process(\*)\\% Processor Time
     - Event Tracing for Windows\Total Memory Usage --- Non-Paged Pool
     - Event Tracing for Windows\Total Memory Usage --- Paged Pool
 
     >**Note**: The counters are added and configured with 60 second collection sample interval.
   
-1. On the **Agents configuration** blade, click **Apply**.
+1. Now click **Apply**.
 
 #### Task 5: View and query collected data
 
@@ -147,10 +148,9 @@ In this task, you will run a log search on your data collection.
 
 1. If needed, close the **Welcome to Log Analysis** window. 	
 
-1. On the **Queries** pane, in the **All Queries** column, scroll down to the bottom of the list of resource types, and click **Virtual machines**	
+1. On the **Queries** pane, in the **All Queries** column, scroll down to the bottom of the list of resource types, and click **Azure Monitor**	
     	
 1. Review the list of predefined queries, select **Memory and CPU usage**, and click the corresponding **Run** button.
-    >**Note**: You can start with the query **Virtual machine available memory**. If you don't get any results check the scope is set to virtual machine
 
 1. The query will automatically open in a new query tab. 
 
@@ -165,7 +165,7 @@ In this task, you will run a log search on your data collection.
     >**Note**: You can generate some additional load on the Azure VM you deployed earlier in this lab by using the following steps:	
     1. Navigate to the Azure VM blade.	
     
-    1. On the Azure VM blade, in the **Operations** section, select **Run command**, on the **Run Command Script** blade, type the following script, and click **Run**:	
+    1. On the Azure VM blade, in the **Operations** section, select **Run command** and click on **RunPowerShellScript**. Type the following script, and click **Run**:	
     
     1. 	
        ```cmd	
