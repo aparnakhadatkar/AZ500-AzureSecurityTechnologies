@@ -41,33 +41,29 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
      
 1. On the **Microsoft Defender for Cloud \| Getting started** blade, in the vertical menu on the left side, in the **Management** section, click **Environment Settings**.
 
-1. On the **Microsoft Defender for Cloud \| Environment Settings** blade, click the entry representing your subscription and, on the **Settings \| Azure Defender plans** blade, ensure that **Azure Defender on** is selected. 
+1. On the **Microsoft Defender for Cloud \| Environment Settings** blade, expand the dropdown and click the entry representing your subscription and, on the **Settings \| Azure Defender plans** blade, ensure that **Azure Defender** is enabled for all listed down resources. 
 
     >**Note**: Review all the features that are available as part of Azure Defender tier and ensure that Azure Defender turned on for each resource type. 
 
-1. If you made any changes, click **Save**.
-
-1. On the **Settings \| Azure Defender plans** blade, select **Enable all** and click **Save**.
+1. On the **Settings \| Azure Defender plans** blade, select **Enable all** and click **Save** to save any changes.
 
 1. On the **Settings \| Azure Defender plans** blade, in the vertical menu bar on the left side, click **Auto Provisioning**.
 
-1. On the **Settings \| Auto Provisioning** blade, make sure that **Auto provisioning** is set to **On** for the first item **Log Analytics agent for Azure VMs**. 
+1. On the **Settings \| Auto Provisioning** blade, make sure that **Auto provisioning** is set to **On** for the first item **Log Analytics agent/Azure Monitor Agent**. 
 
 1. On the **Settings \| Auto provisioning** blade, in the vertical menu on the left side, click **Workflow automation**.
 
 1. On the **Settings \| Workflow automation** blade, click **+ Add workflow automation**.
 
-1. On the **Add workflow automation** blade, review the available settings. 
+1. On the **Add workflow automation** blade, review the available settings and click **Cancel**.
 
     >**Note**: You can trigger actions based threat detection alerts and Microsoft Defender for Cloud recommendations. You can also configure an action based on Logic apps. 
-
-1. On the **Add workflow automation** blade, click **Cancel**.
 
     >**Note**: Microsoft Defender for Cloud provides many insights into virtual machines including system update status, OS security configurations, and endpoint protection.
 
 1. Navigate back to the **Microsoft Defender for Cloud \| Environment Settings** blade and click the entry representing the Log Analytics workspace you created in the previous lab.
 
-1. On the **Settings \| Azure Defender plans** blade, ensure that **Azure Defender on** is selected and click **Save**.
+1. On the **Settings \| Defender plans** blade, ensure that **Enable all** is selected and click **Save**.
 
 
 #### Task 2: Review the Microsoft Defender for Cloud recommendation
@@ -76,7 +72,7 @@ In this task, you will review the Microsoft Defender for Cloud recommendations.
 
 1. In the Azure portal, navigate back to the **Microsoft Defender for Cloud \| Overview** blade. 
 
-1. On the **Microsoft Defender for Cloud \| Overview** blade, review the **Secure Score** tile.
+1. On the **Microsoft Defender for Cloud \| Overview** blade, click on **Security posture** tile and review scores.
 
     >**Note**: Record the current score if it is available.
 
@@ -93,9 +89,11 @@ In this task, you will review the Microsoft Defender for Cloud recommendations.
 
 In this task, you will implement the Microsoft Defender for Cloud recommendation to enable Just in time VM Access on the virtual machine. 
 
-1. In the Azure portal, navigate back to the **Microsoft Defender for Cloud \| Overview** blade and select the **Workload protectionsr** tile.
+1. In the Azure portal, navigate back to the **Microsoft Defender for Cloud \| Overview** blade and select the **Workload protections** tile.
 
-1. On the **Workload protections** blade, in the **Advanced protection** section, click the **Just-in-time- VM access** tile and, on the **Just-in-time VM access blade**, click **Try Just in time VM access**.
+1. On the **Workload protections** blade, scroll down to **Advanced protection** section and click on **Just-in-time- VM access** tile and, click on the **Just-in-time VM access blade**.
+
+>**Note**: If the VMs are not listed, navigate to **Virtual Machine** blade and click the **Configuration**, Click the **Enable the Just-in-time VMs** option under the **Just-in-time Vm's access**. Repeat the above step to navigate back to the **Microsoft Defender for Cloud** and refresh the page, the VM will appear.
 
 1. On the **Just in time VM access**, select **Not Configured** and then click the **myVM** entry.
 
