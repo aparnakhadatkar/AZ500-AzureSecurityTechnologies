@@ -61,7 +61,7 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
     >**Note**: Microsoft Defender for Cloud provides many insights into virtual machines including system update status, OS security configurations, and endpoint protection.
 
-1. Navigate back to the **Microsoft Defender for Cloud \| Environment Settings** blade and click the entry representing the Log Analytics workspace you created in the previous lab.
+1. Navigate back to the **Microsoft Defender for Cloud | Environment Settings** blade, expand your subscription, and click the entry representing the Log Analytics workspace you created in the previous lab.
 
 1. On the **Settings \| Defender plans** blade, ensure that **Enable all** is selected and click **Save**.
 
