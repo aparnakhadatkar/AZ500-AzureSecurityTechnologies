@@ -91,19 +91,19 @@ In this task, you will implement the Microsoft Defender for Cloud recommendation
 
 1. In the Azure portal, navigate back to the **Microsoft Defender for Cloud \| Overview** blade and select the **Workload protections** tile.
 
-1. On the **Workload protections** blade, scroll down to **Advanced protection** section and click on **Just-in-time- VM access** tile and, click on the **Just-in-time VM access blade**.
+2. On the **Workload protections** blade, scroll down to **Advanced protection** section and click on **Just-in-time- VM access** tile and, click on the **Just-in-time VM access blade**.
 
->**Note**: If the VMs are not listed, navigate to **Virtual Machine** blade and click the **Configuration**, Click the **Enable the Just-in-time VMs** option under the **Just-in-time Vm's access**. Repeat the above step to navigate back to the **Microsoft Defender for Cloud** and refresh the page, the VM will appear.
+    >**Note**: If the VMs are not listed, navigate to **Virtual Machine** blade and click the **Configuration**, Click the **Enable the Just-in-time VMs** option       under the **Just-in-time Vm's access**. Repeat the above step to navigate back to the **Microsoft Defender for Cloud** and refresh the page, the VM will appear.
 
-1. On the **Just in time VM access**, select **Not Configured** and then click the **myVM** entry.
+3. On the **Just in time VM access**, select **Not Configured** and then click the **myVM** entry.
 
     >**Note**: You might have to wait a few minutes before the **myVM** entry becomes available.
 
-1. Select **Enable JIT on 1 VM**.
+4. Select **Enable JIT on 1 VM**.
 
-1. On the **JIT VM access configuration** blade, on the far right of the row referencing the port **22**, click the ellipsis button and then click **Delete**.
+5. On the **JIT VM access configuration** blade, on the far right of the row referencing the port **22**, click the ellipsis button and then click **Delete**.
 
-1. On the **JIT VM access configuration** blade, click **Save**.
+6. On the **JIT VM access configuration** blade, click **Save**.
 
     >**Note**: Monitor the progress of configuration by clicking on the **Notifications** icon in the toolbar and viewing the **Notifications** blade. 
 
