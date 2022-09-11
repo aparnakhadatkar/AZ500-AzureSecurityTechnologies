@@ -118,12 +118,13 @@ In this task, you will create an Azure Key Vault resource. You will also configu
     |Setting|Value|
     |----|----|
     |Configure from template (optional)|**Key, Secret, & Certificate Management**|
-    |Key permissions|click **Select all** resulting in **20 selected** permissions|
-    |Secret permissions|click **Select all** resulting in total of **8 selected** permissions|
-    |Certification permissions|click **Select all** resulting in total of **16 selected** permissions|
-    |Select principal|click **None selected**, on the **Principal** blade, select your user account, and click **Select**|
-
-1. Back on the **Add access policy** blade, click **Add** to add the access policy and, back on the access policies blade of the Key Vault, click **Save** to your changes. 
+    |Key permissions|click on **Select all** check boxes resulting in **17 selected** permissions| (Make sure the permissions for **Rotation Policy Operations** are **unchecked**) 
+    |Secret permissions|click on **Select all** check boxes resulting in total of **8 selected** permissions|
+    |Certification permissions|click on **Select all** check boxes resulting in total of **16 selected** permissions|
+    
+ Now click on **Next** to reach to **Principal** tab.
+    
+ On the **Principal** blade, select your user account, and click **Select** and click on **Review + create** and then **Create**.
 
 #### Task 2: Add a key to Key Vault
 
@@ -157,7 +158,7 @@ In this task, you will add a key to the Key Vault and view information about the
 
 1. Minimize the Cloud Shell pane. 
 
-1. Back in the Azure portal, on the Key Vault blade, in the **Settings** section, click **Keys**.
+1. Back in the Azure portal, on the Key Vault blade, in the **Objects** section, click **Keys**.
 
 1. In the list of keys, click the **MyLabKey** entry and then, on the **MyLabKey** blade, click the entry representing the current version of the key.
 
@@ -192,7 +193,7 @@ In this task, you will add a key to the Key Vault and view information about the
 
 1. Minimize the Cloud Shell pane. 
 
-1. In the Azure portal, navigate back to the Key Vault blade, in the **Settings** section, click **Secrets**.
+1. In the Azure portal, navigate back to the Key Vault blade. In the **Objects** section, click **Secrets**.
 
 1. In the list of secrets, click the **SQLPassword** entry and then, on the **SQLPassword** blade, click the entry representing the current version of the secret.
 
@@ -227,7 +228,7 @@ In this task, you will enable a client application to access the Azure SQL Datab
     |Name|**sqlApp**|
     |Redirect URI (optional)|**Web** and **https://sqlapp**|
 
-1. On the **Register an application** blade, click **Register**. 
+1. Now click **Register**. 
 
     >**Note**: Once the registration is completed, the browser will automatically redirect you to **sqlApp** blade. 
 
@@ -328,18 +329,20 @@ In this task, you will connect to the SQL Database with SQL Server Management St
     |Start IP|the Public IP Address of the az500-10-vm1|
     |End IP|the Public IP Address of the az500-10-vm1|
 
-1. Click **Save** and **OK** to save the change and close the confirmation pane. 
+1. Click **Save** to save the change and close the confirmation pane. 
 
     >**Note**: This modifies the server firewall settings, allowing connections to the medical database from the Azure VM's public IP address you deployed in this lab.
 
 1. Navigate back to the **az500-10-vm1** blade, click **Overview**, next click **Connect** and, in the drop down menu, click **RDP**. 
 
-1. Click **Download RDP File** and use it to connect to the **az500-10-vm1** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+1. Click **Download RDP File** and use it to connect to the **az500-10-vm1** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials and click **Ok**. 
 
     |Setting|Value|
     |---|---|
     |User name|**Student**|
     |Password|**Pa55w.rd1234**|
+	
+   In the pop that follows, click on **Yes**.
 
     >**Note**: Wait for the Remote Desktop session and **Server Manager** to load. Close Server Manager. 
 
@@ -379,7 +382,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 		[BirthDate] [date] NOT NULL 
      PRIMARY KEY CLUSTERED ([PatientId] ASC) ON [PRIMARY] );
      ```
-1. After the table is created successfully, in the **Object Explorer** pane, expand the **medical** database node, the **tables** node, right-click the **dbo.Patients** node, and click **Encrypt Columns**. 
+1. After the table is created successfully, in the **Object Explorer** pane, expand the **medical** database node. Now expand the **Tables** node and right-click the **dbo.Patients** node, and click **Encrypt Columns**. 
 
     >**Note**: This will initiate the **Always Encrypted** wizard.
 
@@ -387,7 +390,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
 1. On the **Column Selection** page, select the **SSN** and **Birthdate** columns, set the **Encryption Type** of the **SSN** column to **Deterministic** and of the **Birthdate** column to **Randomized**, and click **Next**.
 
-1. On the **Master Key Configuration** page, select **Azure Key Vault**, click **Sign in**, when prompted, authenticate by using the same user account you used to provision the Azure Key Vault instance earlier in this lab, ensure that that Key Vault appears in the **Select an Azure Key Vault** drop down list, and click **Next**.
+1. On the **Master Key Configuration** page, select **Azure Key Vault**, click **Sign in**. When prompted, authenticate by using the same user account you used to provision the Azure Key Vault instance earlier in this lab, ensure that that Key Vault appears in the **Select an Azure Key Vault** drop down list, and click **Next**.
 
 1. On the **Run Settings** page, click **Next**.
 	
@@ -412,59 +415,58 @@ You will create a Console application using Visual Studio to load data into the 
 
 1. From the RDP session to the **az500-10-vm1**, launch **Visual Studio 2019** from the **Start menu**.
 
-1. Switch to the window displaying Visual Studio 2019 welcome message, click the **Sign in** button and, when prompted, provide the credentials you used to authenticate to the Azure subscription you are using in this lab. 
+2. Switch to the window displaying Visual Studio 2019 welcome message, click the **Sign in** button and, when prompted, provide the credentials you used to authenticate to the Azure subscription you are using in this lab. Now click **Start Visual studio**.
 
-1. On the **Get started** page, click **Create a new project**. 
+3. On the **Get started** page, click **Create a new project**. 
 
-1. In the list of project templates, search for **Console App (.NET Framework)**, in the list of results, click **Console App (.NET Framework)** for **C#**, and click **Next**.
+4. In the list of project templates, search for **Console App (.NET Framework)**, in the list of results, click **Console App (.NET Framework)** for **C#**, and click **Next**.
 
-1. On the **Configure your new project** page, specify the following settings (leave other settings with their default values) and click on **create**
+5. On the **Configure your new project** page, specify the following settings (leave other settings with their default values) and click on **create**
 
     |Setting|Value|
     |---|---|
     |Project name|**OpsEncrypt**|
     |Solution name|**OpsEncrypt**|
     |Framework|**.NET Framework 4.7.2.**|
+6. In the Visual Studio console, click the **Tools** menu, in the drop down menu, click **NuGet Package Manager**, and, in the cascading menu, click **Package Manager Console**.
 
-1. In the Visual Studio console, click the **Tools** menu, in the drop down menu, click **NuGet Package Manager**, and, in the cascading menu, click **Package Manager Console**.
-
-1. In the **Package Manager Console** pane, run the following to install the first required **NuGet** package:
+7. In the **Package Manager Console** pane, run the following to install the first required **NuGet** package:
 
     ```powershell
     Install-Package Microsoft.SqlServer.Management.AlwaysEncrypted.AzureKeyVaultProvider
     ```
 
-1. In the **Package Manager Console** pane, run the following to install the second required **NuGet** package:
+8. In the **Package Manager Console** pane, run the following to install the second required **NuGet** package:
 
     ```powershell
     Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
     ```
+	
+9. Minimize the RDP session to your Azure virtual machine, then navigate to **\\Allfiles\\Labs\\10\\program.cs**, open it in Notepad, and copy its content into Clipboard.
 
-1. Navigate to **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\\10\\program.cs**, open it in Notepad, and copy its content into Clipboard.
+10. Return to the RDP session, and in the Visual Studio console, in the **Solution Explorer** window, click **Program.cs** and replace its content with the code you copied into Clipboard.
+	
+11. In the Visual Studio window, in the **Program.cs** pane, in line 15, replace the `<connection string noted earlier>` placeholder with the Azure SQL database **ADO.NET** connection string you recorded earlier in the lab. In the connection string, replace the `{your_password}` placehodler, with `Pa55w.rd1234`. If you saved the string on the lab computer, you may need to leave the RDP session to copy the ADO string, then return to the Azure virtual machine to paste it in.
 
-1. Switch to the Visual Studio console, in the **Solution Explorer** window, click **Program.cs** and replace its content with the code you copied into Clipboard.
+12. In the Visual Studio window, in the **Program.cs** pane, in line 16, replace the `<client id noted earlier>` placeholder with the value of **Application (client) ID** of the registered app you recorded earlier in the lab. 
 
-1. In the Visual Studio window, in the **Program.cs** pane, in line 15, replace the `<connection string noted earlier>` placeholder with the Azure SQL database **ADO.NET** connection string you recorded earlier in the lab. In the connection string, replace the `{your_password}` placehodler, with `Pa55w.rd1234`.
+13. In the Visual Studio window, in the **Program.cs** pane, in line 17, replace the `<key value noted earlier>` placeholder with the the value of **Key1** of the registered app you recorded earlier in the lab. 
 
-1. In the Visual Studio window, in the **Program.cs** pane, in line 16, replace the `<client id noted earlier>` placeholder with the value of **Application (client) ID** of the registered app you recorded earlier in the lab. 
+14. In the Visual Studio console, click the **Start** button to initiate the build of the console application and start it.
 
-1. In the Visual Studio window, in the **Program.cs** pane, in line 17, replace the `<key value noted earlier>` placeholder with the the value of **Key1** of the registered app you recorded earlier in the lab. 
+15. The application will start a Command Prompt window. When prompted for password, type **Pa55w.rd1234** to connect to Azure SQL Database. 
 
-1. In the Visual Studio console, click the **Start** button to initiate the build of the console application and start it.
+16. Leave the console app running and switch to the **SQL Management Studio** console. 
 
-1. The application will start a Command Prompt window. When prompted for password, type **Pa55w.rd1234** to connect to Azure SQL Database. 
+17. In the **Object Explorer** pane, right-click the **medical** database and, in the right-click menu, click **New Query**.
 
-1. Leave the console app running and switch to the **SQL Management Studio** console. 
-
-1. In the **Object Explorer** pane, right-click the medical database and, in the right-click menu, click **New Query**.
-
-1. From the query window, run the following query to verify that the data that loaded into the database from the console app is encrypted.
+18. From the query window, run the following query by clicking on **Execute** to verify that the data that loaded into the database from the console app is encrypted.
 
     ```sql
     SELECT FirstName, LastName, SSN, BirthDate FROM Patients;
     ```
 
-1. Switch back to the console application where you are prompted to enter a valid SSN. This will query the encrypted column for the data. At the Command Prompt, type the following and press the Enter key:
+19. Switch back to the console application where you are prompted to enter a valid SSN. This will query the encrypted column for the data. At the Command Prompt, type the following and press the Enter key:
 
     ```cmd
     999-99-0003
@@ -472,5 +474,5 @@ You will create a Console application using Visual Studio to load data into the 
 
     >**Note**: Verify that the data returned by the query is not encrypted.
 
-1. To terminate the console app, press the Enter key
+20. To terminate the console app, press the Enter key
 
