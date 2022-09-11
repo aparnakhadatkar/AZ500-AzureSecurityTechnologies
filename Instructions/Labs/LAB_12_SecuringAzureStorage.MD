@@ -55,7 +55,7 @@ In this task, you will create a virtual network.
     |Name|**myVirtualNetwork**|
     |Region|**(US) East US**|
 
-1. On the **IP addresses** tab of the **Create virtual network** blade, set the **IPv4 address space** to **10.0.0.0/16**, in the **Subnet name** column, click **default** and, on the **Edit subnet** blade, specify the following settings and click **Save**:
+1. On the **IP addresses** tab of the **Create virtual network** blade, set the **IPv4 address space** to **10.0.0.0/16**. In the **Subnet name** column, click **default** and, on the **Edit subnet** blade, specify the following settings and click **Save**:
 
     |Setting|Value|
     |---|---|
@@ -157,7 +157,7 @@ In this task, you will create a network security group with two outbound securit
 
     >**Note**: In the next steps, you will create an inbound security rule that allows Remote Desktop Protocol (RDP) traffic to the subnet. The rule overrides a default security rule that denies all inbound traffic from the internet. Remote Desktop connections are allowed to the subnet so that connectivity can be tested in a later step.
 
-1. On the **myNsgPrivate \| Outbound security rules** blade, in the **Settings** section, click **Inbound security rules** and then click **+ Add**.
+1. On the **myNsgPrivate** blade, in the **Settings** section, click **Inbound security rules** and then click **+ Add**.
 
 1. On the **Add inbound security rule** blade, specify the following settings (leave all other values with their default values): 
 
@@ -240,54 +240,54 @@ In this task, you will create a storage account with a file share and obtain the
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Storage accounts** and press the **Enter** key.
 
-1. On the **Storage accounts** blade, click **+ Create**.
+2. On the **Storage accounts** blade, click **+ Create**.
 
-1. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
+3. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |---|---|
     |Subscription|the name of the Azure subscription you are using in this lab|
     |Resource group|**AZ500LAB12**|
-    |Storage account name|any globally unique name between 3 and 24 in length consisting of letters and digits|
+    |Storage account name|**filesharestorage**
     |Location|**(US) EastUS**|
     |Performance|**Standard (general-purpose v2 account)**|
     |Redundency|**Locally redundant storage (LRS)**|
 
-1. On the **Basics** tab of the **Create storage account** blade, click **Review + Create**, wait for the validation process to complete, and click **Create**.
+4. On the **Basics** tab of the **Create storage account** blade, click **Review** and wait for the validation process to complete, and then click **Create**.
 
     >**Note**: Wait for the Storage account to be created. This should take about 2 minutes.
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
+5. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
-1. On the **Resource groups** blade, in the list of resource group, click the **AZ500LAB12** entry.
+6. On the **Resource groups** blade, in the list of resource group, click the **AZ500LAB12** entry.
 
-1. On the **AZ500LAB12** resource group blade, in the list of resources, click the entry representing the newly created storage account.
+7. On the **AZ500LAB12** resource group blade, in the list of resources, click the entry representing the newly created storage account.
 
-1. On the storage account **Overview** blade, click **File Shares** under the **Data storage** tab, and then click **+ File Share**.
+8. On the storage account **Overview** blade, click **File Shares** under the **Data storage** tab, and then click **+ File Share**.
 
-1. On the **New file share** blade, specify the following settings:
+9. On the **New file share** blade, specify the following settings:
 
     |Setting|Value|
     |---|---|
     |Name|**my-file-share**|
 
-1. On the **New file share** blade, click **Create**.
+10. On the **New file share** blade, click **Create**.
 
     >**Note**: Now, retrieve and record the PowerShell script that creates a drive mapping to the Azure file share. 
 
-1. On the storage account blade, in the list of file shares, click **my-file-share**.
+11. On the storage account blade, in the list of file shares, click **my-file-share**.
 
-1. On the **my-file-share** blade, click **Connect**.
+12. On the **my-file-share** blade, click **Connect**.
 
-1. On the **Connect** blade, on the **Windows** tab, click on **Show Script** and copy the PowerShell script that creates a Z drive mapping to the file share. 
+13. On the **Connect** blade, on the **Windows** tab, click on **Show Script** and copy the PowerShell script that creates a Z drive mapping to the file share. 
 
     >**Note**: Record this script. You will need this in a later in this lab in order to map the file share from the Azure virtual machine on the **Private** subnet.
 
-1. Navigate back to the storage account blade, then in the **Security + networking** section, click **Networking**.
+14. Navigate back to the storage account blade, then in the **Security + networking** section, click **Networking**.
 	
-1. Under **Firewalls and virtual networks** blade, select the **Enabled from selected virtual networks and IP addresses** option and click the **+ Add existing virtual network** link. 
+15. Under **Firewalls and virtual networks** blade, select the **Enabled from selected virtual networks and IP addresses** option and click the **+ Add existing virtual network** link. 
 
-1. On the **Add networks** blade, specify the following settings:
+16. On the **Add networks** blade, specify the following settings:
 
     |Setting|Value|
     |---|---|
@@ -295,9 +295,9 @@ In this task, you will create a storage account with a file share and obtain the
     |Virtual networks|**myVirtualNetwork**|
     |Subnets|**Private**|
 
-1. On the **Add networks** blade, Click on **Add**. 
+17. On the **Add networks** blade, Click on **Add**. 
 
-1. Back on the storage account blade, click **Save**.
+18. Back on the storage account blade, click **Save**.
 
     >**Note**: At this point in the lab you have configured a virtual network, a network security group, and a storage account with a file share. 
 
@@ -309,9 +309,9 @@ In this task, you will create two virtual machines one in the Private subnet and
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
-1. On the **Virtual machines** blade, click **+ Create** and, in the dropdown list, click **+ Azure Virtual machine**.
+2. On the **Virtual machines** blade, click **+ Create** and, in the dropdown list, click **+ Azure Virtual machine**.
 
-1. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
+3. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |---|---|
@@ -323,13 +323,12 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Username|**localadmin**|
     |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
-    |Already have a Windows Server license|**No**|
 
     >**Note**: For public inbound ports, we will rely on the precreated NSG. 
 
-1. Click **Next: Disks >** and, on the **Disks** tab of the **Create a virtual machine** blade, set the **OS disk type** to **Standard HDD** and click **Next: Networking >**.
+4. Click **Next: Disks >** and, on the **Disks** tab of the **Create a virtual machine** blade, set the **OS disk type** to **Standard HDD** and click **Next: Networking >**.
 
-1. Click **Next: Networking >**, on the **Networking** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
+5. Click **Next: Networking >**, on the **Networking** tab, specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |---|---|
@@ -338,15 +337,15 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Public IP|**(new)myVmPrivate-ip**|
     |NIC network security group|**None**|
 
-1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, accept the default settings and click **Review + create**.
+6. Click **Next: Management >**, on the **Management** tab, accept the default settings and click **Review + create**.
 
-1. On the **Review + create** blade, ensure that validation was successful and click **Create**.
+7. On the **Review + create** blade, ensure that validation was successful and click **Create**.
 
     >**Note**: The second virtual machine will be connected to the Public subnet.
 
-1. On the **Virtual machines** blade, click **+ Add** and, in the dropdown list, click **+ Azure Virtual machine**.
+8. On the **Virtual machines** blade, click **+ Add** and, in the dropdown list, click **+ Azure Virtual machine**.
 
-1. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
+9. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |---|---|
@@ -358,13 +357,12 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Username|**localadmin**|
     |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
-    |Already have a Windows Server license|**No**|
-
+    
     >**Note**: For public inbound ports, we will rely on the precreated NSG. 
 
-1. Click **Next: Disks >** and, on the **Disks** tab of the **Create a virtual machine** blade, set the **OS disk type** to **Standard HDD** and click **Next: Networking >**.
+10. Click **Next: Disks >** and, on the **Disks** tab, set the **OS disk type** to **Standard HDD** and click **Next: Networking >**.
 
-1. Click **Next: Networking >**, on the **Networking** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
+11. On the **Networking** tab, specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |---|---|
@@ -373,9 +371,9 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Public IP|**(new)myVmPublic-ip**|
     |NIC network security group|**None**|
 
-1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, accept the default settings and click **Review + create**.
+12. Click **Next: Management >**, on the **Management** tab, accept the default settings and click **Review + create**.
 
-1. On the **Review + create** blade, ensure that validation was successful and click **Create**.
+13. On the **Review + create** blade, ensure that validation was successful and click **Create**.
 
     >**Note**: You can continue to the next task once the deployment of the **myVMPrivate** Azure VM is completed.
 
@@ -385,11 +383,11 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
 
 1. Navigate back to the **Virtual machines** blade. 
 
-1. On the **Virtual machines** blade, click the **myVMPrivate** entry.
+2. On the **Virtual machines** blade, click the **myVMPrivate** entry.
 
-1. On the **myVMPrivate** blade, click **Connect** and, in the drop down menu, click **RDP**. 
+3. On the **myVMPrivate** blade, click **Connect** and, in the drop down menu, click **RDP**. 
 
-1. Click **Download RDP File** and use it to connect to the **myVMPrivate** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+4. Click **Download RDP File** and use it to connect to the **myVMPrivate** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
 
     |Setting|Value|
     |---|---|
@@ -398,11 +396,11 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
 
     >**Note**: Wait for the Remote Desktop session to open and Server Manager to load.
 
-    >**Note**: You will now map drive Z to an Azure File share within the Remote Desktop session to a Windows Server 2019 computer
+    >**Note**: You will now map drive Z to an Azure File share within the Remote Desktop session to a Windows Server 2022 computer
 
-1. Within the Remote Desktop session to **myVMPrivate**, click **Start** and then click **Windows PowerShell ISE**.
+5. Within the Remote Desktop session to **myVMPrivate**, click **Start** and then click **Windows PowerShell ISE**.
 
-1. Within the **Windows PowerShell ISE** window, open the **Script** pane, then paste and run the PowerShell script that you recorded earlier in this lab. The script has the following format:
+6. Within the **Windows PowerShell ISE** window, open the **Script** pane, then paste and run the PowerShell script that you recorded earlier in this lab. The script has the following format:
 
     ```powershell
     $connectTestResult = Test-NetConnection -ComputerName <storage_account_name>.file.core.windows.net -Port 445
@@ -417,9 +415,9 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
     ```
     >**Note**: The `<storage-account-name>` placeholder represents the name of the storage account hosting the file share and `<storage_account_name>` one its primary key
 
-1. Start File Explorer and verify that the Z: drive mapping has been successfully created.
+7. Start File Explorer and verify that the Z: drive mapping has been successfully created.
 
-1. Next, from the console pane of the **Windows PowerShell ISE** console, run the following to verify that the virtual machine has no outbound connectivity to the internet:
+8. Next, from the console pane of the **Windows PowerShell ISE** console, run the following to verify that the virtual machine has no outbound connectivity to the internet:
 
     ```powershell
     Test-NetConnection -ComputerName www.bing.com -Port 80
@@ -427,7 +425,7 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
 
     >**Note**: The test will fail because the network security group associated with the Private subnet does not allow outbound access to the internet.
 
-1. Terminate the Remote Desktop session to the **myVMPrivate** Azure VM.
+9. Terminate the Remote Desktop session to the **myVMPrivate** Azure VM.
 
     >**Note**: At this point, you have confirmed that the virtual machine in the Private subnet can access the storage account. 
 
@@ -435,11 +433,11 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
 
 1. Navigate back to the **Virtual machines** blade. 
 
-1. On the **Virtual machines** blade, click the **myVMPublic** entry.
+2. On the **Virtual machines** blade, click the **myVMPublic** entry.
 
-1. On the **myVMPublic** blade, click **Connect** and, in the drop down menu, click **RDP**. 
+3. On the **myVMPublic** blade, click **Connect** and, in the drop down menu, click **RDP**. 
 
-1. Click **Download RDP File** and use it to connect to the **myVMPublic** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+4. Click **Download RDP File** and use it to connect to the **myVMPublic** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
 
     |Setting|Value|
     |---|---|
@@ -448,17 +446,17 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
 
     >**Note**: Wait for the Remote Desktop session to open and Server Manager to load.
 
-    >**Note**: You will now map drive Z to an Azure File share within the Remote Desktop session to a Windows Server 2019 computer
+    >**Note**: You will now map drive Z to an Azure File share within the Remote Desktop session to a Windows Server 2022 computer
 
-1. Within the Remote Desktop session to **myVMPublic**, click **Start** and then click **Windows PowerShell ISE**.
+5. Within the Remote Desktop session to **myVMPublic**, click **Start** and then click **Windows PowerShell ISE**.
 
-1. Within the **Windows PowerShell ISE** window, open the **Script** pane, then paste and run the same PowerShell script that you ran within the Remote Desktop session to the **myVMPrivate** Azure VM.
+6. Within the **Windows PowerShell ISE** window, open the **Script** pane, then paste and run the same PowerShell script that you ran within the Remote Desktop session to the **myVMPrivate** Azure VM.
 
     >**Note**: This time, you will receive the **New-PSDrive : Access is denied** error. 
 
     >**Note**: Access is denied because the *myVmPublic* virtual machine is deployed in the Public subnet. The Public subnet does not have a service endpoint enabled for the Azure Storage. The storage account only allows network access from the Private subnet.
 
-1. Next, from the console pane of the **Windows PowerShell ISE** console, run the following to verify that the virtual machine has outbound connectivity to the internet: 
+7. Next, from the console pane of the **Windows PowerShell ISE** console, run the following to verify that the virtual machine has outbound connectivity to the internet: 
 
     ```powershell
     Test-NetConnection -ComputerName www.bing.com -Port 80
@@ -466,6 +464,6 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
 
     >**Note**: The test will succeed because there is no network security group associated with the Public subnet.
 
-1. Terminate the Remote Desktop session to the **myVMPublic** Azure VM.
+8. Terminate the Remote Desktop session to the **myVMPublic** Azure VM.
 
     >**Note**: At this point, you have confirmed that the virtual machine in the Public subnet cannot access the storage account, but has access to the internet.
