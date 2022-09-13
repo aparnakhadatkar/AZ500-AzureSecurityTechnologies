@@ -144,15 +144,15 @@ In this task, you will run a log search on your data collection.
 
 1. In the Azure portal, navigate back to the Log Analytics workspace you created earlier in this exercise.
 
-1. On the Log Analytics workspace blade, in the **General** section, click **Logs**.
+2. On the Log Analytics workspace blade, in the **General** section, click **Logs**.
 
-1. If needed, close the **Welcome to Log Analysis** window. 	
+3. If needed, close the **Welcome to Log Analysis** window. 	
 
-1. On the **Queries** pane, in the **All Queries** column, scroll down to the bottom of the list of resource types, and click **Azure Monitor**	
+4. On the **Queries** pane, in the **All Queries** column, scroll down to the bottom of the list of resource types, and click **Azure Monitor**	
     	
-1. Review the list of predefined queries, select **Memory and CPU usage**, and click the corresponding **Run** button.
+5. Review the list of predefined queries, select **Memory and CPU usage**, and click the corresponding **Run** button.
 
-1. The query will automatically open in a new query tab. 
+6. The query will automatically open in a new query tab. 
 
     >**Note**: Log Analytics uses the Kusto query language. You can customize the existing queries or create your own. 
 
@@ -165,9 +165,9 @@ In this task, you will run a log search on your data collection.
     >**Note**: You can generate some additional load on the Azure VM you deployed earlier in this lab by using the following steps:	
     1. Navigate to the Azure VM blade.	
     
-    1. On the Azure VM blade, in the **Operations** section, select **Run command** and click on **RunPowerShellScript**. Type the following script, and click **Run**:	
+ 7. On the Azure VM blade, in the **Operations** section, select **Run command** and click on **RunPowerShellScript**. Type the following script, and click **Run**:	
     
-    1. 	
+ 8. 	
        ```cmd	
        cmd	
        :loop	
@@ -175,7 +175,7 @@ In this task, you will run a log search on your data collection.
        goto loop	
        ```	
        	
-    1. Switch back ot the Log Analytics blade and re-run the query. You might need to wait a few minutes for data to be collected and re-run the query again.
+ 9. Switch back ot the Log Analytics blade and re-run the query. You might need to wait a few minutes for data to be collected and re-run the query again.
 
 > Results: You used a Log Analytics workspace to configure data sources and query logs. 
  
