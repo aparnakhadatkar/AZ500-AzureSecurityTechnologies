@@ -55,7 +55,7 @@ In this task, you will create a virtual network.
     |Name|**myVirtualNetwork**|
     |Region|**(US) East US**|
 
-1. On the **IP addresses** tab of the **Create virtual network** blade, set the **IPv4 address space** to **10.0.0.0/16**. In the **Subnet name** column, click **default** and, on the **Edit subnet** blade, specify the following settings and click **Save**:
+1. On the **IP addresses** tab of the **Create virtual network** blade, set the **IPv4 address space** to **10.0.0.0/16**. In the **Subnet name** column, click **default** and, on the **Edit subnet** blade, specify the following settings and click **Save**, if you do not find the **default** subnet please click on **+ Add Subnet** and specify the following settings:
 
     |Setting|Value|
     |---|---|
