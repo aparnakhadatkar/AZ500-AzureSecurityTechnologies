@@ -41,27 +41,27 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
     >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab and the Global Administrator role in the Azure AD tenant associated with that subscription.
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **custom template** and select **Deploy a custom template** under the list of **Services**.
+2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **custom template** and select **Deploy a custom template** under the list of **Services**.
 
     >**Note**: You can also select **Template Deployment (deploy using custom templates)** from the **Marketplace** list.
 
-1. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
+. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
 
-1. On the **Edit template** blade, click **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.json** file and click **Open**.
+4. On the **Edit template** blade, click **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.json** file and click **Open**.
 
     >**Note**: Review the content of the template and note that it deploys an Azure VM hosting Windows Server 2019 Datacenter.
 
-1. On the **Edit template** blade, click **Save**.
+5. On the **Edit template** blade, click **Save**.
 
-1. Back on the **Custom deployment** blade, click **Edit parameters**.
+6. Back on the **Custom deployment** blade, click **Edit parameters**.
 
-1. On the **Edit parameters** blade, click **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.parameters.json** file and click **Open**.
+7. On the **Edit parameters** blade, click **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.parameters.json** file and click **Open**.
 
     >**Note**: Review the content of the parameters file noting the adminUsername and adminPassword values.
 
-1. On the **Edit parameters** blade, click **Save**.
+8. On the **Edit parameters** blade, click **Save**.
 
-1. On the **Custom deployment** blade, ensure that the following settings are configured (leave any others with their default values):
+9. On the **Custom deployment** blade, ensure that the following settings are configured (leave any others with their default values):
 
    |Setting|Value|
    |---|---|
@@ -76,7 +76,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
     >**Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
 
-1. Click **Review + create**, and then click **Create**.
+10. Click **Review + create**, and then click **Create**.
 
     >**Note**: Do not wait for the deployment to complete but proceed to the next exercise. You will use the virtual machine included in this deployment in the last exercise of this lab.
 
@@ -102,11 +102,11 @@ In this task, you will create a new Azure AD tenant.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-1. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage tenants**, and then on the next screen, click **+ Create**.
+2. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage tenants**, and then on the next screen, click **+ Create**.
 
-1. On the **Basics** tab of the **Create a tenant** blade, ensure that the option **Azure Active Directory** is selected and click **Next: Configuration >**.
+3. On the **Basics** tab of the **Create a tenant** blade, ensure that the option **Azure Active Directory** is selected and click **Next: Configuration >**.
 
-1. On the **Configuration** tab of the **Create a tenant** blade, specify the following settings:
+4. On the **Configuration** tab of the **Create a tenant** blade, specify the following settings:
 
    |Setting|Value|
    |---|---|
@@ -116,7 +116,9 @@ In this task, you will create a new Azure AD tenant.
 
     >**Note**: Record the initial domain name. You will need it later in this lab.
 
-1. Click **Review + Create** and then click **Create**.
+5. Click **Review + Create** and then click **Create**.
+
+6. Add Captcha code on **Help us prove you're not a robot** blade and then click on **Submit** button.
 
     >**Note**: Wait for the new tenant to be created. Use the **Notification** icon to monitor the deployment status. 
 
@@ -127,14 +129,14 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 
 1. In the Azure portal, in the toolbar, click the **Directory + subscription** icon, located to the right of the Cloud Shell icon. 
 
-1. In the **Directory + subscription** blade, click the newly created tenant, **AdatumLab500-04** and click the **Switch** button to set it as the current directory.
+2. In the **Directory + subscription** blade, click the newly created tenant, **AdatumLab500-04** and click the **Switch** button to set it as the current directory.
 
     >**Note**: You may need to refresh the browser window if the **AdatumLab500-04** entry does not appear in the **Directory + subscription** filter list.
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key. On the **AdatumLab500-04** blade, in the **Manage** section, click **Licenses**.
-1. On the **Licenses \| Overview** blade, in the **Manage** section, click **All products** and then click **+ Try / Buy**.
+3. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key. On the **AdatumLab500-04** blade, in the **Manage** section, click **Licenses**.
+4. On the **Licenses \| Overview** blade, in the **Manage** section, click **All products** and then click **+ Try / Buy**.
 
-1. On the **Activate** blade, in the Azure AD Premium P2 section, click **Free Trial** and then click **Activate**.
+5. On the **Activate** blade, in the **Azure AD Premium P2** section, click **Free Trial** and then click **Activate**.
 
 
 #### Task 3: Create Azure AD users and groups.
@@ -228,9 +230,9 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
 1. On the **AdatumLab500-04** Azure Active Directory tenant blade, in the **Manage** section, click **Security**.
 
-1. On the **Security \| Getting started** blade, in the **Manage** section, click **MFA**.
+1. On the **Security \| Getting started** blade, in the **Manage** section, click **Multifactor authentication**.
 
-1. On the **Multi-Factor Authentication \| Getting started** blade, click the **Additional cloud-based MFA settings** link. 
+1. On the **Multi-Factor Authentication \| Getting started** blade, click the **Additional cloud-based Multifactor authentication settings** link. 
 
     >**Note**: This will open a new browser tab, displaying **multi-factor authentication** page.
 
@@ -344,7 +346,7 @@ In this task, you will review conditional access policy settings and create a po
 	
    - Click **Locations** and review the location options without making any changes.
 	
-   - Click **Grant** in the **Access controls** section, on the **Grant** blade, select the **Require multi-factor authentication** checkbox and click **Select**
+   - Click **Grant** in the **Access controls** section, on the **Grant** blade, select the **Require multifactor authentication** checkbox and click **Select**
 	
    - Set the **Enable policy** to **On**.
 
