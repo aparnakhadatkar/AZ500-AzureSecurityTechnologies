@@ -166,20 +166,20 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 1. In the Azure portal, navigate back to the **Microsoft Sentinel \| Overview** blade.
 
-1. On the the **Microsoft Sentinel \| Overview** blade, in the **Configuration** section, click **Analytics**.
+2. On the the **Microsoft Sentinel \| Overview** blade, in the **Configuration** section, click **Analytics**.
 
-1. On the **Microsoft Sentinel \| Analytics** blade, click **+ Create** and, in the drop-down menu, click **Scheduled query rule**. 
+3. On the **Microsoft Sentinel \| Analytics** blade, click **+ Create** and, in the drop-down menu, click **Scheduled query rule**. 
 
-1. On the **General** tab of the **Analytic rule wizard - Create new rule** blade, specify the following settings (leave others with their default values):
+4. On the **General** tab of the **Analytic rule wizard - Create new rule** blade, specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |---|---|
     |Name|**Playbook Demo**|
     |Tactics|**Initial Access**|
 
-1. Click **Next: Set rule logic >**.
+5. Click **Next: Set rule logic >**.
 
-1. On the **Set rule logic** tab of the **Analytic rule wizard - Create new rule** blade, in the **Rule query** text box, paste the following rule query. 
+6. On the **Set rule logic** tab of the **Analytic rule wizard - Create new rule** blade, in the **Rule query** text box, paste the following rule query. 
 
     ```
     AzureActivity
@@ -192,15 +192,15 @@ In this task, you will create a playbook. A security playbook is a collection of
     >**Note** if you receive a parse error, intellisense may have added values to your query. Ensure the query matches otherwise paste the query into notepad and then from notepad to the rule query. 
 
 
-1. On the **Set rule logic** tab of the **Analytic rule wizard - Create new rule** blade, in the **Query scheduling** section, set the **Run query every** to **5 Minutes**.
+7. On the **Set rule logic** tab of the **Analytic rule wizard - Create new rule** blade, in the **Query scheduling** section, set the **Run query every** to **5 Minutes**.
 
-1. On the **Set rule logic** tab of the **Analytic rule wizard - Create new rule** blade, accept the default values of the remaining settings and click **Next: Incident settings >**.
+8. On the **Set rule logic** tab of the **Analytic rule wizard - Create new rule** blade, accept the default values of the remaining settings and click **Next: Incident settings >**.
 
-1. On the **Incident settings** tab of the **Analytic rule wizard - Create new rule** blade, accept the default settings and click **Next: Automated response >**. 
+9. On the **Incident settings** tab of the **Analytic rule wizard - Create new rule** blade, accept the default settings and click **Next: Automated response >**. 
 
-1. On the **Automated response** tab of the **Analytic rule wizard - Create new rule** blade, select the **Change-Incident-Severity** checkbox and click **Next: Review >**. 
+10. On the **Automated response** tab of the **Analytic rule wizard - Create new rule** blade, select the **Change-Incident-Severity** checkbox and click **Next: Review >**. 
 
-1. On the **Review and create** tab of the **Analytic rule wizard - Create new rule** blade, click **Create**.
+11. On the **Review and create** tab of the **Analytic rule wizard - Create new rule** blade, click **Create**.
 
     >**Note**: You now have a new active rule called **Playbook Demo**. If an event identified by the rue logic occurs, it will result in a medium severity alert, which will generate a corresponding incident.
 
