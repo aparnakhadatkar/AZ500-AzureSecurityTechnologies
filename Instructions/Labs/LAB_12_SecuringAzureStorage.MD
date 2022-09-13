@@ -252,6 +252,8 @@ In this task, you will create a storage account with a file share and obtain the
     |Location|**(US) EastUS**|
     |Performance|**Standard (general-purpose v2 account)**|
     |Redundency|**Locally redundant storage (LRS)**|
+    
+    >**Note**: **DeploymentID** can be found under the **Environment Details** tab.
 
 4. On the **Basics** tab of the **Create storage account** blade, click **Review** and wait for the validation process to complete, and then click **Create**.
 
