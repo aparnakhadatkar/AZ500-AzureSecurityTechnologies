@@ -121,6 +121,7 @@ In this task, you will create an Azure Key Vault resource. You will also configu
     |Key permissions|click on **Select all** check boxes resulting in **17 selected** permissions| (Make sure the permissions for **Rotation Policy Operations** are **unchecked**) 
     |Secret permissions|click on **Select all** check boxes resulting in total of **8 selected** permissions|
     |Certification permissions|click on **Select all** check boxes resulting in total of **16 selected** permissions|
+    |Cryptographic Operations|Select **Unwrap key** , **Wrap Key** , **Verify** , **Sign**|
     
  Now click on **Next** to reach to **Principal** tab.
     
