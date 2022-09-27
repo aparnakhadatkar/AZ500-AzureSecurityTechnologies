@@ -186,7 +186,7 @@ In this task, you will create a network security group with two outbound securit
     
 #### Task 4: Configure a network security group to allow rdp on the public subnet
 
-In this task, you will create a network security group withone inbound security rule (RDP). You will also associate the network security group with the Public subnet. This will allow RDP access to the Public VM.
+In this task, you will create a network security group with one inbound security rule (RDP). You will also associate the network security group with the Public subnet. This will allow RDP access to the Public VM.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Network security groups** and press the **Enter** key.
 
@@ -251,7 +251,7 @@ In this task, you will create a storage account with a file share and obtain the
     |Storage account name|**storage{DeploymentID}**
     |Location|**(US) EastUS**|
     |Performance|**Standard (general-purpose v2 account)**|
-    |Redundency|**Locally redundant storage (LRS)**|
+    |Redundancy|**Locally redundant storage (LRS)**|
     
     >**Note**: **DeploymentID** can be found under the **Environment Details** tab.
 
@@ -389,7 +389,7 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
 
 3. On the **myVMPrivate** blade, click **Connect** and, in the drop down menu, click **RDP**. 
 
-4. Click **Download RDP File** and use it to connect to the **myVMPrivate** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+4. Click **Download RDP File** and use it to connect to the **myVMPrivate** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
 
     |Setting|Value|
     |---|---|
@@ -439,7 +439,7 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
 
 3. On the **myVMPublic** blade, click **Connect** and, in the drop down menu, click **RDP**. 
 
-4. Click **Download RDP File** and use it to connect to the **myVMPublic** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+4. Click **Download RDP File** and use it to connect to the **myVMPublic** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
 
     |Setting|Value|
     |---|---|

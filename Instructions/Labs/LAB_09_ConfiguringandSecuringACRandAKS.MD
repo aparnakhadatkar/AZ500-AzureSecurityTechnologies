@@ -176,7 +176,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
     az aks get-credentials --resource-group AZ500LAB09 --name MyKubernetesCluster
     ```
 
-1. In the Bash session within the Cloud Shell pane, run the following to list nodes of the Kubenetes cluster: 
+1. In the Bash session within the Cloud Shell pane, run the following to list nodes of the Kubernetes cluster: 
 
     ```sh
     kubectl get nodes

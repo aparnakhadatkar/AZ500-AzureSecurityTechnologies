@@ -40,7 +40,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
     >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role.
     
-    >**Note**: If you still don't see the AdatumLab500-04 entry, click on the Switch Diretory link, select the AdatumLab500-04 line and click the Switch button.
+    >**Note**: If you still don't see the AdatumLab500-04 entry, click on the Switch Directory link, select the AdatumLab500-04 line and click the Switch button.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure AD Privileged Identity Management** and press the **Enter** key.
 
@@ -251,7 +251,7 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 
     >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role.
     
-    >**Note**: If you still don't see the AdatumLab500-04 entry, click on the Switch Diretory link, select the AdatumLab500-04 line and click the Switch button.
+    >**Note**: If you still don't see the AdatumLab500-04 entry, click on the Switch Directory link, select the AdatumLab500-04 line and click the Switch button.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure AD Privileged Identity Management** and press the **Enter** key.
 
