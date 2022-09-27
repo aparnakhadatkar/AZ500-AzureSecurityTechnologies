@@ -39,11 +39,9 @@ In this exercise, you will complete the following tasks:
 
 #### Task 1: Deploy an Azure VM and an Azure SQL database
 
-In this task, you will deploy an Azure VM, which will automatically install Visual Studio 2019 and SQL Server Management Studio 2018 as part of the deployment. 
+In this task, you will deploy an Azure VM, which will automatically install Visual Studio 2019 and SQL Server Management Studio 2018 as part of the deployment.
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
-
-    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and press the **Enter** key.
 
@@ -288,7 +286,7 @@ In this task, you will grant the newly registered app permissions to access secr
 
 #### Task 3: Retrieve SQL Azure database ADO.NET Connection String 
 
-The ARM-template deployment in Exercise 1 provisioned an Azure SQL Server instance and an Azure SQL database named **medical** . You will update the empty database resource with a new table structure and select data columns for encryption
+The ARM-template deployment in Exercise 1 provisioned an Azure SQL Server instance and an Azure SQL database named **medical**. You will update the empty database resource with a new table structure and select data columns for encryption
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **SQL databases** and press the **Enter** key.
 
@@ -334,7 +332,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
     >**Note**: This modifies the server firewall settings, allowing connections to the medical database from the Azure VM's public IP address you deployed in this lab.
 
-1. Navigate back to the **az500-10-vm1** blade, click **Overview**, next click **Connect** and, in the drop down menu, click **RDP**. 
+1. Navigate back to the **az500-10-vm1** blade, click **Overview**, next click **Connect** and, in the drop-down menu, click **RDP**. 
 
 1. Click **Download RDP File** and use it to connect to the **az500-10-vm1** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials and click **Ok**. 
 
@@ -391,7 +389,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
 1. On the **Column Selection** page, select the **SSN** and **Birthdate** columns, set the **Encryption Type** of the **SSN** column to **Deterministic** and of the **Birthdate** column to **Randomized**, and click **Next**.
 
-1. On the **Master Key Configuration** page, select **Azure Key Vault**, click **Sign in**. When prompted, authenticate by using the same user account you used to provision the Azure Key Vault instance earlier in this lab, ensure that that Key Vault appears in the **Select an Azure Key Vault** drop down list, and click **Next**.
+1. On the **Master Key Configuration** page, select **Azure Key Vault**, click **Sign in**. When prompted, authenticate by using the same user account you used to provision the Azure Key Vault instance earlier in this lab, ensure that Key Vault appears in the **Select an Azure Key Vault** drop down list, and click **Next**.
 
 1. On the **Run Settings** page, click **Next**.
 	
@@ -451,7 +449,7 @@ You will create a Console application using Visual Studio to load data into the 
 
 12. In the Visual Studio window, in the **Program.cs** pane, in line 16, replace the `<client id noted earlier>` placeholder with the value of **Application (client) ID** of the registered app you recorded earlier in the lab. 
 
-13. In the Visual Studio window, in the **Program.cs** pane, in line 17, replace the `<key value noted earlier>` placeholder with the the value of **Key1** of the registered app you recorded earlier in the lab. 
+13. In the Visual Studio window, in the **Program.cs** pane, in line 17, replace the `<key value noted earlier>` placeholder with the value of **Key1** of the registered app you recorded earlier in the lab. 
 
 14. In the Visual Studio console, click the **Start** button to initiate the build of the console application and start it.
 

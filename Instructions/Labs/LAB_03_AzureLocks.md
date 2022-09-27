@@ -31,11 +31,10 @@ In this exercise, you will complete the following tasks:
 
 #### Task 1: Create a storage account.
 
-In this task, you will create a storage account for the lab. 
+In this task, you will create a storage account for the lab.
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
-    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
 
 1. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, select **PowerShell** and **Create storage**.
 
@@ -53,7 +52,7 @@ In this task, you will create a storage account for the lab.
 
 #### Task 2: Add a ReadOnly lock on the storage account. 
 
-In this task, you will add a read only lock to the storage account. This will protect the resource from accidental deletion or modification. 
+In this task, you will add a read-only lock to the storage account. This will protect the resource from accidental deletion or modification. 
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
@@ -86,7 +85,7 @@ In this task, you will add a read only lock to the storage account. This will pr
 
 	> **"Failed to update storage account 'xxxxxxxx'. Error: The scope 'xxxxxxxx' cannot perform write operation because following scope(s) are locked: '/subscriptions/xxxxx-xxx-xxxx-xxxx-xxxxxxxx/resourceGroups/AZ500LAB03/providers/Microsoft.Storage/storageAccounts/xxxxxxx'. Please remove the lock and try again"**
 
-1. Return the the **Configuration** blade of the storage account and click **Discard**. 
+1. Return the **Configuration** blade of the storage account and click **Discard**. 
 
 1. On the storage account blade, select **Overview** and, on the **Overview** blade, click **Delete**.
 
@@ -104,7 +103,7 @@ In this task, you remove the ReadOnly lock from the storage account and create a
 
 1. In the Azure portal, navigate back to the blade displaying properties of the newly created storage account.
 
-1. In the **Settings** section , select **Locks**.  
+1. In the **Settings** section, select **Locks****.  
 
 1. On the **Locks** blade, click on the **Delete** icon on the far right of the **ReadOnly Lock** entry.
 
@@ -143,7 +142,7 @@ In this task, you will test the Delete lock. You should be able to modify the st
 
 6. In the Azure portal, navigate back to the blade displaying properties of the newly created storage account.
 
-7. In the **Settings** section , select **Locks**.  
+7. In the **Settings** section, select **Locks**.  
 
 8. On the **Locks** blade, click on the **Delete** icon on the far right of the **Delete Lock** entry.
 

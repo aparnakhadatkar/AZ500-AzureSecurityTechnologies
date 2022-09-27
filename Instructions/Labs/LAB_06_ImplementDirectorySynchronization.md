@@ -5,7 +5,7 @@
 
 ## Lab scenario
 
-You have been asked to create a proof of concept demonstrating how to integrate on-premises Active Directory Domain Services (AD DS) environment with an Azure Active Directory (Azure AD) tenant. Specifically, you want to:
+You have been asked to create a proof of concept demonstrating how to integrate the on-premises Active Directory Domain Services (AD DS) environment with an Azure Active Directory (Azure AD) tenant. Specifically, you want to:
 
 - Implement a single-domain AD DS forest by deploying an Azure VM hosting an AD DS domain controller
 - Create and configure an Azure AD tenant
@@ -32,11 +32,10 @@ In this exercise, you will complete the following tasks:
 
 #### Task 1: Identify an available DNS name for an Azure VM deployment
 
-In this task, you will identify a DNS name for your Azure VM deployment. 
+In this task, you will identify a DNS name for your Azure VM deployment.
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
-    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
 
 2. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, click **PowerShell** and **Create storage**.
 
@@ -54,7 +53,7 @@ In this task, you will identify a DNS name for your Azure VM deployment.
 
 5. Verify that the command returned **True**. If not, rerun the same command with a different value of the `<custom-label>` until the command returns **True**.
 
-6. Record the value of the `<custom-label>` that resulted in the successful outcome. You will need it in the next task.
+6. Record the value of the `<custom-label>` that resulted in the successful outcome. You will need it for the next task.
 
 7. Close the Cloud Shell.
 
@@ -109,7 +108,7 @@ In this task, you will create a new Azure AD tenant to use in this lab.
 
 2. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage tenants**, and then on the next screen, click **+ Create**.
 
-3. On the **Basics** tab of the **Create a tenant** blade, ensure that the option **Azure Active Directory** is selected and click **Next: Configuration >**.
+3. On the **Basics** tab of the **Create a tenant** blade, ensure that the options **Azure Active** Directory** are selected and click **Next: Configuration >**.
 
 4. On the **Configuration** tab of the **Create a directory** blade, specify the following settings:
 
@@ -199,15 +198,15 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
    > Before you start this task, ensure that the template deployment you started in the first exercise of this lab has completed.
 
-1. In the Azure portal, set the **Directory + subscription** filter to the the Azure AD tenant associated with the Azure subscription into which you deployed the Azure VM in the first exercise of this lab.
+1. In the Azure portal, set the **Directory + subscription** filter to the Azure AD tenant associated with the Azure subscription into which you deployed the Azure VM in the first exercise of this lab.
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
 3. On the **Virtual machines** blade, click the **adVM** entry. 
 
-4. On the **adVM** blade, click **Connect** and, in the drop down menu, click **RDP**. 
+4. On the **adVM** blade, click **Connect** and, in the drop-down menu, click **RDP**. 
 
-5. In the **IP address** parameter, select **Load balancer public IP address**, then click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+5. In the **IP address** parameter, select **Load balancer public IP address**, then click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
 
    |Setting|Value|
    |---|---|
@@ -228,7 +227,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 10. In the **Create Organizational Unit** window, in the **Name** text box, type **ToSync** and click **OK**.
 
-11. Double-click the newly crated **ToSync** organizational unit such that its content appears in the details pane of the Active Directory Administrative Center console. 
+11. Double-click the newly created **ToSync** organizational unit such that its content appears in the details pane of the Active Directory Administrative Center console. 
 
 12. In the **Tasks** pane, within the **ToSync** section, click **New**, and, in the cascading menu, click **User**.
 
@@ -246,7 +245,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 In this task, you will install AD Connect on the virtual machine. 
 
-1. Within the Remote Desktop session to **adVM**, use Microsoft Edge to navigate to the Azure portal at **https://portal.azure.com**, and sign in by using the **syncadmin** user account you created the previous exercise. When prompted, specify the full user name you recorded and the **Pa55w.rd1234** password.
+1. Within the Remote Desktop session to **adVM**, use Microsoft Edge to navigate to the Azure portal at **https://portal.azure.com**, and sign in by using the **syncadmin** user account you created in the previous exercise. When prompted, specify the full user name you recorded and the **Pa55w.rd1234** password.
 >Note:If Internet Explorer is not working, download and install the Microsoft Edge by using this link.[Microsoft Edge](https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fgo.microsoft.com.mcas.ms%2Ffwlink%2F%3Flinkid%3D2069324%26Channel%3DStable%26language%3Den) 
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.

@@ -1,5 +1,3 @@
-
-
 # Lab 02: Azure Policy
 # Student lab manual
 
@@ -7,7 +5,7 @@
 
 You have been asked to create a proof of concept showing how Azure policy can be used. Specifically, you need to:
 
-- Create an Allowed Locations policy that ensures resource are only created in a specific region.
+- Create an Allowed Locations policy that ensures resources are only created in a specific region.
 - Test to ensure resources are only created in the Allowed location 
 
 ## Lab objectives
@@ -27,11 +25,10 @@ In this exercise, you will complete the following tasks:
 
 #### Task 1: Create an Allowed Locations policy assignment.
 
-In this task, you will create an Allowed Locations policy assignment and specify which Azure regions the policy can use. 
+In this task, you will create an Allowed Locations policy assignment and specify which Azure regions the policy can use.
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
-    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Policy** and press the **Enter** key.
 
@@ -43,7 +40,7 @@ In this task, you will create an Allowed Locations policy assignment and specify
 
    >**Note**: The **Allowed locations** policy allows you to restrict location of resources, not resource groups. To restrict locations of resource groups, you can use the **Allowed locations for resource groups** policy.
 
-1. Click the **Allowed locations** policy definition to display its details.. 
+1. Click the **Allowed locations** policy definition to display its details.
 
    >**Note**: This policy definition takes an array of locations as parameters. A policy rule is an ‘if-then’ statement. The ‘if’ clause checks if the resource location is included in the parameter list, and if not, the ‘then’ clause denies the resource creation or, for existing resources, marks them as non-compliant.
 
@@ -58,7 +55,7 @@ In this task, you will create an Allowed Locations policy assignment and specify
 
 1. Click **Select**.
 
-1. On the **Allowed locations** blade, on the **Basics** tab, specify the following settings (leave others with their defualt values):
+1. On the **Allowed locations** blade, on the **Basics** tab, specify the following settings (leave others with their default values):
 
    |Setting|Value|
    |---|---|
@@ -88,7 +85,7 @@ In this task, you will test the Allowed Locations policy assignment.
 
    >**Note**: First, you will try to create a virtual network in East US. Since this is not an allowed location, the request should be blocked. 
 
-1. On the **Basics** tab of the **Create virtual network** blade, specify the following settings (leave others with their defualt values):
+1. On the **Basics** tab of the **Create virtual network** blade, specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |---|---|
@@ -98,7 +95,7 @@ In this task, you will test the Allowed Locations policy assignment.
 
 1. Click **Review + create**. 
 
-1. On the **Review + create** tab of the **Create virtual network** blade note the **Validation failed** message. 
+1. On the **Review **+ create** a tab of the **Create virtual network** blade note the **Validation failed** message. 
 
     > **Note**: If the **Validation Failed** warning does not appear, click **Previous** and wait a few more minutes.
 

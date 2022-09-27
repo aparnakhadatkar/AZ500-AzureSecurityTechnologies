@@ -30,11 +30,9 @@ In this exercise, you will complete the following tasks:
 
 #### Task 1: Use the Azure portal to create a user account for Joseph Price 
 
-In this task, you will create a user account for Joseph Price. 
+In this task, you will create a user account for Joseph Price.
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
-
-    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab and the Global Administrator role in the Azure AD tenant associated with that subscription.
 
 1. In the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
@@ -49,7 +47,7 @@ In this task, you will create a user account for Joseph Price.
 
 1. Click on the copy icon next to the **User name** to copy the full user.
 
-1. Ensure that the **Auto-generate** password is selected, select the **Show password** checkbox to identify the automatically generated password. You would need to provide this password, along with the user name to Joseph. 
+1. Ensure that the **Auto-generate** password is selected, and select the **Show** password** checkbox to identify the automatically generated password. You would need to provide this password, along with the user name to Joseph. 
 
 1. Click **Create**.
 
@@ -155,13 +153,13 @@ In this task, you will create the Junior Admins group and add the user account o
     $user = Get-AzureADUser -Filter "MailNickName eq 'Isabel'"
     ```
 
-1. In the PowerShell session within the Cloud Shell pane, run the following to add the user account of Isabel to the Junior Admins group:
+1. In the PowerShell session within the Cloud Shell pane, run the following to add a user account of Isabel to the Junior Admins group:
 	
     ```powershell
     Add-AzADGroupMember -MemberUserPrincipalName $user.userPrincipalName -TargetGroupDisplayName "Junior Admins" 
     ```
 
-1. In the PowerShell session within the Cloud Shell pane, run the following to verify that the Junior Admins group contains the user account of Isabel:
+1. In the PowerShell session within the Cloud Shell pane, run the following to verify that the Junior Admins group contains a user account of Isabel:
 
     ```powershell
     Get-AzADGroupMember -GroupDisplayName "Junior Admins"
@@ -177,7 +175,7 @@ In this task, you will create the Junior Admins group and add the user account o
 In this exercise, you will complete the following tasks:
 
 - Task 1: Use Azure CLI to create a user account for Dylan Williams.
-- Task 2: Use Azure CLI to create the Service Desk group and add the user account of Dylan to the group. 
+- Task 2: Use Azure CLI to create the Service Desk group and add a user account of Dylan to the group. 
 
 #### Task 1: Use Azure CLI to create a user account for Dylan Williams.
 
@@ -185,7 +183,7 @@ In this task, you will create a user account for Dylan Williams.
 
 1. In the drop-down menu in the upper-left corner of the Cloud Shell pane, select **Bash**, and, when prompted, click **Confirm**. 
 
-1. In the Bash session within the Cloud Shell pane, run the following to to identify the name of your Azure AD tenant:
+1. In the Bash session within the Cloud Shell pane, run the following to identify the name of your Azure AD tenant:
 
     ```cli
     DOMAINNAME=$(az ad signed-in-user show --query 'userPrincipalName' | cut -d '@' -f 2 | sed 's/\"//')
@@ -203,7 +201,7 @@ In this task, you will create a user account for Dylan Williams.
     az ad user list --output table
     ```
 
-#### Task 2: Use Azure CLI to create the Service Desk group and add the user account of Dylan to the group. 
+#### Task 2: Use Azure CLI to create the Service Desk group and add a user account of Dylan to the group. 
 
 In this task, you will create the Service Desk group and assign Dylan to the group. 
 
@@ -231,7 +229,7 @@ In this task, you will create the Service Desk group and assign Dylan to the gro
     OBJECTID=$(echo $USER | jq '.[].id' | tr -d '"')
     ```
 
-1. In the Bash session within the Cloud Shell pane, run the following to add the user account of Dylan to the Service Desk group: 
+1. In the Bash session within the Cloud Shell pane, run the following to add a user account of Dylan to the Service Desk group: 
 
     ```cli
     az ad group member add --group "Service Desk" --member-id $OBJECTID

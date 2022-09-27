@@ -39,7 +39,6 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
-    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab and the Global Administrator role in the Azure AD tenant associated with that subscription.
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **custom template** and select **Deploy a custom template** under the list of **Services**.
 
@@ -90,7 +89,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 In this exercise, you will complete the following tasks
 
 - Task 1: Create a new Azure AD tenant.
-- Task 2: Activate Azure AD Premium P2 trial.
+- Task 2: Activate the Azure AD Premium P2 trial.
 - Task 3: Create Azure AD users and groups.
 - Task 4: Assign Azure AD Premium P2 licenses to Azure AD users.
 - Task 5: Configure Azure MFA settings.
@@ -104,7 +103,7 @@ In this task, you will create a new Azure AD tenant.
 
 2. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage tenants**, and then on the next screen, click **+ Create**.
 
-3. On the **Basics** tab of the **Create a tenant** blade, ensure that the option **Azure Active Directory** is selected and click **Next: Configuration >**.
+3. On the **Basics** tab of the **Create a tenant** blade, ensure that the option **Azure Active** Directory** is selected and click **Next: Configuration >**.
 
 4. On the **Configuration** tab of the **Create a tenant** blade, specify the following settings:
 
@@ -147,7 +146,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
 1. On the **Users \| All users** blade, click **+ New User**.
 
-1. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values) and click **Create**:
+1. On the **New user** blade, ensure that the **Create user** option is selected, specify the following settings (leave all others with their default values) and click **Create**:
 
    |Setting|Value|
    |---|---|
@@ -179,7 +178,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
 1. Back on the **Users \| All users** blade, click **+ New User**. 
 
-1. Click **New User**,complete the new user configuration settings, and then click **Create**.
+1. Click **New User**, complete the new user configuration settings, and then click **Create**.
 
    |Setting|Value|
    |---|---|
@@ -204,7 +203,7 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 1. On the blade displaying the properties of your user account, click **Edit**. 
 
-1. In the **Settings** section, in the **Usage location** drop down list, select the **United States** entry and click **Save**.
+1. In the **Settings** section, in the **Usage location** drop-down list, select the **United States** entry and click **Save**.
 
 1. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click **Licenses**.
 
@@ -214,7 +213,7 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 1. On the **Users** blade, select **aaduser1**, **aaduser2**, **aaduser3**, and your user account and click **Select**.
 
-1. Back on the **Assign licenses** blade, click **Assignment options**, ensure that all options are enabled, click **Review + asssign**, click **Assign**.
+1. Back on the **Assign licenses** blade, click **Assignment options**, ensure that all options are enabled, click **Review + **assign**, and click **Assign**.
 
 1. Sign out from the Azure portal and sign back in using the same account. This step is necessary in order for the license assignment to take effect.
 
@@ -278,7 +277,7 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
 #### Task 6: Validate MFA configuration
 
-In this task, you will validate the MFA configuration by testing sign in of the aaduser1 user account. 
+In this task, you will validate the MFA configuration by testing the sign in of the aaduser1 user account. 
 
 1. Open an InPrivate browser window.
 
@@ -298,7 +297,7 @@ In this task, you will validate the MFA configuration by testing sign in of the 
 
 1. On the **Keep your account secure** page, ensure that the verification was successful and click **Next**.
 
-1. On the **Keep your account secure** page, click **I want to use a different method**, select **Email** from the drop down list, click **Confirm**, provide the  email address you intend to use, and click **Next**. Once you receive the corresponding email, identify the code in the email body, provide it, and then click **Done**.
+1. On the **Keep your account secure** page, click **I want to use a different method**, select **Email** from the drop-down list, click **Confirm**, provide the email address you intend to use, and click **Next**. Once you receive the corresponding email, identify the code in the email body, provide it, and then click **Done**.
 
 1. When prompted, change your password. Make sure to record the new password.
 
@@ -342,7 +341,7 @@ In this task, you will review conditional access policy settings and create a po
 	
    - Click **Conditions**, click **Sign-in risk**, on the **Sign-in risk** blade, review the risk levels but do not make any changes and close the **Sign-in risk** blade.
 	
-   - Click **Device platforms**, review the device platforms that can included and click **Done**.
+   - Click **Device platforms**, review the device platforms that can include and click **Done**.
 	
    - Click **Locations** and review the location options without making any changes.
 	
@@ -460,15 +459,15 @@ In this task, you will configure a sign-in risk policy.
 
 > Before you start this task, ensure that the template deployment you started in Exercise 1 has completed. The deployment includes an Azure VM named **az500-04-vm1**. 
 
-1. In the Azure portal, set the **Directory + subscription** filter to the the Azure AD tenant associated with the Azure subscription into which you deployed the **az500-04-vm1** Azure VM.
+1. In the Azure portal, set the **Directory + subscription** filter to the Azure AD tenant associated with the Azure subscription into which you deployed the **az500-04-vm1** Azure VM.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
 1. On the **Virtual machines** blade, click the **az500-04-vm1** entry. 
 
-1. On the **az500-04-vm1** blade, click **Connect** and, in the drop down menu, click **RDP**. 
+1. On the **az500-04-vm1** blade, click **Connect** and, in the drop-down menu, click **RDP**. 
 
-1. Click **Download RDP File** and use it to connect to the **az500-04-vm1** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+1. Click **Download RDP File** and use it to connect to the **az500-04-vm1** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
 
    |Setting|Value|
    |---|---|
@@ -525,7 +524,7 @@ In this task, you will review the Azure AD Identity Protection reports generated
 
 1. Under **Reports** click **Risk detections**.
 
-1. Review the report and identify any entries representing the sign-in from anonymous IP address generated by the ToR browser. 
+1. Review the report and identify any entries representing the sign-in from an anonymous IP address generated by the ToR browser. 
 
  >**Note**: It may take 10-15 minutes to risks to show up in reports.
 

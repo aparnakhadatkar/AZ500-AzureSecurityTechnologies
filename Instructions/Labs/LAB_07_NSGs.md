@@ -39,8 +39,6 @@ In this task, you will create a virtual network to use with the network and appl
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
-    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
-
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual networks** and press the **Enter** key.
 
 1. On the **Virtual networks** blade, click **+ Create**.
@@ -254,7 +252,7 @@ In this task, you will create a virtual machine to use as a management server.
 
 #### Task 3: Associate each virtual machines network interface to its application security group.
 
-In this task, you will associate each virtual machines network interface with the corresponding application security group. The myVMWeb virtual machine interface will be associated to the myAsgWebServers ASG. The myVMMgmt virtual machine interface will be associated to the myAsgMgmtServers ASG. 
+In this task, you will associate each virtual machine's network interface with the corresponding application security group. The myVMWeb virtual machine interface will be associated to the myAsgWebServers ASG. The myVMMgmt virtual machine interface will be associated to the myAsgMgmtServers ASG. 
 
 1. In the Azure portal, navigate back to the **Virtual machines** blade and verify that both virtual machines are listed with the **Running** status.
 
@@ -278,7 +276,7 @@ In this task, you will test the network traffic filters. You should be able to R
 
 1. On the **myVMMgmt** blade, click **Connect** and, in the drop down menu, click **RDP**. 
 
-1. Click **Download RDP File** and use it to connect to the **myVMMgmt** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+1. Click **Download RDP File** and use it to connect to the **myVMMgmt** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
 
    |Setting|Value|
    |---|---|

@@ -5,7 +5,7 @@
 
 ## Lab scenario
 
-You have been asked to create a proof of concept of monitoring virtual machine performance. Specifically, you want to:
+You have been asked to create a proof of concept for monitoring virtual machine performance. Specifically, you want to:
 
 - Configure a virtual machine such that telemetry and logs can be collected.
 - Show what telemetry and logs can be collected.
@@ -34,8 +34,6 @@ In this exercise, you will complete the following tasks:
 #### Task 1: Deploy an Azure virtual machine
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
-
-    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
 
 1. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, select **PowerShell** and **Create storage**.
 
