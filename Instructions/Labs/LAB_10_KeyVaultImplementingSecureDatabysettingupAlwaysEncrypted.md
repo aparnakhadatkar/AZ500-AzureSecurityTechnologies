@@ -109,7 +109,7 @@ In this task, you will create an Azure Key Vault resource. You will also configu
 
 1. On the Resource Group blade, click the entry representing the newly created Key Vault. 
 
-1. On the Key Vault blade, in the **Settings** section, click **Access Policies** and then click **+ Add Access Policy**.
+1. On the Key Vault blade, in the **Overview** section, click **Access Policies** and then click **+ Add Access Policy**.
 
 1. On the **Add access policy** blade, specify the following settings (leave all others with their default values): 
 
@@ -157,7 +157,7 @@ In this task, you will add a key to the Key Vault and view information about the
 
 1. Minimize the Cloud Shell pane. 
 
-1. Back in the Azure portal, on the Key Vault blade, in the **Objects** section, click **Keys**.
+1. Back in the Azure portal, on the Key Vault blade, in the **Settings** section, click **Keys**.
 
 1. In the list of keys, click the **MyLabKey** entry and then, on the **MyLabKey** blade, click the entry representing the current version of the key.
 
@@ -192,7 +192,7 @@ In this task, you will add a key to the Key Vault and view information about the
 
 1. Minimize the Cloud Shell pane. 
 
-1. In the Azure portal, navigate back to the Key Vault blade. In the **Objects** section, click **Secrets**.
+1. In the Azure portal, navigate back to the Key Vault blade. In the **Settings** section, click **Secrets**.
 
 1. In the list of secrets, click the **SQLPassword** entry and then, on the **SQLPassword** blade, click the entry representing the current version of the secret.
 
