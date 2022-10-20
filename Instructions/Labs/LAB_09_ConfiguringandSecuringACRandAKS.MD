@@ -122,7 +122,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
 1. On the **Kubernetes services** blade, click **+ Create** and, in the drop-down menu, click **+ Create Kubernetes cluster**
 
-1. On the **Basics** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
+1. On the **Basics** tab of the **Create Kubernetes cluster** blade, select **Cluster preset configuration**, select **Dev/Test ($)**. Now specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |----|----|
@@ -131,6 +131,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
     |Kubernetes cluster name|**MyKubernetesCluster**|
     |Region|**(US) East US**|
     |Availability zones |**None**|
+    |Scale method|**Manual**|
     |Node count|**1**|
 
 1. Click **Next: Node Pools >** and, on the **Node Pools** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
@@ -267,7 +268,7 @@ In this task, verify the container can be accessed externally using the public I
 
 1. In the Bash session within the Cloud Shell pane, review the output and record the value in the External-IP column. You will need it in the next step. 
 
-1. Open Internet Explorer and browse to the IP address you identified in the previous step.
+1. Open a new broswer and browse to the IP address you identified in the previous step.
 
 1. Ensure the **Welcome to nginx!** page displays. 
 
@@ -306,7 +307,7 @@ In this task, you will deploy the internal facing service on the AKS.
     kubectl get service nginxinternal
     ```
 
-1. In the Bash session within the Cloud Shell pane, review the output. The External-IP is, in this case, a private IP address. 
+1. In the Bash session within the Cloud Shell pane, review the output. The External-IP is, in this case, a private IP address. If it is in a **Pending** state then run the previous command again.
 
     >**Note**: Record this IP address. You will need it in the next task. 
 
