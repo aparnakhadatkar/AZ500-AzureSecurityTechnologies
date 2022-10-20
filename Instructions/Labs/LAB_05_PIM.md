@@ -88,7 +88,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. Click **Next:Notification**.
 
-1. On the **Edit role setting - Global Reader** blade, review the settings and click **Update**.
+1. Review the **Notification** settings, leave everything set by default and click **Update**.
 
     >**Note**: Anyone trying to use the Global Reader role will now need approval from aaduser3. 
 
@@ -119,6 +119,8 @@ In this task, you will make a user eligible for an Azure AD directory role.
 1. Click **Next**. 
 
 1. Review the **Assignment type** settings and click **Assign**.
+
+1. On the **Assignments** page on the **Eligible Assignments** tab, select **Update** for the **aaduser2** assignment. Select **Permanently Eligible** and **Save**.
 
     >**Note**: User aaduser2 is now permanently eligible for the Security Administrator role.
 	
@@ -176,7 +178,7 @@ In this task, you will activate a role that requires approval.
 
 1. In the InPrivate browser window, in the Azure portal, while signed in as the **aaduser2** user, navigate back to the **Privileged Identity Management \| Quick start** blade. 
 
-1. On the **Privileged Identity Management \| Quick start** blade, in the **Manage** section, click **My roles**.
+1. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **My roles**.
 
 1. On the **My roles \| Azure AD roles** blade, in the list of **Eligible assignments**, in the row displaying the **Global Reader** role, click **Activate**. 
 
@@ -257,7 +259,7 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 
 1. Navigate to the **Azure AD Privileged Identity Management** blade. 
 
-1. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **Azure AD Roles**.
+1. On the **Privileged Identity Management \| Quick start** blade, in the **Manage** section, click **Azure AD Roles**.
 
 1. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click **Access reviews**.
 
