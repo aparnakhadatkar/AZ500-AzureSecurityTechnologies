@@ -272,6 +272,8 @@ In this exercise, you will complete the following task:
 
 1. Click **Review + assign** twice to create the role assignment.
 
+1. From the **Access control (IAM)** blade, select **Role assignments**.
+
 1. On the **AZ500Lab01 \| Access control (IAM)** blade, click on the **Check access** tab, in the **Search by name or email address** text box, type **Dylan Williams**.
 
 1. In the list of search results, select the user account of Dylan Williams and, on the **Dylan Williams assignments - AZ500Lab01** blade, view the newly created assignment.
