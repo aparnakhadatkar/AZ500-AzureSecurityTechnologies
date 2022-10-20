@@ -255,7 +255,7 @@ In this task, you will create a storage account with a file share and obtain the
     
     >**Note**: **DeploymentID** can be found under the **Environment Details** tab.
 
-4. On the **Basics** tab of the **Create storage account** blade, click **Review** and wait for the validation process to complete, and then click **Create**.
+4. On the **Basics** tab of the **Create storage account** blade, click **Review + Create** and wait for the validation process to complete, and then click **Create**.
 
     >**Note**: Wait for the Storage account to be created. This should take about 2 minutes.
 
@@ -408,14 +408,14 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
     $connectTestResult = Test-NetConnection -ComputerName <storage_account_name>.file.core.windows.net -Port 445
     if ($connectTestResult.TcpTestSucceeded) {
        # Save the password so the drive will persist on reboot
-       cmd.exe /C "cmdkey /add:`"<storage_account_name>.file.core.windows.net`" /user:`"Azure\<storage_account_name>`"  /pass:`"<storage_account_key>`""
+       cmd.exe /C "cmdkey /add:`"<storage_account_name>.file.core.windows.net`" /user:`"localhost\<storage_account_name>`"  /pass:`"<storage_account_key>`""
        # Mount the drive
        New-PSDrive -Name Z -PSProvider FileSystem -Root "\\<storage_account_name>.file.core.windows.net\my-file-share" -Persist
     } else {
        Write-Error -Message "Unable to reach the Azure storage account via port 445. Check to make sure your organization or ISP is not blocking port 445, or use Azure P2S VPN, Azure S2S VPN, or Express Route to tunnel SMB traffic over a different port."
     }
     ```
-    >**Note**: The `<storage-account-name>` placeholder represents the name of the storage account hosting the file share and `<storage_account_name>` one its primary key
+    >**Note**: The `<storage-account-name>` placeholder represents the name of the storage account hosting the file share and `<storage_account_key>` one its primary key
 
 7. Start File Explorer and verify that the Z: drive mapping has been successfully created.
 
