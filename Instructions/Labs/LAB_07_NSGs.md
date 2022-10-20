@@ -52,7 +52,7 @@ In this task, you will create a virtual network to use with the network and appl
     |Name|**myVirtualNetwork**|
     |Region|**East US**|
 
-1. On the **IP addresses** tab of the **Create virtual network** blade, set the **IPv4 address space** to **10.0.0.0/16**, and, if needed, in the **Subnet name** column, click **+Add subnet**, on the **Add subnet** blade, specify the following settings and click **Add**:
+1. On the **IP addresses** tab of the **Create virtual network** blade, set the **IPv4 address space** to **10.0.0.0/16**, and, if needed, in the **Subnet name** column, click **default**, on the **Edit subnet** blade, specify the following settings and click **Save**:
 
     |Setting|Value|
     |---|---|
@@ -127,7 +127,7 @@ In this task, you will create a network security group.
     |Virtual network|**myVirtualNetwork**|
     |Subnet|**default**|
 
-#### Task 4: Create inbound NSG security rules to all traffic to web servers and RDP to the management servers. 
+#### Task 4: Create inbound NSG security rules to all traffic to web servers and RDP to the servers. 
 
 1. On the **myNsg** blade, in the **Settings** section, click **Inbound security rules**.
 
@@ -203,7 +203,7 @@ In this task, you will create a virtual machine to use as a web server.
 
 1. Under **NIC network security group** select **None**.
 
-1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, verify the following setting:
+1. Click **Next: Management >**, then click **Next: Monitoring >**on the **Monitoring** tab of the **Create a virtual machine** blade, verify the following setting:
 
    |Setting|Value|
    |---|---|
@@ -240,7 +240,7 @@ In this task, you will create a virtual machine to use as a management server.
 
 1. Under **NIC network security group** select **None**.
 
-1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, specify the following settings
+1. Click **Next: Management >**, then click **Next: Monitoring >**on the **Monitoring** tab of the **Create a virtual machine** blade, verify the following setting:
 
    |Setting|Value|
    |---|---|
