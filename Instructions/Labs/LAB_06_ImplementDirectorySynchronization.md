@@ -142,7 +142,7 @@ In this task, you will add your custom DNS name to the new Azure AD tenant.
 
 5. On the **Custom domain name** blade, in the **Custom domain name** text box, type **adatum.com** and click **Add Domain**.
 
-6. On the **adatum.com** blade, review the information necessary to perform verification of the Azure AD domain name.
+6. On the **adatum.com** blade, review the information necessary to perform verification of the Azure AD domain name and then select **Delete** twice.
 
     >**Note**: You will not be able to complete the validation process because you do not own the **adatum.com** DNS domain name. This will not prevent you from synchronizing the **adatum.com** AD DS domain with the Azure AD tenant. You will use for this purpose the initial DNS name of the Azure AD tenant (the name ending with the **onmicrosoft.com** suffix), which you identified in the previous task. However, keep in mind that, as a result, the DNS domain name of the AD DS domain and the DNS name of the Azure AD tenant will differ. This means that Adatum users will need to use different names when signing in to the AD DS domain and when signing in to Azure AD tenant.
 
@@ -223,7 +223,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 8. In **Server Manager**, click **Tools** and, in the drop-down menu, click **Active Directory Administrative Center**.
 
-9. In **Active Directory Administrative Center**, click **adatum (local)**, in the **Tasks** pane, click **New**, and, in the cascading menu, click **Organizational Unit**.
+9. In **Active Directory Administrative Center**, click **adatum (local)**, in the **Tasks** pane, under the domain name **adatum (local)** click **New**, and, in the cascading menu, click **Organizational Unit**.
 
 10. In the **Create Organizational Unit** window, in the **Name** text box, type **ToSync** and click **OK**.
 
@@ -308,9 +308,9 @@ In this task, you will verify that directory synchronization is working.
 
     >**Note**: You might have to wait a few minutes and select **Refresh** for the **aduser1** user account to appear.
 
-3. On the **Users \| All users** blade, select the **aduser1** entry.
+3. Select the **aduser1** account and, in the **Profile > Identity** section, note that the **Source** attribute is set to **Windows Server AD**.
 
-4. On the **aduser1 \| Properties** blade, in the **Job info** section, note that the **Department** attribute is not set.
+4. On the **aduser1 \| Profile** blade, in the **Job info** section, note that the **Department** attribute is not set.
 
 5. Within the Remote Desktop session to **adVM**, switch to **Active Directory Administrative Center**, select the **aduser1** entry in the list of objects in the **ToSync** OU, and, in the **Tasks** pane, in the **aduser1** section, select **Properties**.
 
