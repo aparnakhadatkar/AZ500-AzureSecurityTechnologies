@@ -45,12 +45,6 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
 1. On the **Settings \| Azure Defender plans** blade, select **Enable all** and click **Save** to save any changes.
 
-1. On the **Settings \| Azure Defender plans** blade, in the vertical menu bar on the left side, click **Auto Provisioning**.
-
-1. On the **Settings \| Auto Provisioning** blade, make sure that **Auto provisioning** is set to **On** for the first item **Log Analytics agent/Azure Monitor Agent**. 
-
-1. On the **Settings \| Auto provisioning** blade, in the vertical menu on the left side, click **Workflow automation**.
-
 1. On the **Settings \| Workflow automation** blade, click **+ Add workflow automation**.
 
 1. On the **Add workflow automation** blade, review the available settings and click **Cancel**.
