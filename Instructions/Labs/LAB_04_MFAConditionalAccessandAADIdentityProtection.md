@@ -133,6 +133,7 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
     >**Note**: You may need to refresh the browser window if the **AdatumLab500-04** entry does not appear in the **Directory + subscription** filter list.
 
 3. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key. On the **AdatumLab500-04** blade, in the **Manage** section, click **Licenses**.
+
 4. On the **Licenses \| Overview** blade, in the **Manage** section, click **All products** and then click **+ Try / Buy**.
 
 5. On the **Activate** blade, in the **Azure AD Premium P2** section, click **Free Trial** and then click **Activate**.
@@ -327,7 +328,7 @@ In this task, you will review conditional access policy settings and create a po
 
 1. On the **Security \| Getting started** blade, in the **Protect** section, click **Conditional Access**.
 
-1. On the **Conditional Access \| Policies** blade, click **+ New policy** select the **Create new policy** from the drop-down list.
+1. On the **Conditional Access \| Policies** blade, click **+ New policy**.
 
 1. On the **New** blade, configure the following settings:
 
