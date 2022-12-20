@@ -150,7 +150,7 @@ In this task, you will create a default route for the **Workload-SN** subnet. Th
    |---|---|
    |Route name|**FW-DG**|
    |Address prefix source|**IP Adresses**|
-   |Source IP addresses/CIDR ranges|**0.0.0.0/0**
+   |Destination IP addresses/CIDR ranges|**0.0.0.0/0**
    |Next hop type|**Virtual appliance**|
    |Next hop address|the private IP address of the firewall that you identified in the previous task|
 
