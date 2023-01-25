@@ -242,11 +242,11 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
 1. Notice the **Multi-Factor Auth status** column for **aaduser1** is now **Enabled**.
 
-1. Again Click **aaduser1** and notice that, at this point, you also have the **Enforce** option on the right-side. 
+1. Again click **aaduser1** and notice that, at this point, you also have the **Enforce** option on the right-side. 
 
     >**Note**: Changing the user status from Enabled to Enforced impacts only legacy Azure AD integrated apps which do not support Azure MFA and, once the status changes to Enforced, require the use of app passwords.
 
-1. Again With the **aaduser1** entry selected, click **Manage user settings** and review the available options: 
+1. Again with the **aaduser1** entry selected, click **Manage user settings** and review the available options: 
 
    - Require selected users to provide contact methods again.
 
