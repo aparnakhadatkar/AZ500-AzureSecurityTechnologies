@@ -256,7 +256,7 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
 1. Click **Cancel**.
 
-1. In the Azure portal, in the **Search resources, services, and docs text box** at the top of the Azure portal page, type **Multi-Factor Authentication** and press the Enter key. on the **Multi-Factor Authentication | Getting started** blade, 
+1. In the Azure portal, in the **Search resources, services, and docs text box** at the top of the Azure portal page, type **Multifactor Authentication** and press the Enter key. on the **Multifactor Authentication | Getting started** blade.
 
 1. In the **Settings** section, click **Fraud alert**.
 
@@ -296,9 +296,7 @@ In this task, you will validate the MFA configuration by testing the sign in of 
  
 1. On the **Keep your account secure** page, type the code you received in the text message on your mobile phone, and click **Next**.
 
-1. On the **Keep your account secure** page, ensure that the verification was successful and click **Next**.
-
-1. On the **Keep your account secure** page, click **I want to use a different method**, select **Email** from the drop-down list, click **Confirm**, provide the email address you intend to use, and click **Next**. Once you receive the corresponding email, identify the code in the email body, provide it, and then click **Done**.
+1. On the **Keep your account secure** page, ensure that the verification was successful and click **Next** and then click **Done**.
 
 1. When prompted, change your password. Make sure to record the new password.
 
