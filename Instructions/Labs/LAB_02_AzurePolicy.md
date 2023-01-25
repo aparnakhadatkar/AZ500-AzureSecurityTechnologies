@@ -40,7 +40,7 @@ In this task, you will create an Allowed Locations policy assignment and specify
 
    >**Note**: The **Allowed locations** policy allows you to restrict location of resources, not resource groups. To restrict locations of resource groups, you can use the **Allowed locations for resource groups** policy.
 
-1. Click the **Allowed locations** policy definition to display its details.
+1. Click on the **Allowed locations** policy definition to display its details.
 
    >**Note**: This policy definition takes an array of locations as parameters. A policy rule is an ‘if-then’ statement. The ‘if’ clause checks if the resource location is included in the parameter list, and if not, the ‘then’ clause denies the resource creation or, for existing resources, marks them as non-compliant.
 
