@@ -126,9 +126,9 @@ In this task, you will create a new Azure AD tenant.
 
 In this task, you will sign up for the Azure AD Premium P2 free trial. 
 
-1. In the Azure portal, in the toolbar, click the **Directory + subscription** icon, located to the right of the Cloud Shell icon. 
+1. In the Azure portal, in the toolbar, click the **Directories + subscriptions** icon, located to the right of the Cloud Shell icon. 
 
-2. In the **Directory + subscription** blade, click the newly created tenant, **AdatumLab500-04** and click the **Switch** button to set it as the current directory.
+2. In the **Directories + subscriptions** blade, click the newly created tenant, **AdatumLab500-04** and click the **Switch** button to set it as the current directory.
 
     >**Note**: You may need to refresh the browser window if the **AdatumLab500-04** entry does not appear in the **Directory + subscription** filter list.
 
