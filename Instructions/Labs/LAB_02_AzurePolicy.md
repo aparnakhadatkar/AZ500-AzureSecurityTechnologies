@@ -95,7 +95,7 @@ In this task, you will test the Allowed Locations policy assignment.
 
 1. Click on **Review + create**. 
 
-1. On the **Review **+ create** a tab of the **Create virtual network** blade note the **Validation failed** message. 
+1. On the **Review + create** a tab of the **Create virtual network** blade note the **Validation failed** message. 
 
     > **Note**: If the **Validation Failed** warning does not appear, click on **Previous** and wait a few more minutes.
 
