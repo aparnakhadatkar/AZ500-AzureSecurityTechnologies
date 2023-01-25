@@ -428,13 +428,13 @@ In this task, you will create a user risk policy.
 
 1. Configure the **User risk remediation policy** with the following settings: 
 
-   - Click on **Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
+   - Under Users click on **All Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
 
    - On the **Users** blade, switch to the **Exclude** tab, click on **Select excluded users**, select your user account, and then click on **Select**. 
 
-   - Click on **User risk**; on the **User risk** blade, select **Low and above**, and then click on **Done**. 
+   - Under User risk click on **User risk**; on the **User risk** blade, select **Low and above**, and then click on **Done**. 
 
-   - Click on **Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click on **Done**.
+   - Under Access click on **Block access**; on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click on **Done**.
 
    - Set **Enforce policy** to **On** and click on **Save**.
 
@@ -442,15 +442,15 @@ In this task, you will create a user risk policy.
 
 In this task, you will configure a sign-in risk policy. 
 
-1. On the **Identity Protection \| User risk policy** blade, in the **Protect** section, click on **Sign-in risk policy**
+1. On the **Identity Protection \| User risk policy** blade, in the **Protect** section, click on **Sign-in risk policy**.
 
 1. Configure the **Sign-in risk remediation policy** with the following settings: 
 
-   - Click on **Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
+   - Under Users click on **All Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
 
-   - Click on **Sign-in risk**; on the **Sign-in risk** blade, select **Medium and above**, and then click on **Done**. 
+   - Under Sign-in risk click on **Sign-in risk**; on the **Sign-in risk** blade, select **Medium and above**, and then click on **Done**. 
 
-   - Click on **Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Done**.
+   - Under Access click on **Block access**; on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Done**.
 
    - Set **Enforce Policy** to **On** and click on **Save**.
 
