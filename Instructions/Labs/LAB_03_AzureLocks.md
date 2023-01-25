@@ -60,36 +60,36 @@ In this task, you will add a read-only lock to the storage account. This will pr
 
 1. On the **AZ500LAB03** resource group blade, in the list of resources, select the new storage account. 
 
-1. In the **Settings** section, click the "Locks" icon.
+1. In the **Settings** section, click on the "Locks" icon.
 
-1. Click **+ Add** and specify the following settings:
+1. Click on **+ Add** and specify the following settings:
 
    |Setting|Value|
    |---|---|
    |Lock name|**ReadOnly Lock**|
    |Lock type|**Read-only**|
 
-1. Click **OK**. 
+1. Click on **OK**. 
 
    >**Note**:  The storage account is now protected from accidental deletion and modification.
 
 #### Task 3: Test the ReadOnly lock 
 
-1. In the **Settings** section of the storage account blade, click **Configuration**.
+1. In the **Settings** section of the storage account blade, click on **Configuration**.
 
-1. Set the **Secure transfer required** option to **Disabled** and then click **Save**.
+1. Set the **Secure transfer required** option to **Disabled** and then click on **Save**.
 
 1. You should be able to spot a notification stating **Failed to update storage account**.
 
-1. Click the **Notifications** icon in the toolbar at the top of the Azure portal and review the notification, which will resemble the following text: 
+1. Click on the **Notifications** icon in the toolbar at the top of the Azure portal and review the notification, which will resemble the following text: 
 
 	> **"Failed to update storage account 'xxxxxxxx'. Error: The scope 'xxxxxxxx' cannot perform write operation because following scope(s) are locked: '/subscriptions/xxxxx-xxx-xxxx-xxxx-xxxxxxxx/resourceGroups/AZ500LAB03/providers/Microsoft.Storage/storageAccounts/xxxxxxx'. Please remove the lock and try again"**
 
-1. Return the **Configuration** blade of the storage account and click **Discard**. 
+1. Return the **Configuration** blade of the storage account and click on **Discard**. 
 
-1. On the storage account blade, select **Overview** and, on the **Overview** blade, click **Delete**.
+1. On the storage account blade, select **Overview** and, on the **Overview** blade, click on **Delete**.
 
-1. On the **Delete storage account** blade, type in the name of the storage account to confirm that you intend to proceed and then click **Delete**.
+1. On the **Delete storage account** blade, type in the name of the storage account to confirm that you intend to proceed and then click on **Delete**.
 
 1. Review the newly generated notification, which will resemble the following text: 
 
@@ -103,32 +103,32 @@ In this task, you remove the ReadOnly lock from the storage account and create a
 
 1. In the Azure portal, navigate back to the blade displaying properties of the newly created storage account.
 
-1. In the **Settings** section, select **Locks****.  
+1. In the **Settings** section, select **Locks**.  
 
 1. On the **Locks** blade, click on the **Delete** icon on the far right of the **ReadOnly Lock** entry.
 
-1. Click **+ Add** and specify the following settings:
+1. Click on **+ Add** and specify the following settings:
 
    |Setting|Value|
    |---|---|
    |Lock name|**Delete Lock**|
    |Lock type|**Delete**|
 
-1. Click **OK**. 
+1. Click on **OK**. 
 
 #### Task 5: Test the Delete lock.
 
 In this task, you will test the Delete lock. You should be able to modify the storage account, but not delete it. 
 
-1. In the **Settings** section of the storage account blade, click **Configuration**.
+1. In the **Settings** section of the storage account blade, click on **Configuration**.
 
-2. Set the **Secure transfer required** option to **Disabled** and then click **Save**.
+2. Set the **Secure transfer required** option to **Disabled** and then click on **Save**.
 
    >**Note**:  This time, the change should be successful.
 
-3. On the storage account blade, select **Overview** and, on the **Overview** blade, click **Delete**.
+3. On the storage account blade, select **Overview** and, on the **Overview** blade, click on **Delete**.
 
-4. On the **Delete storage account** blade, type in the name of the storage account to confirm that you intend to proceed and then click **Delete**.
+4. On the **Delete storage account** blade, type in the name of the storage account to confirm that you intend to proceed and then click on **Delete**.
 
 5. Review the notification that resembles the following text: 
 
@@ -146,4 +146,4 @@ In this task, you will test the Delete lock. You should be able to modify the st
 
 8. On the **Locks** blade, click on the **Delete** icon on the far right of the **Delete Lock** entry.
 
-   > Results: In this exercise, you learned to use Resource Manager locks to protect resources from modification and accidental deletion.
+   > **Results:** In this exercise, you learned to use Resource Manager locks to protect resources from modification and accidental deletion.
