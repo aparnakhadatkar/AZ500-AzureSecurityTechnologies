@@ -36,7 +36,7 @@ In this task, you will create a user account for Joseph Price.
 
 1. In the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-1. On the **Overview** blade of the Azure Active Directory tenant, in the **Manage** section, select **Users**, and then select **+ New user**.
+1. On the **Overview** blade of the Azure Active Directory tenant, in the **Manage** section, select **Users**, and then select **+ New user**, then, in the drop-down menu, click on **Create new user**.
 
 1. On the **New User** blade, ensure that the **Create user** option is selected, and specify the following settings:
 
@@ -47,9 +47,9 @@ In this task, you will create a user account for Joseph Price.
 
 1. Click on the copy icon next to the **User name** to copy the full user.
 
-1. Ensure that the **Auto-generate** password is selected, and select the **Show** password** checkbox to identify the automatically generated password. You would need to provide this password, along with the user name to Joseph. 
+1. Ensure that the **Auto-generate** password is selected, and select the **Show password** checkbox to identify the automatically generated password. You would need to provide this password, along with the user name to Joseph. 
 
-1. Click **Create**.
+1. Click on **Create**.
 
 1. Refresh the **Users \| All users** blade to verify the new user was created in your Azure AD tenant.
 
@@ -59,7 +59,7 @@ In this task, you will create the *Senior Admins* group, add the user account of
 
 1. In the Azure portal, navigate back to the blade displaying your Azure Active Directory tenant. 
 
-1. In the **Manage** section, click **Groups**, and then select **+ New group**.
+1. In the **Manage** section, click on **Groups**, and then select **+ New group**.
  
 1. On the **New Group** blade, specify the following settings (leave others with their default values):
 
@@ -69,13 +69,13 @@ In this task, you will create the *Senior Admins* group, add the user account of
    |Group name|**Senior Admins**|
    |Membership type|**Assigned**|
     
-1. Click the **No owners selected** link, on the **Add owners** blade, select **Joseph Price**, and click **Select**.
+1. Click on the **No owners selected** link, on the **Owners** blade, select **Joseph Price**, and click on **Select**.
 
-1. Click the **No members selected** link, on the **Add members** blade, select **Joseph Price**, and click **Select**.
+1. Click on the **No members selected** link, on the **Members** blade, select **Joseph Price**, and click on **Select**.
 
-1. Back on the **New Group** blade, click **Create**.
+1. Back on the **New Group** blade, click on **Create**.
 
-> Result: You used the Azure Portal to create a user and a group, and assigned the user to the group. 
+> **Result:** You used the Azure Portal to create a user and a group, and assigned the user to the group. 
 
 ### Exercise 2: Create a Junior Admins group containing the user account of Isabel Garcia as its member.
 
@@ -165,7 +165,7 @@ In this task, you will create the Junior Admins group and add the user account o
     Get-AzADGroupMember -GroupDisplayName "Junior Admins"
     ```
 
-> Result: You used PowerShell to create a user and a group account, and added the user account to the group account. 
+> **Result:** You used PowerShell to create a user and a group account, and added the user account to the group account. 
 
 
 ### Exercise 3: Create a Service Desk group containing the user account of Dylan Williams as its member.
@@ -181,7 +181,7 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create a user account for Dylan Williams.
 
-1. In the drop-down menu in the upper-left corner of the Cloud Shell pane, select **Bash**, and, when prompted, click **Confirm**. 
+1. In the drop-down menu in the upper-left corner of the Cloud Shell pane, select **Bash**, and, when prompted, click on **Confirm**. 
 
 1. In the Bash session within the Cloud Shell pane, run the following to identify the name of your Azure AD tenant:
 
@@ -243,7 +243,7 @@ In this task, you will create the Service Desk group and assign Dylan to the gro
 
 1. Close the Cloud Shell pane.
 
-> Result: Using Azure CLI you created a user and a group accounts, and added the user account to the group. 
+> **Result:** Using Azure CLI you created a user and a group accounts, and added the user account to the group. 
 
 
 ### Exercise 4: Assign the Virtual Machine Contributor role to the Service Desk group.
@@ -256,11 +256,11 @@ In this exercise, you will complete the following task:
 
 #### Task 1: Assign the Service Desk Virtual Machine Contributor permissions. 
 
-1. On the **Resource groups** blade, click the **AZ500LAB01** resource group entry.
+1. On the **Resource groups** blade, click on the **AZ500LAB01** resource group entry.
 
-1. On the **AZ500Lab01** blade, click **Access control (IAM)**.
+1. On the **AZ500Lab01** blade, click on **Access control (IAM)**.
 
-1. On the **AZ500Lab01 \| Access control (IAM)** blade, click **+ Add** and then, in the drop-down menu, click **Add role assignment**.
+1. On the **AZ500Lab01 \| Access control (IAM)** blade, click on **+ Add** and then, in the drop-down menu, click on **Add role assignment**.
 
 1. On the **Add role assignment** blade, specify the following settings:
 
@@ -270,11 +270,11 @@ In this exercise, you will complete the following task:
    |Assign access to (Under Members Pane)|**User, group, or service principal**|
    |Select (+Select Members)|**Service Desk**|
 
-1. Click **Review + assign** twice to create the role assignment.
+1. Click on **Review + assign** twice to create the role assignment.
 
-1. From the **Access control (IAM)** blade, select **Role assignments**.
+1. From the **Access control (IAM)** blade, click on the **Check access** tab.
 
-1. On the **AZ500Lab01 \| Access control (IAM)** blade, click on the **Check access** tab, in the **Search by name or email address** text box, type **Dylan Williams**.
+1. On the **AZ500Lab01 \| Access control (IAM)** blade, click on the **Check access** button under check access, and then in the **Search by name or email address** text box, type **Dylan Williams**.
 
 1. In the list of search results, select the user account of Dylan Williams and, on the **Dylan Williams assignments - AZ500Lab01** blade, view the newly created assignment.
 
@@ -282,5 +282,5 @@ In this exercise, you will complete the following task:
 
 1. Repeat the same last two steps to check access for **Joseph Price**. 
 
-> Result: You have assigned and checked RBAC permissions. 
+> **Result:** You have assigned and checked RBAC permissions. 
 
