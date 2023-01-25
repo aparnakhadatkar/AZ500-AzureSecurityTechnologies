@@ -44,16 +44,16 @@ In this task, you will create an Allowed Locations policy assignment and specify
 
    >**Note**: This policy definition takes an array of locations as parameters. A policy rule is an ‘if-then’ statement. The ‘if’ clause checks if the resource location is included in the parameter list, and if not, the ‘then’ clause denies the resource creation or, for existing resources, marks them as non-compliant.
 
-1. On the **Allowed locations** blade, click **Assign**.
+1. On the **Allowed locations** blade, click on **Assign**.
 
-1. On the **Basics** tab of the **Allowed locations** blade, click the Ellipsis (...) button next to the **Scope** text box and, on the **Scope** blade, specify the following settings:
+1. On the **Basics** tab of the **Allowed locations** blade, click on the Ellipsis (...) button next to the **Scope** text box and, on the **Scope** blade, specify the following settings:
 
    |Setting|Value|
    |---|---|
    |Subscription|the name of you Azure subscription|
    |Resource group|**AZ500LAB02**|
 
-1. Click **Select**.
+1. Click on **Select**.
 
 1. On the **Allowed locations** blade, on the **Basics** tab, specify the following settings (leave others with their default values):
 
@@ -63,13 +63,13 @@ In this task, you will create an Allowed Locations policy assignment and specify
    |Description|**Allow resources to be created in UK South Only for AZ500LAB02**|
    |Policy enforcement|**Enabled**|
 
-1. Click **Next**.
+1. Click on **Next**.
 
 1. On the **Parameters** tab of the **Allowed locations** blade, in the **Allowed locations** drop-down list, select **UK South** as the only allowed location. 
 
    >**Note**: You can select more than one location. If the policy required a different set of parameters, this tab would provide those selections. 
 
-1. Click **Review + create**, followed by **Create** to create the policy assignment. 
+1. Click on **Review + create**, followed by **Create** to create the policy assignment. 
 
    >**Note**: You will see a notification that the assignment was successful, and that the assignment might take around 30 minutes to complete.
 
@@ -81,7 +81,7 @@ In this task, you will test the Allowed Locations policy assignment.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual networks** and press the **Enter** key.
 
-1. On the **Virtual Networks** blade, click **+ Create**.
+1. On the **Virtual Networks** blade, click on **+ Create**.
 
    >**Note**: First, you will try to create a virtual network in East US. Since this is not an allowed location, the request should be blocked. 
 
@@ -93,15 +93,15 @@ In this task, you will test the Allowed Locations policy assignment.
     |Name|**myVnet**|
     |Region|**(US) East US**|
 
-1. Click **Review + create**. 
+1. Click on **Review + create**. 
 
 1. On the **Review **+ create** a tab of the **Create virtual network** blade note the **Validation failed** message. 
 
-    > **Note**: If the **Validation Failed** warning does not appear, click **Previous** and wait a few more minutes.
+    > **Note**: If the **Validation Failed** warning does not appear, click on **Previous** and wait a few more minutes.
 
-1. Click on the **Previous** tab, on the **Create virtual network** blade, click the **Basics** tab, and, in the **Region** drop-down list, select **(Europe) UK South**.
+1. Click on the **Previous** tab, on the **Create virtual network** blade, click on the **Basics** tab, and, in the **Region** drop-down list, select **(Europe) UK South**.
 
-1. Click **Review + create**, verify that validation passed, click **Create**, and verify that the virtual network was created successfully. 
+1. Click on **Review + create**, verify that validation passed, click on **Create**, and verify that the virtual network was created successfully. 
 
 > Exercise results: In this exercise, you learned to apply an Azure policy by selecting a built-in policy definitions and assigning it to a resource group.
 
