@@ -238,11 +238,11 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
 1. On the **multi-factor authentication** page, click the **service settings** tab. Review **verification options**. Note that **Text message to phone**, **Notification through mobile app**, and **Verification code from mobile app or hardware token** are enabled. Click **Save** and then click **close**.
 
-1. Switch to the **users** tab, click **aaduser1** entry, click the **Enable** link, and, when prompted, click **enable multi-factor auth**.
+1. On the **multi-factor authentication** page, switch to the **users** tab, click **aaduser1** entry, click the **Enable** link on the right-side, and, when prompted, click **enable multi-factor auth**.
 
 1. Notice the **Multi-Factor Auth status** column for **aaduser1** is now **Enabled**.
 
-1. again Click **aaduser1** and notice that, at this point, you also have the **Enforce** option. 
+1. Again Click **aaduser1** and notice that, at this point, you also have the **Enforce** option on the right-side. 
 
     >**Note**: Changing the user status from Enabled to Enforced impacts only legacy Azure AD integrated apps which do not support Azure MFA and, once the status changes to Enforced, require the use of app passwords.
 
