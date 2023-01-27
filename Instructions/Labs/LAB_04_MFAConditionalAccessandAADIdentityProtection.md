@@ -334,7 +334,7 @@ In this task, you will review conditional access policy settings and create a po
 	
    - Under Users, click on **0 Users or groups selected**. On the right side under Include >> Select users and groups checkbox >> enable **Users and groups** checkbox >> on the **Select** blade, click on **aaduser2**, and click on **Select**.
 	
-   - Under **Cloud apps or actions**, click on **No cloud apps, actions, or authentication contexts selected**. On the right side under Include >> click on **Select apps** checkbox >> under Select, ckick on None >> on the **Select** blade, click on **Microsoft Azure Management**, and click on **Select**.
+   - Under **Cloud apps or actions**, click on **No cloud apps, actions, or authentication contexts selected**. On the right side under Include >> click on **Select apps** checkbox >> under Select, click on None >> on the **Select** blade, click on **Microsoft Azure Management**, and click on **Select**.
     
    >**Note**: Review the warning that this policy impacts access to the Azure Portal.
 	
@@ -362,7 +362,7 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
 1. When prompted, in the **More information required** dialog box, click on **Next**.
 
-    >**Note**: The browser seesion will be redirected to the **Keep your account secure** page.
+    >**Note**: The browser session will be redirected to the **Keep your account secure** page.
     
 1. On the **Keep your account secure** page, select the **I want to set up a different method** link, in the **Which method would you like to use?** drop-down list, select **Phone**, and select **Confirm**.
 
