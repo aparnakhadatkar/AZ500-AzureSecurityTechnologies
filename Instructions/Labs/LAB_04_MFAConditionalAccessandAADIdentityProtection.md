@@ -212,7 +212,7 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 1. On the **Assign license** blade, click on **+ Add users and groups**.
 
-1. On the **Users** blade, select **aaduser1**, **aaduser2**, **aaduser3**, and your user account and click on **Select**.
+1. On the **Add users and groups** blade, select **aaduser1**, **aaduser2**, **aaduser3**, and your user account and click on **Select**.
 
 1. Back on the **Assign license** blade, click on **Assignment options**, ensure that all options are enabled(on), click on **Review + assign**, and click on **Assign**.
 
