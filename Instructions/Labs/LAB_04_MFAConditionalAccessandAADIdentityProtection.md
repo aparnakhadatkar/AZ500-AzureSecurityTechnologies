@@ -256,7 +256,7 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
 1. Click on **Cancel**.
 
-1. In the Azure portal, in the **Search resources, services, and docs text box** at the top of the Azure portal page, type **Multifactor Authentication** and press the Enter key. on the **Multifactor Authentication | Getting started** blade.
+1. In the Azure portal, in the **Search resources, services, and docs text box** at the top of the Azure portal page, type **Multifactor Authentication** and press the Enter key. On the **Multifactor Authentication | Getting started** blade.
 
 1. In the **Settings** section, click on **Fraud alert**.
 
