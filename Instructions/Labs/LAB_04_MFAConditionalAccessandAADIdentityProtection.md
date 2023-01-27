@@ -326,7 +326,7 @@ In this task, you will review conditional access policy settings and create a po
 
 1. On the **Security \| Getting started** blade, in the **Protect** section, click on **Conditional Access**.
 
-1. On the **Conditional Access \| Policies** blade, click on **+ New policy**.
+1. On the **Conditional Access \| Overview** blade, click on **+ Create new policy**.
 
 1. On the **New** blade, configure the following settings:
 
