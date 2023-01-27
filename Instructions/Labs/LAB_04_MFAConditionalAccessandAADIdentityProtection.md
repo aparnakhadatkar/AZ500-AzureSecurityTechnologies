@@ -202,7 +202,7 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 1. On the **Users \| All users** blade, click on the entry representing your user account. 
 
-1. On the blade displaying the properties of your user account, click on **Edit**. 
+1. On the blade displaying the properties of your user account, click on **Edit properties**. 
 
 1. In the **Settings** section, in the **Usage location** drop-down list, select the **United States** entry and click on **Save**.
 
