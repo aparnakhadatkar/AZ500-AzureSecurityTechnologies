@@ -263,7 +263,7 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 
 1. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click **Access reviews**.
 
-1. On the **AdatumLab500-04 \| Access reviews** blade, click **New**:
+1. On the **AdatumLab500-04 \| Access reviews** blade, click **New**.
 
 1. On the **Create an access review** blade, specify the following settings (leave others with their default values): 
 
@@ -277,15 +277,15 @@ In this task, you will reduce the risk associated with "stale" role assignments.
    |Reviewers|**Selected users**|
    |Select reviewers|your account|
 
-1. On the **Create an access review** blade, click **Start**:
+1. On the **Create an access review** blade, click **Start**.
  
     >**Note**: It will take about a minute for the review to deploy and appear on the **AdatumLab500-04 \| Access reviews** blade. You might have to refresh the web page. The review status will be **Active**. 
 
 1. On the **AdatumLab500-04 \| Access reviews** blade, under the **Global Reader Review** header, click the **Global Reader** entry. 
 
-1. On the **Global Reader Review** blade, examine the **Overview** page and note that the **Progress** charts shows a single users in the **Not reviewed** category. 
+1. On the **Access review details** blade, examine the **Overview** page and note that the **Progress** charts shows a single users in the **Not reviewed** category. 
 
-1. On the **Global Reader Review** blade, in the **Manage** section, click **Results**. Note that aaduser2 is listed as having access to this role.
+1. On the **Access review details** blade, in the **Manage** section, click **Results**. Note that aaduser2 is listed as having access to this role.
 
 1. Click **view** on **aaduser2** line to view a detailed audit log with entries representing PIM activities that involve that user.
 
