@@ -111,7 +111,7 @@ In this task, you will create a new Azure AD tenant to use in this lab.
 
 3. On the **Basics** tab of the **Create a tenant** blade, ensure that the options **Azure Active Directory** are selected and click **Next: Configuration >**.
 
-4. On the **Configuration** tab of the **Create a directory** blade, specify the following settings:
+4. On the **Configuration** tab of the **Create a tenant** blade, specify the following settings:
 
    |Setting|Value|
    |---|---|
@@ -131,13 +131,13 @@ In this task, you will create a new Azure AD tenant to use in this lab.
 
 In this task, you will add your custom DNS name to the new Azure AD tenant. 
 
-1. In the Azure portal, in the toolbar, click the **Directory + subscription** icon, located to the right of the Cloud Shell icon. 
+1. In the Azure portal, in the toolbar, click the **Directories + subscriptions** icon, located to the right of the Cloud Shell icon. 
 
-2. In the **Directory + subscription** blade, select the newly created tenant **AdatumSync** line and click the **Switch** button.
+2. In the **Directories + subscriptions** blade, select the newly created tenant **AdatumSync** line and click the **Switch** button.
 
-    >**Note**: You may need to refresh the browser window if the **AdatumSync** entry does not appear in the **Directory + subscription** filter list.
+    >**Note**: You may need to refresh the browser window if the **AdatumSync** entry does not appear in the **Directories + subscriptions** filter list.
 
-3. On the **AdatumSync** \**| Azure Active Directory** blade, in the **Manage** section, click **Custom domain names**.
+3. On the **AdatumSync \| Azure Active Directory** blade, in the **Manage** section, click **Custom domain names**.
 
 4. On the **AdatumSync \| Custom domain names** blade, click **+ Add custom domain**.
 
@@ -153,7 +153,7 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 1. On the **AdatumSync** Azure AD tenant blade, in the **Manage** section, click **Users**.
 
-2. On the **Users \| All users** blade, click **+ New User**. 
+2. On the **Users \| All users** blade, click **+ New User** and then from the drop-down list, select **Create new user**. 
 
 3. On the **New user** blade, ensure that the **Create user** option is selected, specify the following settings (leave all others with their default values) and click **Create**:
 
@@ -240,6 +240,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
    |User UPN logon|**aduser1**|
    |User SamAccountName logon|**aduser1**|
    |Password|**Pa55w.rd1234**|
+   |Confirm Password|**Pa55w.rd1234**|
    |Other password options|**Password never expires**|
 
 #### Task 2: Install Azure AD Connect
