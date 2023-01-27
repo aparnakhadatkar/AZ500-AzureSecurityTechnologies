@@ -203,7 +203,7 @@ In this task, you will create a virtual machine to use as a web server.
 
 1. Under **NIC network security group** select **None**.
 
-1. Click **Next: Management >**, then click **Next: Monitoring >**on the **Monitoring** tab of the **Create a virtual machine** blade, verify the following setting:
+1. Click **Next: Management >** , then click **Next: Monitoring>** on the **Monitoring** tab of the **Create a virtual machine** blade, verify the following setting:
 
    |Setting|Value|
    |---|---|
@@ -230,7 +230,7 @@ In this task, you will create a virtual machine to use as a management server.
    |Username|**Student**|
    |Password|**Pa55w.rd1234**|
    |Public inbound ports|**None**|
-   |Already have a Windows Server license|**No**|
+   |Would you like to use an existing Windows Server License|**No**|
 
     >**Note**: For public inbound ports, we will rely on the precreated NSG. 
 
@@ -240,7 +240,7 @@ In this task, you will create a virtual machine to use as a management server.
 
 1. Under **NIC network security group** select **None**.
 
-1. Click **Next: Management >**, then click **Next: Monitoring >**on the **Monitoring** tab of the **Create a virtual machine** blade, verify the following setting:
+1. Click **Next: Management >**, then click **Next: Monitoring >** on the **Monitoring** tab of the **Create a virtual machine** blade, verify the following setting:
 
    |Setting|Value|
    |---|---|
