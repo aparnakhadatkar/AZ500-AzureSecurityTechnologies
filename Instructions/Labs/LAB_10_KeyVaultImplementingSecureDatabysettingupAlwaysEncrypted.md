@@ -157,7 +157,7 @@ In this task, you will add a key to the Key Vault and view information about the
 
 1. Minimize the Cloud Shell pane. 
 
-1. Back in the Azure portal, on the Key Vault blade, in the **Settings** section, click **Keys**.
+1. Back in the Azure portal, on the Key Vault blade, in the **Objects** section, click **Keys**.
 
 1. In the list of keys, click the **MyLabKey** entry and then, on the **MyLabKey** blade, click the entry representing the current version of the key.
 
