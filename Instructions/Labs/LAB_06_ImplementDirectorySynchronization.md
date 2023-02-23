@@ -334,3 +334,5 @@ In this task, you will verify that directory synchronization is working.
 
 > **Result**: After you completed this exercise, you have prepared AD DS for directory synchronization, installed Azure AD Connect, and verified directory synchronization.
 
+> **Congratulations!** You have successfully completed the exercise. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
+
