@@ -528,3 +528,5 @@ In this task, you will review the Azure AD Identity Protection reports generated
  >**Note**: It may take 10-15 minutes to risks to show up in reports.
 
 > **Result**: You have enabled Azure AD Identity Protection, configured user risk policy and sign-in risk policy, as well as validated Azure AD Identity Protection configuration by simulating risk events.
+
+> **Congratulations!** You have successfully completed the exercise. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
