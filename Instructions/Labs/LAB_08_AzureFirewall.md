@@ -293,4 +293,7 @@ In this task, you will test the firewall to confirm that it works as expected.
 
 1. Terminate both Remote Desktop sessions.
 
-> Result: You have successfully configured and tested the Azure Firewall.
+> **Result:** You have successfully configured and tested the Azure Firewall.
+
+> **Congratulations!** You have successfully completed the exercise. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
+
