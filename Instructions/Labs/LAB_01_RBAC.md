@@ -283,4 +283,6 @@ In this exercise, you will complete the following task:
 1. Repeat the same last two steps to check access for **Joseph Price**. 
 
 > **Result:** You have assigned and checked RBAC permissions. 
+> 
+> **Congratulations!** You have successfully completed the exercise. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
 
