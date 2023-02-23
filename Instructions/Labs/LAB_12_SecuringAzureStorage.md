@@ -469,3 +469,6 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
 8. Terminate the Remote Desktop session to the **myVMPublic** Azure VM.
 
     >**Note**: At this point, you have confirmed that the virtual machine in the Public subnet cannot access the storage account, but has access to the internet.
+
+    > **Congratulations!** You have successfully completed the exercise. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
+
