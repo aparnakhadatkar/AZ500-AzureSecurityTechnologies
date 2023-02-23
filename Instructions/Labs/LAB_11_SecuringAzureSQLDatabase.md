@@ -158,4 +158,7 @@ In this task, you will first configure server level auditing and then configure 
 
     >**Note**: Since this SQL server and database were created recently, it is unlikely that any events will be available at this point. 
 
-> Results: You have created a SQL server and database, configured data classification, and auditing.  
+> **Results:** You have created a SQL server and database, configured data classification, and auditing.  
+
+> **Congratulations!** You have successfully completed the exercise. Please validate your progress by clicking on **(...) icon** and switch to **Lab Validation** tab and then click on **Validate** button for the respective task.
+
