@@ -347,7 +347,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
     >**Note**: The remaining steps in this lab are performed within the Remote Desktop session to the **az500-10-vm1** Azure VM. 
 
-1. Click **Start**, in the **Start** menu, expand the **Microsoft SQL Server Tools 18** folder, and click the **Micosoft SQL Server Management Studio** menu item.
+1. Click **Start**, in the **Start** menu, expand the **Microsoft SQL Server Tools 19** folder, and click the **Micosoft SQL Server Management Studio** menu item.
 
 1. In the **Connect to Server** dialog box, specify the following settings: 
 
