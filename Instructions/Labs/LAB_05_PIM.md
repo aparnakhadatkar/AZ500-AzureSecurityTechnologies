@@ -12,8 +12,6 @@ You have been asked to create a proof of concept that uses Azure Privileged Iden
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-> Before you proceed, ensure that you have completed Lab 04: MFA, Conditional Access and AAD Identity Protection . You will need the Azure AD tenant, AdatumLab500-04, and the aaduser1, aaduser2, and aaduser3 user accounts.
-
 ## Lab objectives
 
 In this lab, you will complete the following exercises:
