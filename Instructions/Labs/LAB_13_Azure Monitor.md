@@ -97,7 +97,7 @@ In this task, you will enable the Log Analytics virtual machine extension. This 
 
 1. In the Azure portal, navigate back to the **Log Analytics workspaces** blade, and, in the list of workspaces, click the entry representing the workspace you created in the previous task.
 
-1. On the Log Analytics workspace blade, in the **Workspace Data Sources** section, click the **Virtual machines** entry.
+1. On the Log Analytics workspace blade, in the **Get started with Log Analytics** section, click the **Azure virtual machines (VMs)** entry under **Connect a data source** field.
 
     >**Note**: For the agent to be successfully installed, the virtual machine must be running.
 
@@ -146,9 +146,9 @@ In this task, you will run a log search on your data collection.
 
 3. If needed, close the **Welcome to Log Analysis** window. 	
 
-4. On the **Queries** pane, in the **All Queries** column, scroll down to the bottom of the list of resource types, and click **Azure Monitor**	
+4. On the **Queries** pane, within the searchbox, type **Memory and CPU usage**.
     	
-5. Review the list of predefined queries, select **Memory and CPU usage**, and click the corresponding **Run** button.
+5. On the **Memory and CPU usage** card, click on the **Run** button.
 
 6. The query will automatically open in a new query tab. 
 
@@ -161,11 +161,12 @@ In this task, you will run a log search on your data collection.
     >**Note**: You have the option of displaying data in different formats. You also have the option of creating an alert rule based on the results of the query.
     
     >**Note**: You can generate some additional load on the Azure VM you deployed earlier in this lab by using the following steps:	
-    1. Navigate to the Azure VM blade.	
     
- 7. On the Azure VM blade, in the **Operations** section, select **Run command** and click on **RunPowerShellScript**. Type the following script, and click **Run**:	
+ 7. Now, navigate to the Azure VM blade within the Azure portal.
     
- 8. 	
+ 8. On the Azure VM blade, in the **Operations** section, select **Run command** and click on **RunPowerShellScript**. Type the following script, and click **Run**:	
+    
+ 9. 	
        ```cmd	
        cmd	
        :loop	
@@ -173,7 +174,7 @@ In this task, you will run a log search on your data collection.
        goto loop	
        ```	
        	
- 9. Switch back ot the Log Analytics blade and re-run the query. You might need to wait a few minutes for data to be collected and re-run the query again.
+ 10. Switch back ot the Log Analytics blade and re-run the query. You might need to wait a few minutes for data to be collected and re-run the query again.
 
 > Results: You used a Log Analytics workspace to configure data sources and query logs. 
  
