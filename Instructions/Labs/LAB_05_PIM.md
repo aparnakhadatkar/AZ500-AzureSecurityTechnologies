@@ -28,11 +28,95 @@ In this lab, you will complete the following exercises:
 
 In this exercise, you will complete the following tasks:
 
-- Task 1: Make a user eligible for a role.
-- Task 2: Configure a role to require approval to activate and add an eligible member.
-- Task 3: Give a user permanent assignment to a role. 
+- Task 1: Create a new Azure AD tenant.
+- Task 2: Activate the Azure AD Premium P2 trial.
+- Task 3: Create Azure AD users and groups.
+- Task 4: Make a user eligible for a role.
+- Task 5: Configure a role to require approval to activate and add an eligible member.
+- Task 6: Give a user permanent assignment to a role. 
 
-#### Task 1: Make a user eligible for a role
+#### Task 1: Create a new Azure AD tenant
+
+In this task, you will create a new Azure AD tenant. 
+
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
+
+2. On the blade displaying **Overview** of your current Azure AD tenant, click on **Manage tenants**, and then on the next screen, click on **+ Create**.
+
+3. On the **Basics** tab of the **Create a tenant** blade, ensure that the option **Azure Active Directory** is selected and click on **Next: Configuration >**.
+
+4. On the **Configuration** tab of the **Create a tenant** blade, specify the following settings:
+
+   |Setting|Value|
+   |---|---|
+   |Organization name|**AdatumLab500-04**|
+   |Initial domain name|a unique name consisting of a combination of letters and digits|
+   |Country or region|**United States**|
+
+    >**Note**: Record the initial domain name. You will need it later in this lab.
+
+5. Click on **Review + Create** and then click on **Create**.
+
+6. Add Captcha code on **Help us prove you're not a robot** blade and then click on **Submit** button.
+
+    >**Note**: Wait for the new tenant to be created. Use the **Notification** icon to monitor the deployment status. 
+
+#### Task 2: Activate Azure AD Premium P2 trial
+
+In this task, you will sign up for the Azure AD Premium P2 free trial. 
+
+1. In the Azure portal, in the toolbar, click on the **Directories + subscriptions** icon, located to the right of the Cloud Shell icon. 
+
+2. In the **Directories + subscriptions** blade, click on the newly created tenant, **AdatumLab500-04** and click on the **Switch** button to set it as the current directory.
+
+    >**Note**: You may need to refresh the browser window if the **AdatumLab500-04** entry does not appear in the **Directories + subscriptions** filter list.
+
+3. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key. On the **AdatumLab500-04** blade, in the **Manage** section, click on **Licenses**.
+
+4. On the **Licenses \| Overview** blade, in the **Manage** section, click on **All products** and then click on **+ Try / Buy**.
+
+5. On the **Activate** blade, in the **Azure AD Premium P2** section, click on **Free Trial** and then click on **Activate**.
+
+#### Task 3: Create Azure AD users.
+
+1. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click on **Users**.
+
+1. On the **Users \| All users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**
+
+1. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values) and click on **Create**:
+
+   |Setting|Value|
+   |---|---|
+   |User name|**aaduser2**|
+   |Name|**aaduser2**|
+   |Password|ensure that the option **Auto-generate password** is selected and click on **Show Password**|
+   |Groups|**0 groups selected**|
+   |Roles|**User**|
+   |Usage Location|**United States**|  
+
+    >**Note**: Record the full user name and the password.
+
+1. Back on the **Users \| All users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**. 
+
+1. Click on **New User**, complete the new user configuration settings, and then click on **Create**.
+
+   |Setting|Value|
+   |---|---|
+   |User name|**aaduser3**|
+   |Name|**aaduser3**|
+   |Password|ensure that the option **Auto-generate password** is selected and click on **Show Password**|
+   |Groups|**0 groups selected**|
+   |Roles|**User**|
+   |Usage Location|**United States**|  
+
+    >**Note**: Record the full user name and the password.
+
+1. On the **New user** blade, click on **Create**.
+
+    >**Note**: At this point, you should have three new users listed on the **Users** page. 
+
+
+#### Task 4: Make a user eligible for a role
 
 In this task, you will make a user eligible for an Azure AD directory role.
 
@@ -66,7 +150,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
     >**Note**: During sign-in, aaduser2 will be eligible to use the Billing administrator role. 
 
-#### Task 2: Configure a role to require approval to activate and add an eligible member
+#### Task 5: Configure a role to require approval to activate and add an eligible member
 
 1. In the Azure Portal, navigate back to the **Azure AD Privileged Identity Management** blade and click on **Azure AD roles**.
 
@@ -104,7 +188,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
     >**Note**: User aaduser2 is eligible for the Global Reader role. 
  
-#### Task 3: Give a user permanent assignment to a role.
+#### Task 6: Give a user permanent assignment to a role.
 
 1. In the Azure Portal, navigate back to the **Azure AD Privileged Identity Management** blade and click on **Azure AD roles**.
 
