@@ -344,3 +344,6 @@ In this task, you will use one of the pods running on the AKS cluster to access 
 1. Close the Cloud Shell pane.
 
 > Result: You have configured and secured ACR and AKS.
+
+
+**You have successfully completed the lab**
