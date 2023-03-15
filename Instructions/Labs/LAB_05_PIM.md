@@ -142,12 +142,6 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 In this task, you will make a user eligible for an Azure AD directory role.
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
-
-    >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role.
-    
-    >**Note**: If you still don't see the AdatumLab500-04 entry, click on the Switch Directory link, select the AdatumLab500-04 line and click the Switch button.
-
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure AD Privileged Identity Management** and press the **Enter** key.
 
 1. On the **Azure AD Privileged Identity Management** blade, in the **Manage** section, click on **Azure AD roles**.
