@@ -29,9 +29,10 @@ In this exercise, you will complete the following tasks:
 - Task 1: Create a new Azure AD tenant.
 - Task 2: Activate the Azure AD Premium P2 trial.
 - Task 3: Create Azure AD users and groups.
-- Task 4: Make a user eligible for a role.
-- Task 5: Configure a role to require approval to activate and add an eligible member.
-- Task 6: Give a user permanent assignment to a role. 
+- Task 4: Assign Azure AD Premium P2 licenses to Azure AD users
+- Task 5: Make a user eligible for a role.
+- Task 6: Configure a role to require approval to activate and add an eligible member.
+- Task 7: Give a user permanent assignment to a role. 
 
 #### Task 1: Create a new Azure AD tenant
 
@@ -114,7 +115,30 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
     >**Note**: At this point, you should have three new users listed on the **Users** page. 
 
 
-#### Task 4: Make a user eligible for a role
+#### Task 4: Assign Azure AD Premium P2 licenses to Azure AD users
+
+In this task, you will assign each user to the Azure Active Directory Premium P2 license.
+
+1. On the **Users \| All users** blade, click on the entry representing your user account. 
+
+1. On the blade displaying the properties of your user account, click on **Edit properties**. 
+
+1. In the **Settings** section, in the **Usage location** drop-down list, select the **United States** entry and click on **Save**.
+
+1. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click on **Licenses**.
+
+1. On the **Licenses \| Overview** blade, click on **All products**, select the **Azure Active Directory Premium P2** checkbox, and click on **+ Assign**.
+
+1. On the **Assign license** blade, click on **+ Add users and groups**.
+
+1. On the **Add users and groups** blade, select  **aaduser2**, **aaduser3**, and **your user account** and click on **Select**.
+
+1. Back on the **Assign license** blade, click on **Assignment options**, ensure that all options are enabled(on), click on **Review + assign**, and click on **Assign**.
+
+    >**Note**: At this point, you assigned Azure Active Directory Premium P2 licenses to all user accounts you will be using in this lab. Be sure to sign out and then sign back in. 
+
+
+#### Task 5: Make a user eligible for a role
 
 In this task, you will make a user eligible for an Azure AD directory role.
 
@@ -148,7 +172,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
     >**Note**: During sign-in, aaduser2 will be eligible to use the Billing administrator role. 
 
-#### Task 5: Configure a role to require approval to activate and add an eligible member
+#### Task 6: Configure a role to require approval to activate and add an eligible member
 
 1. In the Azure Portal, navigate back to the **Azure AD Privileged Identity Management** blade and click on **Azure AD roles**.
 
@@ -186,7 +210,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
     >**Note**: User aaduser2 is eligible for the Global Reader role. 
  
-#### Task 6: Give a user permanent assignment to a role.
+#### Task 7: Give a user permanent assignment to a role.
 
 1. In the Azure Portal, navigate back to the **Azure AD Privileged Identity Management** blade and click on **Azure AD roles**.
 
