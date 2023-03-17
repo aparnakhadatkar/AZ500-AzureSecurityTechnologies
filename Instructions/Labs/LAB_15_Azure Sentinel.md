@@ -243,3 +243,5 @@ In this task, you will create a playbook. A security playbook is a collection of
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 
+
+**You have successfully completed the lab**

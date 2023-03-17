@@ -54,8 +54,6 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
 1. On the **Edit template** blade, click **Load file**, locate the **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\08\\template.json** file and click **Open**.
 
-    >**Note**: Review the content of the template and note that it deploys an Azure VM hosting Windows Server 2019 Datacenter.
-
 1. On the **Edit template** blade, click **Save**.
 
 1. On the **Custom deployment** blade, ensure that the following settings are configured (leave any others with their default values):
