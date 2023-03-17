@@ -305,4 +305,11 @@ In this task, you will test the network traffic filters. You should be able to R
 
     >**Note**: The browser page should display the default IIS welcome page because port 80 is allowed inbound from the internet based on the setting of the **myAsgWebServers** application security group. The network interface of the myVMWeb Azure VM is associated with that application security group. 
 
-> Result: You have validated that the NSG and ASG configuration is working and traffic is being correctly managed.
+> **Result:** You have validated that the NSG and ASG configuration is working and traffic is being correctly managed.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+> - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
