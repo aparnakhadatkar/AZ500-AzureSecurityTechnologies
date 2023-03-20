@@ -54,8 +54,6 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
 1. On the **Edit template** blade, click **Load file**, locate the **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\08\\template.json** file and click **Open**.
 
-    >**Note**: Review the content of the template and note that it deploys an Azure VM hosting Windows Server 2019 Datacenter.
-
 1. On the **Edit template** blade, click **Save**.
 
 1. On the **Custom deployment** blade, ensure that the following settings are configured (leave any others with their default values):
@@ -293,4 +291,11 @@ In this task, you will test the firewall to confirm that it works as expected.
 
 1. Terminate both Remote Desktop sessions.
 
-> Result: You have successfully configured and tested the Azure Firewall.
+> **Result:** You have successfully configured and tested the Azure Firewall.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+> - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+

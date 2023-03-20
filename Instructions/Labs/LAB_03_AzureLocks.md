@@ -147,3 +147,6 @@ In this task, you will test the Delete lock. You should be able to modify the st
 8. On the **Locks** blade, click on the **Delete** icon on the far right of the **Delete Lock** entry.
 
    > **Results:** In this exercise, you learned to use Resource Manager locks to protect resources from modification and accidental deletion.
+
+
+**You have successfully completed the lab**
