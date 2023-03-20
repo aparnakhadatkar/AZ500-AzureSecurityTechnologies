@@ -45,8 +45,6 @@ In this exercise, you will complete the following tasks:
     New-AzResourceGroup -Name AZ500LAB131415 -Location 'EastUS'
     ```
 
-    >**Note**: This resource group will be used for labs 13, 14, and 15. 
-
 1. In the PowerShell session within the Cloud Shell pane, run the following to create a new Azure virtual machine. 
 
     ```powershell
@@ -115,7 +113,7 @@ In this task, you will configure collection of the Windows System log and severa
 
 1. In the Azure portal, navigate back to the Log Analytics workspace you created earlier in this exercise.
 
-1. On the Log Analytics workspace blade, in the **Settings** section, click **Legacy agents management**.
+1. On the Log Analytics workspace blade, in the **Classics** section, click **Legacy agents management**.
 
 1. On the **Legacy agents management** blade, review the configurable settings including Windows Event Logs, Windows Performance Counters, Linux Performance Counters, IIS Logs, and Syslog. 
 
