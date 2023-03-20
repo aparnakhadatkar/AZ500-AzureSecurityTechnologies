@@ -161,9 +161,9 @@ In this task, you will run a log search on your data collection.
     >**Note**: You have the option of displaying data in different formats. You also have the option of creating an alert rule based on the results of the query.
     
     >**Note**: You can generate some additional load on the Azure VM you deployed earlier in this lab by using the following steps:	
-    1. Navigate to the Azure VM blade.	
+   
     
- 7. On the Azure VM blade, in the **Operations** section, select **Run command** and click on **RunPowerShellScript**. Type the following script, and click **Run**:	
+ 7. Navigate to the Azure VM blade, in the **Operations** section, select **Run command** and click on **RunPowerShellScript**. Type the following script, and click **Run**:	
     
  8. 	
        ```cmd	
