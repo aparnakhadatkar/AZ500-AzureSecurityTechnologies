@@ -194,7 +194,6 @@ In this task, you will grant the AKS cluster permission to access the ACR and ma
     ```sh
     ACRNAME=$(az acr list --resource-group AZ500LAB09 --query '[].{Name:name}' --output tsv)
 
-    az aks update -n MyKubernetesCluster -g AZ500LAB09 --attach-acr $ACRNAME
     ```
 
     >**Note**: This command grants the 'acrpull' role assignment to the ACR. 
