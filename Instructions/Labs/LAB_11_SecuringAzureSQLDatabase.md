@@ -70,18 +70,14 @@ In this task, you will use a template to deploy the lab infrastructure.
 
 3. On the **AZ500LAB11** blade, click the entry representing the newly created SQL Server.
 
-4. On the SQL server blade, in the **Security** section, click **Microsoft Defender for Cloud**. Scroll to the bottom of the **Getting started** page and select **Upgrade**. On the **Install agents** tab scroll to the bottom and select **Install agents**.
-
-    >**Note**: Refresh the browser if **Install agents** tab is not displaying.
-
-5. On the SQL server blade, in the **Security** section, click **Microsoft Defender for Cloud**, select **Enable Microsoft Defender for SQL**.
+4. On the SQL server blade, in the **Security** section, click **Microsoft Defender for Cloud**, select **Enable Microsoft Defender for SQL**.
       >**Note**: Wait until notification indicates Azure Defender for SQL has been successfully enabled.
 
-6. On the SQL server blade, in the **Security** section, on the **Microsoft Defender for Cloud** page, in the **Microsoft Defender for SQL: Enabled at the server-level (Configure)** parameter, click **(configure)**. 
+5. On the SQL server blade, in the **Security** section, on the **Microsoft Defender for Cloud** page, in the **Microsoft Defender for SQL: Enabled at the subscription-level (Configure)** parameter, click **(configure)**. 
     
-7. On the **Server Settings** blade, review the information about pricing and the trial period, **VULNERABILITY ASSESSMENT SETTINGS** and **ADVANCED THREAT PROTECTION SETTINGS**.
+6. On the **Server Settings** blade, review the information about pricing and the trial period, **VULNERABILITY ASSESSMENT SETTINGS** and **ADVANCED THREAT PROTECTION SETTINGS**.
 
-8. Back to **Microsoft Defender for Cloud** blade, review **Recommendations** and **Security incidents and alerts**.
+7. Back to **Microsoft Defender for Cloud** blade, review **Recommendations** and **Security incidents and alerts**.
 
       >**Note**: It may take 10-15 minutes for recommendations to appear on the **Microsoft Defender for Cloud** blade. Rather than waiting, proceed to the next task but consider returning to this blade once you complete all the remaining tasks.
 
