@@ -361,7 +361,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
     >**Note**: The remaining steps in this lab are performed within the Remote Desktop session to the **az500-10-vm1** Azure VM. 
 
-1. Click **Start**, in the **Start** menu, expand the **Microsoft SQL Server Tools 18** folder, and click the **Micosoft SQL Server Management Studio** menu item.
+1. Click **Start**, in the **Start** menu, expand the **Microsoft SQL Server Tools 19** folder, and click the **Micosoft SQL Server Management Studio** menu item.
 
 1. In the **Connect to Server** dialog box, specify the following settings: 
 
@@ -440,7 +440,7 @@ You will create a Console application using Visual Studio to load data into the 
     |---|---|
     |Project name|**OpsEncrypt**|
     |Solution name|**OpsEncrypt**|
-    |Framework|**.NET Framework 4.7.2.**|
+    |Framework|**.NET Framework 4.7.2**|
 6. In the Visual Studio console, click the **Tools** menu, in the drop down menu, click **NuGet Package Manager**, and, in the cascading menu, click **Package Manager Console**.
 
 7. In the **Package Manager Console** pane, run the following to install the first required **NuGet** package:
@@ -455,7 +455,7 @@ You will create a Console application using Visual Studio to load data into the 
     Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
     ```
 	
-9. Minimize the RDP session to your Azure virtual machine, then navigate to **\\Allfiles\\Labs\\10\\program.cs**, open it in Notepad, and copy its content into Clipboard.
+9. Minimize the RDP session to your Azure virtual machine, then navigate to **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\10\program.cs**, open it in Notepad, and copy its content into Clipboard.
 
 10. Return to the RDP session, and in the Visual Studio console, in the **Solution Explorer** window, click **Program.cs** and replace its content with the code you copied into Clipboard.
 	

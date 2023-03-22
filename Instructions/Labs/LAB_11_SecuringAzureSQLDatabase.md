@@ -100,7 +100,7 @@ In this task, you will discover and classify information in SQL database for GPD
 
     >**Note**: The classification engine scans your database for columns containing potentially sensitive data and provides a list of recommended column classifications.
 
-5. Click the text message **15 columns with classification recommendations** displayed on blue bar at the top of the blade.
+5. Click the text message **15 columns with classification recommendations** displayed on blue bar at the bottom of the blade.
 
 6. Review the listed columns and the recommended sensitivity label. 
 
