@@ -44,7 +44,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
     >**Note**: You can also select **Template Deployment (deploy using custom templates)** from the **Marketplace** list.
 
-. On the **Custom deployment** blade, click on the **Build your own template in the editor** option.
+3. On the **Custom deployment** blade, click on the **Build your own template in the editor** option.
 
 4. On the **Edit template** blade, click on **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.json** file and click on **Open**.
 
