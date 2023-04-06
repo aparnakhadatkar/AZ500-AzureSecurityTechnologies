@@ -36,13 +36,11 @@ In this task, you will identify a DNS name for your Azure VM deployment.
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
-2. Switch to the directory which has the valid subscription.
+2. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, click **PowerShell** and **Create storage**.
 
-3. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, click **PowerShell** and **Create storage**.
+3. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
-4. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
-
-5. In the PowerShell session within the Cloud Shell pane, run the following to identify an available DNS name you can use for an Azure VM deployment in the next task of this exercise:
+4. In the PowerShell session within the Cloud Shell pane, run the following to identify an available DNS name you can use for an Azure VM deployment in the next task of this exercise:
 
     ```powershell
     Test-AzDnsAvailability -DomainNameLabel <custom-label> -Location '<location>'
@@ -52,11 +50,11 @@ In this task, you will identify a DNS name for your Azure VM deployment.
 
     >**Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
 
-6. Verify that the command returned **True**. If not, rerun the same command with a different value of the `<custom-label>` until the command returns **True**.
+5. Verify that the command returned **True**. If not, rerun the same command with a different value of the `<custom-label>` until the command returns **True**.
 
-7. Record the value of the `<custom-label>` that resulted in the successful outcome. You will need it for the next task.
+6. Record the value of the `<custom-label>` that resulted in the successful outcome. You will need it for the next task.
 
-8. Close the Cloud Shell.
+7. Close the Cloud Shell.
 
 #### Task 2: Use an ARM template to deploy an Azure VM hosting an Active Directory domain controller
 
@@ -64,7 +62,7 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
 
 1. Open another browser tab in the same browser window and navigate to the [https://github.com/Azure/azure-quickstart-templates/tree/master/application-workloads/active-directory/active-directory-new-domain](https://github.com/Azure/azure-quickstart-templates/tree/master/application-workloads/active-directory/active-directory-new-domain). 
 
-2. On the **Create a new Windows VM and create a new AD Forest, Domain and DC** page, click **Deploy to Azure**. This will automatically redirect the browser to the **Create an Azure VM with a new AD Forest** blade in the Azure portal.
+2. Within the GitHub page that shows up, on the **Create an Azure VM with a new AD Forest** section, click **Deploy to Azure**. This will automatically redirect the browser to the **Create an Azure VM with a new AD Forest** blade in the Azure portal.
 
 3. On the **Create an Azure VM with a new AD Forest** blade, click **Edit parameters**.
 
@@ -137,7 +135,7 @@ In this task, you will add your custom DNS name to the new Azure AD tenant.
 
     >**Note**: You may need to refresh the browser window if the **AdatumSync** entry does not appear in the **Directories + subscriptions** filter list.
 
-3. On the **AdatumSync \| Azure Active Directory** blade, in the **Manage** section, click **Custom domain names**.
+3. On the **AdatumSync - Azure Active Directory** blade, in the **Manage** section, click **Custom domain names**.
 
 4. On the **AdatumSync \| Custom domain names** blade, click **+ Add custom domain**.
 
@@ -153,7 +151,7 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 1. On the **AdatumSync** Azure AD tenant blade, in the **Manage** section, click **Users**.
 
-2. On the **Users \| All users** blade, click **+ New User** and then from the drop-down list, select **Create new user**. 
+2. On the **Users** blade, click **+ New User** and then from the drop-down list, select **Create new user**. 
 
 3. On the **New user** blade, ensure that the **Create user** option is selected, specify the following settings (leave all others with their default values) and click **Create**:
 
@@ -258,7 +256,7 @@ In this task, you will install AD Connect on the virtual machine.
 
 5. On the **Microsoft Azure Active Directory Connect** download page, click **Download**.
 
-6. When prompted, click **Run** to start the **Microsoft Azure Active Directory Connect** wizard.
+6. When prompted, click **Run** or **Open the downloaded file** to start the **Microsoft Azure Active Directory Connect** wizard.
 
 7. On the **Welcome to Azure AD Connect** page of the **Microsoft Azure Active Directory Connect** wizard, click the checkbox **I agree to the license terms and privacy notice** and click **Continue**.
 
