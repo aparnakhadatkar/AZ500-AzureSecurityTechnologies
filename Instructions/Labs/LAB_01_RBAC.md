@@ -267,6 +267,7 @@ In this exercise, you will complete the following task:
    |Setting|Value|
    |---|---|
    |Search by role name (Under Role Pane) |search and select **Virtual Machine Contributor**|
+   |Click on **Next**|
    |Assign access to (Under Members Pane)|**User, group, or service principal**|
    |Select (+Select Members)|**Service Desk**|
 
