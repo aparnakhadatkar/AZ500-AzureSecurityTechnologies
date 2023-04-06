@@ -45,9 +45,11 @@ In this task, you will create a storage account for the lab.
 1. In the PowerShell session within the Cloud Shell pane, run the following to create a storage account in the newly created resource group:
     
     ```powershell
-    New-AzStorageAccount -ResourceGroupName AZ500LAB03 -Name (Get-Random -Maximum 999999999999999) -Location  EastUS -SkuName Standard_LRS -Kind StorageV2 
+    New-AzStorageAccount -ResourceGroupName AZ500LAB03 -Name <storageAccountName> -Location  EastUS -SkuName Standard_LRS -Kind StorageV2 
     ```
-
+   
+   >**Note**: In the above code snippet, replace the **<>** name placeholder with the following storage account name, **strgacc<inject key="Deployment-id" enableCopy="false" />**
+   
    >**Note**:  Wait until the storage account is created. This might take a couple of minutes. 
 
 1. Close the Cloud Shell pane.
@@ -130,7 +132,7 @@ In this task, you will test the Delete lock. You should be able to modify the st
 
 4. On the **Delete storage account** blade, we notice that the delete button is disabled with the following warning sign :
 
-	>**'storage-acc-name' can't be deleted because this resource or its parent has a lock. Locks must be removed before this resource can be deleted.**
+	>**'storage-acc-name' can't be deleted because this resource or its parent has a delete lock. Locks must be removed before this resource can be deleted.**
 
    >**Note**:  You have now verified that a **Delete** lock will allow configuration changes but stop accidental deletion.
 
