@@ -262,7 +262,7 @@ In this exercise, you will complete the following task:
 
 1. On the **AZ500Lab01 \| Access control (IAM)** blade, click on **+ Add** and then, in the drop-down menu, click on **Add role assignment**.
 
-1. On the **Add role assignment** blade, specify the following settings, click Next after each step::
+1. On the **Add role assignment** blade, specify the following settings:
 
    |Setting|Value|
    |---|---|
