@@ -436,7 +436,7 @@ In this task, you will create a user risk policy.
 
    - Under Access click on **Block access**; on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click on **Done**.
 
-   - Set **Enforce policy** to **On** and click on **Save**.
+   - Set **Policy enforcement** to **Enabled** and click on **Save**.
 
 #### Task 3: Configure sign-in risk policy
 
