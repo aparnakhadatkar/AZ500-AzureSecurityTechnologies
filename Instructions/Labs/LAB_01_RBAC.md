@@ -69,9 +69,9 @@ In this task, you will create the *Senior Admins* group, add the user account of
    |Group name|**Senior Admins**|
    |Membership type|**Assigned**|
     
-1. Click on the **No owners selected** link, on the **Owners** blade, select **Joseph Price**, and click on **Select**.
+1. Click on the **No owners selected** link, on the **Add owners** blade, select **Joseph Price**, and click on **Select**.
 
-1. Click on the **No members selected** link, on the **Members** blade, select **Joseph Price**, and click on **Select**.
+1. Click on the **No members selected** link, on the **Add members** blade, select **Joseph Price**, and click on **Select**.
 
 1. Back on the **New Group** blade, click on **Create**.
 
@@ -256,6 +256,8 @@ In this exercise, you will complete the following task:
 
 #### Task 1: Assign the Service Desk Virtual Machine Contributor permissions. 
 
+1. In the Search resources, services, and docs text box at the top of the Azure portal page, type Resource Groups and press the Enter key.
+
 1. On the **Resource groups** blade, click on the **AZ500LAB01** resource group entry.
 
 1. On the **AZ500Lab01** blade, click on **Access control (IAM)**.
@@ -266,7 +268,8 @@ In this exercise, you will complete the following task:
 
    |Setting|Value|
    |---|---|
-   |Role in the search tab|**Virtual Machine Contributor**|
+   |Search by role name (Under Role Pane) |search and select **Virtual Machine Contributor**|
+   |Click on **Next**|
    |Assign access to (Under Members Pane)|**User, group, or service principal**|
    |Select (+Select Members)|**Service Desk**|
 

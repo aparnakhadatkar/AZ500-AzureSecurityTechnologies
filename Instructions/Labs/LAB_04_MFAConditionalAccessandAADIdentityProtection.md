@@ -44,7 +44,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
     >**Note**: You can also select **Template Deployment (deploy using custom templates)** from the **Marketplace** list.
 
-. On the **Custom deployment** blade, click on the **Build your own template in the editor** option.
+3. On the **Custom deployment** blade, click on the **Build your own template in the editor** option.
 
 4. On the **Edit template** blade, click on **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.json** file and click on **Open**.
 
@@ -272,7 +272,7 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
     >**Note**: At this point, you have enabled MFA for aaduser1 and setup fraud alert settings. 
 
-1. Navigate back to the **AdatumLab500-04** Azure Active Directory tenant blade, in the **Manage** section, click on **Properties**, next click on the **Manage Security defaults** link at the bottom of the blade, on the **Enable Security Defaults** blade, click on **No**. Select **My Organization is using Conditonal Access** as the reason and and then click on **Save**.
+1. Navigate back to the **AdatumLab500-04** Azure Active Directory tenant blade, in the **Manage** section, click on **Properties**, next click on the **Manage Security defaults** link at the bottom of the blade, on the **Security defaults** blade, in the security defaults dropdown select **Disabled**. Select **My Organization is using Conditonal Access** as the reason and and then click on **Save**.
 
     >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directories + subscriptions** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role in the Azure AD tenant.
 
@@ -326,7 +326,7 @@ In this task, you will review conditional access policy settings and create a po
 
 1. On the **Security \| Getting started** blade, in the **Protect** section, click on **Conditional Access**.
 
-1. On the **Conditional Access \| Overview** blade, click on **+ Create new policy**.
+1. On the **Conditional Access \| Overview** blade, click on **+ new policy**.
 
 1. On the **New** blade, configure the following settings:
 
@@ -436,7 +436,7 @@ In this task, you will create a user risk policy.
 
    - Under Access click on **Block access**; on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click on **Done**.
 
-   - Set **Enforce policy** to **On** and click on **Save**.
+   - Set **Policy enforcement** to **Enabled** and click on **Save**.
 
 #### Task 3: Configure sign-in risk policy
 
@@ -452,7 +452,7 @@ In this task, you will configure a sign-in risk policy.
 
    - Under Access click on **Block access**; on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Done**.
 
-   - Set **Enforce Policy** to **On** and click on **Save**.
+   - Set **Policy enforcement** to **Enabled** and click on **Save**.
 
 #### Task 4: Simulate risk events against the Azure AD Identity Protection policies 
 
