@@ -452,7 +452,7 @@ In this task, you will configure a sign-in risk policy.
 
    - Under Access click on **Block access**; on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Done**.
 
-   - Set **Enforce Policy** to **On** and click on **Save**.
+   - Set **Policy enforcement** to **Enabled** and click on **Save**.
 
 #### Task 4: Simulate risk events against the Azure AD Identity Protection policies 
 
