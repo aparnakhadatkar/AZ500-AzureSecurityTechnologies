@@ -55,12 +55,12 @@ In this task, you will create a virtual network.
     |Name|**myVirtualNetwork**|
     |Region|**(US) East US**|
 
-1. On the **IP addresses** tab of the **Create virtual network** blade, set the **IPv4 address space** to **10.0.0.0/16**. In the **Subnet name** column, click **default** and, on the **Edit subnet** blade, specify the following settings and click **Save**, if you do not find the **default** subnet please click on **+ Add Subnet** and specify the following settings:
+1. On the **IP addresses** tab of the **Create virtual network** blade, set the **IPv4 address space** to **10.1.0.0/16**. In the **Subnet name** column, click **default** and, on the **Edit subnet** blade, specify the following settings and click **Save**, if you do not find the **default** subnet please click on **+ Add Subnet** and specify the following settings:
 
     |Setting|Value|
     |---|---|
     |Subnet name|**Public**|
-    |Subnet address range|**10.0.0.0/24**|
+    |Subnet address range|**10.1.0.0/24**|
 
 1. Back on the **IP addresses** tab of the **Create virtual network** blade, click **Review + create**.
 
@@ -84,7 +84,7 @@ In this task, you will create another subnet and enable a service endpoint on th
     |---|---|
     |Subnet name|**Private**|
     |Subnet address range|**10.0.1.0/24**|
-    |Service endpoints|**Microsoft.Storage**|
+    |Service endpoints|Select services **Microsoft.Storage**|
 
 1. On the **Add subnet** blade, click **Save** to add the new subnet.
 
