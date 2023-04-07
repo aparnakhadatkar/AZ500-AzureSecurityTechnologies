@@ -65,6 +65,7 @@ In this task, you will create a virtual network.
 1. Back on the **IP addresses** tab of the **Create virtual network** blade, click **Review + create**.
 
 1. On the **Review + create** tab of the **Create virtual network** blade, click **Create**.
+>**Note**:If you are not able to edit the **default** first create the virtual network and go to subnets in created Virtualnetwork and delete the Default Sbnet and add **Public** Subnet 
 
 #### Task 2: Add a subnet to the virtual network and configure a storage endpoint
 
@@ -84,7 +85,7 @@ In this task, you will create another subnet and enable a service endpoint on th
     |---|---|
     |Subnet name|**Private**|
     |Subnet address range|**10.0.1.0/24**|
-    |Service endpoints|**Microsoft.Storage**|
+    |Service endpoints|Select services **Microsoft.Storage**|
 
 1. On the **Add subnet** blade, click **Save** to add the new subnet.
 
