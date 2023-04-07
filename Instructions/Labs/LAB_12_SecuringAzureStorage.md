@@ -369,7 +369,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Setting|Value|
     |---|---|
     |Virtual network|**myVirtualNetwork**|
-    |Subnet|**Public (10.0.0.0/24)**|
+    |Subnet|**Public (10.1.0.0/24)**|
     |Public IP|**(new)myVmPublic-ip**|
     |NIC network security group|**None**|
 
