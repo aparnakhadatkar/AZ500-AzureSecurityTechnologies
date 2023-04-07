@@ -57,7 +57,7 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
    |---|---|
    |Subscription|Let it be default|
    |Resource group|click **Create new** and type the name **AZ500LAB10**|
-   |Location|**(US) East US**|
+   |Location|**East US**|
    |Admin Username|**Student**|
    |Admin Password|**Pa55w.rd1234**|
    
@@ -80,7 +80,7 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
 
 ### Exercise 2: Configure the Key Vault resource with a key and a secret
 
->**Note**: For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is region to use for you class. 
+>**Note**: For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is region to use for you class. 
 
 In this exercise, you will complete the following tasks:
 
