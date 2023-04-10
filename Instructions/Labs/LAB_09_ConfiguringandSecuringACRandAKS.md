@@ -122,7 +122,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
 1. On the **Kubernetes services** blade, click **+ Create** and, in the drop-down menu, click **+ Create Kubernetes cluster**
 
-1. On the **Basics** tab of the **Create Kubernetes cluster** blade, select **Cluster preset configuration**, select **Dev/Test ($)**. Now specify the following settings (leave others with their default values):
+1. On the **Basics** tab of the **Create Kubernetes cluster** blade, select **Cluster preset configuration**, select **Dev/Test**. Now specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |----|----|
@@ -151,7 +151,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
     >**Note**: AKS can be configured as a private cluster. This assigns a private IP to the API server to ensure network traffic between your API server and your node pools remains on the private network only. For more information, visit [Create a private Azure Kubernetes Service cluster](https://docs.microsoft.com/en-us/azure/aks/private-clusters) page.
 
-1. Click **Next: Integrations >** and, on the **Integrations** tab of the **Create Kubernetes cluster** blade, set **Container monitoring** to **Disabled**. 
+1. Click **Next: Integrations >** and, on the **Integrations** tab of the **Create Kubernetes cluster** blade, set **Enable Container Logs** to **Disabled**. 
 
     >**Note**: In production scenarios, you would want to enable monitoring. Monitoring is disabled in this case since it is not covered in the lab. 
 
@@ -240,7 +240,7 @@ In this task,  you will download the Manifest files, edit the YAML file, and app
 
 1. In the editor pane, scroll down to **line 24** and replace the **`<ACRUniquename>`** placeholder with the ACR name.
 
-1. In the editor pane, in the upper right corner, click the **ellipses** icon, click **Save** and then click **Close editor**. 
+1. Now to save this edited yaml file, perform **CTRL + S** and then **CTRL + Q** to exit. 
 
 1. In the Bash session within the Cloud Shell pane, run the following to apply the change to the cluster:
 

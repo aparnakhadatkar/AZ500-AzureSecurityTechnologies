@@ -40,7 +40,6 @@ In this task, you will use a template to deploy the lab infrastructure.
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
-    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and hit **Enter** key.
 3. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
 
@@ -73,7 +72,7 @@ In this task, you will use a template to deploy the lab infrastructure.
 4. On the SQL server blade, in the **Security** section, click **Microsoft Defender for Cloud**, select **Enable Microsoft Defender for SQL**.
       >**Note**: Wait until notification indicates Azure Defender for SQL has been successfully enabled.
 
-5. On the SQL server blade, in the **Security** section, on the **Microsoft Defender for Cloud** page, in the **Microsoft Defender for SQL: Enabled at the subscription-level (Configure)** parameter, click **(configure)**. 
+5. On the SQL server blade, under the **Security** section and within the **Microsoft Defender for Cloud** page, notice the **Enablement Status: Enabled at the server-level (Configure)** parameter, click **(configure)**. 
     
 6. On the **Server Settings** blade, review the information about pricing and the trial period, **VULNERABILITY ASSESSMENT SETTINGS** and **ADVANCED THREAT PROTECTION SETTINGS**.
 

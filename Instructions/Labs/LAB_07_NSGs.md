@@ -52,7 +52,7 @@ In this task, you will create a virtual network to use with the network and appl
     |Name|**myVirtualNetwork**|
     |Region|**East US**|
 
-1. On the **IP addresses** tab of the **Create virtual network** blade, set the **IPv4 address space** to **10.0.0.0/16**, and, if needed, in the **Subnet name** column, click **default**, on the **Edit subnet** blade, specify the following settings and click **Save**:
+1. On the **IP addresses** tab of the **Create virtual network** blade, if needed, in the **Subnet name** column, click **default**. On the **Edit subnet** blade, specify the following settings and click **Save**:
 
     |Setting|Value|
     |---|---|
@@ -256,9 +256,9 @@ In this task, you will associate each virtual machine's network interface with t
 
 1. In the Azure portal, navigate back to the **Virtual machines** blade and verify that both virtual machines are listed with the **Running** status.
 
-1. In the list of virtual machines, click the **myVMWeb** entry.
+1. In the list of virtual machines, click the **myVmWeb** entry.
 
-1. On the **myVMWeb** blade, in the **Settings** section, click **Networking** and then, on the **myVMWeb \| Networking** blade, click the **Application security groups** tab.
+1. On the **myVmWeb** blade, in the **Settings** section, click **Networking** and then, on the **myVmWeb \| Networking** blade, click the **Application security groups** tab.
 
 1. Click **Configure the application security groups**, in the **Application security group** drop-down list, select **myAsgWebServers**, and then click **Save**.
 
@@ -287,7 +287,7 @@ In this task, you will test the network traffic filters. You should be able to R
 
 1. In the Azure portal, navigate to the **myVMWeb** virtual machine blade.
 
-1. On the **myVMWeb** blade, in the **Operations** section, click **Run command** and then click **RunPowerShellScript**.
+1. On the **myVmWeb** blade, in the **Operations** section, click **Run command** and then click **RunPowerShellScript**.
 
 1. On the **Run Command Script** pane, run the following to install the Web server role on **myVmWeb**:
 
@@ -297,9 +297,9 @@ In this task, you will test the network traffic filters. You should be able to R
 
     >**Note**: Wait for the installation to complete. This might take a couple of minutes. At that point, you can verify that myVMWeb can be accessed via HTTP/HTTPS.
 
-1. In the Azure portal, navigate back to the **myVMWeb** blade.
+1. In the Azure portal, navigate back to the **myVmWeb** blade.
 
-1. On the **myVMWeb** blade, identify the **Public IP address** of the myVmWeb Azure VM.
+1. On the **myVmWeb** blade, identify the **Public IP address** of the myVmWeb Azure VM.
 
 1. Open another browser tab and navigate to IP address you identified in the previous step.
 
