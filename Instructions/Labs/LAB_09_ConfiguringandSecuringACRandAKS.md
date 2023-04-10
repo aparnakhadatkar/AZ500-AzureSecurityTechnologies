@@ -240,7 +240,7 @@ In this task,  you will download the Manifest files, edit the YAML file, and app
 
 1. In the editor pane, scroll down to **line 24** and replace the **`<ACRUniquename>`** placeholder with the ACR name.
 
-1. In the editor pane, in the upper right corner, click the **ellipses** icon, click **Save** and then click **Close editor**. 
+1. Now to save this edited yaml file, perform **CTRL + S** and then **CTRL + Q** to exit. 
 
 1. In the Bash session within the Cloud Shell pane, run the following to apply the change to the cluster:
 
