@@ -181,7 +181,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click on **Roles**.
 
-1. On the **AdatumLab500-04 \| Roles** blade, click the **Global reader** role entry. 
+1. On the **AdatumLab500-04 \| Roles** blade, search and select the **Global reader** role entry. 
 
 1. On the **Global Reader \| Assignments** blade, click on **Settings** icon in the toolbar of the blade and review configuration settings for the role, including Azure Multi-Factor Authentication requirements.
 
