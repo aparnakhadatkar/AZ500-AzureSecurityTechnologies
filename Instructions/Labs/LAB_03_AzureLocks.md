@@ -69,12 +69,10 @@ In this task, you will add a read-only lock to the storage account. This will pr
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
-1. On the **Resource groups** blade, select the **AZ500LAB03** resource group entry.
-   >**Note**: Replace the **[DeploymentID] with <inject key="DeploymentID" enableCopy="true"/>**
-
-1. On the **AZ500LAB03-[DeploymentID]** resource group blade, in the list of resources, **select the new storage account**.
-   >**Note**: Replace the **[DeploymentID] with <inject key="DeploymentID" enableCopy="true"/>**
-
+1. On the **Resource groups** blade, select the **AZ500LAB03-<inject key="DeploymentID" enableCopy="false"/>** resource group entry.
+   
+1. On the **AZ500LAB03-<inject key="DeploymentID" enableCopy="false"/>** resource group blade, in the list of resources, **select the new storage account**.
+  
 1. Under the **Settings** section in the left navigation pane, click on the "Locks" icon.
 
 1. Click on **+ Add** and specify the following settings:
