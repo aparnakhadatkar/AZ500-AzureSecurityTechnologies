@@ -48,7 +48,7 @@ In this task, you will create a storage account for the lab.
     New-AzStorageAccount -ResourceGroupName AZ500LAB03 -Name <storageAccountName> -Location  EastUS -SkuName Standard_LRS -Kind StorageV2 
     ```
    
-   >**Note**: In the above code snippet, replace the **<>** name placeholder with the storage account name, **strgacc<inject key="Deployment-id" enableCopy="false" />**. The following image is provided for your reference:
+   >**Note**: In the above code snippet, replace the **<>** name placeholder with the storage account name, **strgacc<inject key="DeploymentID" enableCopy="false"/>**. The following image is provided for your reference:
 
 	![storage account creation through powershell](images/strgaccPowershell.png)
    
