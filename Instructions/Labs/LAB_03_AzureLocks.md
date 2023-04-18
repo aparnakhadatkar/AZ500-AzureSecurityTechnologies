@@ -43,7 +43,7 @@ In this task, you will create a storage account for the lab.
 
 1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
 
-1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected and click on **show advanced settings**. Please make sure you have selected your resource group **AZ500LAB03-<inject key="DeploymentID" enableCopy="false"/>** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create Storage**.
+1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected and click on **show advanced settings**. Please make sure you have selected your resource group **AZ500LAB03-<inject key="DeploymentID" enableCopy="false"/>** and enter **storage<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **fileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create Storage**.
 
 	>**Note**: It might take about a minute for the Cloud Shell pane to show up.
 
@@ -55,7 +55,7 @@ In this task, you will create a storage account for the lab.
     New-AzStorageAccount -ResourceGroupName AZ500LAB03-[DeploymentID] -Name <storageAccountName> -Location  EastUS -SkuName Standard_LRS -Kind StorageV2 
     ```
    
-   >**Note**: In the above code snippet, replace the **<>** name placeholder with the storage account name  **strgacc<inject key="DeploymentID" enableCopy="true"/>**. The following image is provided for your reference:
+   >**Note**: In the above code snippet, replace the **<>** name placeholder with AZ500LAB03-**[DeploymentID] with <inject key="DeploymentID" enableCopy="true"/>**,and the storage account name with **strgacc<inject key="DeploymentID" enableCopy="true"/>**. The following image is provided for your reference:
 
 	![storage account creation through powershell](images/strgaccPowershell1.png)
    
