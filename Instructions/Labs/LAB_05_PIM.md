@@ -82,18 +82,21 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 
 1. On the **Users \| All users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**
 
-1. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values) and click on **Create**:
+1. On the **Create new user** blade, in **basics** tab specify the following settings (leave all others with their default values) :
 
    |Setting|Value|
    |---|---|
-   |User name|**aaduser2**|
-   |Name|**aaduser2**|
-   |Password|ensure that the option **Auto-generate password** is selected and click on **Show Password**|
-   |Groups|**0 groups selected**|
-   |Roles|**User**|
-   |Usage Location|**United States**|  
-
+   |User principal name|**aaduser2**|
+   |Display name|**aaduser2**|
+   |Password|ensure that the option **Auto-generate password** is selected |
+   
     >**Note**: Record the full user name and the password.
+   
+1. On the **Create new user** blade, in **Property** tab under settings specify the following settings :
+   
+   |Usage Location|**United States**|
+
+1. Select **Review + create** and click on **Create**.
 
 1. Back on the **Users \| All users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**. 
 
@@ -101,16 +104,17 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 
    |Setting|Value|
    |---|---|
-   |User name|**aaduser3**|
-   |Name|**aaduser3**|
-   |Password|ensure that the option **Auto-generate password** is selected and click on **Show Password**|
-   |Groups|**0 groups selected**|
-   |Roles|**User**|
-   |Usage Location|**United States**|  
-
+   |User principal name|**aaduser3**|
+   |Display name|**aaduser3**|
+   |Password|ensure that the option **Auto-generate password** is selected |
+   
     >**Note**: Record the full user name and the password.
 
-1. On the **New user** blade, click on **Create**.
+1. On the **Create new user** blade, in **Property** tab under settings specify the following settings:
+   
+   |Usage Location|**United States**|  
+
+1. Select **Review + create** and click on **Create**.
 
     >**Note**: At this point, you should have three new users listed on the **Users** page. 
 
