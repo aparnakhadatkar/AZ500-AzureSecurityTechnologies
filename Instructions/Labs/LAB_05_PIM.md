@@ -278,8 +278,9 @@ In this task, you will activate a role that does not require approval.
 
    - In **Action Required** page, click on **Next**.
    - In **Keep your account secure** page, select the link **I want to set up a different method** and in Choose a different method, select phone option from the dropdown and click on **Confirm**.
-   - In **Phone** page , please select your country and enter your phone number, make sure **Text me a code** is selected and click on **Next**.
-   - Select **Next** and **Done**
+   - In **Phone** page, please select your country and enter your phone number, make sure **Text me a code** is selected and click on **Next**.
+   - Enter the code and click on **Next**.
+   - Select **Next** and **Done**.
 
 1. On the **Activate - Billing Administrator** blade, in the **Reason** text box, type a text providing justification for the activation, and then click on **Activate**.
 
