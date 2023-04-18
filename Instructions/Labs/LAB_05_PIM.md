@@ -237,6 +237,10 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. Review the **Assignment type** settings and click on **Assign**.
 
+1. Back on the **AdatumLab500-04 \| Roles** blade, in the **Manage** section, click on **Assignments**.
+
+1. Back on the **AdatumLab500-04 \| Assignments** blade, note the tabs for **Eligible assignments**, **Active assignments**, and **Expired assignments**.
+
 1. On the **Assignments** page on the **Eligible Assignments** tab, select **Update** for the **aaduser2** assignment. Select **Permanently Eligible** and **Save**.
 
     >**Note**: User aaduser2 is now permanently eligible for the Security Administrator role.
