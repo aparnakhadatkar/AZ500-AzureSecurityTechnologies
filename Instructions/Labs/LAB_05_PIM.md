@@ -93,7 +93,8 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
     >**Note**: Record the full user name and the password.
    
 1. On the **Create new user** blade, in **Property** tab under settings specify the following settings :
-   
+   |Setting|Value|
+   |---|---|
    |Usage Location|**United States**|
 
 1. Select **Review + create** and click on **Create**.
@@ -112,6 +113,8 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 
 1. On the **Create new user** blade, in **Property** tab under settings specify the following settings:
    
+   |Setting|Value|
+   |---|---|
    |Usage Location|**United States**|  
 
 1. Select **Review + create** and click on **Create**.
