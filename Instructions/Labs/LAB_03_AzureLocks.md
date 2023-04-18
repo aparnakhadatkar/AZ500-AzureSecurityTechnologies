@@ -48,7 +48,7 @@ In this task, you will create a storage account for the lab.
     New-AzStorageAccount -ResourceGroupName AZ500LAB03-[DeploymentID] -Name <storageAccountName> -Location  EastUS -SkuName Standard_LRS -Kind StorageV2 
     ```
    
-   >**Note**: In the above code snippet, replace the **<>** name placeholder with the storage account name and **[DeploymentID] with <inject key="DeploymentID" enableCopy="true"/>**, **strgacc<inject key="DeploymentID" enableCopy="true"/>**. The following image is provided for your reference:
+   >**Note**: In the above code snippet, replace the **<>** name placeholder with the storage account name and **[DeploymentID] with <inject key="DeploymentID" enableCopy="true"/>** and **strgacc<inject key="DeploymentID" enableCopy="true"/>**. The following image is provided for your reference:
 
 	![storage account creation through powershell](images/strgaccPowershell1.png)
    
@@ -63,8 +63,10 @@ In this task, you will add a read-only lock to the storage account. This will pr
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
 1. On the **Resource groups** blade, select the **AZ500LAB03** resource group entry.
+   >**Note**: Replace the **[DeploymentID] with <inject key="DeploymentID" enableCopy="true"/>**
 
-1. On the **AZ500LAB03-[DeploymentID]** resource group blade, in the list of resources, **select the new storage account**. 
+1. On the **AZ500LAB03-[DeploymentID]** resource group blade, in the list of resources, **select the new storage account**.
+   >**Note**: Replace the **[DeploymentID] with <inject key="DeploymentID" enableCopy="true"/>**
 
 1. Under the **Settings** section in the left navigation pane, click on the "Locks" icon.
 
