@@ -41,7 +41,9 @@ In this task, you will create a storage account for the lab.
 1. Now enter the following password and click on **Sign in**.
    * Password: <inject key="AzureAdUserPassword"></inject>
 
-1. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, select **PowerShell** and **Create storage**.
+1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
+
+1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected and click on **show advanced settings**. Please make sure you have selected your resource group **AZ500LAB03-<inject key="DeploymentID" enableCopy="false"/>** and enter **blob<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **blobfileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create Storage**.
 
 	>**Note**: It might take about a minute for the Cloud Shell pane to show up.
 
@@ -53,7 +55,7 @@ In this task, you will create a storage account for the lab.
     New-AzStorageAccount -ResourceGroupName AZ500LAB03-[DeploymentID] -Name <storageAccountName> -Location  EastUS -SkuName Standard_LRS -Kind StorageV2 
     ```
    
-   >**Note**: In the above code snippet, replace the **<>** name placeholder with the storage account name and **[DeploymentID] with <inject key="DeploymentID" enableCopy="true"/>** and **strgacc<inject key="DeploymentID" enableCopy="true"/>**. The following image is provided for your reference:
+   >**Note**: In the above code snippet, replace the **<>** name placeholder with the storage account name  **strgacc<inject key="DeploymentID" enableCopy="true"/>**. The following image is provided for your reference:
 
 	![storage account creation through powershell](images/strgaccPowershell1.png)
    
@@ -67,12 +69,10 @@ In this task, you will add a read-only lock to the storage account. This will pr
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
-1. On the **Resource groups** blade, select the **AZ500LAB03** resource group entry.
-   >**Note**: Replace the **[DeploymentID] with <inject key="DeploymentID" enableCopy="true"/>**
-
-1. On the **AZ500LAB03-[DeploymentID]** resource group blade, in the list of resources, **select the new storage account**.
-   >**Note**: Replace the **[DeploymentID] with <inject key="DeploymentID" enableCopy="true"/>**
-
+1. On the **Resource groups** blade, select the **AZ500LAB03-<inject key="DeploymentID" enableCopy="false"/>** resource group entry.
+   
+1. On the **AZ500LAB03-<inject key="DeploymentID" enableCopy="false"/>** resource group blade, in the list of resources, **select the new storage account**.
+  
 1. Under the **Settings** section in the left navigation pane, click on the "Locks" icon.
 
 1. Click on **+ Add** and specify the following settings:
