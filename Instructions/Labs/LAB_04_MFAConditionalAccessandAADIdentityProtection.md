@@ -15,74 +15,12 @@ You have been asked to create a proof of concept of features that enhance Azure 
 
 In this lab, you will complete the following exercises:
 
-- Exercise 1: Deploy an Azure VM by using an Azure Resource Manager template
-- Exercise 2: Implement Azure MFA
-- Exercise 3: Implement Azure AD Conditional Access Policies 
-- Exercise 4: Implement Azure AD Identity Protection
-
-## Lab files:
-
-- **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.json**
-- **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.parameters.json** 
-
-### Exercise 1: Deploy an Azure VM by using an Azure Resource Manager template
-
-### Estimated timing: 10 minutes
-
-In this exercise, you will complete the following tasks:
-
-- Task 1: Deploy an Azure VM by using an Azure Resource Manager template.
-
-#### Task 1: Deploy an Azure VM by using an Azure Resource Manager template
-
-In this task, you will create a virtual machine by using an ARM template. This virtual machine will be used in the last exercise for this lab. 
-
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
+- Exercise 1: Implement Azure MFA
+- Exercise 2: Implement Azure AD Conditional Access Policies 
+- Exercise 3: Implement Azure AD Identity Protection
 
 
-2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **custom template** and select **Deploy a custom template** under the list of **Services**.
-
-    >**Note**: You can also select **Template Deployment (deploy using custom templates)** from the **Marketplace** list.
-
-3. On the **Custom deployment** blade, click on the **Build your own template in the editor** option.
-
-4. On the **Edit template** blade, click on **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.json** file and click on **Open**.
-
-    >**Note**: Review the content of the template and note that it deploys an Azure VM hosting Windows Server 2019 Datacenter.
-
-5. On the **Edit template** blade, click on **Save**.
-
-6. Back on the **Custom deployment** blade, click on **Edit parameters**.
-
-7. On the **Edit parameters** blade, click on **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.parameters.json** file and click on **Open**.
-
-    >**Note**: Review the content of the parameters file noting the adminUsername and adminPassword values.
-
-8. On the **Edit parameters** blade, click on **Save**.
-
-9. On the **Custom deployment** blade, ensure that the following settings are configured (leave any others with their default values):
-
-   |Setting|Value|
-   |---|---|
-   |Subscription|the name of the Azure subscription you will be using in this lab|
-   |Resource group|click on **Create new** and type the name **AZ500LAB04**|
-   |Location|**(US) East US**|
-   |Vm Size|**Standard_D2s_v3**|
-   |Vm Name|**az500-04-vm1**|
-   |Admin Username|**Student**|
-   |Admin Password|**Pa55w.rd1234**|
-   |Virtual Network Name|**az500-04-vnet1**|
-
-    >**Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
-
-10. Click on **Review + create**, and then click on **Create**.
-
-    >**Note**: Do not wait for the deployment to complete but proceed to the next exercise. You will use the virtual machine included in this deployment in the last exercise of this lab.
-
-> Result: You have initiated a template deployment of an Azure VM **az500-04-vm1** that you will use in the last exercise of this lab.
-
-
-### Exercise 2: Implement Azure MFA
+### Exercise 1: Implement Azure MFA
 
 ### Estimated timing: 30 minutes
 
@@ -307,7 +245,7 @@ In this task, you will validate the MFA configuration by testing the sign in of 
 > Result: You have created a new AD tenant, configured AD users, configured MFA, and tested the MFA experience for a user. 
 
 
-### Exercise 3: Implement Azure AD Conditional Access Policies 
+### Exercise 2: Implement Azure AD Conditional Access Policies 
 
 ### Estimated timing: 15 minutes
 
@@ -394,7 +332,7 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
 >Result: You have configured and tested Azure AD conditional access.
 
-### Exercise 4: Implement Azure AD Identity Protection
+### Exercise 3: Implement Azure AD Identity Protection
 
 ### Estimated timing: 30 minutes
 
@@ -454,36 +392,11 @@ In this task, you will configure a sign-in risk policy.
 
    - Set **Policy enforcement** to **Enabled** and click on **Save**.
 
-#### Task 4: Simulate risk events against the Azure AD Identity Protection policies 
+#### Task 4: Simulate risk events against the Azure AD Identity Protection policies
 
-> Before you start this task, ensure that the template deployment you started in Exercise 1 has completed. The deployment includes an Azure VM named **az500-04-vm1**. 
+1. In the virtual machine open **InPrivate Browsing** in the Microsoft edge.
 
-1. In the Azure portal, set the **Directory + subscription** filter to the Azure AD tenant associated with the Azure subscription into which you deployed the **az500-04-vm1** Azure VM.
-
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
-
-1. On the **Virtual machines** blade, click on the **az500-04-vm1** entry. 
-
-1. On the **az500-04-vm1** blade, click on **Connect** and, in the drop-down menu, click on **RDP**. 
-
-1. Click on **Download RDP File** and use it to connect to the **az500-04-vm1** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
-
-   |Setting|Value|
-   |---|---|
-   |User name|**Student**|
-   |Password|**Pa55w.rd1234**|
-
-    >**Note**: Wait for the Remote Desktop session and **Server Manager** to load.  
-
-    >**Note**: The following steps are performed in the Remote Desktop session to the **az500-04-vm1** Azure VM. 
-
-1. In **Server Manager**, click on **Local Server** and then click on **IE Enhanced Security Configuration**.
-
-1. In the **Internet Explorer Enhanced Security Configuration** dialog box, set both options to **Off** and click on **OK**.
-
-1. Start **Internet Explorer**, click the cog wheel icon in the toolbar, in the drop-down menu, click on **Safety** and then click on **InPrivate Browsing**.
-
-1. In the InPrivate Internet Explorer window, navigate to the ToR Browser Project at [**https://www.torproject.org/projects/torbrowser.html.en**](https://www.torproject.org/projects/torbrowser.html.en).
+1. In the InPrivate Microsoft edge window, navigate to the ToR Browser Project at [**https://www.torproject.org/projects/torbrowser.html.en**](https://www.torproject.org/projects/torbrowser.html.en).
 
 1. Download and install the Windows version of the ToR Browser with the default settings. 
 
@@ -500,10 +413,6 @@ In this task, you will configure a sign-in risk policy.
 1. Use the **Verify** option and specify whether you want to verify your identity via text or a call.
 
 1. Complete the verification and ensure that you successfully signed in to the Application Access Panel.
-
-1. Close your RDP session. 
-
-    >**Note**: At this point, you attempted two different sign ins. Next, you will review the Azure Identity Protection reports.
 
 #### Task 5: Review the Azure AD Identity Protection reports
 
