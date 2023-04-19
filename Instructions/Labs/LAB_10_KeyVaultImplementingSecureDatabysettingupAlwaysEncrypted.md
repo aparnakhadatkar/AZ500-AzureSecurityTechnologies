@@ -130,7 +130,7 @@ In this task, you will create an Azure Key Vault resource. You will also configu
     
  Now click on **Next** to reach to **Principal** tab.
     
- On the **Principal** blade, select your user account, and click **Select** and click on **Review + create** and then **Create**.
+ On the **Principal** blade, select your user account, and click **Select** and click on **Review + create** tab and then **Create**.
 
 #### Task 2: Add a key to Key Vault
 
