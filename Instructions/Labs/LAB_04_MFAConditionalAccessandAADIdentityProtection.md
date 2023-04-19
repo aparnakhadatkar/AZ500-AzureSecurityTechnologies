@@ -110,7 +110,6 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
    |Name|**aaduser2**|
    |Password|ensure that the option **Auto-generate password** is selected and click on **Show Password**|
    |Groups|**0 groups selected**|
-   |Roles|**User**|
    |Usage Location|**United States**|  
 
     >**Note**: Record the full user name and the password.
@@ -125,7 +124,6 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
    |Name|**aaduser3**|
    |Password|ensure that the option **Auto-generate password** is selected and click on **Show Password**|
    |Groups|**0 groups selected**|
-   |Roles|**User**|
    |Usage Location|**United States**|  
 
     >**Note**: Record the full user name and the password.
