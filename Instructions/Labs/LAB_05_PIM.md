@@ -90,7 +90,7 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 
 1. On the **Users \| All users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**
 
-1. On the **Create new user** blade, in **basics** tab specify the following settings (leave all others with their default values) :
+1. On the **Create new user** blade, in **basics** tab specify the following settings (leave all others with their default values):
 
    |Setting|Value|
    |---|---|
@@ -100,7 +100,7 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
    
     >**Note**: Record the full user name and the password.
    
-1. On the **Create new user** blade, in **Property** tab under settings specify the following settings :
+1. On the **Create new user** blade, in **Property** tab under settings specify the following settings:
    |Setting|Value|
    |---|---|
    |Usage Location|**United States**|
@@ -109,7 +109,7 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 
 1. Back on the **Users \| All users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**. 
 
-1. Click on **New User**, complete the new user configuration settings, and then click on **Create**.
+1. Click on **Create new user** blade, in **basics** tab specify the following settings (leave all others with their default values):
 
    |Setting|Value|
    |---|---|
@@ -140,7 +140,7 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 1. In the **Settings** section, in the **Usage location** drop-down list, select the **United States** entry and click on **Save**.
 
-1. Repeat last three step for **aaduser2** and **aaduser3**.
+1. Repeat last three step's(1-3) for **aaduser2** and **aaduser3**.
 
 1. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click on **Licenses**.
 
@@ -237,6 +237,10 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. Review the **Assignment type** settings and click on **Assign**.
 
+1. Back on the **AdatumLab500-04 \| Roles** blade, in the **Manage** section, click on **Assignments**.
+
+1. Back on the **AdatumLab500-04 \| Assignments** blade, note the tabs for **Eligible assignments**, **Active assignments**, and **Expired assignments**.
+
 1. On the **Assignments** page on the **Eligible Assignments** tab, select **Update** for the **aaduser2** assignment. Select **Permanently Eligible** and **Save**.
 
     >**Note**: User aaduser2 is now permanently eligible for the Security Administrator role.
@@ -260,7 +264,7 @@ In this task, you will activate a role that does not require approval.
 
     >**Note**: To sign in you will need to provide a fully qualified name of the **aaduser2** user account, including the Azure AD tenant DNS domain name, which you recorded earlier in this lab. This user name is in the format aaduser2@`<your_tenant_name>`.onmicrosoft.com, where `<your_tenant_name>` is the placeholder representing your unique Azure AD tenant name.
 
-    >**Note**: If **Update your password** is Prompted, kindly update your password. 
+    >**Note**: You will be prompted to **Update your password**, kindly update your password. 
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure AD Privileged Identity Management** and press the **Enter** key.
 
@@ -273,9 +277,10 @@ In this task, you will activate a role that does not require approval.
 1. If needed, click the warning **Additional verification required. Click to continue** and follow the instructions to verify your identity.
 
    - In **Action Required** page, click on **Next**.
-   - In **Keep your account secure page**, select the link **I want to set up a different method** and in Choose a different method, select phone option from the dropdown.
-   - In **Phone** page , please select your country and enter your phone number, make sure **Text me a code** is selected and click on **Next**.
-   - Select **Next** and **Done**
+   - In **Keep your account secure** page, select the link **I want to set up a different method** and in Choose a different method, select phone option from the dropdown and click on **Confirm**.
+   - In **Phone** page, please select your country and enter your phone number, make sure **Text me a code** is selected and click on **Next**.
+   - Enter the code and click on **Next**.
+   - Select **Next** and **Done**.
 
 1. On the **Activate - Billing Administrator** blade, in the **Reason** text box, type a text providing justification for the activation, and then click on **Activate**.
 

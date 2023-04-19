@@ -71,7 +71,7 @@ In this task, you will add a read-only lock to the storage account. This will pr
 
 1. On the **Resource groups** blade, select the **AZ500LAB03-<inject key="DeploymentID" enableCopy="false"/>** resource group entry.
    
-1. On the **AZ500LAB03-<inject key="DeploymentID" enableCopy="false"/>** resource group blade, in the list of resources, **select the new storage account**.
+1. On the **AZ500LAB03-<inject key="DeploymentID" enableCopy="false"/>** resource group blade, in the list of resources, select the new storage account **strgacc<inject key="DeploymentID" enableCopy="false"/>**.
   
 1. Under the **Settings** section in the left navigation pane, click on the "Locks" icon.
 
