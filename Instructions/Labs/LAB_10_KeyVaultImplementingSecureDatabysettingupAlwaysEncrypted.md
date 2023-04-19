@@ -321,7 +321,7 @@ The ARM-template deployment in Exercise 1 provisioned an Azure SQL Server instan
 
 1. In the list of SQL databases, click the **medical(<randomsqlservername>)** entry.
 
-    >**Note**: If the database cannot be found, this likely means the deployment you initiated in Exercise 1 has not completed yet. You can validate this by browsing to the Azure Resource Group "AZ500LAB10" (or the name you chose), and selecting **Deployments** from the Settings pane.  
+    >**Note**: If the database cannot be found, this likely means the deployment you initiated in Exercise 1 has not completed yet. You can validate this by browsing to the Azure Resource Group **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>** (or the name you chose), and selecting **Deployments** from the Settings pane.  
 
 1. On the SQL database blade, in the **Settings** section, click **Connection strings**. 
 
