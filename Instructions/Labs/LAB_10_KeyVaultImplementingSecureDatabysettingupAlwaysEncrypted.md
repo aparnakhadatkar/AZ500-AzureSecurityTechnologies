@@ -104,7 +104,7 @@ In this task, you will create an Azure Key Vault resource. You will also configu
 
 1. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
-1. In the PowerShell session within the Cloud Shell pane, run the following to create an Azure Key Vault in the resource group **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>**. (If you chose another name for this lab's Resource Group out of Task 1, use that name for this task as well). The Key Vault name must be unique. Remember the name you have chosen. You will need it throughout this lab.  
+1. In the PowerShell session within the Cloud Shell pane, run the following to create an Azure Key Vault in the resource group **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>**. The Key Vault name must be unique. Remember the name you have chosen. You will need it throughout this lab.  
 
     ```powershell
     $kvName = 'az500kv' + $(Get-Random)
@@ -122,7 +122,7 @@ In this task, you will create an Azure Key Vault resource. You will also configu
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
-1. On the **Resource groups** blade, in the list of resource group, click the **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>** (or other name you chose earlier for the resource group) entry.
+1. On the **Resource groups** blade, in the list of resource group, click the **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>** entry.
 
 1. On the Resource Group blade, click the entry representing the newly created Key Vault. 
 
@@ -335,7 +335,7 @@ The ARM-template deployment in Exercise 1 provisioned an Azure SQL Server instan
 
 In this task, you log on to the Azure VM, which deployment you initiated in Exercise 1. This Azure VM hosts Visual Studio 2019 and SQL Server Management Studio 2019.
 
->**Note**: Before you proceed with this task, ensure that the deployment you initiated in the first exercise has completed successfully. You can validate this by navigating to the blade of the Azure resource group "Az500Lab10" (or other name you chose) and selecting **Deployments** from the Settings pane.  
+>**Note**: Before you proceed with this task, ensure that the deployment you initiated in the first exercise has completed successfully. You can validate this by navigating to the blade of the Azure resource group **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>**.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **virtual machines** and press the **Enter** key.
 
