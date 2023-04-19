@@ -55,7 +55,7 @@ In this task, you will create a virtual network.
     |Setting|Value|
     |---|---|
     |Subscription|the name of the Azure subscription you are using in this lab|
-    |Resource group|Select existing resource group from drop down**AZ500LAB12-[DeploymentID]**|
+    |Resource group|click **Create new** and type the name **AZ500LAB12**|
     |Name|**myVirtualNetwork**|
     |Region|**(US) East US**|
 
@@ -107,7 +107,7 @@ In this task, you will create a network security group with two outbound securit
     |Setting|Value|
     |---|---|
     |Subscription|the name of the Azure subscription you are using in this lab|
-    |Resource group|**AZ500LAB12-[DeploymentID]**|
+    |Resource group|**AZ500LAB12**|
     |Name|**myNsgPrivate**|
     |Region|**East US**|
 
@@ -201,7 +201,7 @@ In this task, you will create a network security group with one inbound security
     |Setting|Value|
     |---|---|
     |Subscription|the name of the Azure subscription you are using in this lab|
-    |Resource group|**AZ500LAB12-[DeploymentID]**|
+    |Resource group|**AZ500LAB12**|
     |Name|**myNsgPublic**|
     |Region|**East US**|
 
@@ -251,7 +251,7 @@ In this task, you will create a storage account with a file share and obtain the
     |Setting|Value|
     |---|---|
     |Subscription|the name of the Azure subscription you are using in this lab|
-    |Resource group|**AZ500LAB12-[DeploymentID]**|
+    |Resource group|**AZ500LAB12**|
     |Storage account name|**storage{DeploymentID}**
     |Location|**(US) EastUS**|
     |Performance|**Standard (general-purpose v2 account)**|
@@ -265,9 +265,9 @@ In this task, you will create a storage account with a file share and obtain the
 
 5. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
-6. On the **Resource groups** blade, in the list of resource group, click the **AZ500LAB12-[DeploymentID]** entry.
+6. On the **Resource groups** blade, in the list of resource group, click the **AZ500LAB12** entry.
 
-7. On the **AZ500LAB12-[DeploymentID]** resource group blade, in the list of resources, click the entry representing the newly created storage account.
+7. On the **AZ500LAB12** resource group blade, in the list of resources, click the entry representing the newly created storage account.
 
 8. On the storage account **Overview** blade, click **File Shares** under the **Data storage** tab, and then click **+ File Share**.
 
@@ -322,7 +322,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Setting|Value|
     |---|---|
     |Subscription|the name of the Azure subscription you will be using in this lab|
-    |Resource group|**AZ500LAB12-[DeploymentID]**|
+    |Resource group|**AZ500LAB12**|
     |Virtual machine name|**myVmPrivate**|
     |Region|**(US)East US**|
     |Image|**Windows Server 2022 Datacenter: Azure Edition - Gen 2**|
@@ -356,7 +356,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Setting|Value|
     |---|---|
     |Subscription|the name of the Azure subscription you will be using in this lab|
-    |Resource group|**AZ500LAB12-[DeploymentID]**|
+    |Resource group|**AZ500LAB12**|
     |Virtual machine name|**myVmPublic**|
     |Region|**(US)East US**|
     |Image|**Windows Server 2022 Datacenter: Azure Edition - Gen 2**|
