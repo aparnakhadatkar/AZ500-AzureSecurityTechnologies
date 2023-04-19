@@ -118,7 +118,7 @@ In this task, you will create an Azure Key Vault resource. You will also configu
 
 1. On the Key Vault blade, in the **Overview** section, click **Access Policies** and then click **+ Create**.
 
-1. On the **Add access policy** blade, specify the following settings (leave all others with their default values): 
+1. On the **Create an access policy** blade, specify the following settings (leave all others with their default values): 
 
     |Setting|Value|
     |----|----|
