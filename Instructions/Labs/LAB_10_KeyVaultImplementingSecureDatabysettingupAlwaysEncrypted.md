@@ -109,11 +109,13 @@ In this task, you will create an Azure Key Vault resource. You will also configu
     ```powershell
     $kvName = 'az500kv' + $(Get-Random)
 
-    $location = (Get-AzResourceGroup -ResourceGroupName 'AZ500LAB10').Location
+    $location = (Get-AzResourceGroup -ResourceGroupName 'AZ500LAB10-[DeploymentID]').Location
 
-    New-AzKeyVault -VaultName $kvName -ResourceGroupName 'AZ500LAB10' -Location $location
+    New-AzKeyVault -VaultName $kvName -ResourceGroupName 'AZ500LAB10-[DeploymentID]' -Location $location
     ```
 
+    >**Note**: In the above code snippet, replace the **[DeploymentID]** with **<inject key="DeploymentID" enableCopy="true"/>**
+   
     >**Note**: The output of the last command will display the vault name and the vault URI. The vault URI is in the format `https://<vault_name>.vault.azure.net/`
 
 1. Close the Cloud Shell pane. 
@@ -151,11 +153,12 @@ In this task, you will add a key to the Key Vault and view information about the
 1. In the PowerShell session within the Cloud Shell pane, run the following to add a software-protected key to the Key Vault: 
 
     ```powershell
-    $kv = Get-AzKeyVault -ResourceGroupName 'AZ500LAB10'
+    $kv = Get-AzKeyVault -ResourceGroupName 'AZ500LAB10-[DeploymentID]'
 
     $key = Add-AZKeyVaultKey -VaultName $kv.VaultName -Name 'MyLabKey' -Destination 'Software'
     ```
-
+    >**Note**: In the above code snippet, replace the **[DeploymentID]** with **<inject key="DeploymentID" enableCopy="true"/>**
+    
     >**Note**: The name of the key is **MyLabKey**
 
 1. In the PowerShell session within the Cloud Shell pane, run the following to verify the key was created:
@@ -292,16 +295,20 @@ In this task, you will grant the newly registered app permissions to access secr
     ```
 1. In the PowerShell session within the Cloud Shell pane, run the following to create a variable storing the Key Vault name.
 	```
-    $kvName = (Get-AzKeyVault -ResourceGroupName 'AZ500LAB10').VaultName
+    $kvName = (Get-AzKeyVault -ResourceGroupName 'AZ500LAB10-[DeploymentID]').VaultName
 
     $kvName
     ```
+      
+  >**Note**: In the above code snippet, replace the **-[DeploymentID]** with **<inject key="DeploymentID" enableCopy="true"/>**.
 
 1. In the PowerShell session within the Cloud Shell pane, run the following to grant permissions on the Key Vault to the application you registered in the previous task:
 
     ```powershell
-    Set-AZKeyVaultAccessPolicy -VaultName $kvName -ResourceGroupName AZ500LAB10 -ServicePrincipalName $applicationId -PermissionsToKeys get,wrapKey,unwrapKey,sign,verify,list
+    Set-AZKeyVaultAccessPolicy -VaultName $kvName -ResourceGroupName AZ500LAB10-[DeploymentID] -ServicePrincipalName $applicationId -PermissionsToKeys get,wrapKey,unwrapKey,sign,verify,list
     ```
+    
+     >**Note**: In the above code snippet, replace the **[DeploymentID]** with **<inject key="DeploymentID" enableCopy="true"/>**.
 
 1. Close the Cloud Shell pane. 
 
