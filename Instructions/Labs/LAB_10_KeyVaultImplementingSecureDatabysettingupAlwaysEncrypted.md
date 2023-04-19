@@ -62,8 +62,8 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
    |Setting|Value|
    |---|---|
    |Subscription|Let it be default|
-   |Resource group|click **Create new** and type the name **AZ500LAB10**|
-   |Location|**(US) East US**|
+   |Resource group|Select **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>**|
+   |Location|**Southeast Asia**|
    |Admin Username|**Student**|
    |Admin Password|**Pa55w.rd1234**|
    
