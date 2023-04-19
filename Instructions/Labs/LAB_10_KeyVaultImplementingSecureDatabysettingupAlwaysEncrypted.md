@@ -233,7 +233,7 @@ In this exercise, you will complete the following tasks:
 - Task 1: Enable a client application to access the Azure SQL Database service.
 - Task 2: Create a policy allowing the application access to the Key Vault.
 - Task 3: Retrieve SQL Azure database ADO.NET Connection String 
-- Task 4: Log on to the Azure VM running Visual Studio 2019 and SQL Management Studio 2018
+- Task 4: Log on to the Azure VM running Visual Studio 2019 and SQL Management Studio 2019
 - Task 5: Create a table in the SQL Database and select data columns for encryption
 
 
@@ -331,9 +331,9 @@ The ARM-template deployment in Exercise 1 provisioned an Azure SQL Server instan
 
     >**Note**: When you use the connection string, make sure to replace the `{your_password}` placeholder with **Pa55w.rd1234**.
 
-#### Task 4: Log on to the Azure VM running Visual Studio 2019 and SQL Management Studio 2018
+#### Task 4: Log on to the Azure VM running Visual Studio 2019 and SQL Management Studio 2019
 
-In this task, you log on to the Azure VM, which deployment you initiated in Exercise 1. This Azure VM hosts Visual Studio 2019 and SQL Server Management Studio 2018.
+In this task, you log on to the Azure VM, which deployment you initiated in Exercise 1. This Azure VM hosts Visual Studio 2019 and SQL Server Management Studio 2019.
 
 >**Note**: Before you proceed with this task, ensure that the deployment you initiated in the first exercise has completed successfully. You can validate this by navigating to the blade of the Azure resource group "Az500Lab10" (or other name you chose) and selecting **Deployments** from the Settings pane.  
 
