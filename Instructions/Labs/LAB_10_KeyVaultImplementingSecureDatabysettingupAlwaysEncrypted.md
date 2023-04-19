@@ -123,7 +123,7 @@ In this task, you will create an Azure Key Vault resource. You will also configu
     |Setting|Value|
     |----|----|
     |Configure from template (optional)|**Key, Secret, & Certificate Management**|
-    |Key permissions|click on **Select all** check boxes resulting in **12 selected** permissions| (Make sure the permissions for **Rotation Policy Operations** are **unchecked**) 
+    |Key permissions|click **Select all** permissions (Make sure the permissions for **Rotation Policy Operations** are **unchecked**) |
     |Secret permissions|click on **Select all** check boxes resulting in total of **7 selected** permissions|
     |Certification permissions|click on **Select all** check boxes resulting in total of **15 selected** permissions|
     |Cryptographic Operations|Select **Unwrap key** , **Wrap Key** , **Verify** , **Sign**|
