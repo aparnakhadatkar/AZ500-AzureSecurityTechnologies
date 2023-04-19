@@ -138,9 +138,9 @@ In this task, you will create an Azure Key Vault resource. You will also configu
     |Certification permissions|click on **Select all** check boxes resulting in total of **15 selected** permissions|
     |Cryptographic Operations|Select **Unwrap key** , **Wrap Key** , **Verify** , **Sign**|
     
- Now click on **Next** to reach to **Principal** tab.
+1. Now click on **Next** to reach to **Principal** tab.
     
- On the **Principal** blade, select your user account, and click **Select** and click on **Review + create** tab and then **Create**.
+1. On the **Principal** blade, select your user account, and click **Select** and click on **Review + create** tab and then **Create**.
 
 #### Task 2: Add a key to Key Vault
 
