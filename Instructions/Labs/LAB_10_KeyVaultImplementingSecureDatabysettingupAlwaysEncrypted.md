@@ -334,7 +334,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
     >**Note**: Record the server name. You will need the server name later in this task.
 
-1. On the **Firewall settings** blade, scroll down to **Rule Name**, and specify the following settings: 
+1. On the **Firewall settings** blade, scroll down to **Rule Name**, click on **+ Add a firewall rule** and specify the following settings: 
 
     |Setting|Value|
     |---|---|
