@@ -38,9 +38,13 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create a virtual network.
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
+1. If you are not already signed into the Azure portal, sign in to the Azure portal at https://portal.azure.com, with the Azure credentials.
 
-    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
+1. On **Sign in to Microsoft Azure** blade, you will see a login screen, in that enter the following email/username and then click on **Next**. 
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+
+1. Now enter the following password and click on **Sign in**.
+   * Password: <inject key="AzureAdUserPassword"></inject>
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual networks** and press the **Enter** key.
 
