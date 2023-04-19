@@ -12,7 +12,7 @@ You have been asked to create a proof of concept application that makes use of t
 
 >**Note**: For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-To keep the focus on the security aspects of Azure, related to building this proof of concept, you will start from an automated ARM template deployment, setting up a Virtual Machine with Visual Studio 2019 and SQL Server Management Studio 2018.
+To keep the focus on the security aspects of Azure, related to building this proof of concept, you will start from an automated ARM template deployment, setting up a Virtual Machine with Visual Studio 2019 and SQL Server Management Studio 2019.
 
 ## Lab objectives
 
