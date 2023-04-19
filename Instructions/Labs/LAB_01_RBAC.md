@@ -32,7 +32,7 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create a user account for Joseph Price.
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
+1. Sign-in to the [Azure Portal](https://portal.azure.com).
 
 1. In the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
