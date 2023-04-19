@@ -51,7 +51,7 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
 
 5. On the **Edit template** blade, click **Save**.
 
-6. On the **Custom deployment** blade, under **Deployment Scope** ensure that the following settings are configured (leave any others with their default values):
+6. On the **Custom deployment** blade, under **Project details**  ensure that the following settings are configured (leave any others with their default values):
 
    |Setting|Value|
    |---|---|
