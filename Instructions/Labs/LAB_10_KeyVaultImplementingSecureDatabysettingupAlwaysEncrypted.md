@@ -39,25 +39,31 @@ In this exercise, you will complete the following tasks:
 
 #### Task 1: Deploy an Azure VM and an Azure SQL database
 
-In this task, you will deploy an Azure VM, which will automatically install Visual Studio 2019 and SQL Server Management Studio 2018 as part of the deployment.
+In this task, you will deploy an Azure VM, which will automatically install Visual Studio 2019 and SQL Server Management Studio 2019 as part of the deployment.
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
+1. If you are not already signed into the Azure portal, sign in to the Azure portal at https://portal.azure.com, with the Azure credentials.
 
-2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and press the **Enter** key.
+2. On **Sign in to Microsoft Azure** blade, you will see a login screen, in that enter the following email/username and then click on **Next**. 
+   * Email/Username: <inject key="AzureAdUserEmail"></inject>
 
-3. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
+3. Now enter the following password and click on **Sign in**.
+   * Password: <inject key="AzureAdUserPassword"></inject>
 
-4. On the **Edit template** blade, click **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.json** file and click **Open**.
+4. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and press the **Enter** key.
 
-5. On the **Edit template** blade, click **Save**.
+5. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
 
-6. On the **Custom deployment** blade, under **Deployment Scope** ensure that the following settings are configured (leave any others with their default values):
+6. On the **Edit template** blade, click **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.json** file and click **Open**.
+
+7. On the **Edit template** blade, click **Save**.
+
+8. On the **Custom deployment** blade, under **Project details**  ensure that the following settings are configured (leave any others with their default values):
 
    |Setting|Value|
    |---|---|
    |Subscription|Let it be default|
-   |Resource group|click **Create new** and type the name **AZ500LAB10**|
-   |Location|**(US) East US**|
+   |Resource group|Select **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>**|
+   |Location|**Southeast Asia**|
    |Admin Username|**Student**|
    |Admin Password|**Pa55w.rd1234**|
    
@@ -65,7 +71,7 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
 
     >**Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
 
-7. Click the **Review and Create** button, and confirm the deployment by clicking the **Create** button. 
+9. Click the **Review and Create** button, and confirm the deployment by clicking the **Create** button. 
 
     >**Note**: This initiates the deployment of the Azure VM and Azure SQL Database required for this lab. 
 
@@ -92,45 +98,49 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create an Azure Key Vault resource. You will also configure the Azure Key Vault permissions.
 
-1. Open the Cloud Shell by clicking the first icon (next to the search bar) at the top right of the Azure portal. If prompted, select **PowerShell** and **Create storage**.
+1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
+
+1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected and click on **show advanced settings**. Please make sure you have selected your resource group **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>** and select ** Create new enter **storage<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **fileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create Storage**.
 
 1. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
-1. In the PowerShell session within the Cloud Shell pane, run the following to create an Azure Key Vault in the resource group **AZ500LAB10**. (If you chose another name for this lab's Resource Group out of Task 1, use that name for this task as well). The Key Vault name must be unique. Remember the name you have chosen. You will need it throughout this lab.  
+1. In the PowerShell session within the Cloud Shell pane, run the following to create an Azure Key Vault in the resource group **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>**. (If you chose another name for this lab's Resource Group out of Task 1, use that name for this task as well). The Key Vault name must be unique. Remember the name you have chosen. You will need it throughout this lab.  
 
     ```powershell
     $kvName = 'az500kv' + $(Get-Random)
 
-    $location = (Get-AzResourceGroup -ResourceGroupName 'AZ500LAB10').Location
+    $location = (Get-AzResourceGroup -ResourceGroupName 'AZ500LAB10-[DeploymentID]').Location
 
-    New-AzKeyVault -VaultName $kvName -ResourceGroupName 'AZ500LAB10' -Location $location
+    New-AzKeyVault -VaultName $kvName -ResourceGroupName 'AZ500LAB10-[DeploymentID]' -Location $location
     ```
 
+    >**Note**: In the above code snippet, replace the **[DeploymentID]** with **<inject key="DeploymentID" enableCopy="true"/>**
+   
     >**Note**: The output of the last command will display the vault name and the vault URI. The vault URI is in the format `https://<vault_name>.vault.azure.net/`
 
 1. Close the Cloud Shell pane. 
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
-1. On the **Resource groups** blade, in the list of resource group, click the **AZ500LAB10** (or other name you chose earlier for the resource group) entry.
+1. On the **Resource groups** blade, in the list of resource group, click the **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>** (or other name you chose earlier for the resource group) entry.
 
 1. On the Resource Group blade, click the entry representing the newly created Key Vault. 
 
 1. On the Key Vault blade, in the **Overview** section, click **Access Policies** and then click **+ Create**.
 
-1. On the **Add access policy** blade, specify the following settings (leave all others with their default values): 
+1. On the **Create an access policy** blade, specify the following settings (leave all others with their default values): 
 
     |Setting|Value|
     |----|----|
     |Configure from template (optional)|**Key, Secret, & Certificate Management**|
-    |Key permissions|click on **Select all** check boxes resulting in **12 selected** permissions| (Make sure the permissions for **Rotation Policy Operations** are **unchecked**) 
+    |Key permissions|click **Select all** permissions (Make sure the permissions for **Rotation Policy Operations** are **unchecked**) |
     |Secret permissions|click on **Select all** check boxes resulting in total of **7 selected** permissions|
     |Certification permissions|click on **Select all** check boxes resulting in total of **15 selected** permissions|
     |Cryptographic Operations|Select **Unwrap key** , **Wrap Key** , **Verify** , **Sign**|
     
  Now click on **Next** to reach to **Principal** tab.
     
- On the **Principal** blade, select your user account, and click **Select** and click on **Review + create** and then **Create**.
+ On the **Principal** blade, select your user account, and click **Select** and click on **Review + create** tab and then **Create**.
 
 #### Task 2: Add a key to Key Vault
 
@@ -143,11 +153,12 @@ In this task, you will add a key to the Key Vault and view information about the
 1. In the PowerShell session within the Cloud Shell pane, run the following to add a software-protected key to the Key Vault: 
 
     ```powershell
-    $kv = Get-AzKeyVault -ResourceGroupName 'AZ500LAB10'
+    $kv = Get-AzKeyVault -ResourceGroupName 'AZ500LAB10-[DeploymentID]'
 
     $key = Add-AZKeyVaultKey -VaultName $kv.VaultName -Name 'MyLabKey' -Destination 'Software'
     ```
-
+    >**Note**: In the above code snippet, replace the **[DeploymentID]** with **<inject key="DeploymentID" enableCopy="true"/>**
+    
     >**Note**: The name of the key is **MyLabKey**
 
 1. In the PowerShell session within the Cloud Shell pane, run the following to verify the key was created:
@@ -258,7 +269,7 @@ In this task, you will enable a client application to access the Azure SQL Datab
     |Setting|Value|
     |----|----|
     |Description|**Key1**|
-    |Expires|**12 months**|
+    |Expires|**365 days (12 months)**|
 	
 1. Click **Add** to update the application credentials.
 
@@ -284,16 +295,20 @@ In this task, you will grant the newly registered app permissions to access secr
     ```
 1. In the PowerShell session within the Cloud Shell pane, run the following to create a variable storing the Key Vault name.
 	```
-    $kvName = (Get-AzKeyVault -ResourceGroupName 'AZ500LAB10').VaultName
+    $kvName = (Get-AzKeyVault -ResourceGroupName 'AZ500LAB10-[DeploymentID]').VaultName
 
     $kvName
     ```
+      
+  >**Note**: In the above code snippet, replace the **-[DeploymentID]** with **<inject key="DeploymentID" enableCopy="true"/>**.
 
 1. In the PowerShell session within the Cloud Shell pane, run the following to grant permissions on the Key Vault to the application you registered in the previous task:
 
     ```powershell
-    Set-AZKeyVaultAccessPolicy -VaultName $kvName -ResourceGroupName AZ500LAB10 -ServicePrincipalName $applicationId -PermissionsToKeys get,wrapKey,unwrapKey,sign,verify,list
+    Set-AZKeyVaultAccessPolicy -VaultName $kvName -ResourceGroupName AZ500LAB10-[DeploymentID] -ServicePrincipalName $applicationId -PermissionsToKeys get,wrapKey,unwrapKey,sign,verify,list
     ```
+    
+     >**Note**: In the above code snippet, replace the **[DeploymentID]** with **<inject key="DeploymentID" enableCopy="true"/>**.
 
 1. Close the Cloud Shell pane. 
 
@@ -334,7 +349,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
     >**Note**: Record the server name. You will need the server name later in this task.
 
-1. On the **Firewall settings** blade, scroll down to **Rule Name**, and specify the following settings: 
+1. On the **Firewall settings** blade, scroll down to **Rule Name**, click on **+ Add a firewall rule** and specify the following settings: 
 
     |Setting|Value|
     |---|---|
@@ -361,7 +376,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
     >**Note**: The remaining steps in this lab are performed within the Remote Desktop session to the **az500-10-vm1** Azure VM. 
 
-1. Click **Start**, in the **Start** menu, expand the **Microsoft SQL Server Tools 18** folder, and click the **Micosoft SQL Server Management Studio** menu item.
+1. Inside the Virtual Machine, Select the Windows Start button and type SSMS(1). Select Microsoft SQL Server Management Studio 19(2) from the list.
 
 1. In the **Connect to Server** dialog box, specify the following settings: 
 
