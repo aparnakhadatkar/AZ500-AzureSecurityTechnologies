@@ -102,7 +102,7 @@ In this task, you will implement the Microsoft Defender for Cloud recommendation
 
     >**Note**: It can take some time for the implementation of recommendations in this lab to be reflected by Secure Score. Periodically check the Secure Score to determine the impact of implementing these features. 
 
-> Results: You have on-boarded Microsoft Defender for Cloud and implemented virtual machine recommendations. 
+>**Results:** You have on-boarded Microsoft Defender for Cloud and implemented virtual machine recommendations. 
 
 >**Note**: Do not remove the resources from this lab as they are needed for the Azure Sentinel lab.
 
