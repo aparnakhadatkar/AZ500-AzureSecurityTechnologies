@@ -36,6 +36,9 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
 1. On the **Microsoft Defender for Cloud \| Getting started** blade, click **Upgrade** and then click **Install agents tab** scroll down and click **Install agents**.
 
+   >
+   >**Note:** If you see any pop-up like **Only upgrade plans with exsiting resources** then Click on **Enable** and then perform the previous step.
+ 
      
 1. On the **Microsoft Defender for Cloud \| Getting started** blade, in the vertical menu on the left side, in the **Management** section, click **Environment Settings**.
 
@@ -87,7 +90,7 @@ In this task, you will implement the Microsoft Defender for Cloud recommendation
 
     >**Note**: If the VMs are not listed, navigate to **Virtual Machine** blade and click the **Configuration**, Click the **Enable the Just-in-time VMs** option       under the **Just-in-time Vm's access**. Repeat the above step to navigate back to the **Microsoft Defender for Cloud** and refresh the page, the VM will appear.
 
-3. On the **Just in time VM access**, select **Not Configured** and then click the **myVM** entry.
+3. On the **Just in time VM access**, select **Not Configured** and then Select **myVM** entry.
 
     >**Note**: You might have to wait a few minutes before the **myVM** entry becomes available.
 
