@@ -12,7 +12,7 @@ You have been asked to create a proof of concept application that makes use of t
 
 >**Note**: For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-To keep the focus on the security aspects of Azure, related to building this proof of concept, you will start from an automated ARM template deployment, setting up a Virtual Machine with Visual Studio 2019 and SQL Server Management Studio 2018.
+To keep the focus on the security aspects of Azure, related to building this proof of concept, you will start from an automated ARM template deployment, setting up a Virtual Machine with Visual Studio 2019 and SQL Server Management Studio 2019.
 
 ## Lab objectives
 
@@ -63,7 +63,7 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
    |---|---|
    |Subscription|Let it be default|
    |Resource group|Select **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>**|
-   |Location|**Southeast Asia**|
+   |Location|**East US**|
    |Admin Username|**Student**|
    |Admin Password|**Pa55w.rd1234**|
    
@@ -100,11 +100,11 @@ In this task, you will create an Azure Key Vault resource. You will also configu
 
 1. The first time you open the Cloud Shell, you may be prompted to choose the type of shell you want to use (*Bash* or *PowerShell*). Select **PowerShell**. If you do not see this option, skip the step.  
 
-1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected and click on **show advanced settings**. Please make sure you have selected your resource group **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>** and select ** Create new enter **storage<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **fileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create Storage**.
+1. If you are prompted to create storage for your Cloud Shell, ensure your subscription is selected and click on **show advanced settings**. Please make sure you have selected your resource group **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>** and in **storage account** select Create new and enter **storage<inject key="DeploymentID" enableCopy="false"/>** for the **Storage account name** and enter **fileshare<inject key="DeploymentID" enableCopy="false"/>** For the **File share name**, then click on **Create Storage**.
 
 1. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
-1. In the PowerShell session within the Cloud Shell pane, run the following to create an Azure Key Vault in the resource group **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>**. (If you chose another name for this lab's Resource Group out of Task 1, use that name for this task as well). The Key Vault name must be unique. Remember the name you have chosen. You will need it throughout this lab.  
+1. In the PowerShell session within the Cloud Shell pane, run the following to create an Azure Key Vault in the resource group **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>**. The Key Vault name must be unique. Remember the name you have chosen. You will need it throughout this lab.  
 
     ```powershell
     $kvName = 'az500kv' + $(Get-Random)
@@ -122,7 +122,7 @@ In this task, you will create an Azure Key Vault resource. You will also configu
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
-1. On the **Resource groups** blade, in the list of resource group, click the **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>** (or other name you chose earlier for the resource group) entry.
+1. On the **Resource groups** blade, in the list of resource group, click the **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>** entry.
 
 1. On the Resource Group blade, click the entry representing the newly created Key Vault. 
 
@@ -138,9 +138,9 @@ In this task, you will create an Azure Key Vault resource. You will also configu
     |Certification permissions|click on **Select all** check boxes resulting in total of **15 selected** permissions|
     |Cryptographic Operations|Select **Unwrap key** , **Wrap Key** , **Verify** , **Sign**|
     
- Now click on **Next** to reach to **Principal** tab.
+1. Now click on **Next** to reach to **Principal** tab.
     
- On the **Principal** blade, select your user account, and click **Select** and click on **Review + create** tab and then **Create**.
+1. On the **Principal** blade, select your user account, and click **Select** and click on **Review + create** tab and then **Create**.
 
 #### Task 2: Add a key to Key Vault
 
@@ -233,7 +233,7 @@ In this exercise, you will complete the following tasks:
 - Task 1: Enable a client application to access the Azure SQL Database service.
 - Task 2: Create a policy allowing the application access to the Key Vault.
 - Task 3: Retrieve SQL Azure database ADO.NET Connection String 
-- Task 4: Log on to the Azure VM running Visual Studio 2019 and SQL Management Studio 2018
+- Task 4: Log on to the Azure VM running Visual Studio 2019 and SQL Management Studio 2019
 - Task 5: Create a table in the SQL Database and select data columns for encryption
 
 
@@ -321,7 +321,7 @@ The ARM-template deployment in Exercise 1 provisioned an Azure SQL Server instan
 
 1. In the list of SQL databases, click the **medical(<randomsqlservername>)** entry.
 
-    >**Note**: If the database cannot be found, this likely means the deployment you initiated in Exercise 1 has not completed yet. You can validate this by browsing to the Azure Resource Group "AZ500LAB10" (or the name you chose), and selecting **Deployments** from the Settings pane.  
+    >**Note**: If the database cannot be found, this likely means the deployment you initiated in Exercise 1 has not completed yet. You can validate this by browsing to the Azure Resource Group **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>** (or the name you chose), and selecting **Deployments** from the Settings pane.  
 
 1. On the SQL database blade, in the **Settings** section, click **Connection strings**. 
 
@@ -331,11 +331,11 @@ The ARM-template deployment in Exercise 1 provisioned an Azure SQL Server instan
 
     >**Note**: When you use the connection string, make sure to replace the `{your_password}` placeholder with **Pa55w.rd1234**.
 
-#### Task 4: Log on to the Azure VM running Visual Studio 2019 and SQL Management Studio 2018
+#### Task 4: Log on to the Azure VM running Visual Studio 2019 and SQL Management Studio 2019
 
-In this task, you log on to the Azure VM, which deployment you initiated in Exercise 1. This Azure VM hosts Visual Studio 2019 and SQL Server Management Studio 2018.
+In this task, you log on to the Azure VM, which deployment you initiated in Exercise 1. This Azure VM hosts Visual Studio 2019 and SQL Server Management Studio 2019.
 
->**Note**: Before you proceed with this task, ensure that the deployment you initiated in the first exercise has completed successfully. You can validate this by navigating to the blade of the Azure resource group "Az500Lab10" (or other name you chose) and selecting **Deployments** from the Settings pane.  
+>**Note**: Before you proceed with this task, ensure that the deployment you initiated in the first exercise has completed successfully. You can validate this by navigating to the blade of the Azure resource group **AZ500LAB10-<inject key="DeploymentID" enableCopy="false"/>**.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **virtual machines** and press the **Enter** key.
 
@@ -470,7 +470,7 @@ You will create a Console application using Visual Studio to load data into the 
     Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
     ```
 	
-9. Minimize the RDP session to your Azure virtual machine, then navigate to **\\Allfiles\\Labs\\10\\program.cs**, open it in Notepad, and copy its content into Clipboard.
+9. Minimize the RDP session to your Azure virtual machine, then navigate to **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\10\program.cs**, open it in Notepad, and copy its content into Clipboard.
 
 10. Return to the RDP session, and in the Visual Studio console, in the **Solution Explorer** window, click **Program.cs** and replace its content with the code you copied into Clipboard.
 	
