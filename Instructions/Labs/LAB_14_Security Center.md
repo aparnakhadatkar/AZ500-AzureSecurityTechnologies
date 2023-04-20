@@ -10,7 +10,7 @@ You have been asked to create a proof of concept of Microsoft Defender for Cloud
 - Implement recommendations for guest configuration and Just in time VM access. 
 - Review how the Secure Score can be used to determine progress toward creating a more secure infrastructure.
 
-> For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
+ > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
 ## Lab objectives
 
@@ -36,6 +36,9 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
 1. On the **Microsoft Defender for Cloud \| Getting started** blade, click **Upgrade** and then click **Install agents tab** scroll down and click **Install agents**.
 
+   >
+   >**Note:** If you see any pop-up like **Only upgrade plans with exsiting resources** then Click on **Enable** and then perform the previous step.
+ 
      
 1. On the **Microsoft Defender for Cloud \| Getting started** blade, in the vertical menu on the left side, in the **Management** section, click **Environment Settings**.
 
@@ -87,7 +90,7 @@ In this task, you will implement the Microsoft Defender for Cloud recommendation
 
     >**Note**: If the VMs are not listed, navigate to **Virtual Machine** blade and click the **Configuration**, Click the **Enable the Just-in-time VMs** option       under the **Just-in-time Vm's access**. Repeat the above step to navigate back to the **Microsoft Defender for Cloud** and refresh the page, the VM will appear.
 
-3. On the **Just in time VM access**, select **Not Configured** and then click the **myVM** entry.
+3. On the **Just in time VM access**, select **Not Configured** and then Select **myVM** entry.
 
     >**Note**: You might have to wait a few minutes before the **myVM** entry becomes available.
 
@@ -103,5 +106,11 @@ In this task, you will implement the Microsoft Defender for Cloud recommendation
 
 > Results: You have on-boarded Microsoft Defender for Cloud and implemented virtual machine recommendations. 
 
-
 >**Note**: Do not remove the resources from this lab as they are needed for the Azure Sentinel lab.
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+> - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+ 
