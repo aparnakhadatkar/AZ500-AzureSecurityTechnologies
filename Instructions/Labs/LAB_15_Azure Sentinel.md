@@ -160,7 +160,7 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 1. On the **Logic Apps Designer** blade, click **Save** to save your changes.
 
-#### Task 5 Create a custom alert and configure a playbook as an automated response
+#### Task 5: Create a custom alert and configure a playbook as an automated response
 
 1. In the Azure portal, navigate back to the **Microsoft Sentinel \| Overview** blade.
 
