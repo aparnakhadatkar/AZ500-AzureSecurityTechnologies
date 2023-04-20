@@ -36,9 +36,7 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
 1. On the **Microsoft Defender for Cloud \| Getting started** blade, click **Upgrade** and then click **Install agents tab** scroll down and click **Install agents**.
 
-   >
-   >**Note:** If you see any pop-up like **Only upgrade plans with exsiting resources** then Click on **Enable** and then perform the previous step.
-
+   >**Note**: If you see any pop-up like **Only upgrade plans with exsiting resources** then click on **Enable** and then perform the previous step.
      
 1. On the **Microsoft Defender for Cloud \| Getting started** blade, in the vertical menu on the left side, in the **Management** section, click **Environment Settings**.
 
@@ -104,7 +102,7 @@ In this task, you will implement the Microsoft Defender for Cloud recommendation
 
     >**Note**: It can take some time for the implementation of recommendations in this lab to be reflected by Secure Score. Periodically check the Secure Score to determine the impact of implementing these features. 
 
-> Results: You have on-boarded Microsoft Defender for Cloud and implemented virtual machine recommendations. 
+>**Results:** You have on-boarded Microsoft Defender for Cloud and implemented virtual machine recommendations. 
 
 >**Note**: Do not remove the resources from this lab as they are needed for the Azure Sentinel lab.
 
