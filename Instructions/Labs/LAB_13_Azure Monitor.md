@@ -162,8 +162,7 @@ In this task, you will run a log search on your data collection.
     
  7. Now, navigate to the Azure VM blade within the Azure portal.
     
- 8. On the Azure VM blade, in the **Operations** section, select **Run command** and click on **RunPowerShellScript**. Type the following script, and click **Run**:	
-    
+ 8. Navigate to the Azure VM blade, right-click on the **Start** icon on the Task bar and select **Windows Powershell(Admin)** and Run the below commands one by one:
  9. 	
        ```cmd	
        cmd	
