@@ -33,8 +33,6 @@ In this exercise, you will complete the following tasks:
 
 #### Task 1: Deploy an Azure virtual machine
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
-
 1. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, select **PowerShell** and **Create storage**.
 
 1. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
