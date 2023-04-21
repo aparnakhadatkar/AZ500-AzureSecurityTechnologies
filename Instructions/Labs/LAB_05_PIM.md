@@ -378,7 +378,7 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will reduce the risk associated with "stale" role assignments. You will do this by creating a PIM access review to ensure that assigned roles are still valid. Specifically, you will review the Global Reader role. 
 
-1. Nevigate back to Azure portal with your account.
+1. Nevigate back to Azure portal Sign-in with your account.
 
     >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role.
     
