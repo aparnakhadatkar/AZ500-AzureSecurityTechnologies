@@ -51,7 +51,7 @@ In this task, you will create an Allowed Locations policy assignment and specify
    |Setting|Value|
    |---|---|
    |Subscription|the name of you Azure subscription|
-   |Resource group|**AZ500LAB02-<inject key="DeploymentID"></inject>**|
+   |Resource group|**AZ500LAB02-<inject key="DeploymentID" enableCopy="false"/>**|
 
 1. Click on **Select**.
 
@@ -89,7 +89,7 @@ In this task, you will test the Allowed Locations policy assignment.
 
     |Setting|Value|
     |---|---|
-    |Resource group|**AZ500LAB02<inject key="DeploymentID"></inject>**|
+    |Resource group|**AZ500LAB02-<inject key="DeploymentID" enableCopy="false"/>**|
     |Name|**myVnet**|
     |Region|**(US) East US**|
 
