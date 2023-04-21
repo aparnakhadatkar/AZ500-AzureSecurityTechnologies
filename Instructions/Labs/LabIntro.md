@@ -27,7 +27,7 @@
 1. On the **Sign in to Microsoft Azure** window, you will see the login screen, enter the following username and click on **Next**.
    * Username: <inject key="AzureAdUserEmail"></inject>
 
-    ![](../images/portal1-az500.png)
+    ![](../images/portal3-az500.png)
      
 1. Now enter the password and click on Sign in.
    * Password: <inject key="AzureAdUserPassword"></inject>
@@ -36,7 +36,7 @@
 
 1. First-time users are often prompted to Stay Signed In, if you see any such pop-up, click on No.
 
-    ![](../images/portal3-az500.png)
+    ![](../images/portal1-az500.png)
 
 1. If a **Welcome to Microsoft Azure** popup window appears, click Maybe Later to skip the tour.
     
