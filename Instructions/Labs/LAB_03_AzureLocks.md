@@ -55,11 +55,11 @@ In this task, you will create a storage account for the lab.
     New-AzStorageAccount -ResourceGroupName AZ500LAB03-[DeploymentID] -Name <storageAccountName> -Location  EastUS -SkuName Standard_LRS -Kind StorageV2 
     ```
    
-   >**Note**: In the above code snippet, replace the **[DeploymentID]** with **<inject key="DeploymentID" enableCopy="false"/>**,and <storageAccountName> with **strgacc<inject key="DeploymentID" enableCopy="false"/>**. The following image is provided for your referenc
+   >**Note**: In the above code snippet, replace the **[DeploymentID]** with **<inject key="DeploymentID" enableCopy="false"/>**,and <storageAccountName> with **strgacc<inject key="DeploymentID" enableCopy="false"/>**. The following image is provided for your referenc.
 		
-     ![](/Instructions/Labs/images/storagecreation.png)
+	![](/Instructions/Labs/images/storagecreation.png)
 	
-   >**Note**:  Wait until the storage account is created. This might take a couple of minutes. 
+    >**Note**: Wait until the storage account is created. This might take a couple of minutes. 
 
 1. Close the Cloud Shell pane.
 
