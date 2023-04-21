@@ -56,11 +56,11 @@ In this task, you will create a storage account for the lab.
     ```
    
    
-    >**Note**: In the above code snippet, replace the **[DeploymentID]** with **<inject key="DeploymentID" enableCopy="false"/>**, and **[storageAccountName]** **strgacc<inject key="DeploymentID" enableCopy="false"/>**.The following image is provided for your reference.
+   >**Note**: In the above code snippet, replace the **[DeploymentID]** with **<inject key="DeploymentID" enableCopy="false"/>**, and **[storageAccountName]** **strgacc<inject key="DeploymentID" enableCopy="false"/>**.The following image is provided for your reference.
    
       ![](/Instructions/Labs/images/storagecreation.png)
 	
-    >**Note**: Wait until the storage account is created. This might take a couple of minutes. 
+   >**Note**: Wait until the storage account is created. This might take a couple of minutes. 
 
 1. Close the Cloud Shell pane.
 
