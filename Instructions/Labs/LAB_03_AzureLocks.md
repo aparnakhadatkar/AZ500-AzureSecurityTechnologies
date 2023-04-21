@@ -52,12 +52,13 @@ In this task, you will create a storage account for the lab.
 1. In the PowerShell session within the Cloud Shell pane, run the following to create a storage account in the newly created resource group:
     
     ```powershell
-    New-AzStorageAccount -ResourceGroupName AZ500LAB03-[DeploymentID] -Name <storageAccountName> -Location  EastUS -SkuName Standard_LRS -Kind StorageV2 
+    New-AzStorageAccount -ResourceGroupName AZ500LAB03-[DeploymentID] -Name [storageAccountName] -Location  EastUS -SkuName Standard_LRS -Kind StorageV2 
     ```
    
-   >**Note**: In the above code snippet, replace the **[DeploymentID]** with **<inject key="DeploymentID" enableCopy="false"/>**,and <storageAccountName> with **strgacc<inject key="DeploymentID" enableCopy="false"/>**. The following image is provided for your referenc.
-		
-	![](/Instructions/Labs/images/storagecreation.png)
+   
+    >**Note**: In the above code snippet, replace the **[DeploymentID]** with **<inject key="DeploymentID" enableCopy="false"/>**, and **[storageAccountName]** **strgacc<inject key="DeploymentID" enableCopy="false"/>**.The following image is provided for your reference.
+   
+   	![](/Instructions/Labs/images/storagecreation.png)
 	
     >**Note**: Wait until the storage account is created. This might take a couple of minutes. 
 
