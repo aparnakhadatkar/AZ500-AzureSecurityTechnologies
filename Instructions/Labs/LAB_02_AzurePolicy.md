@@ -51,7 +51,7 @@ In this task, you will create an Allowed Locations policy assignment and specify
    |Setting|Value|
    |---|---|
    |Subscription|the name of you Azure subscription|
-   |Resource group|**AZ500LAB02**|
+   |Resource group|**AZ500LAB02-<inject key="DeploymentID"></inject>**|
 
 1. Click on **Select**.
 
@@ -89,17 +89,17 @@ In this task, you will test the Allowed Locations policy assignment.
 
     |Setting|Value|
     |---|---|
-    |Resource group|**AZ500LAB02**|
+    |Resource group|**AZ500LAB02<inject key="DeploymentID"></inject>**|
     |Name|**myVnet**|
     |Region|**(US) East US**|
 
 1. Click on **Review + create**. 
 
-1. On the **Review + create** a tab of the **Create virtual network** blade note the **Validation failed** message. 
+1. Click on **Create**. 
 
-    > **Note**: If the **Validation Failed** warning does not appear, click on **Previous** and wait a few more minutes.
+    > **Note**: You will receice **Deployment Failed** notification. This is the expected output since we are allowing to create resources only in the (Europe) UK South and restricting other regions using Azurepolicy.
 
-1. Click on the **Previous** tab, on the **Create virtual network** blade, click on the **Basics** tab, and, in the **Region** drop-down list, select **(Europe) UK South**.
+1. Perform Previous **1-3** steps again of task 2 and create **virtual network** again, This time in the **Region** drop-down list, select **(Europe) UK South**.
 
 1. Click on **Review + create**, verify that validation passed, click on **Create**, and verify that the virtual network was created successfully. 
 
