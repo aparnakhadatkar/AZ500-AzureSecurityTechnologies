@@ -27,9 +27,6 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create an Allowed Locations policy assignment and specify which Azure regions the policy can use.
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
-
-
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Policy** and press the **Enter** key.
 
 1. On the **Policy** blade, in the **Authoring** section, select **Definitions**.
