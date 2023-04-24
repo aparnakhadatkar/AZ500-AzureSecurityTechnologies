@@ -104,13 +104,16 @@ In this task, you will implement the Microsoft Defender for Cloud recommendation
 
     >**Note**: It can take some time for the implementation of recommendations in this lab to be reflected by Secure Score. Periodically check the Secure Score to determine the impact of implementing these features. 
 
-> Results: You have on-boarded Microsoft Defender for Cloud and implemented virtual machine recommendations. 
+>**Results:** You have on-boarded Microsoft Defender for Cloud and implemented virtual machine recommendations. 
 
 >**Note**: Do not remove the resources from this lab as they are needed for the Azure Sentinel lab.
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-> - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
- 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+
+ - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+ - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+ - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+ - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+**You have successfully completed the lab**
+
