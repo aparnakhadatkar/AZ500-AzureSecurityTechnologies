@@ -1,7 +1,6 @@
 
 
 # Lab 03: Resource Manager Locks
-# Student lab manual
 
 ## Lab scenario 
 
@@ -33,10 +32,7 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create a storage account for the lab.
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
-
-
-1. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, select **PowerShell** and **Create storage**.
+1. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, select **PowerShell** 
 
 1. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
@@ -89,11 +85,9 @@ In this task, you will add a read-only lock to the storage account. This will pr
 
 1. On the storage account blade, select **Overview** and, on the **Overview** blade, click on **Delete**.
 
-1. On the **Delete storage account** blade, type in the name of the storage account to confirm that you intend to proceed and then click on **Delete**.
+1. On the **Delete storage account** blade, review the notification that resembles the following text: 
 
-1. Review the newly generated notification, which will resemble the following text: 
-
-	> **"Failed to delete storage account 'xxxxxxx'. Error: The scope 'xxxxxxx' cannot perform delete operation because following scope(s) are locked: '/subscriptions/xxxx-xxxx-xxxx-xxxx-xxxxxx/resourceGroups/AZ500LAB03/providers/Microsoft.Storage/storageAccounts/xxxxxxx'. Please remove the lock and try again."**
+   > **'xxxxxx' can't be deleted because this resource or its parent has a delete lock. Locks must be removed before this resource can be deleted"**
 
    >**Note**:  You have now verified that a ReadOnly lock will stop accidental deletion and modification of a resource.
 
@@ -128,11 +122,9 @@ In this task, you will test the Delete lock. You should be able to modify the st
 
 3. On the storage account blade, select **Overview** and, on the **Overview** blade, click on **Delete**.
 
-4. On the **Delete storage account** blade, type in the name of the storage account to confirm that you intend to proceed and then click on **Delete**.
+4. On the **Delete storage account** blade, review the notification that resembles the following text: 
 
-5. Review the notification that resembles the following text: 
-
-	> **'xxxxxx' can't be deleted because this resource or its parent has a delete lock. Locks must be removed before this resource can be deleted"**
+   > **'xxxxxx' can't be deleted because this resource or its parent has a delete lock. Locks must be removed before this resource can be deleted"**
 
    >**Note**:  You have now verified that a **Delete** lock will allow configuration changes but stop accidental deletion.
 
