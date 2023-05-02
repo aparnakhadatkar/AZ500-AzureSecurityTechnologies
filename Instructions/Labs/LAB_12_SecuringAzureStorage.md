@@ -16,6 +16,10 @@ In this lab, you will complete the following exercise:
 
 - Exercise 1: Service endpoints and security storage
 
+## Service Endpoints and Securing Storage diagram
+
+![image](../images/LAB12PNG.png)
+
 ### Exercise 1: Service endpoints and security storage
 
 ### Estimated timing: 45 minutes
