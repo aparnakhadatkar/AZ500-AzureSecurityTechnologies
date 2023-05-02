@@ -1,7 +1,4 @@
-
-
 # Lab 11: Securing Azure SQL Database
-# Student lab manual
 
 ## Lab scenario
 
@@ -70,22 +67,20 @@ In this task, you will use a template to deploy the lab infrastructure.
 
 3. On the **AZ500LAB11** blade, click the entry representing the newly created SQL Server.
 
-4. On the SQL server blade, in the **Security** section, click **Microsoft Defender for Cloud**. Scroll to the bottom of the **Getting started** page and select **Upgrade**. On the **Install agents** tab scroll to the bottom and select **Install agents**.
+4. On the SQL server blade, in the **Security** section, click **Microsoft Defender for Cloud**, select **Enable Microsoft Defender for SQL**.
 
-    >**Note**: Refresh the browser if **Install agents** tab is not displaying.
-
-5. On the SQL server blade, in the **Security** section, click **Microsoft Defender for Cloud**, select **Enable Microsoft Defender for SQL**.
       >**Note**: Wait until notification indicates Azure Defender for SQL has been successfully enabled.
 
-6. On the SQL server blade, in the **Security** section, on the **Microsoft Defender for Cloud** page, in the **Microsoft Defender for SQL: Enabled at the server-level (Configure)** parameter, click **(configure)**. 
-    
-7. On the **Server Settings** blade, review the information about pricing and the trial period, **VULNERABILITY ASSESSMENT SETTINGS** and **ADVANCED THREAT PROTECTION SETTINGS**.
+5. On the SQL server blade, in the **Security** section, on the **Microsoft Defender for Cloud** page, in the **Microsoft Defender for SQL: Enabled at the subscription-level (Configure)** parameter, click **(configure)**.  
 
-8. Back to **Microsoft Defender for Cloud** blade, review **Recommendations** and **Security incidents and alerts**.
+      >**Note**: Refresh the browser if **(configure)** is not displaying.
+    
+6. On the **Server Settings** blade, review the information about pricing and the trial period, **VULNERABILITY ASSESSMENT SETTINGS** and **ADVANCED THREAT PROTECTION SETTINGS**.
+
+7. Back to **Microsoft Defender for Cloud** blade, review **Recommendations** and **Security alerts**.
 
       >**Note**: It may take 10-15 minutes for recommendations to appear on the **Microsoft Defender for Cloud** blade. Rather than waiting, proceed to the next task but consider returning to this blade once you complete all the remaining tasks.
-
-
+      
 #### Task 3: Configure Data Classification
 
 In this task, you will discover and classify information in SQL database for GPDR and data protection compliance.
@@ -100,7 +95,7 @@ In this task, you will discover and classify information in SQL database for GPD
 
     >**Note**: The classification engine scans your database for columns containing potentially sensitive data and provides a list of recommended column classifications.
 
-5. Click the text message **15 columns with classification recommendations** displayed on blue bar at the bottom of the blade.
+5. Click the text message **We have found 15 columns with classification recommendations** displayed on blue bar at the top of the blade.
 
 6. Review the listed columns and the recommended sensitivity label. 
 
@@ -136,6 +131,8 @@ In this task, you will first configure server level auditing and then configure 
 
 7. On the **Create storage account** blade, in the **Name** box, type a globally unique name consisting of between 3 and 24 lower case letters and digits, click **OK**. 
 
+    >**Note**: You may need to refresh the browser before the storage account becomes available.
+
 8. Back on the **Auditing** blade, under **Advanced properties** set **Retention (days)** to **5** and click **save**.
 
     >**Note**: If you receive an error message regarding invalid storage container path then the storage account may not have have been provisioned yet. Wait a few minutes, click **Storage account**, on the **Choose storage account** blade, select the newly created storage account and back on the Auditing blade, click **Save**.
@@ -161,7 +158,7 @@ In this task, you will first configure server level auditing and then configure 
 > **Results:** You have created a SQL server and database, configured data classification, and auditing.  
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+> - Click the Lab Validation icon located at the upper right corner of the lab guide section which navigates to the Lab Validation Page.
 > - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
