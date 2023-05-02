@@ -16,6 +16,10 @@ In this lab, you will complete the following exercise:
 
 - Exercise 1: Implement SQL Database security features
 
+## Securing Azure SQL Database diagram
+
+   ![image](../images/LAB11PNG.png)
+
 ## Lab files:
 
 - **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\\11\\azuredeploy.json**
