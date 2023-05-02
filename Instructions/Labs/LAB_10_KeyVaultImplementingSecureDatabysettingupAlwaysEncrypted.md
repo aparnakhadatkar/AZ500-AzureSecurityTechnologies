@@ -20,6 +20,10 @@ In this lab, you will complete the following exercises:
 - Exercise 3: Configure an Azure SQL database and a data-driven application
 - Exercise 4: Demonstrate the use of Azure Key Vault in encrypting the Azure SQL database
 
+## Key Vault diagram
+
+![image](../images/LAB10PNG.png)
+
 ## Lab files:
 
 - **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.json**
