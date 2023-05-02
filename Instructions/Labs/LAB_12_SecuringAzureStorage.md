@@ -1,7 +1,4 @@
-
-
 # Lab 12: Service Endpoints and Securing Storage
-# Student lab manual
 
 ## Lab scenario
 
@@ -55,7 +52,7 @@ In this task, you will create a virtual network.
     |Name|**myVirtualNetwork**|
     |Region|**(US) East US**|
 
-1. On the **IP addresses** tab of the **Create virtual network** blade, set the **IPv4 address space** to **10.0.0.0/16**. In the **Subnet name** column, click **default** and, on the **Edit subnet** blade, specify the following settings and click **Save**, if you do not find the **default** subnet please click on **+ Add Subnet** and specify the following settings:
+1. On the **IP addresses** tab of the **Create virtual network** blade, set the **IPv4 address space** to **10.0.0.0/16**. In the **Subnet name** column, click **default** and, on the **Edit subnet** blade, specify the following settings and click **Save**.
 
     |Setting|Value|
     |---|---|
@@ -249,7 +246,7 @@ In this task, you will create a storage account with a file share and obtain the
     |---|---|
     |Subscription|the name of the Azure subscription you are using in this lab|
     |Resource group|**AZ500LAB12**|
-    |Storage account name|**storage{DeploymentID}**
+    |Storage account name|**storage<inject key="DeploymentID" enableCopy="false"/>**
     |Location|**(US) EastUS**|
     |Performance|**Standard (general-purpose v2 account)**|
     |Redundancy|**Locally redundant storage (LRS)**|
@@ -322,7 +319,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Resource group|**AZ500LAB12**|
     |Virtual machine name|**myVmPrivate**|
     |Region|**(US)East US**|
-    |Image|**Windows Server 2022 Datacenter: Azure Edition - Gen 2**|
+    |Image|**Windows Server 2022 Datacenter: Azure Edition - X64 Gen 2**|
     |Username|**localadmin**|
     |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
@@ -472,7 +469,7 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
     >**Note**: At this point, you have confirmed that the virtual machine in the Public subnet cannot access the storage account, but has access to the internet.
 
 **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+   - Click the Lab Validation icon located at the upper right corner of the lab guide section which navigates to the Lab Validation Page.
    - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
