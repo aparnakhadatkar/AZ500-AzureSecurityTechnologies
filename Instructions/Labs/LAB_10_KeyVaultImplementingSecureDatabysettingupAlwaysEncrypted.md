@@ -1,7 +1,4 @@
-
-
 # Lab 10: Key Vault (Implementing Secure Data by setting up Always Encrypted)
-# Student lab manual
 
 ## Lab scenario
 
@@ -72,7 +69,7 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
     >**Note**: Do not wait for the ARM template deployment to be completed, continue on to the next exercise. The deployment might take upto **20-25 minutes**. 
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+    > - Click the Lab Validation icon located at the upper right corner of the lab guide section which navigates to the Lab Validation Page.
     > - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
@@ -112,7 +109,7 @@ In this task, you will create an Azure Key Vault resource. You will also configu
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
-1. On the **Resource groups** blade, in the list of resource group, click the **AZ500LAB10** (or other name you chose earlier for the resource group) entry.
+1. On the **Resource groups** blade, in the list of resource group, click the **AZ500LAB10** entry.
 
 1. On the Resource Group blade, click the entry representing the newly created Key Vault. 
 
@@ -123,14 +120,14 @@ In this task, you will create an Azure Key Vault resource. You will also configu
     |Setting|Value|
     |----|----|
     |Configure from template (optional)|**Key, Secret, & Certificate Management**|
-    |Key permissions|click on **Select all** check boxes resulting in **12 selected** permissions| (Make sure the permissions for **Rotation Policy Operations** are **unchecked**) 
-    |Secret permissions|click on **Select all** check boxes resulting in total of **7 selected** permissions|
-    |Certification permissions|click on **Select all** check boxes resulting in total of **15 selected** permissions|
-    |Cryptographic Operations|Select **Unwrap key** , **Wrap Key** , **Verify** , **Sign**|
+    |Key permissions|click **Select all** permissions|
+    |Secret permissions|click **Select all** resulting in total of **7 selected** permissions|
+    |Certification permissions|click **Select all** resulting in total of **15 selected** permissions|
+    |Select principal|click **None selected**, on the **Principal** blade, select your user account, and click **Next**|
+    |Application (optional)|click **Next**|
+    |Review + create|click **Create**|
     
- Now click on **Next** to reach to **Principal** tab.
-    
- On the **Principal** blade, select your user account, and click **Select** and click on **Review + create** and then **Create**.
+    >**Note**: The previous Review + create operation returns to the Access policies page that lists Application, Email, Key Permissions, Secret Permissions, and Certificate Permissions.
 
 #### Task 2: Add a key to Key Vault
 
@@ -208,11 +205,10 @@ In this task, you will add a key to the Key Vault and view information about the
     >**Note**: To get the most current version of a secret, reference `https://<key_vault_name>.vault.azure.net/secrets/<secret_name>` or get a specific version, reference `https://<key_vault_name>.vault.azure.net/secrets/<secret_name>/<secret_version>`
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+    > - Click the Lab Validation icon located at the upper right corner of the lab guide section which navigate to the Lab Validation Page.
     > - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
     > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
 
 
 ### Exercise 3: Configure an Azure SQL database and a data-driven application
@@ -258,7 +254,7 @@ In this task, you will enable a client application to access the Azure SQL Datab
     |Setting|Value|
     |----|----|
     |Description|**Key1**|
-    |Expires|**12 months**|
+    |Expires|Select **365 days (12 months)**|
 	
 1. Click **Add** to update the application credentials.
 
@@ -312,7 +308,7 @@ The ARM-template deployment in Exercise 1 provisioned an Azure SQL Server instan
 
     >**Note**: The interface includes connection strings for ADO.NET, JDBC, ODBC, PHP, and Go. 
    
-1. Record the **ADO.NET Connection String**. You will need it later.
+1. Record the **ADO.NET (SQL authentication)** connection string. You will need it later.
 
     >**Note**: When you use the connection string, make sure to replace the `{your_password}` placeholder with **Pa55w.rd1234**.
 
@@ -320,7 +316,7 @@ The ARM-template deployment in Exercise 1 provisioned an Azure SQL Server instan
 
 In this task, you log on to the Azure VM, which deployment you initiated in Exercise 1. This Azure VM hosts Visual Studio 2019 and SQL Server Management Studio 2019.
 
->**Note**: Before you proceed with this task, ensure that the deployment you initiated in the first exercise has completed successfully. You can validate this by navigating to the blade of the Azure resource group "Az500Lab10" (or other name you chose) and selecting **Deployments** from the Settings pane.  
+>**Note**: Before you proceed with this task, ensure that the deployment you initiated in the first exercise has completed successfully. You can validate this by navigating to the blade of the Azure resource group "Az500Lab10" and selecting **Deployments** from the Settings pane.  
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **virtual machines** and press the **Enter** key.
 
@@ -339,8 +335,8 @@ In this task, you will connect to the SQL Database with SQL Server Management St
     |Setting|Value|
     |---|---|
     |Rule Name|**Allow Mgmt VM**|
-    |Start IP|the Public IP Address of the az500-10-vm1|
-    |End IP|the Public IP Address of the az500-10-vm1|
+    |Start IP|Enter the Public IP Address of the az500-10-vm1|
+    |End IP|Enter the Public IP Address of the az500-10-vm1|
 
 1. Click **Save** to save the change and close the confirmation pane. 
 
@@ -368,7 +364,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
     |Setting|Value|
     |---|---|
     |Server Type|**Database Engine**|
-    |Server Name|the server name you identified earlier in this task(sqlserverigjceucfednki.database.windows.net)|
+    |Server Name|the server name you identified earlier in this task|
     |Authentication|**SQL Server Authentication**|
     |Login|**Student**|
     |Password|**Pa55w.rd1234**|
@@ -402,6 +398,8 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 1. On the **Introduction** page, click **Next**.
 
 1. On the **Column Selection** page, select the **SSN** and **Birthdate** columns, set the **Encryption Type** of the **SSN** column to **Deterministic** and of the **Birthdate** column to **Randomized**, and click **Next**.
+	
+    >**Note**: While performing the encryption if any error thrown like **Exception has been thrown by the target of an innvocation** related to **Rotary(Microsoft.SQLServer.Management.ServiceManagement)** then make sure the **Key Permission's** values of **Rotation Policy Operations** are **unchecked**, if not in the Azure portal navigate to the **Key Vault** >> **Access Policies** >> **Key Permissions** >> Uncheck all the values under the **Rotation Policy Operations** >> Under **Privileged Key Operations** >> Uncheck **Release**.	
 
 1. On the **Master Key Configuration** page, select **Azure Key Vault**, click **Sign in**. When prompted, authenticate by using the same user account you used to provision the Azure Key Vault instance earlier in this lab, ensure that Key Vault appears in the **Select an Azure Key Vault** drop down list, and click **Next**.
 
@@ -441,6 +439,7 @@ You will create a Console application using Visual Studio to load data into the 
     |Project name|**OpsEncrypt**|
     |Solution name|**OpsEncrypt**|
     |Framework|**.NET Framework 4.7.2**|
+	
 6. In the Visual Studio console, click the **Tools** menu, in the drop down menu, click **NuGet Package Manager**, and, in the cascading menu, click **Package Manager Console**.
 
 7. In the **Package Manager Console** pane, run the following to install the first required **NuGet** package:
@@ -490,7 +489,7 @@ You will create a Console application using Visual Studio to load data into the 
 20. To terminate the console app, press the Enter key.
 	
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+> - Click the Lab Validation icon located at the upper right corner of the lab guide section which navigates to the Lab Validation Page.
 > - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
