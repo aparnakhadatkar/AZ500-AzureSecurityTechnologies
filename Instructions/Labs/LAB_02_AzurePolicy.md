@@ -1,21 +1,21 @@
 # Lab 02: Azure Policy
 
 ## Lab scenario
-
 You have been asked to create a proof of concept showing how Azure policy can be used. Specifically, you need to:
-
 - Create an Allowed Locations policy that ensures resources are only created in a specific region.
 - Test to ensure resources are only created in the Allowed location 
 
 ## Lab objectives
-
 In this lab, you will complete the following:
+- Exercise 1: Implement Azure Policy.
 
-- Exercise 1: Implement Azure Policy. 
+## Architecture Diagram
+
+![image](https://user-images.githubusercontent.com/91347931/157511920-19c1f06c-86bd-440d-80ac-d96aa27aefff.png)
 
 # Exercise 1: Implement Azure Policy
 
-#### Estimated timing: 20 minutes
+## Estimated timing: 20 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -71,7 +71,7 @@ In this task, you will create an Allowed Locations policy assignment and specify
 
    >**Note**: The reason the Azure policy assignment might take up to 30 minutes to take effect is that is has to replicate globally. Typically this takes only a few minutes.  If the next task fails, simply wait a few minutes and attempt its steps again.
 
-#### Task 2: Test the Allowed Locations policy assignment
+## Task 2: Test the Allowed Locations policy assignment
 
 In this task, you will test the Allowed Locations policy assignment. 
 

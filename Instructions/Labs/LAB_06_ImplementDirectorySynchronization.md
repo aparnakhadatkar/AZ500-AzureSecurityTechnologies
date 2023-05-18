@@ -1,12 +1,7 @@
-
-
 # Lab 06: Implement Directory Synchronization
-# Student lab manual
 
 ## Lab scenario
-
 You have been asked to create a proof of concept demonstrating how to integrate the on-premises Active Directory Domain Services (AD DS) environment with an Azure Active Directory (Azure AD) tenant. Specifically, you want to:
-
 - Implement a single-domain AD DS forest by deploying an Azure VM hosting an AD DS domain controller
 - Create and configure an Azure AD tenant
 - Synchronize the AD DS forest with the Azure AD tenant
@@ -14,23 +9,25 @@ You have been asked to create a proof of concept demonstrating how to integrate 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
 ## Lab objectives
-
 In this lab, you will complete the following exercises:
-
 - Exercise 1: Deploy an Azure VM hosting an Active Directory domain controller
 - Exercise 2: Create and configure an Azure Active Directory tenant
 - Exercise 3: Synchronize Active Directory forest with an Azure Active Directory tenant
 
-### Exercise 1: Deploy an Azure VM hosting an Active Directory domain controller
+## Architecture Diagram
 
-### Estimated timing: 10 minutes
+![image](https://user-images.githubusercontent.com/91347931/157525374-8f740f14-c2db-47b3-98f8-7feb9bc122b5.png)
+
+# Exercise 1: Deploy an Azure VM hosting an Active Directory domain controller
+
+## Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
 
 - Task 1: Identify an available DNS name for an Azure VM deployment
 - Task 2: Use an ARM template to deploy an Azure VM hosting an Active Directory domain controller
 
-#### Task 1: Identify an available DNS name for an Azure VM deployment
+## Task 1: Identify an available DNS name for an Azure VM deployment
 
 In this task, you will identify a DNS name for your Azure VM deployment.
 
@@ -56,7 +53,7 @@ In this task, you will identify a DNS name for your Azure VM deployment.
 
 7. Close the Cloud Shell.
 
-#### Task 2: Use an ARM template to deploy an Azure VM hosting an Active Directory domain controller
+## Task 2: Use an ARM template to deploy an Azure VM hosting an Active Directory domain controller
 
 In this task, you will deploy an Azure VM that will host an Active Directory domain controller
 
@@ -89,7 +86,7 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
 > Result: After you completed this exercise, you have initiated deployment of an Azure VM that will host an Active Directory domain controller by using an Azure Resource Manager template
 
 
-### Exercise 2: Create and configure an Azure Active Directory tenant 
+# Exercise 2: Create and configure an Azure Active Directory tenant 
 
 ### Estimated timing: 20 minutes
 
@@ -99,7 +96,7 @@ In this exercise, you will complete the following tasks:
 - Task 2: Add a custom DNS name to the new Azure AD tenant
 - Task 3: Create an Azure AD user with the Global Administrator role
 
-#### Task 1: Create an Azure Active Directory (AD) tenant
+## Task 1: Create an Azure Active Directory (AD) tenant
 
 In this task, you will create a new Azure AD tenant to use in this lab. 
 
@@ -125,7 +122,7 @@ In this task, you will create a new Azure AD tenant to use in this lab.
 
     >**Note**: Wait for the new tenant to be created. Use the **Notification** icon to monitor the deployment status. 
 
-#### Task 2: Add a custom DNS name to the new Azure AD tenant
+## Task 2: Add a custom DNS name to the new Azure AD tenant
 
 In this task, you will add your custom DNS name to the new Azure AD tenant. 
 
@@ -145,7 +142,7 @@ In this task, you will add your custom DNS name to the new Azure AD tenant.
 
     >**Note**: You will not be able to complete the validation process because you do not own the **adatum.com** DNS domain name. This will not prevent you from synchronizing the **adatum.com** AD DS domain with the Azure AD tenant. You will use for this purpose the initial DNS name of the Azure AD tenant (the name ending with the **onmicrosoft.com** suffix), which you identified in the previous task. However, keep in mind that, as a result, the DNS domain name of the AD DS domain and the DNS name of the Azure AD tenant will differ. This means that Adatum users will need to use different names when signing in to the AD DS domain and when signing in to Azure AD tenant.
 
-#### Task 3: Create an Azure AD user with the Global Administrator role
+## Task 3: Create an Azure AD user with the Global Administrator role
 
 In this task, you will add a new Azure AD user and assign them to the Global Administrator role. 
 
@@ -181,7 +178,7 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 > **Result**: After you completed this exercise, you have created an Azure AD tenant, added a custom DNS name to the new Azure AD tenant, and created an Azure AD user with the Global Administrator role.
 
 
-### Exercise 3: Synchronize Active Directory forest with an Azure Active Directory tenant
+# Exercise 3: Synchronize Active Directory forest with an Azure Active Directory tenant
 
 ### Estimated timing: 20 minutes
 
@@ -191,7 +188,7 @@ In this exercise, you will complete the following tasks:
 - Task 2: Install Azure AD Connect
 - Task 3: Verify directory synchronization
 
-#### Task 1: Prepare AD DS for directory synchronization
+## Task 1: Prepare AD DS for directory synchronization
 
 In this task, you will connect to the Azure VM running AD DS domain controller and create a directory synchronization account. 
 
@@ -241,7 +238,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
    |Confirm Password|**Pa55w.rd1234**|
    |Other password options|**Password never expires**|
 
-#### Task 2: Install Azure AD Connect
+## Task 2: Install Azure AD Connect
 
 In this task, you will install AD Connect on the virtual machine. 
 
@@ -298,7 +295,7 @@ In this task, you will install AD Connect on the virtual machine.
 20. Review the information on the **Configuration complete** page and click **Exit** to close the **Microsoft Azure Active Directory Connect** window.
 
 
-#### Task 3: Verify directory synchronization
+## Task 3: Verify directory synchronization
 
 In this task, you will verify that directory synchronization is working. 
 

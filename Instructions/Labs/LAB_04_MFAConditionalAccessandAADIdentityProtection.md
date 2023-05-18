@@ -1,10 +1,7 @@
 # Lab 04: MFA, Conditional Access and AAD Identity Protection
-# Student lab manual
 
 ## Lab scenario
-
 You have been asked to create a proof of concept of features that enhance Azure Active Directory (Azure AD) authentication. Specifically, you want to evaluate:
-
 - Azure AD multi-factor authentication
 - Azure AD conditional access
 - Azure AD Identity Protection
@@ -12,28 +9,30 @@ You have been asked to create a proof of concept of features that enhance Azure 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
 ## Lab Objectives
-
 In this lab, you will complete the following exercises:
-
 - Exercise 1: Deploy an Azure VM by using an Azure Resource Manager template
 - Exercise 2: Implement Azure MFA
 - Exercise 3: Implement Azure AD Conditional Access Policies 
 - Exercise 4: Implement Azure AD Identity Protection
+
+## Architecture Diagram
+
+![image](https://user-images.githubusercontent.com/91347931/157518628-8b4a9efe-0086-4ec0-825e-3d062748fa63.png)
 
 ## Lab files:
 
 - **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.json**
 - **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.parameters.json** 
 
-### Exercise 1: Deploy an Azure VM by using an Azure Resource Manager template
+# Exercise 1: Deploy an Azure VM by using an Azure Resource Manager template
 
-### Estimated timing: 10 minutes
+## Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
 
 - Task 1: Deploy an Azure VM by using an Azure Resource Manager template.
 
-#### Task 1: Deploy an Azure VM by using an Azure Resource Manager template
+## Task 1: Deploy an Azure VM by using an Azure Resource Manager template
 
 In this task, you will create a virtual machine by using an ARM template. This virtual machine will be used in the last exercise for this lab. 
 
@@ -82,7 +81,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 > Result: You have initiated a template deployment of an Azure VM **az500-04-vm1** that you will use in the last exercise of this lab.
 
 
-### Exercise 2: Implement Azure MFA
+# Exercise 2: Implement Azure MFA
 
 ### Estimated timing: 30 minutes
 
@@ -95,7 +94,7 @@ In this exercise, you will complete the following tasks
 - Task 5: Configure Azure MFA settings.
 - Task 6: Validate MFA configuration
 
-#### Task 1: Create a new Azure AD tenant
+## Task 1: Create a new Azure AD tenant
 
 In this task, you will create a new Azure AD tenant. 
 
@@ -122,7 +121,7 @@ In this task, you will create a new Azure AD tenant.
     >**Note**: Wait for the new tenant to be created. Use the **Notification** icon to monitor the deployment status. 
 
 
-#### Task 2: Activate Azure AD Premium P2 trial
+## Task 2: Activate Azure AD Premium P2 trial
 
 In this task, you will sign up for the Azure AD Premium P2 free trial. 
 
@@ -139,7 +138,7 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 5. On the **Activate** blade, in the **Azure AD Premium P2** section, click on **Free Trial** and then click on **Activate**.
 
 
-#### Task 3: Create Azure AD users and groups.
+## Task 3: Create Azure AD users and groups.
 
 In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (user), and aaduser3 (user). You will need each user's principal name and password for later tasks. 
 
@@ -196,7 +195,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
     >**Note**: At this point, you should have three new users listed on the **Users** page. 
 	
-#### Task 4: Assign Azure AD Premium P2 licenses to Azure AD users
+## Task 4: Assign Azure AD Premium P2 licenses to Azure AD users
 
 In this task, you will assign each user to the Azure Active Directory Premium P2 license.
 
@@ -220,7 +219,7 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
     >**Note**: At this point, you assigned Azure Active Directory Premium P2 licenses to all user accounts you will be using in this lab. Be sure to sign out and then sign back in. 
 
-#### Task 5: Configure Azure MFA settings.
+## Task 5: Configure Azure MFA settings.
 
 In this task, you will configure MFA and enable MFA for aaduser1. 
 
@@ -276,7 +275,7 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
     >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directories + subscriptions** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role in the Azure AD tenant.
 
-#### Task 6: Validate MFA configuration
+## Task 6: Validate MFA configuration
 
 In this task, you will validate the MFA configuration by testing the sign in of the aaduser1 user account. 
 
@@ -307,7 +306,7 @@ In this task, you will validate the MFA configuration by testing the sign in of 
 > Result: You have created a new AD tenant, configured AD users, configured MFA, and tested the MFA experience for a user. 
 
 
-### Exercise 3: Implement Azure AD Conditional Access Policies 
+# Exercise 3: Implement Azure AD Conditional Access Policies 
 
 ### Estimated timing: 15 minutes
 
@@ -316,7 +315,7 @@ In this exercise, you will complete the following tasks
 - Task 1: Configure a conditional access policy.
 - Task 2: Test the conditional access policy.
 
-#### Task 1 - Configure a conditional access policy. 
+## Task 1 - Configure a conditional access policy. 
 
 In this task, you will review conditional access policy settings and create a policy that requires MFA when signing in to the Azure portal. 
 
@@ -352,7 +351,7 @@ In this task, you will review conditional access policy settings and create a po
 
     >**Note**: At this point, you have a conditional access policy that requires MFA to sign in to the Azure portal. 
 
-#### Task 2 - Test the conditional access policy.
+## Task 2 - Test the conditional access policy.
 
 In this task, you will sign in to the Azure portal as **aaduser2** and verify MFA is required. You will also delete the policy before continuing on to the next exercise. 
 
@@ -394,7 +393,7 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
 >Result: You have configured and tested Azure AD conditional access.
 
-### Exercise 4: Implement Azure AD Identity Protection
+# Exercise 4: Implement Azure AD Identity Protection
 
 ### Estimated timing: 30 minutes
 
@@ -406,7 +405,7 @@ In this exercise, you will complete the following tasks
 - Task 4: Simulate risk events against the Azure AD Identity Protection policies 
 - Task 5: Review the Azure AD Identity Protection reports
 
-#### Task 1: Enable Azure AD Identity Protection
+## Task 1: Enable Azure AD Identity Protection
 
 In this task, you will view the Azure AD Identity Protection options in the Azure portal. 
 
@@ -420,7 +419,7 @@ In this task, you will view the Azure AD Identity Protection options in the Azur
 
 1. On the **Identity Protection \| Overview** blade, review the **New risky users detected** and **New risky sign-ins detected** charts and other information about risky users.  
 
-#### Task 2: Configure a user risk policy
+## Task 2: Configure a user risk policy
 
 In this task, you will create a user risk policy. 
 
@@ -438,7 +437,7 @@ In this task, you will create a user risk policy.
 
    - Set **Enforce policy** to **On** and click on **Save**.
 
-#### Task 3: Configure sign-in risk policy
+## Task 3: Configure sign-in risk policy
 
 In this task, you will configure a sign-in risk policy. 
 
@@ -454,7 +453,7 @@ In this task, you will configure a sign-in risk policy.
 
    - Set **Enforce Policy** to **On** and click on **Save**.
 
-#### Task 4: Simulate risk events against the Azure AD Identity Protection policies 
+## Task 4: Simulate risk events against the Azure AD Identity Protection policies 
 
 > Before you start this task, ensure that the template deployment you started in Exercise 1 has completed. The deployment includes an Azure VM named **az500-04-vm1**. 
 
@@ -505,7 +504,7 @@ In this task, you will configure a sign-in risk policy.
 
     >**Note**: At this point, you attempted two different sign ins. Next, you will review the Azure Identity Protection reports.
 
-#### Task 5: Review the Azure AD Identity Protection reports
+## Task 5: Review the Azure AD Identity Protection reports
 
 In this task, you will review the Azure AD Identity Protection reports generated from the ToR browser logins.
 

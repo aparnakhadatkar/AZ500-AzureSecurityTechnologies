@@ -1,9 +1,7 @@
 # Lab 12: Service Endpoints and Securing Storage
 
 ## Lab scenario
-
 You have been asked to create a proof of concept to demonstrate securing Azure file shares. Specifically, you want to:
-	
 - Create a storage endpoint so traffic destined to Azure Storage always stays within the Azure backbone network.
 - Configure the storage endpoint so only resources from a specific subnet can access the storage.
 - Confirm that resources outside of the specific subnet cannot access the storage. 
@@ -11,18 +9,16 @@ You have been asked to create a proof of concept to demonstrate securing Azure f
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
 ## Lab objectives
-
 In this lab, you will complete the following exercise:
-
 - Exercise 1: Service endpoints and security storage
 
-## Service Endpoints and Securing Storage diagram
+## Architecture Diagram
 
-![image](../images/LAB12PNG.png)
+![image](https://user-images.githubusercontent.com/91347931/157534883-29664a05-85d1-4c70-99a7-f16d2360755d.png)
 
-### Exercise 1: Service endpoints and security storage
+# Exercise 1: Service endpoints and security storage
 
-### Estimated timing: 45 minutes
+## Estimated timing: 45 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -35,7 +31,7 @@ In this exercise, you will complete the following tasks:
 - Task 7: Test the storage connection from the private subnet to confirm that access is allowed
 - Task 8: Test the storage connection from the public subnet to confirm that access is denied 
 
-#### Task 1: Create a virtual network
+## Task 1: Create a virtual network
 
 In this task, you will create a virtual network.
 
@@ -68,7 +64,7 @@ In this task, you will create a virtual network.
 1. On the **Review + create** tab of the **Create virtual network** blade, click **Create**.
 >**Note**:If you are not able to edit the **default** first create the virtual network and go to subnets in created Virtualnetwork and delete the Default Sbnet and add **Public** Subnet 
 
-#### Task 2: Add a subnet to the virtual network and configure a storage endpoint
+## Task 2: Add a subnet to the virtual network and configure a storage endpoint
 
 In this task, you will create another subnet and enable a service endpoint on that subnet. Service endpoints are enabled per service, per subnet. 
 
@@ -92,7 +88,7 @@ In this task, you will create another subnet and enable a service endpoint on th
 
     >**Note**: The virtual network now has two subnets: Public and Private. 
 	
-#### Task 3: Configure a network security group to restrict access to the subnet
+## Task 3: Configure a network security group to restrict access to the subnet
 
 In this task, you will create a network security group with two outbound security rules (Storage and internet) and one inbound security rule (RDP). You will also associate the network security group with the Private subnet. This will restrict outbound traffic from Azure VMs connected to that subnet.
 
@@ -186,7 +182,7 @@ In this task, you will create a network security group with two outbound securit
     |Virtual network|**myVirtualNetwork**|
     |Subnet|**Private**|
     
-#### Task 4: Configure a network security group to allow rdp on the public subnet
+## Task 4: Configure a network security group to allow rdp on the public subnet
 
 In this task, you will create a network security group with one inbound security rule (RDP). You will also associate the network security group with the Public subnet. This will allow RDP access to the Public VM.
 
@@ -236,7 +232,7 @@ In this task, you will create a network security group with one inbound security
     |Virtual network|**myVirtualNetwork**|
     |Subnet|**Public**|
 
-#### Task 5: Create a storage account with a file share
+## Task 5: Create a storage account with a file share
 
 In this task, you will create a storage account with a file share and obtain the storage account key.  
 
@@ -305,7 +301,7 @@ In this task, you will create a storage account with a file share and obtain the
 
     >**Note**: At this point in the lab you have configured a virtual network, a network security group, and a storage account with a file share. 
 
-#### Task 6: Deploy virtual machines into the designated subnets
+## Task 6: Deploy virtual machines into the designated subnets
 
 In this task, you will create two virtual machines one in the Private subnet and one in the Public subnet. 
 
@@ -381,7 +377,7 @@ In this task, you will create two virtual machines one in the Private subnet and
 
     >**Note**: You can continue to the next task once the deployment of the **myVMPrivate** Azure VM is completed.
 
-#### Task 7: Test the storage connection from the private subnet to confirm that access is allowed
+## Task 7: Test the storage connection from the private subnet to confirm that access is allowed
 
 In this task, you will connect to the myVMPrivate virtual machine via Remote Desktop and map a drive to the file share. 
 

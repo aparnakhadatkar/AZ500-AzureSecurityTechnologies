@@ -1,10 +1,7 @@
 # Lab 08: Azure Firewall
-# Student lab manual
 
 ## Lab scenario
-
 You have been asked to install Azure Firewall. This will help your organization control inbound and outbound network access which is an important part of an overall network security plan. Specifically, you would like to create and test the following infrastructure components:
-
 - A virtual network with a workload subnet and a jump host subnet.
 - A virtual machine is each subnet. 
 - A custom route that ensures all outbound workload traffic from the workload subnet must use the firewall.
@@ -19,13 +16,17 @@ In this lab, you will complete the following exercise:
 
 - Exercise 1: Deploy and test an Azure Firewall
 
+## Architecture Diagram
+
+![image](https://user-images.githubusercontent.com/91347931/157529954-a1bc434b-2eca-41c1-b875-1f0c977d5e20.png)
+
 ## Lab files:
 
 - **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\08\\template.json**
 
-### Exercise 1: Deploy and test an Azure Firewall
+# Exercise 1: Deploy and test an Azure Firewall
 
-### Estimated timing: 40 minutes
+## Estimated timing: 40 minutes
 
 > For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is region to use for you class. 
 
@@ -39,7 +40,7 @@ In this exercise, you will complete the following tasks:
 - Task 6: Configure DNS servers.
 - Task 7: Test the firewall. 
 
-#### Task 1: Use a template to deploy the lab environment. 
+## Task 1: Use a template to deploy the lab environment. 
 
 In this task, you will review and deploy the lab environment. 
 
@@ -70,7 +71,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
     >**Note**: Wait for the deployment to complete. This should take about 2 minutes. 
 
-#### Task 2: Deploy the Azure firewall
+## Task 2: Deploy the Azure firewall
 
 In this task you will deploy the Azure firewall into the virtual network. 
 
@@ -107,7 +108,7 @@ In this task you will deploy the Azure firewall into the virtual network.
     >**Note**: You will need this information in the next task.
 
 
-#### Task 3: Create a default route
+## Task 3: Create a default route
 
 In this task, you will create a default route for the **Workload-SN** subnet. This route will configure outbound traffic through the firewall.
 
@@ -157,7 +158,7 @@ In this task, you will create a default route for the **Workload-SN** subnet. Th
 1.  Click **Add** to add the route. 
 
 
-#### Task 4: Configure an application rule
+## Task 4: Configure an application rule
 
 In this task you will create an application rule that allows outbound access to `www.bing.com`.
 
@@ -189,7 +190,7 @@ In this task you will create an application rule that allows outbound access to 
 
     >**Note**: Azure Firewall includes a built-in rule collection for infrastructure FQDNs that are allowed by default. These FQDNs are specific for the platform and can't be used for other purposes. 
 
-#### Task 5: Configure a network rule
+## Task 5: Configure a network rule
 
 In this task, you will create a network rule that allows outbound access to two IP addresses on port 53 (DNS).
 
@@ -221,7 +222,7 @@ In this task, you will create a network rule that allows outbound access to two 
 
     >**Note**: The destination addresses used in this case are known public DNS servers. 
 
-#### Task 6: Configure the virtual machine DNS servers
+## Task 6: Configure the virtual machine DNS servers
 
 In this task, you will configure the primary and secondary DNS addresses for the virtual machine. This is not a firewall requirement. 
 
@@ -241,7 +242,7 @@ In this task, you will configure the primary and secondary DNS addresses for the
 
     >**Note**: Updating the DNS servers for a network interface will automatically restart the virtual machine to which that interface is attached, and if applicable, any other virtual machines in the same availability set.
 
-#### Task 7: Test the firewall
+## Task 7: Test the firewall
 
 In this task, you will test the firewall to confirm that it works as expected.
 

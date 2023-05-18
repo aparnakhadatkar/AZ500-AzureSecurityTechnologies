@@ -1,12 +1,7 @@
-
-
 # Lab 13: Azure Monitor
-# Student lab manual
 
 ## Lab scenario
-
 You have been asked to create a proof of concept for monitoring virtual machine performance. Specifically, you want to:
-
 - Configure a virtual machine such that telemetry and logs can be collected.
 - Show what telemetry and logs can be collected.
 - Show how the data can be used and queried. 
@@ -14,14 +9,16 @@ You have been asked to create a proof of concept for monitoring virtual machine 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
 ## Lab objectives
-
 In this lab, you will complete the following exercise:
-
 - Exercise 1: Collect data from an Azure virtual machine with Azure Monitor
 
-### Exercise 1: Collect data from an Azure virtual machine with Azure Monitor
+## Architecture Diagram
 
-### Exercise timing: 20 minutes
+![image](https://user-images.githubusercontent.com/91347931/157536648-0a286514-a7e2-4058-9dea-e42da21eef76.png)
+
+# Exercise 1: Collect data from an Azure virtual machine with Azure Monitor
+
+# Exercise timing: 20 minutes
 
 In this exercise, you will complete the following tasks: 
 
@@ -31,7 +28,7 @@ In this exercise, you will complete the following tasks:
 - Task 4: Collect virtual machine event and performance data
 - Task 5: View and query collected data 
 
-#### Task 1: Deploy an Azure virtual machine
+## Task 1: Deploy an Azure virtual machine
 
 1. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, select **PowerShell** and **Create storage**.
 
@@ -66,7 +63,7 @@ In this exercise, you will complete the following tasks:
 
 1. Close the Cloud Shell pane. 
 
-#### Task 2: Create a Log Analytics workspace
+## Task 2: Create a Log Analytics workspace
 
 In this task, you will create a Log Analytics workspace. 
 
@@ -87,7 +84,7 @@ In this task, you will create a Log Analytics workspace.
 
 1. On the **Review + create** tab of the **Create Log Analytics workspace** blade, click **Create**.
 
-#### Task 3: Enable the Log Analytics virtual machine extension
+## Task 3: Enable the Log Analytics virtual machine extension
 
 In this task, you will enable the Log Analytics virtual machine extension. This extension installs the Log Analytics agent on Windows and Linux virtual machines. This agent collects data from the virtual machine and transfers it to the Log Analytics workspace that you designate. Once the agent is installed it will be automatically upgraded ensuring you always have the latest features and fixes. 
 
@@ -105,7 +102,7 @@ In this task, you will enable the Log Analytics virtual machine extension. This 
 
     >**Note**: This may take a few minutes. The **Status** displayed on the **myVM** blade, will change from **Connecting** to **This workspace**. 
 
-#### Task 4: Collect virtual machine event and performance data
+## Task 4: Collect virtual machine event and performance data
 
 In this task, you will configure collection of the Windows System log and several common performance counters. You will also review other sources that are available.
 
@@ -132,7 +129,7 @@ In this task, you will configure collection of the Windows System log and severa
   
 1. Now click **Apply**.
 
-#### Task 5: View and query collected data
+## Task 5: View and query collected data
 
 In this task, you will run a log search on your data collection. 
 

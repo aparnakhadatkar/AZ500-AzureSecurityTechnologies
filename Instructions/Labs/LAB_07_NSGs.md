@@ -1,10 +1,7 @@
 # Lab 07: Network Security Groups and Application Security Groups
-# Student lab manual
 
 ## Lab scenario
-
 You have been asked to implement your organization's virtual networking infrastructure and test to ensure it is working correctly. In particular:
-
 - The organization has two groups of servers: Web Servers and Management Servers.
 - Each group of servers should be in its own Application Security Group. 
 - You should be able to RDP into the Management Servers, but not the Web Servers.
@@ -14,15 +11,17 @@ You have been asked to implement your organization's virtual networking infrastr
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
 ## Lab objectives
-
 In this lab, you will complete the following exercises:
-
 - Exercise 1: Create the virtual networking infrastructure
 - Exercise 2: Deploy virtual machines and test the network filters
 
-### Exercise 1: Create the virtual networking infrastructure
+## Architecture Diagram
 
-### Estimated timing: 20 minutes
+![image](https://user-images.githubusercontent.com/91347931/157526438-6da4f68b-db88-4931-a041-8474e66d3fe5.png)
+
+# Exercise 1: Create the virtual networking infrastructure
+
+## Estimated timing: 20 minutes
 
 > For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is region to use for you class. 
 
@@ -33,7 +32,7 @@ In this exercise, you will complete the following tasks:
 - Task 3: Create a network security group and associate it with the virtual network subnet.
 - Task 4: Create inbound NSG security rules to all traffic to web servers and RDP to the management servers.
 
-#### Task 1:  Create a virtual network
+## Task 1:  Create a virtual network
 
 In this task, you will create a virtual network to use with the network and application security groups. 
 
@@ -63,7 +62,7 @@ In this task, you will create a virtual network to use with the network and appl
 
 1. On the **Review + create** tab of the **Create virtual network** blade, click **Create**.
 
-#### Task 2:  Create application security groups
+## Task 2:  Create application security groups
 
 In this task, you will create an application security group.
 
@@ -97,7 +96,7 @@ In this task, you will create an application security group.
 
 1. Click **Review + create** and then click **Create**.
 
-#### Task 3:  Create a network security group and associate the NSG to the subnet
+## Task 3:  Create a network security group and associate the NSG to the subnet
 
 In this task, you will create a network security group. 
 
@@ -127,7 +126,7 @@ In this task, you will create a network security group.
     |Virtual network|**myVirtualNetwork**|
     |Subnet|**default**|
 
-#### Task 4: Create inbound NSG security rules to all traffic to web servers and RDP to the servers. 
+## Task 4: Create inbound NSG security rules to all traffic to web servers and RDP to the servers. 
 
 1. On the **myNsg** blade, in the **Settings** section, click **Inbound security rules**.
 
@@ -161,7 +160,7 @@ In this task, you will create a network security group.
 
 > Result: You have deployed a virtual network, network security with inbound security rules, and two application security groups. 
 
-### Exercise 2: Deploy virtual machines and test network filters
+# Exercise 2: Deploy virtual machines and test network filters
 
 ### Estimated timing: 25 minutes
 
@@ -172,7 +171,7 @@ In this exercise, you will complete the following tasks:
 - Task 3: Associate each virtual machines network interface to it's application security group.
 - Task 4: Test the network traffic filtering.
 
-#### Task 1: Create a virtual machine to use as a web server.
+## Task 1: Create a virtual machine to use as a web server.
 
 In this task, you will create a virtual machine to use as a web server.
 
@@ -211,7 +210,7 @@ In this task, you will create a virtual machine to use as a web server.
 
 1. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful and click **Create**.
 
-#### Task 2: Create a virtual machine to use as a management server. 
+## Task 2: Create a virtual machine to use as a management server. 
 
 In this task, you will create a virtual machine to use as a management server.
 
@@ -250,7 +249,7 @@ In this task, you will create a virtual machine to use as a management server.
 
     >**Note**: Wait for both virtual machines to be provisioned before continuing. 
 
-#### Task 3: Associate each virtual machines network interface to its application security group.
+## Task 3: Associate each virtual machines network interface to its application security group.
 
 In this task, you will associate each virtual machine's network interface with the corresponding application security group. The myVMWeb virtual machine interface will be associated to the myAsgWebServers ASG. The myVMMgmt virtual machine interface will be associated to the myAsgMgmtServers ASG. 
 
@@ -268,7 +267,7 @@ In this task, you will associate each virtual machine's network interface with t
 
 1. Click **Configure the application security groups**, in the **Application security group** drop-down list, select **myAsgMgmtServers**, and then click **Save**.
 
-#### Task 4: Test the network traffic filtering
+## Task 4: Test the network traffic filtering
 
 In this task, you will test the network traffic filters. You should be able to RDP into the myVMMgmnt virtual machine. You should be able to connect from the internet to the myVMWeb virtual machine and view the default IIS web page.  
 
