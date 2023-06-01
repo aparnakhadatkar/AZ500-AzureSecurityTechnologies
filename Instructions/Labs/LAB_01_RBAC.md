@@ -37,6 +37,12 @@ In this task, you will create a user account for Joseph Price.
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
+1.If you have not logged in , using the following credentials to sign in:
+ 
+ - Username: <inject key="Username" enableCopy="false" />
+ - Password: <inject key="Password" enableCopy="false" />
+
+
 1. In the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
       ![image](../images/az500-1-3.png)
@@ -48,7 +54,7 @@ In this task, you will create a user account for Joseph Price.
    |Setting|Value|
    |---|---|
    |User principal name|**Joseph**|
-   |Name|**Joseph Price**|
+   |Display Name|**Joseph Price**|
 
      ![image](../images/az500-1-4.png)
 
@@ -78,11 +84,11 @@ In this task, you will create the *Senior Admins* group, add the user account of
     
 1. Click on the **No owners selected** link, on the **Owners** blade, select **Joseph Price**, and click on **Select**.
 
-    ![image](../images/az500-1-5.png)
+    ![image](../images/AZ-500-01.png)
 
 1. Click on the **No members selected** link, on the **Members** blade, select **Joseph Price**, and click on **Select**.
 
-    ![image](../images/az500-1-6.png)
+    ![image](../images/AZ-500-02.png)
 
 1. Back on the **New Group** blade, click on **Create**.
 
@@ -279,7 +285,7 @@ In this exercise, you will complete the following task:
 
    |Setting|Value|
    |---|---|
-   |Assignment type|select **Job function roles**|
+   |Role|select **Job function roles**|
    |Role |Search and select **Virtual Machine Contributor**|
    |Assign access to (Under Members Pane)|**User, group, or service principal**|
    |Select (+Select Members)|**Service Desk**|
