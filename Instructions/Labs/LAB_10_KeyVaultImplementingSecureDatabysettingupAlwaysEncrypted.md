@@ -127,6 +127,7 @@ In this task, you will create an Azure Key Vault resource. You will also configu
     |Key permissions|click **Select all** permissions|
     |Secret permissions|click **Select all** resulting in total of **7 selected** permissions|
     |Certification permissions|click **Select all** resulting in total of **15 selected** permissions|
+    |Cryptographic Operations |click **Select all** resulting in total of **6 selected** permissions|
     |Select principal|click **None selected**, on the **Principal** blade, select your user account, and click **Next**|
     |Application (optional)|click **Next**|
     |Review + create|click **Create**|
@@ -283,10 +284,8 @@ In this task, you will grant the newly registered app permissions to access secr
     $applicationId = '<Azure_AD_Application_ID>'
     ```
 1. In the PowerShell session within the Cloud Shell pane, run the following to create a variable storing the Key Vault name.
-	```
+    ```powershell
     $kvName = (Get-AzKeyVault -ResourceGroupName 'AZ500LAB10').VaultName
-
-    $kvName
     ```
 
 1. In the PowerShell session within the Cloud Shell pane, run the following to grant permissions on the Key Vault to the application you registered in the previous task:
@@ -334,7 +333,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
     >**Note**: Record the server name. You will need the server name later in this task.
 
-1. On the **Firewall settings** blade, scroll down to **Rule Name**, and specify the following settings: 
+1. On the **Networking** blade, scroll down to **Firewall Rules**, click on **+Add a firewall rule**, and specify the following settings: 
 
     |Setting|Value|
     |---|---|
