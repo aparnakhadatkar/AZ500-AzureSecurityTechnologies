@@ -142,6 +142,8 @@ In this task, you will add your custom DNS name to the new Azure AD tenant.
 
     >**Note**: You will not be able to complete the validation process because you do not own the **adatum.com** DNS domain name. However, this will not prevent you from synchronizing the **adatum.com** AD DS domain with the Azure AD tenant. You will use for this purpose the initial DNS name of the Azure AD tenant (the name ending with the **onmicrosoft.com** suffix), which you identified in the previous task. Keep in mind that, as a result, the DNS domain name of the AD DS domain and the DNS name of the Azure AD tenant will differ. This means that Adatum users will need to use different names when signing in to the AD DS domain and when signing in to Azure AD tenant.
 
+![image](../images/Lab-06_Ex2_Task2.png)
+
 ## Task 3: Create an Azure AD user with the Global Administrator role
 
 In this task, you will add a new Azure AD user and assign them to the Global Administrator role. 
@@ -220,6 +222,8 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 8. In **Server Manager**, click **Tools** and, in the drop-down menu, click **Active Directory Administrative Center**.
 
+![image](../images/Lab-06_Ex3_Task1.png)
+
 9. In **Active Directory Administrative Center**, click **adatum (local)**, in the **Tasks** pane, under the domain name **adatum (local)** click **New**, and, in the cascading menu, click **Organizational Unit**.
 
 10. In the **Create Organizational Unit** window, in the **Name** text box, type **ToSync** and click **OK**.
@@ -238,6 +242,8 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
    |Password|**Pa55w.rd1234**|
    |Confirm Password|**Pa55w.rd1234**|
    |Other password options|**Password never expires**|
+
+![image](../images/Lab-06_Ex3_Task2.png)
 
 ## Task 2: Install Azure AD Connect
 
@@ -304,6 +310,8 @@ In this task, you will verify that directory synchronization is working.
 2. On the **Users \| All users** blade, note that the list of user objects includes the **aduser1** account. 
 
     >**Note**: You might have to wait a few minutes and select **Refresh** for the **aduser1** user account to appear.
+
+![image](../images/Lab-06_Ex3_Task3.png)
 
 3. On the **aduser1 \| Properties** blade, in the **Job information** section, note that the **Department** attribute is not set.
 
