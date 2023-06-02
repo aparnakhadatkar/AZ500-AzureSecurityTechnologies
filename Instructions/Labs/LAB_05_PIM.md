@@ -99,7 +99,9 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. Ensure the **Assignment type** is **Eligible** and review the eligible duration settings.
 
-1. Click on **Assign**.
+![image](../images/Lab-05_Ex1_Task2.png)
+
+16. Click on **Assign**.
 
     >**Note**: User aaduser2 is eligible for the Global Reader role. 
  
