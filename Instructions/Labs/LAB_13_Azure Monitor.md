@@ -166,7 +166,7 @@ In this task, you will run a log search on your data collection.
        goto loop	
        ```	
        	
- 10. Switch back ot the Log Analytics blade and re-run the query. You might need to wait a few minutes for data to be collected and re-run the query again.
+ 10. Switch back to the Log Analytics blade and re-run the query. You might need to wait a few minutes for data to be collected and re-run the query again.
 
 > **Results:** You used a Log Analytics workspace to configure data sources and query logs. 
 
