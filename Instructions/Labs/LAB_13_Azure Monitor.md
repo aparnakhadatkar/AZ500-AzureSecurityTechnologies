@@ -14,7 +14,7 @@ In this lab, you will complete the following exercise:
 
 ## Architecture Diagram
 
-![image](AZ-500-lab13arch.png)
+![image](https://user-images.githubusercontent.com/91347931/157536648-0a286514-a7e2-4058-9dea-e42da21eef76.png)
 
 # Exercise 1: Collect data from an Azure virtual machine with Azure Monitor
 
