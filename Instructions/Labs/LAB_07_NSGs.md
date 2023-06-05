@@ -23,8 +23,6 @@ In this lab, you will complete the following exercises:
 
 ## Estimated timing: 20 minutes
 
-> For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is region to use for you class. 
-
 In this exercise, you will complete the following tasks:
 
 - Task 1: Create a virtual network with one subnet.
@@ -315,5 +313,5 @@ overview page of **myVmWeb** blade.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-**You have successfully completed the lab**
+**You have successfully completed the lab, please click on the Next button to start the next lab.**
 
