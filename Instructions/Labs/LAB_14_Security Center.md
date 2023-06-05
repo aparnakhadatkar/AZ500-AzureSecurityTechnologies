@@ -33,7 +33,7 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
 1. On the **Microsoft Defender for Cloud \| Getting started** blade, click **Upgrade** and then click **Install agents tab** scroll down and click **Install agents**.
 
-   >**Note**: If you see any pop-up like **Only upgrade plans with exsiting resources** then click on **Enable** and then perform the previous step.
+   >**Note**: If you see any pop-up like **Only upgrade plans with existing resources** then click on **Enable** and then perform the previous step.
    
    
      ![image](../images/Az-500lab14-upgrade.png) 
