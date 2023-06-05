@@ -36,7 +36,7 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create a virtual network to use with the network and application security groups. 
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual networks** and press the **Enter** key.
+1. On the Azure portal locate the search bar at the top of the page. Search for **Virtual networks**, select the search result for **Virtual networks**.
 
 1. On the **Virtual networks** blade, click **+ Create**.
 
@@ -66,7 +66,7 @@ In this task, you will create a virtual network to use with the network and appl
 
 In this task, you will create an application security group.
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Application security groups** and press the **Enter** key.
+1. On the Azure portal locate the search bar at the top of the page, and search for **Application security groups** select the search result for **Application security groups**.
 
 1. On the **Application security groups** blade, click **+ Create**.
 
@@ -100,7 +100,7 @@ In this task, you will create an application security group.
 
 In this task, you will create a network security group. 
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Network security groups** and press the **Enter** key.
+1. On the Azure portal locate the search bar at the top of the page search for **Network security groups**, select the search result for **Network security groups**.
 
 1. On the **Network security groups** blade, click **+ Create**.
 
@@ -310,8 +310,10 @@ overview page of **myVmWeb** blade.
 > **Result:** You have validated that the NSG and ASG configuration is working and traffic is being correctly managed.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
+> - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
 > - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+**You have successfully completed the lab**
 
