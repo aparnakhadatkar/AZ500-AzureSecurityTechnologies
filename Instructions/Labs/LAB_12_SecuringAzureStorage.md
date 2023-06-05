@@ -400,20 +400,7 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
 
 5. Within the Remote Desktop session to **myVMPrivate**, click **Start** and then click **Windows PowerShell ISE**.
 
-6. Within the **Windows PowerShell ISE** window, open the **Script** pane, then paste and run the PowerShell script that you recorded earlier in this lab. The script has the following format:
-
-    ```powershell
-    $connectTestResult = Test-NetConnection -ComputerName <storage_account_name>.file.core.windows.net -Port 445
-    if ($connectTestResult.TcpTestSucceeded) {
-       # Save the password so the drive will persist on reboot
-       cmd.exe /C "cmdkey /add:`"<storage_account_name>.file.core.windows.net`" /user:`"localhost\<storage_account_name>`"  /pass:`"<storage_account_key>`""
-       # Mount the drive
-       New-PSDrive -Name Z -PSProvider FileSystem -Root "\\<storage_account_name>.file.core.windows.net\my-file-share" -Persist
-    } else {
-       Write-Error -Message "Unable to reach the Azure storage account via port 445. Check to make sure your organization or ISP is not blocking port 445, or use Azure P2S VPN, Azure S2S VPN, or Express Route to tunnel SMB traffic over a different port."
-    }
-    ```
-    >**Note**: The `<storage-account-name>` placeholder represents the name of the storage account hosting the file share and `<storage_account_key>` one its primary key
+6. Within the **Windows PowerShell ISE** window, open the **Script** pane, then paste and run the PowerShell script that you recorded earlier in this lab.
 
 7. Start File Explorer and verify that the Z: drive mapping has been successfully created.
 
