@@ -22,7 +22,7 @@
 
 1. In the virtual machine (VM) on the left, click on the Azure Portal as shown below.
 
-    ![](../images/AZ-900-module08-jumpvm.png)
+    ![](../images/AZ-500-Getting.png)
 
 1. On the **Sign in to Microsoft Azure** window, you will see the login screen, enter the following username and click on **Next**.
    * Username: <inject key="AzureAdUserEmail"></inject>
