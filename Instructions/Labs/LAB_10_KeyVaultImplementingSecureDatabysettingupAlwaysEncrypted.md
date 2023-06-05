@@ -48,13 +48,11 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
 
 3. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
 
-![image](../images/Custom_Template.png)
-
+   ![image](../images/Custom_Template.png)
 
 4. On the **Edit template** blade, click **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.json** file and click **Open**.
 
-![image](../images/Lab-10_Ex1_Task1.png)
-
+   ![image](../images/Lab-10_Ex1_Task1.png)
 
 5. On the **Edit template** blade, click **Save**.
 
@@ -123,14 +121,13 @@ In this task, you will create an Azure Key Vault resource. You will also configu
 
 1. On the Resource Group blade, click the entry representing the newly created Key Vault. 
 
-![image](../images/Lab-10_Ex2_Task1_1.png)
+   ![image](../images/Lab-10_Ex2_Task1_1.png)
 
+1. On the Key Vault blade, in the **Overview** section, click **Access Policies** and then click **+ Create**.
 
-8. On the Key Vault blade, in the **Overview** section, click **Access Policies** and then click **+ Create**.
+   ![image](../images/Lab-10_Ex2_Task1_2.png)
 
-![image](../images/Lab-10_Ex2_Task1_2.png)
-
-9. On the **Add access policy** blade, specify the following settings (leave all others with their default values): 
+1. On the **Add access policy** blade, specify the following settings (leave all others with their default values): 
 
     |Setting|Value|
     |----|----|
