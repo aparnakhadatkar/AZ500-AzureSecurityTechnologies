@@ -36,8 +36,6 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create a virtual network to use with the network and application security groups. 
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
-
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual networks** and press the **Enter** key.
 
 1. On the **Virtual networks** blade, click **+ Create**.
@@ -117,7 +115,7 @@ In this task, you will create a network security group.
 
 1. Click **Review + create** and then click **Create**.
 
-1. In the Azure portal, navigate back to the **Network security groups** blade and click the **myNsg** entry.
+1. After deployment succeeded, click on **Go to resources**.
 
 1. On the **myNsg** blade, in the **Settings** section, click **Subnets** and then click **+ Associate**. 
 
@@ -134,7 +132,7 @@ In this task, you will create a network security group.
 
 1. Review the default inbound security rules and then click **+ Add**.
 
-1. On the **Add inbound security rule** blade, specify the following settings to allow TCP ports 80 and 443 to the **myAsgWebServers** application security group (leave all other values with their default values): 
+1. On the **Add inbound security rules** blade, specify the following settings to allow TCP ports 80 and 443 to the **myAsgWebServers** application security group (leave all other values with their default values): 
 
     |Setting|Value|
     |---|---|
@@ -144,11 +142,11 @@ In this task, you will create a network security group.
     |Priority|**100**|                                                    
     |Name|**Allow-Web-All**|
 
-1. On the **Add inbound security rule** blade, click **Add** to create the new inbound rule. 
+1. On the **Add inbound security rules** blade, click **Add** to create the new inbound rule. 
 
-1. On the **myNsg** blade, in the **Settings** section, click **Inbound security rules**, and then click **+ Add**.
+1. Again click **+ Add inbound security rules** page.
 
-1. On the **Add inbound security rule** blade, specify the following settings to allow the RDP port (TCP 3389) to the **myAsgMgmtServers** application security group (leave all other values with their default values): 
+1. On the **Add inbound security rules** blade, specify the following settings to allow the RDP port (TCP 3389) to the **myAsgMgmtServers** application security group (leave all other values with their default values): 
 
     |Setting|Value|
     |---|---|
@@ -279,7 +277,7 @@ In this task, you will test the network traffic filters. You should be able to R
 
 1. On the **myVMMgmt** blade, click **Connect** and, click **RDP**. 
 
-1. Click **Download RDP File**, then open that file and use it to connect to the **myVMMgmt** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
+1. Click **Download RDP File**, then open that file and use it to connect to the **myVMMgmt** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials, after providing the credentials, click on **Yes**:
 
    |Setting|Value|
    |---|---|
@@ -300,9 +298,10 @@ In this task, you will test the network traffic filters. You should be able to R
 
     >**Note**: Wait for the installation to complete. This might take a couple of minutes. At that point, you can verify that myVmWeb can be accessed via HTTP/HTTPS.
 
-1. In the Azure portal, navigate back to the **myVmWeb** blade.
+1. After getting the output, close the **Run Command Script** blade, and navigate back to the 
+overview page of **myVmWeb** blade.
 
-1. On the **myVmWeb** blade, identify the **Public IP address** of the myVmWeb Azure VM.
+1. Identify the **Public IP address** of the myVmWeb Azure VM.
 
 1. Open another browser tab and navigate to IP address you identified in the previous step.
 

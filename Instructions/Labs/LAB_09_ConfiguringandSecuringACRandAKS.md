@@ -44,8 +44,6 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create a resource group for the lab an an Azure Container Registry.
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
-
 1. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, click **Bash** and **Create storage**.
 
 1. Ensure **Bash** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
@@ -149,15 +147,13 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
     >**Note**: AKS can be configured as a private cluster. This assigns a private IP to the API server to ensure network traffic between your API server and your node pools remains on the private network only. For more information, visit [Create a private Azure Kubernetes Service cluster](https://docs.microsoft.com/en-us/azure/aks/private-clusters) page.
 
-1. Click **Next: Integrations >** and, on the **Integrations** tab of the **Create Kubernetes cluster** blade, set **Container monitoring** to **Disabled**. 
-
-    >**Note**: In production scenarios, you would want to enable monitoring. Monitoring is disabled in this case since it is not covered in the lab. 
+1. Click **Next: Integrations >** and, on the **Integrations** tab of the **Create Kubernetes cluster** blade, uncheck the box of **Enable container logs** under **Container Insights**. 
 
 1. Click **Review + Create** and then click **Create**.
 
     >**Note**: Wait for the deployment to complete. This might take about 10 minutes.
 
-1. Once the deployment completes, in the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
+1. Once the deployment completes, in the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type/search and select **Resource groups**.
 
 1. On the **Resource groups** blade, in the listing of resource groups, note a new resource group named **MC_AZ500LAB09_MyKubernetesCluster_eastus** that holds components of the AKS Nodes. Review resources in this resource group. 
 	
@@ -239,7 +235,7 @@ In this task,  you will download the Manifest files, edit the YAML file, and app
 
 1. In the editor pane, scroll down to **line 24** and replace the **`<ACRUniquename>`** placeholder with the ACR name.
 
-1. In the editor pane, in the upper right corner, click the **ellipses** icon, click **Save** and then click **Close editor**. 
+1. In the editor pane, in the upper right corner, on keyboard press **CTRL + S** to save the file and then click **Close editor**. 
 
 1. In the Bash session within the Cloud Shell pane, run the following to apply the change to the cluster:
 
@@ -284,7 +280,7 @@ In this task, you will deploy the internal facing service on the AKS.
 
 1. In the editor pane, scroll down to the line containing the reference to the container image and replace the **`<ACRUniquename>`** placeholder with the ACR name.
 
-1. In the editor pane, in the upper right corner, click the **ellipses** icon, click **Save** and then click **Close editor**. 
+1. In the editor pane, in the upper right corner, on keyboard press **CTRL + S** to save the file and then click **Close editor**.
 
 1. In the Bash session within the Cloud Shell pane, run the following to apply the change to the cluster:
 
@@ -348,7 +344,6 @@ In this task, you will use one of the pods running on the AKS cluster to access 
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-
-    > Result: You have configured and secured ACR and AKS.
+> Result: You have configured and secured ACR and AKS.
 
 **You have successfully completed the lab**

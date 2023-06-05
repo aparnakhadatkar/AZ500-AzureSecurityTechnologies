@@ -46,10 +46,7 @@ In this task, you will review and deploy the lab environment.
 
 In this task, you will create a virtual machine by using an ARM template. This virtual machine will be used in the last exercise for this lab.
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
-
-
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and press the **Enter** key.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type/search and select **Deploy a custom template**.
 
 1. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
 
@@ -75,7 +72,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
 In this task you will deploy the Azure firewall into the virtual network. 
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Firewalls** and press the **Enter** key.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type/search and select **Firewalls**.
 
 1. On the **Firewalls** blade, click **+ Create**.
 
@@ -95,7 +92,7 @@ In this task you will deploy the Azure firewall into the virtual network.
 
     >**Note**: Wait for the deployment to complete. This should take about 5 minutes. 
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type/search and select **Resource groups**.
 
 1. On the **Resource groups** blade, in the list of resource group, click the **AZ500LAB08** entry.
 
@@ -112,7 +109,7 @@ In this task you will deploy the Azure firewall into the virtual network.
 
 In this task, you will create a default route for the **Workload-SN** subnet. This route will configure outbound traffic through the firewall.
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Route tables** and press the **Enter** key.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type/search and select **Route tables**.
 
 1. On the **Route tables** blade, click **+ Create**.
 
@@ -148,7 +145,7 @@ In this task, you will create a default route for the **Workload-SN** subnet. Th
    |Setting|Value|
    |---|---|
    |Route name|**FW-DG**|
-   |Address prefix source|**IP Adresses**|
+   |Destination address prefix|**IP Adresses**|
    |Destination IP addresses/CIDR ranges|**0.0.0.0/0**
    |Next hop type|**Virtual appliance**|
    |Next hop address|the private IP address of the firewall that you identified in the previous task|
@@ -250,9 +247,9 @@ In this task, you will test the firewall to confirm that it works as expected.
 
 1. On the **AZ500LAB08** blade, in the list of resources, click the **Srv-Jump** virtual machine.
 
-1. On the **Srv-Jump** blade, click **Connect** and, in the drop down menu, click **RDP**. 
+1. On the **Srv-Jump** blade, click **Connect**. 
 
-1. Click **Download RDP File** and use it to connect to the **Srv-Jump** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+1. Then on the **RDP** page, click **Download RDP File** and use it to connect to the **Srv-Jump** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials, after providing the credentials, click on **Yes** on remote desktop connection page:
 
    |Setting|Value|
    |---|---|
