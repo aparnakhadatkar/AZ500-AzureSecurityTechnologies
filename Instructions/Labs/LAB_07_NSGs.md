@@ -6,9 +6,7 @@ You have been asked to implement your organization's virtual networking infrastr
 - Each group of servers should be in its own Application Security Group. 
 - You should be able to RDP into the Management Servers, but not the Web Servers.
 - The Web Servers should display the IIS web page when accessed from the internet. 
-- Network security group rules should be used to control network access. 
-
-> For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
+- Network security group rules should be used to control network access.  
 
 ## Lab objectives
 In this lab, you will complete the following exercises:
