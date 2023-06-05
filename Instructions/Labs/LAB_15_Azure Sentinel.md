@@ -48,9 +48,11 @@ In this task, you will on-board Microsoft Sentinel and connect the Log Analytics
 
 In this task, you will configure Sentinel to use the Azure Activity data connector.  
 
-1. In the Azure portal, on the **Microsoft Sentinel \| Overview** blade, in the **Configuration** section, click **Data connectors**. 
+1. In the Azure portal, on the **Microsoft Sentinel \| Overview** blade, in the left navigation pane, under the **Configuration** section, click **Data connectors**. 
 
 1. On the **Microsoft Sentinel \| Data connectors** blade, review the list of available connectors, type **Azure** into the search bar and select the entry representing the **Azure Activity** connector (hide the menu bar on the left using \<< if needed), review its description and status, and then click **Open connector page**.
+
+   ![image](../images/AZ-500-lab15open.png) 
 
 1. On the **Azure Activity** blade the **Instructions** tab should be selected, note the **Prerequisites** and scroll down to the **Configuration**. Take note of the information describing the connector update. Your Azure Pass subscription never used the legacy connection method so you can skip step 1 (the **Disconnect All** button will be grayed out) and proceed to step 2.
 
