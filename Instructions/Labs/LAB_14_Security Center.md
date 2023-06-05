@@ -34,6 +34,9 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 1. On the **Microsoft Defender for Cloud \| Getting started** blade, click **Upgrade** and then click **Install agents tab** scroll down and click **Install agents**.
 
    >**Note**: If you see any pop-up like **Only upgrade plans with exsiting resources** then click on **Enable** and then perform the previous step.
+   
+   
+     ![image](../images/Az-500lab14-upgrade.png) 
      
 1. On the **Microsoft Defender for Cloud \| Getting started** blade, in the vertical menu on the left side, in the **Management** section, click **Environment Settings**.
  
@@ -69,6 +72,8 @@ In this task, you will review the Microsoft Defender for Cloud recommendations.
     >**Note**: Record the current score if it is available.
 
 1. Navigate back to the **Microsoft Defender for Cloud \| Overview** blade, select **Assessed resources**.
+
+   ![image](../images/AZ-500-assesesresources.png) 
 
 1. On the **Inventory** blade, select the **myVM** entry.
 
@@ -107,7 +112,7 @@ In this task, you will implement the Microsoft Defender for Cloud recommendation
 
  **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
- - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+ - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
