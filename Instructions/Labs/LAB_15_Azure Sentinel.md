@@ -52,7 +52,7 @@ In this task, you will configure Sentinel to use the Azure Activity data connect
 
 1. On the **Microsoft Sentinel \| Data connectors** blade, review the list of available connectors, type **Azure** into the search bar and select the entry representing the **Azure Activity** connector (hide the menu bar on the left using \<< if needed), review its description and status, and then click **Open connector page**.
 
-   ![image](../images/AZ-500-lab15open.png) 
+   ![image](../images/AZ-500-lab15open1.1.png) 
 
 1. On the **Azure Activity** blade the **Instructions** tab should be selected, note the **Prerequisites** and scroll down to the **Configuration**. Take note of the information describing the connector update. Your Azure Pass subscription never used the legacy connection method so you can skip step 1 (the **Disconnect All** button will be grayed out) and proceed to step 2.
 
@@ -86,7 +86,9 @@ In this task, you will review and create a rule that uses the Azure Activity dat
 
     >**Note**: Review the types of rules you can create. Each rule is associated with a specific Data Source.
 
-1. In the listing of rule templates, type **Suspicious** into the search bar form and click the **Suspicious number of resource creation or deployment** entry associated with the **Azure Activity** data source. And then, in the pane displaying the rule template properties, click **Create rule** (scroll to the right of the page if needed).
+1. In the listing of rule templates, type **Suspicious** into the search bar form and click the **Suspicious number of resource creation or deployment** entry associated with the **Azure Activity** data source. And then, in the pane displaying the rule template properties(click the >> symbol to view the pane), click **Create rule** (scroll to the right of the page if needed).
+
+     ![image](../images/AZ-500-lab15-steps.png)
 
     >**Note**: This rule has the medium severity. 
 
@@ -234,7 +236,7 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 
- - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+ - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
