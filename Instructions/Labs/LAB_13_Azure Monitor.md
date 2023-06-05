@@ -110,6 +110,8 @@ In this task, you will configure collection of the Windows System log and severa
 
 1. On the Log Analytics workspace blade, in the **Classics** section, click **Legacy agents management**.
 
+    ![image](../images/AZ-500--legacy.png)
+
 1. On the **Legacy agents management** blade, review the configurable settings including Windows Event Logs, Windows Performance Counters, Linux Performance Counters, IIS Logs, and Syslog. 
 
 1. Under tab **Windows event logs**, click on **+ Add windows event log**, in the listing of event log types, select **System**.
@@ -137,6 +139,8 @@ In this task, you will run a log search on your data collection.
 
 2. On the Log Analytics workspace blade, in the **General** section, click **Logs**.
 
+     ![image](../images/AZ-500-general.png)
+
 3. If needed, close the **Welcome to Log Analysis** window. 	
 
 4. On the **Queries** pane, within the searchbox, type **Memory and CPU usage**.
@@ -156,8 +160,18 @@ In this task, you will run a log search on your data collection.
     >**Note**: You can generate some additional load on the Azure VM you deployed earlier in this lab by using the following steps:	
     
  7. Now, navigate to the Azure VM blade within the Azure portal.
+ 
+ 8. On the **Overview** page for the virtual machine, select the **Connect** button.
+ 
+ 9. On the RDP tab, select the **Download RDP File** button.
+ 
+10. Open the RDP file that was just downloaded. When a dialog appears asking if you want to connect, select **Connect**.
+ 
+11. Enter the username and password selected during the virtual machine provisioning process. Then select **OK**.
+ 
+12. When the **Remote Desktop Connection** dialog appears asking if you want to connect, select **Yes**.
     
- 8. Navigate to the Azure VM blade, right-click on the **Start** icon on the Task bar and select **Windows Powershell(Admin)** and Run the below commands one by one:
+13. Within the remote session, right-click on the **Start** icon on the Task bar and select **Windows Powershell(Admin)** and Run the below commands one by one:
  	
        ```cmd	
        cmd	
@@ -166,17 +180,17 @@ In this task, you will run a log search on your data collection.
        goto loop	
        ```	
        	
- 10. Switch back ot the Log Analytics blade and re-run the query. You might need to wait a few minutes for data to be collected and re-run the query again.
+ 14. Switch back to the Log Analytics blade and re-run the query. You might need to wait a few minutes for data to be collected and re-run the query again.
 
 > **Results:** You used a Log Analytics workspace to configure data sources and query logs. 
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 
- - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+ - Click Lab Validation tab located at the upper right corner of the lab guide section and navigate to the Lab Validation Page..
  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-**You have successfully completed the lab**
+**You have successfully completed the lab** Please click on **Next** to start the next lab.
 
  
