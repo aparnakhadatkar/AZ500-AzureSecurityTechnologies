@@ -58,7 +58,9 @@ In this task, you will create a virtual network.
     |---|---|
     |Subnet name|**Public**|
     |Subnet address range|**10.0.0.0/24**|
-
+	
+	![image](../images/Lab-12_Ex1_Task1.png)
+	
 1. Back on the **IP addresses** tab of the **Create virtual network** blade, click **Review + create**.
 
 1. On the **Review + create** tab of the **Create virtual network** blade, click **Create**.
@@ -75,7 +77,9 @@ In this task, you will create another subnet and enable a service endpoint on th
 1. On the **myVirtualNetwork** blade, in the **Settings** section, click **Subnets**.
 
 1. On the **myVirtualNetwork \| Subnets** blade, click **+ Subnet**. 
-
+	
+	![image](../images/Lab-12_Ex1_Task2.png)
+	
 1. On the **Add subnet** blade, specify the following settings (leave others with their default values):
 
     |Setting|Value|
@@ -95,6 +99,8 @@ In this task, you will create a network security group with two outbound securit
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Network security groups** and press the **Enter** key.
 
 1. On the **Network security groups** blade, click **+ Create**.
+
+	![image](../images/New_NSG.png)
 
 1. On the **Basics** tab of the **Create network security group** blade, specify the following settings: 
 
@@ -130,6 +136,8 @@ In this task, you will create a network security group with two outbound securit
     |Priority|**1000**|
     |Name|**Allow-Storage-All**|
 
+	![image](../images/Lab-12_Ex1_Task3_1.png)
+
 1. On the **Add outbound security rule** blade, click **Add** to create the new outbound rule. 
 
 1. On the **myNsgPrivate** blade, in the **Settings** section, click **Outbound security rules**, and then click **+ Add**.
@@ -148,7 +156,9 @@ In this task, you will create a network security group with two outbound securit
     |Action|**Deny**|
     |Priority|**1100**|
     |Name|**Deny-Internet-All**|
-
+	
+	![image](../images/Lab-12_Ex1_Task3_2.png)
+	
 1. On the **Add outbound security rule** blade, click **Add** to create the new outbound rule.
 
     >**Note**: This rule overrides a default rule in all network security groups that allows outbound internet communication. 
@@ -170,7 +180,9 @@ In this task, you will create a network security group with two outbound securit
     |Action|**Allow**|
     |Priority|**1200**|                                                    
     |Name|**Allow-RDP-All**|
-
+	
+	![image](../images/Lab-12_Ex1_Task3_3.png)
+	
 1. On the **Add inbound security rule** blade, click **Add** to create the new inbound rule. 
 
     >**Note**: Now you will associate the network security group with the Private subnet.
@@ -189,7 +201,9 @@ In this task, you will create a network security group with one inbound security
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Network security groups** and press the **Enter** key.
 
 2. On the **Network security groups** blade, click **+ Create**.
-
+	
+	![image](../images/New_NSG.png)
+	
 3. On the **Basics** tab of the **Create network security group** blade, specify the following settings: 
 
     |Setting|Value|
@@ -239,7 +253,9 @@ In this task, you will create a storage account with a file share and obtain the
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Storage accounts** and press the **Enter** key.
 
 2. On the **Storage accounts** blade, click **+ Create**.
-
+	
+	![image](../images/Lab-12_Ex1_Task5.png)
+	
 3. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
 
     |Setting|Value|
@@ -274,7 +290,9 @@ In this task, you will create a storage account with a file share and obtain the
 10. On the **New file share** blade, click **Create**.
 
     >**Note**: Now, retrieve and record the PowerShell script that creates a drive mapping to the Azure file share. 
-
+	
+	![image](../images/Lab-12_Ex1_Task5_2.png)
+	
 11. On the storage account blade, in the list of file shares, click **my-file-share**.
 
 12. On the **my-file-share** blade, click **Connect**.
@@ -282,6 +300,8 @@ In this task, you will create a storage account with a file share and obtain the
 13. On the **Connect** blade, on the **Windows** tab, click on **Show Script** and copy the PowerShell script that creates a Z drive mapping to the file share. 
 
     >**Note**: Record this script. You will need this in a later in this lab in order to map the file share from the Azure virtual machine on the **Private** subnet.
+    
+    ![image](../images/Lab-12_Ex1_Task5_3.png)
 
 14. Navigate back to the storage account blade, then in the **Security + networking** section, click **Networking**.
 	
