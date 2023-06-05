@@ -530,5 +530,7 @@ You will create a Console application using Visual Studio to load data into the 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
+
+**You have successfully completed the lab. Please click on next to go to the next lab.**
 	
 
