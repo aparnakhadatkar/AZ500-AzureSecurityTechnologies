@@ -6,8 +6,6 @@ You have been asked to create a proof of concept demonstrating how to integrate 
 - Create and configure an Azure AD tenant
 - Synchronize the AD DS forest with the Azure AD tenant
 
-> For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
-
 ## Lab objectives
 In this lab, you will complete the following exercises:
 - Exercise 1: Deploy an Azure VM hosting an Active Directory domain controller
