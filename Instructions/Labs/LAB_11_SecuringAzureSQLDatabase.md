@@ -18,9 +18,9 @@ In this lab, you will complete the following exercise:
 
 - **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\\11\\azuredeploy.json**
 
-# Exercise 1: Implement SQL Database security features
+## Exercise 1: Implement SQL Database security features
 
-## Estimated timing: 30 minutes
+### Estimated timing: 30 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -29,7 +29,7 @@ In this exercise, you will complete the following tasks:
 - Task 3: Configure Data Classification
 - Task 4: Configure Auditing
 
-## Task 1: Deploy an Azure SQL Database
+### Task 1: Deploy an Azure SQL Database
 
 In this task, you will use a template to deploy the lab infrastructure. 
 
@@ -57,7 +57,7 @@ In this task, you will use a template to deploy the lab infrastructure.
 
     >**Note**: Wait for the deployment to complete. It might take upto 5 minutes.
 
-## Task 2: Configure Advanced Data Protection
+### Task 2: Configure Advanced Data Protection
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
@@ -83,7 +83,7 @@ In this task, you will use a template to deploy the lab infrastructure.
 
       >**Note**: It may take 10-15 minutes for recommendations to appear on the **Microsoft Defender for Cloud** blade. Rather than waiting, proceed to the next task but consider returning to this blade once you complete all the remaining tasks.
       
-## Task 3: Configure Data Classification
+### Task 3: Configure Data Classification
 
 In this task, you will discover and classify information in SQL database for GPDR and data protection compliance.
 
@@ -115,7 +115,7 @@ In this task, you will discover and classify information in SQL database for GPD
 
 9. Back on the **Data Discovery & Classification** blade **Overview** tab, note that it has been updated to account for the latest classification information. 
 
-## Task 4 : Configure auditing 
+### Task 4 : Configure auditing 
 
 In this task, you will first configure server level auditing and then configure database level auditing. 
 
