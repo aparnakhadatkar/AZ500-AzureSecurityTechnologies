@@ -16,16 +16,16 @@ In this lab, you will complete the following exercises:
 
 ![image](https://user-images.githubusercontent.com/91347931/157525374-8f740f14-c2db-47b3-98f8-7feb9bc122b5.png)
 
-# Exercise 1: Deploy an Azure VM hosting an Active Directory domain controller
+## Exercise 1: Deploy an Azure VM hosting an Active Directory domain controller
 
-## Estimated timing: 10 minutes
+### Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
 
 - Task 1: Identify an available DNS name for an Azure VM deployment
 - Task 2: Use an ARM template to deploy an Azure VM hosting an Active Directory domain controller
 
-## Task 1: Identify an available DNS name for an Azure VM deployment
+### Task 1: Identify an available DNS name for an Azure VM deployment
 
 In this task, you will identify a DNS name for your Azure VM deployment.
 
@@ -49,7 +49,7 @@ In this task, you will identify a DNS name for your Azure VM deployment.
 
 6. Close the Cloud Shell.
 
-## Task 2: Use an ARM template to deploy an Azure VM hosting an Active Directory domain controller
+### Task 2: Use an ARM template to deploy an Azure VM hosting an Active Directory domain controller
 
 In this task, you will deploy an Azure VM that will host an Active Directory domain controller
 
@@ -82,7 +82,7 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
 > Result: After you completed this exercise, you have initiated deployment of an Azure VM that will host an Active Directory domain controller by using an Azure Resource Manager template
 
 
-# Exercise 2: Create and configure an Azure Active Directory tenant 
+## Exercise 2: Create and configure an Azure Active Directory tenant 
 
 ### Estimated timing: 20 minutes
 
@@ -92,7 +92,7 @@ In this exercise, you will complete the following tasks:
 - Task 2: Add a custom DNS name to the new Azure AD tenant
 - Task 3: Create an Azure AD user with the Global Administrator role
 
-## Task 1: Create an Azure Active Directory (AD) tenant
+### Task 1: Create an Azure Active Directory (AD) tenant
 
 In this task, you will create a new Azure AD tenant to use in this lab. 
 
@@ -118,7 +118,7 @@ In this task, you will create a new Azure AD tenant to use in this lab.
 
     >**Note**: Wait for the new tenant to be created. Use the **Notification** icon to monitor the deployment status. 
 
-## Task 2: Add a custom DNS name to the new Azure AD tenant
+### Task 2: Add a custom DNS name to the new Azure AD tenant
 
 In this task, you will add your custom DNS name to the new Azure AD tenant. 
 
@@ -140,7 +140,7 @@ In this task, you will add your custom DNS name to the new Azure AD tenant.
 
      ![image](../images/Lab-06_Ex2_Task2.png)
 
-## Task 3: Create an Azure AD user with the Global Administrator role
+### Task 3: Create an Azure AD user with the Global Administrator role
 
 In this task, you will add a new Azure AD user and assign them to the Global Administrator role. 
 
@@ -177,7 +177,7 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 > **Result**: After you completed this exercise, you have created an Azure AD tenant, added a custom DNS name to the new Azure AD tenant, and created an Azure AD user with the Global Administrator role.
 
 
-# Exercise 3: Synchronize Active Directory forest with an Azure Active Directory tenant
+## Exercise 3: Synchronize Active Directory forest with an Azure Active Directory tenant
 
 ### Estimated timing: 20 minutes
 
@@ -187,7 +187,7 @@ In this exercise, you will complete the following tasks:
 - Task 2: Install Azure AD Connect
 - Task 3: Verify directory synchronization
 
-## Task 1: Prepare AD DS for directory synchronization
+### Task 1: Prepare AD DS for directory synchronization
 
 In this task, you will connect to the Azure VM running AD DS domain controller and create a directory synchronization account. 
 
@@ -200,6 +200,8 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 3. On the **Virtual machines** blade, click the **adVM** entry. 
 
 4. On the **adVM** blade, click **Connect** and, in the drop-down menu, click **RDP**. 
+
+   ![image](../images/Download_RDP.png)
 
 5. In the **IP address** parameter, select **Load balancer public IP address**, then click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
 
@@ -241,7 +243,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
    ![image](../images/Lab-06_Ex3_Task2.png)
 
-## Task 2: Install Azure AD Connect
+### Task 2: Install Azure AD Connect
 
 In this task, you will install AD Connect on the virtual machine. 
 
@@ -297,7 +299,7 @@ In this task, you will install AD Connect on the virtual machine.
 20. Review the information on the **Configuration complete** page and click **Exit** to close the **Microsoft Azure Active Directory Connect** window.
 
 
-## Task 3: Verify directory synchronization
+### Task 3: Verify directory synchronization
 
 In this task, you will verify that directory synchronization is working. 
 
