@@ -137,7 +137,7 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 
 5. On the **Activate** blade, in the **Azure AD Premium P2** section, click on **Free Trial** and then click on **Activate**.
 
-![image](../images/Lab-04_Ex2_Task2.png)
+   ![image](../images/Lab-04_Ex2_Task2.png)
 
 ## Task 3: Create Azure AD users and groups.
 
@@ -246,7 +246,7 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
 7. Notice the **Multi-Factor Auth status** column for **aaduser1** is now **Enabled**.
 
-![image](../images/Lab-04_Ex2_Task5.png)
+   ![image](../images/Lab-04_Ex2_Task5.png)
 
 8. Again click on **aaduser1** and notice that, at this point, you also have the **Enforce** option on the right-side. 
 
@@ -436,10 +436,10 @@ In this task, you will create a user risk policy.
 
    - Under Users click on **All Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
 
-![image](../images/Lab-04_Ex4_Task2.png)
-
    - On the **Users** blade, switch to the **Exclude** tab, click on **Select excluded users**, select your user account, and then click on **Select**. 
 
+     ![image](../images/Lab-04_Ex4_Task2.png)
+     
    - Under User risk click on **User risk**; on the **User risk** blade, select **Low and above**, and then click on **Done**. 
 
    - Under Access click on **Block access**; on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click on **Done**.
@@ -460,7 +460,7 @@ In this task, you will configure a sign-in risk policy.
 
    - Under Access click on **Block access**; on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Done**.
 
-![image](../images/Lab-04_Ex4_Task3.png)
+     ![image](../images/Lab-04_Ex4_Task3.png)
 
    - Set **Enforce Policy** to **On** and click on **Save**.
 
