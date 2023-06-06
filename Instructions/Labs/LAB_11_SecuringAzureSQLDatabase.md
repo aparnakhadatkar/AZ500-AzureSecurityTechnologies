@@ -6,8 +6,6 @@ You have been asked to review security features for Azure SQL database. Specific
 - Ability to discover and classify database information into categories such as Confidential. 
 - Ability to audit database server and database queries and log events. 
 
-> For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
-
 ## Lab objectives
 In this lab, you will complete the following exercise:
 - Exercise 1: Implement SQL Database security features
@@ -20,9 +18,9 @@ In this lab, you will complete the following exercise:
 
 - **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\\11\\azuredeploy.json**
 
-# Exercise 1: Implement SQL Database security features
+## Exercise 1: Implement SQL Database security features
 
-## Estimated timing: 30 minutes
+### Estimated timing: 30 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -31,23 +29,23 @@ In this exercise, you will complete the following tasks:
 - Task 3: Configure Data Classification
 - Task 4: Configure Auditing
 
-## Task 1: Deploy an Azure SQL Database
+### Task 1: Deploy an Azure SQL Database
 
 In this task, you will use a template to deploy the lab infrastructure. 
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and hit **Enter** key.
 
-    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
-2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and hit **Enter** key.
-3. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
-
-4. On the **Edit template** blade, click **Load file**, locate the **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\\11\\azuredeploy.json** file and click **Open**.
+2. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
+    
+    ![image](../images/Custom_Template.png)
+    
+3. On the **Edit template** blade, click **Load file**, locate the **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\\11\\azuredeploy.json** file and click **Open**.
 
     >**Note**: Review the content of the template and note that it deploys an Azure SQL database.
 
-5. On the **Edit template** blade, click **Save**.
+4. On the **Edit template** blade, click **Save**.
 
-6. On the **Custom deployment** blade, ensure that the following settings are configured (leave rest with the default values):
+5. On the **Custom deployment** blade, ensure that the following settings are configured (leave rest with the default values):
 
    |Setting|Value|
    |---|---|
@@ -55,11 +53,11 @@ In this task, you will use a template to deploy the lab infrastructure.
    |Resource group|click **Create new** and type the name **AZ500LAB11**|
    |Location|**(US) East US**|
 
-7. Click **Review + Create** and then click **Create**.
+6. Click **Review + Create** and then click **Create**.
 
     >**Note**: Wait for the deployment to complete. It might take upto 5 minutes.
 
-## Task 2: Configure Advanced Data Protection
+### Task 2: Configure Advanced Data Protection
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
@@ -68,12 +66,16 @@ In this task, you will use a template to deploy the lab infrastructure.
 3. On the **AZ500LAB11** blade, click the entry representing the newly created SQL Server.
 
 4. On the SQL server blade, in the **Security** section, click **Microsoft Defender for Cloud**, select **Enable Microsoft Defender for SQL**.
-
+    
+    ![image](../images/Lab-11_Ex1_Task2_1.png)
+    
       >**Note**: Wait until notification indicates Azure Defender for SQL has been successfully enabled.
 
 5. On the SQL server blade, in the **Security** section, on the **Microsoft Defender for Cloud** page, in the **Microsoft Defender for SQL: Enabled at the subscription-level (Configure)** parameter, click **(configure)**.  
 
       >**Note**: Refresh the browser if **(configure)** is not displaying.
+    
+    ![image](../images/Lab-11_Ex1_Task2_2.png)
     
 6. On the **Server Settings** blade, review the information about pricing and the trial period, **VULNERABILITY ASSESSMENT SETTINGS** and **ADVANCED THREAT PROTECTION SETTINGS**.
 
@@ -81,7 +83,7 @@ In this task, you will use a template to deploy the lab infrastructure.
 
       >**Note**: It may take 10-15 minutes for recommendations to appear on the **Microsoft Defender for Cloud** blade. Rather than waiting, proceed to the next task but consider returning to this blade once you complete all the remaining tasks.
       
-## Task 3: Configure Data Classification
+### Task 3: Configure Data Classification
 
 In this task, you will discover and classify information in SQL database for GPDR and data protection compliance.
 
@@ -96,7 +98,9 @@ In this task, you will discover and classify information in SQL database for GPD
     >**Note**: The classification engine scans your database for columns containing potentially sensitive data and provides a list of recommended column classifications.
 
 5. Click the text message **We have found 15 columns with classification recommendations** displayed on blue bar at the top of the blade.
-
+    
+    ![image](../images/Lab-11_Ex1_Task3.png)
+    
 6. Review the listed columns and the recommended sensitivity label. 
 
 7. Enable the **Select all** checkbox and then click **Accept Selected Recommendations**.
@@ -111,7 +115,7 @@ In this task, you will discover and classify information in SQL database for GPD
 
 9. Back on the **Data Discovery & Classification** blade **Overview** tab, note that it has been updated to account for the latest classification information. 
 
-## Task 4 : Configure auditing 
+### Task 4 : Configure auditing 
 
 In this task, you will first configure server level auditing and then configure database level auditing. 
 
@@ -128,7 +132,9 @@ In this task, you will first configure server level auditing and then configure 
 5. Choose your **Subscription** from the dropdown list.	
 
 6. Click **Storage account** and choose **Create new**.	
-
+    
+    ![image](../images/Lab-11_Ex1_Task4.png)
+    
 7. On the **Create storage account** blade, in the **Name** box, type a globally unique name consisting of between 3 and 24 lower case letters and digits, click **OK**. 
 
     >**Note**: You may need to refresh the browser before the storage account becomes available.
@@ -163,3 +169,4 @@ In this task, you will first configure server level auditing and then configure 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
+**You have successfully completed the lab. Please click on next to go to the next lab.**

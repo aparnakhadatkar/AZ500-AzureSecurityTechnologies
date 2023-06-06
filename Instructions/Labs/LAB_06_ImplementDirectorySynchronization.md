@@ -6,8 +6,6 @@ You have been asked to create a proof of concept demonstrating how to integrate 
 - Create and configure an Azure AD tenant
 - Synchronize the AD DS forest with the Azure AD tenant
 
-> For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
-
 ## Lab objectives
 In this lab, you will complete the following exercises:
 - Exercise 1: Deploy an Azure VM hosting an Active Directory domain controller
@@ -18,26 +16,24 @@ In this lab, you will complete the following exercises:
 
 ![image](https://user-images.githubusercontent.com/91347931/157525374-8f740f14-c2db-47b3-98f8-7feb9bc122b5.png)
 
-# Exercise 1: Deploy an Azure VM hosting an Active Directory domain controller
+## Exercise 1: Deploy an Azure VM hosting an Active Directory domain controller
 
-## Estimated timing: 10 minutes
+### Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
 
 - Task 1: Identify an available DNS name for an Azure VM deployment
 - Task 2: Use an ARM template to deploy an Azure VM hosting an Active Directory domain controller
 
-## Task 1: Identify an available DNS name for an Azure VM deployment
+### Task 1: Identify an available DNS name for an Azure VM deployment
 
 In this task, you will identify a DNS name for your Azure VM deployment.
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
+1. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, click **PowerShell** and **Create storage**.
 
-2. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, click **PowerShell** and **Create storage**.
+2. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
-3. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
-
-4. In the PowerShell session within the Cloud Shell pane, run the following to identify an available DNS name you can use for an Azure VM deployment in the next task of this exercise:
+3. In the PowerShell session within the Cloud Shell pane, run the following to identify an available DNS name you can use for an Azure VM deployment in the next task of this exercise:
 
     ```powershell
     Test-AzDnsAvailability -DomainNameLabel <custom-label> -Location '<location>'
@@ -47,13 +43,13 @@ In this task, you will identify a DNS name for your Azure VM deployment.
 
     >**Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
 
-5. Verify that the command returned **True**. If not, rerun the same command with a different value of the `<custom-label>` until the command returns **True**.
+4. Verify that the command returned **True**. If not, rerun the same command with a different value of the `<custom-label>` until the command returns **True**.
 
-6. Record the value of the `<custom-label>` that resulted in the successful outcome. You will need it for the next task.
+5. Record the value of the `<custom-label>` that resulted in the successful outcome. You will need it for the next task.
 
-7. Close the Cloud Shell.
+6. Close the Cloud Shell.
 
-## Task 2: Use an ARM template to deploy an Azure VM hosting an Active Directory domain controller
+### Task 2: Use an ARM template to deploy an Azure VM hosting an Active Directory domain controller
 
 In this task, you will deploy an Azure VM that will host an Active Directory domain controller
 
@@ -86,7 +82,7 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
 > Result: After you completed this exercise, you have initiated deployment of an Azure VM that will host an Active Directory domain controller by using an Azure Resource Manager template
 
 
-# Exercise 2: Create and configure an Azure Active Directory tenant 
+## Exercise 2: Create and configure an Azure Active Directory tenant 
 
 ### Estimated timing: 20 minutes
 
@@ -96,7 +92,7 @@ In this exercise, you will complete the following tasks:
 - Task 2: Add a custom DNS name to the new Azure AD tenant
 - Task 3: Create an Azure AD user with the Global Administrator role
 
-## Task 1: Create an Azure Active Directory (AD) tenant
+### Task 1: Create an Azure Active Directory (AD) tenant
 
 In this task, you will create a new Azure AD tenant to use in this lab. 
 
@@ -122,7 +118,7 @@ In this task, you will create a new Azure AD tenant to use in this lab.
 
     >**Note**: Wait for the new tenant to be created. Use the **Notification** icon to monitor the deployment status. 
 
-## Task 2: Add a custom DNS name to the new Azure AD tenant
+### Task 2: Add a custom DNS name to the new Azure AD tenant
 
 In this task, you will add your custom DNS name to the new Azure AD tenant. 
 
@@ -138,11 +134,13 @@ In this task, you will add your custom DNS name to the new Azure AD tenant.
 
 5. On the **Custom domain name** blade, in the **Custom domain name** text box, type **adatum.com** and click **Add Domain**.
 
-6. On the **adatum.com** blade, review the information necessary to perform verification of the Azure AD domain name and then select **Delete** twice.
+6. On the **adatum.com** blade, review the information necessary to perform verification of the Azure AD domain name and then close.
 
-    >**Note**: You will not be able to complete the validation process because you do not own the **adatum.com** DNS domain name. This will not prevent you from synchronizing the **adatum.com** AD DS domain with the Azure AD tenant. You will use for this purpose the initial DNS name of the Azure AD tenant (the name ending with the **onmicrosoft.com** suffix), which you identified in the previous task. However, keep in mind that, as a result, the DNS domain name of the AD DS domain and the DNS name of the Azure AD tenant will differ. This means that Adatum users will need to use different names when signing in to the AD DS domain and when signing in to Azure AD tenant.
+    >**Note**: You will not be able to complete the validation process because you do not own the **adatum.com** DNS domain name. However, this will not prevent you from synchronizing the **adatum.com** AD DS domain with the Azure AD tenant. You will use for this purpose the initial DNS name of the Azure AD tenant (the name ending with the **onmicrosoft.com** suffix), which you identified in the previous task. Keep in mind that, as a result, the DNS domain name of the AD DS domain and the DNS name of the Azure AD tenant will differ. This means that Adatum users will need to use different names when signing in to the AD DS domain and when signing in to Azure AD tenant.
 
-## Task 3: Create an Azure AD user with the Global Administrator role
+     ![image](../images/Lab-06_Ex2_Task2.png)
+
+### Task 3: Create an Azure AD user with the Global Administrator role
 
 In this task, you will add a new Azure AD user and assign them to the Global Administrator role. 
 
@@ -158,8 +156,9 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
    |Name|**syncadmin**|
    |Password|ensure that the option **Auto-generate password** is selected and click **Show Password**|
    |Groups|**0 groups selected**|
-   |Roles|click **User**, then click **Global administrator**, and click **Select**|
-   |Usage Location|**United States**|  
+   |Usage Location (bottom of Properties tab)|**United States**|  
+   |Assignments (+Add Role)|click **User**, then click **Global administrator**, and click **Select**|
+   
 
     >**Note**: Record the full user name. You can copy its value by clicking the **Copy to clipboard** button on the right hand side of the drop-down list displaying the domain name. 
 
@@ -178,7 +177,7 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 > **Result**: After you completed this exercise, you have created an Azure AD tenant, added a custom DNS name to the new Azure AD tenant, and created an Azure AD user with the Global Administrator role.
 
 
-# Exercise 3: Synchronize Active Directory forest with an Azure Active Directory tenant
+## Exercise 3: Synchronize Active Directory forest with an Azure Active Directory tenant
 
 ### Estimated timing: 20 minutes
 
@@ -188,7 +187,7 @@ In this exercise, you will complete the following tasks:
 - Task 2: Install Azure AD Connect
 - Task 3: Verify directory synchronization
 
-## Task 1: Prepare AD DS for directory synchronization
+### Task 1: Prepare AD DS for directory synchronization
 
 In this task, you will connect to the Azure VM running AD DS domain controller and create a directory synchronization account. 
 
@@ -200,7 +199,9 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 3. On the **Virtual machines** blade, click the **adVM** entry. 
 
-4. On the **adVM** blade, click **Connect** and, in the drop-down menu, click **RDP**. 
+4. On the **adVM** blade, click **Connect** and click **RDP**. 
+
+   ![image](../images/Download_RDP.png)
 
 5. In the **IP address** parameter, select **Load balancer public IP address**, then click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
 
@@ -218,6 +219,8 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 7. In the **Internet Explorer Enhanced Security Configuration** dialog box, set both options to **Off** and click **OK**.
 
 8. In **Server Manager**, click **Tools** and, in the drop-down menu, click **Active Directory Administrative Center**.
+
+   ![image](../images/Lab-06_Ex3_Task1.png)
 
 9. In **Active Directory Administrative Center**, click **adatum (local)**, in the **Tasks** pane, under the domain name **adatum (local)** click **New**, and, in the cascading menu, click **Organizational Unit**.
 
@@ -238,26 +241,27 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
    |Confirm Password|**Pa55w.rd1234**|
    |Other password options|**Password never expires**|
 
-## Task 2: Install Azure AD Connect
+   ![image](../images/Lab-06_Ex3_Task2.png)
+
+### Task 2: Install Azure AD Connect
 
 In this task, you will install AD Connect on the virtual machine. 
 
 1. Within the Remote Desktop session to **adVM**, use Microsoft Edge to navigate to the Azure portal at **https://portal.azure.com**, and sign in by using the **syncadmin** user account you created in the previous exercise. When prompted, specify the full user name you recorded and the **Pa55w.rd1234** password.
->Note:If Internet Explorer is not working, download and install the Microsoft Edge by using this link.[Microsoft Edge](https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fgo.microsoft.com.mcas.ms%2Ffwlink%2F%3Flinkid%3D2069324%26Channel%3DStable%26language%3Den) 
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-3. In the Azure portal, on the **AdatumSync \| Overview** blade, click **Azure AD Connect**.
+3. In the Azure portal, on the **AdatumSync \| Overview** blade, scroll down and click **Azure AD Connect**.
 
-4. On the **AAD COnnect \| Connect Sync** blade, click the **Download Azure AD Connect** link. You will be redirected to the **Microsoft Azure Active Directory Connect** download page.
+4. Go to the **AAD Connect \| Connect Sync** blade, click the **Download Azure AD Connect** link. You will be redirected to the **Microsoft Azure Active Directory Connect** download page.
 
 5. On the **Microsoft Azure Active Directory Connect** download page, click **Download**.
 
     >**Note**: Wait for the **AzureADConnect.msi** file to get downloaded and then click on **Open file**.
 
-6. On the **Welcome to Azure AD Connect** page of the **Microsoft Azure Active Directory Connect** wizard, click the checkbox **I agree to the license terms and privacy notice** and click **Continue**.
+6. On the **Welcome to Azure AD Connect** page of the Microsoft Azure Active Directory Connect wizard, click the checkbox **I agree to the license terms and privacy notice** and click **Continue**.
 
-7. On the **Express Settings** page of the **Microsoft Azure Active Directory Connect** wizard, click the **Customize** option.
+7. On the **Express Settings** page of the Microsoft Azure Active Directory Connect wizard, click the **Customize** option.
 
 8. On the **Install required components** page, leave all optional configuration options deselected and click **Install**.
 
@@ -295,7 +299,7 @@ In this task, you will install AD Connect on the virtual machine.
 20. Review the information on the **Configuration complete** page and click **Exit** to close the **Microsoft Azure Active Directory Connect** window.
 
 
-## Task 3: Verify directory synchronization
+### Task 3: Verify directory synchronization
 
 In this task, you will verify that directory synchronization is working. 
 
@@ -305,17 +309,17 @@ In this task, you will verify that directory synchronization is working.
 
     >**Note**: You might have to wait a few minutes and select **Refresh** for the **aduser1** user account to appear.
 
-3. Select the **aduser1** account and, in the **Profile > Identity** section, note that the **Source** attribute is set to **Windows Server AD**.
+     ![image](../images/Lab-06_Ex3_Task3.png)
 
-4. On the **aduser1 \| Profile** blade, in the **Job info** section, note that the **Department** attribute is not set.
+3. On the **aduser1 \| Properties** blade, in the **Job information** section, note that the **Department** attribute is not set.
 
-5. Within the Remote Desktop session to **adVM**, switch to **Active Directory Administrative Center**, select the **aduser1** entry in the list of objects in the **ToSync** OU, and, in the **Tasks** pane, in the **aduser1** section, select **Properties**.
+4. Within the Remote Desktop session to **adVM**, switch to **Active Directory Administrative Center**, select the **aduser1** entry in the list of objects in the **ToSync** OU, and, in the **Tasks** pane, in the **aduser1** section, select **Properties**.
 
-6. In the **aduser1** window, in the **Organization** section, in the **Department** text box, type **Sales**, and select **OK**.
+5. In the **aduser1** window, in the **Organization** section, in the **Department** text box, type **Sales**, and select **OK**.
 
-7. Within the Remote Desktop session to **adVM**, start **Windows PowerShell**.
+6. Within the Remote Desktop session to **adVM**, start **Windows PowerShell**.
 
-8. From the **Administrator: Windows PowerShell** console, run the following to start Azure AD Connect delta synchronization:
+7. From the **Administrator: Windows PowerShell** console, run the following to start Azure AD Connect delta synchronization:
 
     ```powershell
     Import-Module -Name 'C:\Program Files\Microsoft Azure AD Sync\Bin\ADSync\ADSync.psd1'
@@ -323,7 +327,7 @@ In this task, you will verify that directory synchronization is working.
     Start-ADSyncSyncCycle -PolicyType Delta
     ```
 
-9. Switch to the Microsoft Edge window displaying the **aduser1 \| Profile** blade, refresh the page and note that the **Department** property is set to **Sales**.
+8. Switch to the Microsoft Edge window displaying the **aduser1 \| Profile** blade, refresh the page and note that the **Department** property is set to **Sales**.
 
     >**Note**: You might need to wait for another minute and refresh the page again if the **Department** attribute remains not set.
 
@@ -331,9 +335,9 @@ In this task, you will verify that directory synchronization is working.
 
 
 **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
-   - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - Click the Lab Validation icon located at the upper right corner of the lab guide section which navigates to the Lab Validation Page.
+> - Hit the Validate button for the corresponding task.If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 **You have successfully completed the lab**

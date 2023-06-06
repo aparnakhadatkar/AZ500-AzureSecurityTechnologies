@@ -7,8 +7,6 @@ You have been asked to create a proof of concept that uses Azure Privileged Iden
 - Configure the Global Reader role activation to require an approval of the aaduser3 Azure AD user
 - Configure an access review of the Global Reader role and review auditing capabilities.
 
-> For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
-
 > Before you proceed, ensure that you have completed Lab 04: MFA, Conditional Access and AAD Identity Protection . You will need the Azure AD tenant, AdatumLab500-04, and the aaduser1, aaduser2, and aaduser3 user accounts.
 
 ## Lab objectives
@@ -21,9 +19,9 @@ In this lab, you will complete the following exercises:
 
 ![image](https://user-images.githubusercontent.com/91347931/157522920-264ce57e-5c55-4a9d-8f35-e046e1a1e219.png)
 
-# Exercise 1 - Configure PIM users and roles
+## Exercise 1 - Configure PIM users and roles
 
-## Estimated timing: 15 minutes
+### Estimated timing: 15 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -31,13 +29,11 @@ In this exercise, you will complete the following tasks:
 - Task 2: Configure a role to require approval to activate and add an eligible member.
 - Task 3: Give a user permanent assignment to a role. 
 
-## Task 1: Make a user eligible for a role
+### Task 1: Make a user eligible for a role
 
 In this task, you will make a user eligible for an Azure AD directory role.
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
-
-    >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role.
+1. Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role.
     
     >**Note**: If you still don't see the AdatumLab500-04 entry, click on the Switch Directory link, select the AdatumLab500-04 line and click the Switch button.
 
@@ -65,7 +61,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
     >**Note**: During sign-in, aaduser2 will be eligible to use the Billing administrator role. 
 
-## Task 2: Configure a role to require approval to activate and add an eligible member
+### Task 2: Configure a role to require approval to activate and add an eligible member
 
 1. In the Azure Portal, navigate back to the **Azure AD Privileged Identity Management** blade and click on **Azure AD roles**.
 
@@ -99,11 +95,13 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. Ensure the **Assignment type** is **Eligible** and review the eligible duration settings.
 
-1. Click on **Assign**.
+   ![image](../images/Lab-05_Ex1_Task2.png)
+
+16. Click on **Assign**.
 
     >**Note**: User aaduser2 is eligible for the Global Reader role. 
  
-## Task 3: Give a user permanent assignment to a role.
+### Task 3: Give a user permanent assignment to a role.
 
 1. In the Azure Portal, navigate back to the **Azure AD Privileged Identity Management** blade and click on **Azure AD roles**.
 
@@ -123,16 +121,16 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
     >**Note**: User aaduser2 is now permanently eligible for the Security Administrator role.
 	
-### Exercise 2 - Activate PIM roles with and without approval
+## Exercise 2 - Activate PIM roles with and without approval
 
-#### Estimated timing: 15 minutes
+### Estimated timing: 15 minutes
 
 In this exercise, you will complete the following tasks:
 
 - Task 1: Activate a role that does not require approval. 
 - Task 2: Activate a role that requires approval. 
 
-## Task 1: Activate a role that does not require approval.
+### Task 1: Activate a role that does not require approval.
 
 In this task, you will activate a role that does not require approval.
 
@@ -171,7 +169,7 @@ In this task, you will activate a role that does not require approval.
 1.  On the **Deactivate - Billing Administrator** blade, click on **Deactivate** again to confirm.
 
 
-## Task 2: Activate a role that requires approval. 
+### Task 2: Activate a role that requires approval. 
 
 In this task, you will activate a role that requires approval.
 
@@ -235,16 +233,16 @@ In this task, you will activate a role that requires approval.
 
 > Result: You have practiced activating PIM roles with and without approval. 
 
-### Exercise 3 - Create an Access Review and review PIM auditing features
+## Exercise 3 - Create an Access Review and review PIM auditing features
 
-#### Estimated timing: 10 minutes
+### Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
 
 - Task 1: Configure security alerts for Azure AD directory roles in PIM
 - Task 2: Review PIM alerts, summary information, and detailed audit information
 
-## Task 1: Configure security alerts for Azure AD directory roles in PIM
+### Task 1: Configure security alerts for Azure AD directory roles in PIM
 
 In this task, you will reduce the risk associated with "stale" role assignments. You will do this by creating a PIM access review to ensure that assigned roles are still valid. Specifically, you will review the Global Reader role. 
 
@@ -302,7 +300,7 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 
 1. Select the entry representing the **Global Reader** review. Note that the **Progress** chart has been updated to show your review. 
 
-## Task 2: Review PIM alerts, summary information, and detailed audit information. 
+### Task 2: Review PIM alerts, summary information, and detailed audit information. 
 
 In this task, you will review PIM alerts, summary information, and detailed audit information. 
 
@@ -323,3 +321,5 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 1. Notice you can retrieve detailed information, including **Time**, **Requestor**, **Action**, **Resource name**, **Scope**, **Primary Target** and **Subject**. 
 
 > Result: You have configured an access review and reviewed audit information.
+
+**You have successfully completed the lab. Please click on next to go to the next lab.**
