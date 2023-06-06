@@ -301,7 +301,7 @@ In this task, you will deploy the internal facing service on the AKS.
     kubectl get service nginxinternal
     ```
 
-1. In the Bash session within the Cloud Shell pane, review the output. The External-IP is, in this case, a private IP address. If it is in a **Pending** state then run the previous command again.
+1. In the Bash session within the Cloud Shell pane, review the output. The External-IP is, in this case, a private IP address. If it is in a **Pending** state then try to run the previous command again.
 
     >**Note**: Record this IP address. You will need it in the next task. 
 
