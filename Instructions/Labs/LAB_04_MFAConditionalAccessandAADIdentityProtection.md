@@ -34,30 +34,27 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create a virtual machine by using an ARM template. This virtual machine will be used in the last exercise for this lab. 
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
-
-
-2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **custom template** and select **Deploy a custom template** under the list of **Services**.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **custom template** and select **Deploy a custom template** under the list of **Services**.
 
     >**Note**: You can also select **Template Deployment (deploy using custom templates)** from the **Marketplace** list.
 
-. On the **Custom deployment** blade, click on the **Build your own template in the editor** option.
+2. On the **Custom deployment** blade, click on the **Build your own template in the editor** option.
 
-4. On the **Edit template** blade, click on **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.json** file and click on **Open**.
+3. On the **Edit template** blade, click on **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.json** file and click on **Open**.
 
     >**Note**: Review the content of the template and note that it deploys an Azure VM hosting Windows Server 2019 Datacenter.
 
-5. On the **Edit template** blade, click on **Save**.
+4. On the **Edit template** blade, click on **Save**.
 
-6. Back on the **Custom deployment** blade, click on **Edit parameters**.
+5. Back on the **Custom deployment** blade, click on **Edit parameters**.
 
-7. On the **Edit parameters** blade, click on **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.parameters.json** file and click on **Open**.
+6. On the **Edit parameters** blade, click on **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\04\\az-500-04_azuredeploy.parameters.json** file and click on **Open**.
 
     >**Note**: Review the content of the parameters file noting the adminUsername and adminPassword values.
 
-8. On the **Edit parameters** blade, click on **Save**.
+7. On the **Edit parameters** blade, click on **Save**.
 
-9. On the **Custom deployment** blade, ensure that the following settings are configured (leave any others with their default values):
+8. On the **Custom deployment** blade, ensure that the following settings are configured (leave any others with their default values):
 
    |Setting|Value|
    |---|---|
@@ -72,7 +69,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
     >**Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
 
-10. Click on **Review + create**, and then click on **Create**.
+9. Click on **Review + create**, and then click on **Create**.
 
     >**Note**: Do not wait for the deployment to complete but proceed to the next exercise. You will use the virtual machine included in this deployment in the last exercise of this lab.
 
