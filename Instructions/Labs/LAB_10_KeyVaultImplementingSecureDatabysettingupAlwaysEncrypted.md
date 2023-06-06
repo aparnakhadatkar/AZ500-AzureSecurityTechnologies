@@ -42,21 +42,19 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will deploy an Azure VM, which will automatically install Visual Studio 2019 and SQL Server Management Studio 2019 as part of the deployment.
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and press the **Enter** key.
 
-2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and press the **Enter** key.
-
-3. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
+2. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
 
    ![image](../images/Custom_Template.png)
 
-4. On the **Edit template** blade, click **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.json** file and click **Open**.
+3. On the **Edit template** blade, click **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.json** file and click **Open**.
 
    ![image](../images/Lab-10_Ex1_Task1.png)
 
-5. On the **Edit template** blade, click **Save**.
+4. On the **Edit template** blade, click **Save**.
 
-6. On the **Custom deployment** blade, under **Deployment Scope** ensure that the following settings are configured (leave any others with their default values):
+5. On the **Custom deployment** blade, under **Deployment Scope** ensure that the following settings are configured (leave any others with their default values):
 
    |Setting|Value|
    |---|---|
@@ -70,7 +68,7 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
 
     >**Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
 
-7. Click the **Review and Create** button, and confirm the deployment by clicking the **Create** button. 
+6. Click the **Review and Create** button, and confirm the deployment by clicking the **Create** button. 
 
     >**Note**: This initiates the deployment of the Azure VM and Azure SQL Database required for this lab. 
 
