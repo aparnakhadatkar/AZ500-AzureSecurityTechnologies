@@ -6,8 +6,6 @@ You have been asked to create a proof of concept of features that enhance Azure 
 - Azure AD conditional access
 - Azure AD Identity Protection
 
-> For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
-
 ## Lab Objectives
 In this lab, you will complete the following exercises:
 - Exercise 1: Deploy an Azure VM by using an Azure Resource Manager template
