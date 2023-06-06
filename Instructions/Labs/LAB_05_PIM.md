@@ -7,8 +7,6 @@ You have been asked to create a proof of concept that uses Azure Privileged Iden
 - Configure the Global Reader role activation to require an approval of the aaduser3 Azure AD user
 - Configure an access review of the Global Reader role and review auditing capabilities.
 
-> For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
-
 > Before you proceed, ensure that you have completed Lab 04: MFA, Conditional Access and AAD Identity Protection . You will need the Azure AD tenant, AdatumLab500-04, and the aaduser1, aaduser2, and aaduser3 user accounts.
 
 ## Lab objectives
