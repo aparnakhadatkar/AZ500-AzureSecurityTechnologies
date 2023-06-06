@@ -159,7 +159,7 @@ In this task, you will run a log search on your data collection.
     
     >**Note**: You can generate some additional load on the Azure VM you deployed earlier in this lab by using the following steps:	
     
- 7. Now, navigate to the Azure VM blade within the Azure portal.
+ 7. Now, navigate to the Azure VM blade within the Azure portal and select **myVM**.
  
  8. On the **Overview** page for the virtual machine, select the **Connect** button.
  
