@@ -55,7 +55,7 @@ In this task, you will use a template to deploy the lab infrastructure.
 
 6. Click **Review + Create** and then click **Create**.
 
-    >**Note**: Wait for the deployment to complete. It might take upto 5 minutes.
+    >**Note**: Wait for the deployment to complete. It might take up to 5 minutes.
 
 ### Task 2: Configure Advanced Data Protection
 

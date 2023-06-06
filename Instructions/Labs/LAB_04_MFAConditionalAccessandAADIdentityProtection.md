@@ -211,7 +211,7 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 8. Back on the **Assign license** blade, click on **Assignment options**, ensure that all options are enabled(on), click on **Review + assign**, and click on **Assign**.
 
-9. Sign out from the Azure portal and sign back in using the same account. This step is necessary in order for the license assignment to take effect.
+9. Sign out from the Azure portal and sign back in using the same account. This step is necessary for the license assignment to take effect.
 
     >**Note**: At this point, you assigned Azure Active Directory Premium P2 licenses to all user accounts you will be using in this lab. Be sure to sign out and then sign back in. 
 
@@ -355,7 +355,7 @@ In this task, you will review conditional access policy settings and create a po
 
 ### Task 2 - Test the conditional access policy.
 
-In this task, you will sign in to the Azure portal as **aaduser2** and verify MFA is required. You will also delete the policy before continuing on to the next exercise. 
+In this task, you will sign in to the Azure portal as **aaduser2** and verify MFA is required. You will also delete the policy before continuing to the next exercise. 
 
 1. Open an InPrivate Microsoft Edge window.
 
@@ -502,7 +502,7 @@ In this task, you will configure a sign-in risk policy.
 
 13. Use the **Sign out and sign in with a different account option** to sign in as **aaduser1** account you created and configured for multi-factor authentication earlier in this lab.
 
-    >**Note**: This time, you will be presented with the **Suspicious activity detected** message. Again, this is expected, since this account is configured with multi-factor authentiation. Considering the increased sign-in risk associated with the use of ToR Browser, you will have to use multi-factor authentication.
+    >**Note**: This time, you will be presented with the **Suspicious activity detected** message. Again, this is expected, since this account is configured with multi-factor authentication. Considering the increased sign-in risk associated with the use of ToR Browser, you will have to use multi-factor authentication.
 
 14. Use the **Verify** option and specify whether you want to verify your identity via text or a call.
 

@@ -58,7 +58,7 @@ In this task, you will create a virtual network.
 1. Back on the **IP addresses** tab of the **Create virtual network** blade, click **Review + create**.
 
 1. On the **Review + create** tab of the **Create virtual network** blade, click **Create**.
->**Note**:If you are not able to edit the **default** first create the virtual network and go to subnets in created Virtualnetwork and delete the Default Sbnet and add **Public** Subnet 
+>**Note**:If you are not able to edit the **default** first create the virtual network and go to subnets in created Virtual network and delete the Default Subnet and add **Public** Subnet 
 
 ### Task 2: Add a subnet to the virtual network and configure a storage endpoint
 
@@ -338,7 +338,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
 
-    >**Note**: For public inbound ports, we will rely on the precreated NSG. 
+    >**Note**: For public inbound ports, we will rely on the pre-created NSG. 
 
 4. Click **Next: Disks >** and, on the **Disks** tab of the **Create a virtual machine** blade, set the **OS disk type** to **Standard HDD** and click **Next: Networking >**.
 

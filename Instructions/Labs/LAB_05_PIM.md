@@ -308,7 +308,7 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 1. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click on **Alerts**, and then click on **Setting**.
 
-1. On the **Alert settings** blade, review the preconfigured alerts and risk levels. Click on any of them for more detailed information. 
+1. On the **Alert settings** blade, review the pre-configured alerts and risk levels. Click on any of them for more detailed information. 
 
 1. Return to the **AdatumLab500-04 \| Quick start** blade and click on **Overview**. 
 

@@ -1,7 +1,7 @@
 # Lab 10: Key Vault (Implementing Secure Data by setting up Always Encrypted)
 
 ## Lab scenario
-You have been asked to create a proof of concept application that makes use of the Azure SQL Database support for Always Encrypted functionality. All of the secrets and keys used in this scenario should be stored in Key Vault. The application should be registered in Azure Active Directory (Azure AD) in order to enhance its security posture. To accomplish these objectives, the proof of concept should include:
+You have been asked to create a proof of concept application that makes use of the Azure SQL Database support for Always Encrypted functionality. All of the secrets and keys used in this scenario should be stored in Key Vault. The application should be registered in Azure Active Directory (Azure AD) to enhance its security posture. To accomplish these objectives, the proof of concept should include:
 - Creating an Azure Key Vault and storing keys and secrets in the vault.
 - Create a SQL Database and encrypting content of columns in database tables by using Always Encrypted.
 
@@ -70,7 +70,7 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
 
     >**Note**: This initiates the deployment of the Azure VM and Azure SQL Database required for this lab. 
 
-    >**Note**: Do not wait for the ARM template deployment to be completed, continue on to the next exercise. The deployment might take upto **20-25 minutes**. 
+    >**Note**: Do not wait for the ARM template deployment to be completed, continue on to the next exercise. The deployment might take up to **20-25 minutes**. 
 
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
     > - Click the Lab Validation icon located at the upper right corner of the lab guide section which navigates to the Lab Validation Page.
@@ -428,7 +428,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 	
     >**Note**: While performing the encryption if any error thrown like **Exception has been thrown by the target of an innvocation** related to **Rotary(Microsoft.SQLServer.Management.ServiceManagement)** then make sure the **Key Permission's** values of **Rotation Policy Operations** are **unchecked**, if not in the Azure portal navigate to the **Key Vault** >> **Access Policies** >> **Key Permissions** >> Uncheck all the values under the **Rotation Policy Operations** >> Under **Privileged Key Operations** >> Uncheck **Release**.	
 
-1. On the **Master Key Configuration** page, select **Azure Key Vault**, click **Sign in**. When prompted, authenticate by using the same user account you used to provision the Azure Key Vault instance earlier in this lab, ensure that Key Vault appears in the **Select an Azure Key Vault** drop down list, and click **Next**.
+1. On the **Master Key Configuration** page, select **Azure Key Vault**, click **Sign in**. When prompted, authenticate by using the same user account you used to provision the Azure Key Vault instance earlier in this lab, ensure that Key Vault appears in the **Select an Azure Key Vault** drop-down list, and click **Next**.
 
 1. On the **Run Settings** page, click **Next**.
 	
@@ -469,7 +469,7 @@ You will create a Console application using Visual Studio to load data into the 
     |Solution name|**OpsEncrypt**|
     |Framework|**.NET Framework 4.7.2**|
 	
-6. In the Visual Studio console, click the **Tools** menu, in the drop down menu, click **NuGet Package Manager**, and, in the cascading menu, click **Package Manager Console**.
+6. In the Visual Studio console, click the **Tools** menu, in the drop-down menu, click **NuGet Package Manager**, and, in the cascading menu, click **Package Manager Console**.
 
 7. In the **Package Manager Console** pane, run the following to install the first required **NuGet** package:
 
@@ -483,11 +483,11 @@ You will create a Console application using Visual Studio to load data into the 
     Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
     ```
 	
-9. Minimize the RDP session to your Azure virtual machine,In Labvm Server then navigate to **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\10\program.cs**, open it in Notepad, and copy its content into Clipboard.
+9. Minimize the RDP session to your Azure virtual machine, In Labvm Server then navigate to **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\10\program.cs**, open it in Notepad, and copy its content into Clipboard.
 
 10. Return to the RDP session, and in the Visual Studio console, in the **Solution Explorer** window, click **Program.cs** and replace its content with the code you copied into Clipboard.
 	
-11. In the Visual Studio window, in the **Program.cs** pane, in line 15, replace the `<connection string noted earlier>` placeholder with the Azure SQL database **ADO.NET** connection string you recorded earlier in the lab. In the connection string, replace the `{your_password}` placehodler, with `Pa55w.rd1234`. If you saved the string on the lab computer, you may need to leave the RDP session to copy the ADO string, then return to the Azure virtual machine to paste it in.
+11. In the Visual Studio window, in the **Program.cs** pane, in line 15, replace the `<connection string noted earlier>` placeholder with the Azure SQL database **ADO.NET** connection string you recorded earlier in the lab. In the connection string, replace the `{your_password}` placeholder, with `Pa55w.rd1234`. If you saved the string on the lab computer, you may need to leave the RDP session to copy the ADO string, then return to the Azure virtual machine to paste it in.
 
 12. In the Visual Studio window, in the **Program.cs** pane, in line 16, replace the `<client id noted earlier>` placeholder with the value of **Application (client) ID** of the registered app you recorded earlier in the lab. 
 
@@ -501,7 +501,7 @@ You will create a Console application using Visual Studio to load data into the 
 
 17. In the **Object Explorer** pane, right-click the **medical** database and, in the right-click menu, click **New Query**.
 
-18. From the query window, run the following query by clicking on **Execute** to verify that the data that loaded into the database from the console app is encrypted.
+18. From the query window, run the following query by clicking on **Execute** to verify that the data loaded into the database from the console app is encrypted.
 
     ```sql
     SELECT FirstName, LastName, SSN, BirthDate FROM Patients;
