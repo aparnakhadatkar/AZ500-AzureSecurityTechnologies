@@ -199,7 +199,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 3. On the **Virtual machines** blade, click the **adVM** entry. 
 
-4. On the **adVM** blade, click **Connect** and, in the drop-down menu, click **RDP**. 
+4. On the **adVM** blade, click **Connect** and click **RDP**. 
 
    ![image](../images/Download_RDP.png)
 
