@@ -37,6 +37,8 @@ In this exercise, you will complete the following tasks:
 In this task, you will on-board Microsoft Sentinel and connect the Log Analytics workspace. 
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Sentinel** and press the **Enter** key.
+
+   ![image](../images/AZ-500-MSSentinel.png) 
 	
 1. On the **Microsoft Sentinel** blade, click **+ Create**.	
 
