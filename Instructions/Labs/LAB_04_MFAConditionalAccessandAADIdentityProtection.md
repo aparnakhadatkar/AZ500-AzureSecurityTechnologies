@@ -470,9 +470,11 @@ In this task, you will configure a sign-in risk policy.
 3. On the **Virtual machines** blade, click on the **az500-04-vm1** entry. 
 
 4. On the **az500-04-vm1** blade, click on **Connect** and, in the drop-down menu, click on **RDP**. 
+   
+   ![image](../images/Download_RDP.png)
 
 5. Click on **Download RDP File** and use it to connect to the **az500-04-vm1** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
-
+   
    |Setting|Value|
    |---|---|
    |User name|**Student**|
