@@ -42,7 +42,7 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
  
    >**Note**: If you get any pop-up you can click on **Maybe Later**
 
-1. On the **Microsoft Defender for Cloud \| Environment Settings** blade, expand the dropdown and click the entry representing your subscription and, on the **Settings \| Azure Defender plans** blade, ensure that **Azure Defender** is enabled for all listed down resources. 
+1. On the **Microsoft Defender for Cloud \| Environment Settings** blade, expand the dropdown and click the entry representing under your subscription and, on the **Settings \| Defender plans** blade, ensure that **Azure Defender** is enabled for all listed down resources. 
 
     >**Note**: Review all the features that are available as part of Azure Defender tier and ensure that Azure Defender turned on for each resource type. 
 
