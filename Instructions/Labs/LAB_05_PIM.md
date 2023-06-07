@@ -211,7 +211,7 @@ In this task, you will activate a role that requires approval.
 
 1. Sign into the Azure portal as **aaduser3**.
 
-    >**Note**: If you run into problems with authenticating by using any of the user accounts, you can sign in to the Azure AD tenant by using your user account to reset their passwords or by navigating to Azure AD identity protection reconfigure their sign-in options by disabling the User risk policy and Sign-in risk policy.
+    >**Note**: If you run into problems with authenticating by using any of the user accounts, you can sign in to the Azure AD tenant by using your user account to reset their passwords or by navigating to Azure AD identity protection reconfigure their sign-in options by disabling the User risk policy and Sign-in risk policy, if prompted kindly updated you're password and sign in to Azure portal
 
 1. In the Azure portal, navigate to **Azure AD Privileged Identity Management**.
 
