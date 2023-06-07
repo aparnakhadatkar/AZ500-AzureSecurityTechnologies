@@ -347,18 +347,28 @@ In this task, you will review conditional access policy settings and create a po
    - Under Users, click on **0 Users or groups selected**. On the right side under Include >> Select users and groups checkbox >> enable **Users and groups** checkbox >> on the **Select** blade, click on **aaduser2**, and click on **Select**.
 	
    - Under **Cloud apps or actions**, click on **No cloud apps, actions, or authentication contexts selected**. On the right side under Include >> click on **Select apps** checkbox >> under Select, click on None >> on the **Select** blade, click on **Microsoft Azure Management**, and click on **Select**.
+
+      ![image](../images/az-500-lab1b-e3-t1-1.png)
     
    >**Note**: Review the warning that this policy impacts access to the Azure Portal.
 	
    - Under **Conditions**, click on **0 conditions selected**. On the right side under **Sign-in risk**, click on **Not configured** >> on the **Sign-in risk** blade, review the risk levels but do not make any changes and close the **Sign-in risk** blade.
+
+      ![image](../images/az-500-lab1b-e3-t1-2.png)
 	
    - Under **Device platforms**, click on **Not configured** >> review the device platforms that can be included and click on **Done**.
+
+      ![image](../images/az-500-lab1b-e3-t1-2.png)
 	
    - Under **Locations**, click on **Not configured** >> review the location options without making any changes.
 	
-   - Under **Grant**, click on **0 controls selected** in the **Access controls** section, on the **Grant** blade, select the **Require multifactor authentication** checkbox and click on **Select**
-	
+   - Under **Grant**, click on **0 controls selected** in the **Access controls** section, on the **Grant** blade, select the **Require multifactor authentication** checkbox and click on **Select**.
+   
+	 ![image](../images/az-500-lab1b-e3-t1-4.png)
+	 
    - Set the **Enable policy** to **On**.
+
+        ![image](../images/az-500-lab1b-e3-t1-5.png)
  
  6. On the **New** blade, click on **Create**. 
 
@@ -428,7 +438,7 @@ In this task, you will view the Azure AD Identity Protection options in the Azur
 
 2. On the **AdatumLab500-04** blade, in the **Manage** section, click on **Security**.
 
-3. On the **Security \| Getting started** blade, in the **Protect** section, click on **Identity Protection**.
+3. On the **Security \| Getting started** blade, from left navigation pane under **Protect** section, click on **Identity Protection**.
 
 4. On the **Identity Protection \| Overview** blade, review the **New risky users detected** and **New risky sign-ins detected** charts and other information about risky users.  
 
