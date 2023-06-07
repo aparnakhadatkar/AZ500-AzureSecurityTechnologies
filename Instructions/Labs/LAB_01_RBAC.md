@@ -53,14 +53,14 @@ In this task, you will create a user account for Joseph Price.
 
    |Setting|Value|
    |---|---|
-   |User principal name|**Joseph**|
-   |Display Name|**Joseph Price**|
+   |User principal name|**Joseph (1)**|
+   |Display Name|**Joseph Price (2)**|
 
-1. Click on the copy icon next to the **User principal name** to copy the full username.
+1. Click on the **copy icon (3)** next to the **User principal name** to copy the full username.
 
-1. Ensure that the **Auto-generate** password is selected, and click on the copy icon next to **Password**. You would need to provide this password, along with the user name to Joseph. 
+1. Ensure that the **Auto-generate (4)** password is selected, and click on the copy icon next to **Password (5)**. You would need to provide this password, along with the user name to Joseph. 
 
-1. Click on **Review + create**, and then click on **Create**.
+1. Click on **Review + create (6)**, and then click on **Create**.
 
       ![image](../images/az-500-lab1-image2.png)
 
