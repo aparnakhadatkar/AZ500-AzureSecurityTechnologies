@@ -238,15 +238,17 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
     >**Note**: This will open a new browser tab, displaying **multi-factor authentication** page.
 
-5. On the **multi-factor authentication** page, click on the **service settings** tab. Review **verification options**. Note that **Text message to phone**, **Notification through mobile app**, and **Verification code from mobile app or hardware token** are enabled. Click on **Save** and then click on **close**.
+5. On the **multi-factor authentication** page, click on the **service settings (1) ** tab. Review **verification options (2)**. Note that **Text message to phone**, **Notification through mobile app**, and **Verification code from mobile app or hardware token** are enabled. Click on **Save** and then click on **close**.
 
-6. On the **AdatumLab500-04 \| Overview** page, switch to the **users** tab
+    ![image](../images/az-500-lab1b-t5-1.png)
+
+6. On the **AdatumLab500-04 \| Overview** page, switch to the **users (1)** tab
 
     >**Note**: This will open a new browser tab, displaying **multi-factor authentication** page. 
     
-7. Click on aaduser1 entry, then click on the **Enable** link on the right-side, and, when prompted, click on **enable multi-factor auth**.
+7. Click on **aaduser1 (2)** entry, then click on the **Enable (3)** link on the right-side, and, when prompted, click on **enable multi-factor auth**.
 
-
+    ![image](../images/az-500-lab1b-t5-2.png)
 
 7. Notice the **Multi-Factor Auth status** column for **aaduser1** is now **Enabled**.
 
