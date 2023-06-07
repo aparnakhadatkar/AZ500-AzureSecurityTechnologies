@@ -412,6 +412,8 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
 15. On the **Conditional Access \| Overview** blade, from left navigation pane select **Policies** click on the ellipsis next to **AZ500Policy1**, click on **Delete**, and, when prompted to confirm, click on **Yes**.
 
+      ![image](../images/az-500-policydelete.png)
+
     >**Note**: Result: In this exercise you implement a conditional access policy to require MFA when a user signs into the Azure portal. 
 
 >Result: You have configured and tested Azure AD conditional access.
@@ -494,46 +496,55 @@ In this task, you will configure a sign-in risk policy.
 
 3. On the **Virtual machines** blade, click on the **az500-04-vm1** entry. 
 
-4. On the **az500-04-vm1** blade, click on **Connect** and, in the drop-down menu, click on **RDP**. 
-   
-   ![image](../images/Download_RDP.png)
+4. On the **Overview** page for the virtual machine, select the **Connect** button.
 
-5. Click on **Download RDP File** and use it to connect to the **az500-04-vm1** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
+   ![image](../images/Download_RDP.png)
    
+5. On the RDP tab, select the **Download RDP File** button.
+
+6. Open the RDP file that was just downloaded. When a dialog appears asking if you want to connect, select **Connect**.
+
+
+7. Enter the following username and password. Then select **OK**.
+
    |Setting|Value|
    |---|---|
    |User name|**Student**|
    |Password|**Pa55w.rd1234**|
+   
+8. When the **Remote Desktop Connection** dialog appears asking if you want to connect, select **Yes**.
 
     >**Note**: Wait for the Remote Desktop session and **Server Manager** to load.  
 
     >**Note**: The following steps are performed in the Remote Desktop session to the **az500-04-vm1** Azure VM. 
 
-6. In **Server Manager**, click on **Local Server** and then click on **IE Enhanced Security Configuration**.
+7. In **Server Manager**, click on **Local Server** and then click on **IE Enhanced Security Configuration**.
 
-7. In the **Internet Explorer Enhanced Security Configuration** dialog box, set both options to **Off** and click on **OK**.
+8. In the **Internet Explorer Enhanced Security Configuration** dialog box, set both options to **Off** and click on **OK**.
 
-8. Start **Internet Explorer**, click the cog wheel icon in the toolbar, in the drop-down menu, click on **Safety** and then click on **InPrivate Browsing**.
+9. Start **Internet Explorer**, click the cog wheel icon in the toolbar, in the drop-down menu, click on **Safety** and then click on **InPrivate Browsing**.
 
-9. In the InPrivate Internet Explorer window, navigate to the ToR Browser Project at [**https://www.torproject.org/projects/torbrowser.html.en**](https://www.torproject.org/projects/torbrowser.html.en).
+     ![image](../images/IE.png)
 
-10. Download and install the Windows version of the ToR Browser with the default settings. 
+10. In the InPrivate Internet Explorer window, navigate to the ToR Browser Project at [**https://www.torproject.org/projects/torbrowser.html.en**](https://www.torproject.org/projects/torbrowser.html.en).
 
-11. Once the installation completes, start the ToR Browser, use the **Connect** option on the initial page, and browse to the Application Access Panel at [**https://myapps.microsoft.com**](https://myapps.microsoft.com).
+11. Download and install the Windows version of the ToR Browser with the default settings. 
 
-12. When prompted, attempt to sign in with the **aaduser3** account. 
+12. Once the installation completes, start the ToR Browser, use the **Connect** option on the initial page, and browse to the Application Access Panel at [**https://myapps.microsoft.com**](https://myapps.microsoft.com).
+
+13. When prompted, attempt to sign in with the **aaduser3** account. 
 
     >**Note**: You will be presented with the message **Your sign-in was blocked**. This is expected, since this account is not configured with multi-factor authentication, which is required due to increased sign-in risk associated with the use of ToR Browser.
 
-13. Use the **Sign out and sign in with a different account option** to sign in as **aaduser1** account you created and configured for multi-factor authentication earlier in this lab.
+14. Use the **Sign out and sign in with a different account option** to sign in as **aaduser1** account you created and configured for multi-factor authentication earlier in this lab.
 
     >**Note**: This time, you will be presented with the **Suspicious activity detected** message. Again, this is expected, since this account is configured with multi-factor authentication. Considering the increased sign-in risk associated with the use of ToR Browser, you will have to use multi-factor authentication.
 
-14. Use the **Verify** option and specify whether you want to verify your identity via text or a call.
+15. Use the **Verify** option and specify whether you want to verify your identity via text or a call.
 
-15. Complete the verification and ensure that you successfully signed in to the Application Access Panel.
+16. Complete the verification and ensure that you successfully signed in to the Application Access Panel.
 
-16. Close your RDP session. 
+17. Close your RDP session. 
 
     >**Note**: At this point, you attempted two different sign ins. Next, you will review the Azure Identity Protection reports.
 
