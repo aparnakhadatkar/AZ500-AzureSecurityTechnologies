@@ -174,12 +174,10 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
    >**Note**: Record the user's password. You will need this later in this lab. 
 
-3. On **Create new user** blade, under **Properties** tab, specify Usage Location as **United States** 
+3. On **Create new user** blade, under **Properties** tab, specify Usage Location as **United States**.
 
-4. click on **Review + Create** and **Create**
-   
-
-
+4. click on **Review + Create** and **Create**.
+  
 6. Back on the **Users \| All users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**. 
 
 3. On **Create new user** blade,  under **Basics** tab specify the following settings (leave all others with their default values) and click on **Next:Properties>**
@@ -194,9 +192,9 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
    >**Note**: Record the user's password. You will need this later in this lab. 
 
-3. On **Create new user** blade, under **Properties** tab, specify Usage Location as **United States** 
+3. On **Create new user** blade, under **Properties** tab, specify Usage Location as **United States**.
 
-4. click on **Review + Create** and **Create**
+4. click on **Review + Create** and **Create**.
    
     >**Note**: At this point, you should have three new users listed on the **Users** page. 
 	
@@ -204,15 +202,15 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
 In this task, you will assign each user to the Azure Active Directory Premium P2 license.
 
-1. On the **Users \| All users** blade, click on the entry representing your user account. 
+1. On the **Users** blade, click on the entry representing your user account. 
 
 2. On the blade displaying the properties of your user account, click on **Edit properties**. 
 
 3. In the **Settings** section, in the **Usage location** drop-down list, select the **United States** entry and click on **Save**.
 
-4. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click on **Licenses**.
+4. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, from left navigation pane under the **Manage** section, click on **Licenses**.
 
-5. On the **Licenses \| Overview** blade, click on **All products**, select the **Azure Active Directory Premium P2** checkbox, and click on **+ Assign**.
+5. On the **Licenses \| Overview** blade, from left navigation pane click on **All products**, select the **Azure Active Directory Premium P2** checkbox, and click on **+ Assign**.
 
 6. On the **Assign license** blade, click on **+ Add users and groups**.
 
