@@ -92,7 +92,7 @@ In this task, you will create the *Senior Admins* group, add the user account of
 
 1. Back on the **New Group** blade, click on **Create**.
 
-    ![image](../images/az-500-lab1-image3.png)
+    ![image](../images/az-500-lab1-image5.png)
 
 > **Result:** You used the Azure Portal to create a user and a group, and assigned the user to the group. 
 
