@@ -138,57 +138,66 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 
 In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (user), and aaduser3 (user). You will need each user's principal name and password for later tasks. 
 
-1. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click on **Users**.
+1. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, from left navigation pane under the **Manage** section, click on **Users**.
 
-2. On the **Users \| All users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**.
+2. On the **Users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**.
 
-3. On the **New user** blade, ensure that the **Create user** option is selected, specify the following settings (leave all others with their default values) and click on **Create**:
+3. On **Create new user** blade,  under **Basics** tab specify the following settings (leave all others with their default values) and click on **Next:Properties>**
 
    |Setting|Value|
    |---|---|
    |User principal name|**aaduser1**|
    |Display name|**aaduser1**|
    |Password|ensure that the option **Auto-generate password** is selected|
-   |Groups|**0 groups selected**|
-   |Assignments|click on **User**, then click on **Global administrator**, and click on **Select**|
-   |Properties>Usage Location|**United States**|  
+   
+   >**Note**: Record the full user name. You can copy its value by clicking the **Copy to clipboard** button on the right hand side of the drop-down list displaying the domain name. 
 
-    >**Note**: Record the full user name. You can copy its value by clicking the **Copy to clipboard** button on the right hand side of the drop-down list displaying the domain name. 
+   >**Note**: Record the user's password. You will need this later in this lab. 
 
-    >**Note**: Record the user's password. You will need this later in this lab. 
+3. On **Create new user** blade, under **Properties** tab   specify Usage Location as **United States** and  click on **Next:Assignments>** 
+
+3. On **Create new user** blade, under **Assignments** tab  click **+ Add role** and on Directory roles search for **Global administrator** click select.
+
+4. click on **Review + Create** and **Create**
 
 4. Back on the **Users \| All users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**. 
 
-5. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values) and click on **Create**:
+3. On **Create new user** blade,  under **Basics** tab specify the following settings (leave all others with their default values) and click on **Next:Properties>**
 
    |Setting|Value|
    |---|---|
    |User principal name|**aaduser2**|
    |Display name|**aaduser2**|
-   |Password|ensure that the option **Auto-generate password** is selected and click on **Show Password**|
-   |Groups|**0 groups selected**|
-   |Assignments|**None**|
-   |Properties>Usage Location|**United States**|  
+   |Password|ensure that the option **Auto-generate password** is selected |
+   
+    >**Note**: Record the full user name. You can copy its value by clicking the **Copy to clipboard** button on the right hand side of the drop-down list displaying the domain name. 
 
-    >**Note**: Record the full user name and the password.
+   >**Note**: Record the user's password. You will need this later in this lab. 
+
+3. On **Create new user** blade, under **Properties** tab, specify Usage Location as **United States** 
+
+4. click on **Review + Create** and **Create**
+   
+
 
 6. Back on the **Users \| All users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**. 
 
-7. Click on **New User**, complete the new user configuration settings, and then click on **Create**.
+3. On **Create new user** blade,  under **Basics** tab specify the following settings (leave all others with their default values) and click on **Next:Properties>**
 
    |Setting|Value|
    |---|---|
    |User principal name|**aaduser3**|
    |Display name|**aaduser3**|
-   |Password|ensure that the option **Auto-generate password** is selected and click on **Show Password**|
-   |Groups|**0 groups selected**|
-   |Assignments|**User**|
-   |Properties>Usage Location|**United States**|  
+   |Password|ensure that the option **Auto-generate password** is selected |
+   
+    >**Note**: Record the full user name. You can copy its value by clicking the **Copy to clipboard** button on the right hand side of the drop-down list displaying the domain name. 
 
-    >**Note**: Record the full user name and the password.
+   >**Note**: Record the user's password. You will need this later in this lab. 
 
-8. On the **New user** blade, click on **Create**.
+3. On **Create new user** blade, under **Properties** tab, specify Usage Location as **United States** 
 
+4. click on **Review + Create** and **Create**
+   
     >**Note**: At this point, you should have three new users listed on the **Users** page. 
 	
 ### Task 4: Assign Azure AD Premium P2 licenses to Azure AD users
