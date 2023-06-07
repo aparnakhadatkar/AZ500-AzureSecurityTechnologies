@@ -193,7 +193,7 @@ In this task, you will activate a role that requires approval.
 
 1. On the **My roles \| Azure AD roles** blade, locate the **Security Administrator** role, and click on **Activate**. 
 
-1. Click the warning **Additional verification required. Click to continue**. 
+1. If warning is displayed, click the warning **Additional verification required. Click to continue**. 
 
 1. Follow the instructions to verify your identity.
 
