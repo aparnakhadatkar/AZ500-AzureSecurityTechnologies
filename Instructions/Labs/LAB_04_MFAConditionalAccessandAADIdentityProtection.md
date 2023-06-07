@@ -478,7 +478,7 @@ In this task, you will configure a sign-in risk policy.
 
      ![image](../images/Lab-04_Ex4_Task3.png)
 
-   - Set **Enforce Policy** to **On** and click on **Save**.
+   - Set **Policy Enforcement** to **Enable** and click on **Save**.
 
 ### Task 4: Simulate risk events against the Azure AD Identity Protection policies 
 
