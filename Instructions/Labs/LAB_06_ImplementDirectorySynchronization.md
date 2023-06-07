@@ -312,6 +312,8 @@ In this task, you will verify that directory synchronization is working.
     >**Note**: You might have to wait a few minutes and select **Refresh** for the **aduser1** user account to appear.
 
      ![image](../images/Lab-06_Ex3_Task3.png)
+     
+3. Select **aduser1** user account and on **aduser1** blade select **Edit property**.
 
 3. On the **aduser1 \| Properties** blade, in the **Job information** section, note that the **Department** attribute is not set.
 
