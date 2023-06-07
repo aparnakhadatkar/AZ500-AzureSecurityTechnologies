@@ -49,7 +49,7 @@ In this task, you will add a read-only lock to the storage account. This will pr
 
 1. On the **AZ500LAB03** resource group blade, in the list of resources, select the new storage account. 
 
-1. In the **Settings** section, click on the "Locks" icon.
+1. From left navigation pane under the **Settings** section, click on the "Locks" icon.
 
 1. Click on **+ Add** and specify the following settings:
 
@@ -64,7 +64,7 @@ In this task, you will add a read-only lock to the storage account. This will pr
 
 ## Task 3: Test the ReadOnly lock 
 
-1. In the **Settings** section of the storage account blade, click on **Configuration**.
+1. From left navigation pane under the **Settings** section of the storage account blade, click on **Configuration**.
 
 1. Set the **Secure transfer required** option to **Disabled** and then click on **Save**.
 
@@ -76,7 +76,7 @@ In this task, you will add a read-only lock to the storage account. This will pr
 
 1. Return the **Configuration** blade of the storage account and click on **Discard**. 
 
-1. On the storage account blade, select **Overview** and, on the **Overview** blade, click on **Delete**.
+1. On the storage account blade, from left navigation pane select **Overview** and, on the **Overview** blade, click on **Delete**.
 
 1. On the **Delete storage account** blade, review the notification that resembles the following text: 
 
@@ -90,7 +90,7 @@ In this task, you remove the ReadOnly lock from the storage account and create a
 
 1. In the Azure portal, navigate back to the blade displaying properties of the newly created storage account.
 
-1. In the **Settings** section, select **Locks**.  
+1. From left navigation pane under  the **Settings** section, select **Locks**.  
 
 1. On the **Locks** blade, click on the **Delete** icon on the far right of the **ReadOnly Lock** entry.
 
@@ -107,13 +107,13 @@ In this task, you remove the ReadOnly lock from the storage account and create a
 
 In this task, you will test the Delete lock. You should be able to modify the storage account, but not delete it. 
 
-1. In the **Settings** section of the storage account blade, click on **Configuration**.
+1. From left navigation pane under the **Settings** section of the storage account blade, click on **Configuration**.
 
 2. Set the **Secure transfer required** option to **Disabled** and then click on **Save**.
 
    >**Note**:  This time, the change should be successful.
 
-3. On the storage account blade, select **Overview** and, on the **Overview** blade, click on **Delete**.
+3. On the storage account blade, from left navigation pane select **Overview** and, on the **Overview** blade, click on **Delete**.
 
 4. On the **Delete storage account** blade, review the notification that resembles the following text: 
 
@@ -123,13 +123,11 @@ In this task, you will test the Delete lock. You should be able to modify the st
 
    >**Note**:  By using Resource Locks you can implement an extra line of defense against accidental or malicious changes and/or deletion of the most important resources. Resource locks can be removed by any user with the **Owner** role, but doing so requires a conscious effort. Locks supplement Role Based Access Control. 
 
+5. In the Azure portal, navigate back to the blade displaying properties of the newly created storage account.
 
+6. From left navigation pane under  the **Settings** section, select **Locks**.  
 
-6. In the Azure portal, navigate back to the blade displaying properties of the newly created storage account.
-
-7. In the **Settings** section, select **Locks**.  
-
-8. On the **Locks** blade, click on the **Delete** icon on the far right of the **Delete Lock** entry.
+7. On the **Locks** blade, click on the **Delete** icon on the far right of the **Delete Lock** entry.
 
    > **Results:** In this exercise, you learned to use Resource Manager locks to protect resources from modification and accidental deletion.
 
