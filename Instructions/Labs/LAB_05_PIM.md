@@ -221,6 +221,8 @@ In this task, you will activate a role that requires approval.
 
 1. Click on **Approve**. On the **Approve Request** blade, in the **Justification** text box, type a reason for activation, note the start and end times, and then click on **Confirm**. 
 
+    ![image](../images/az-500-lab5-4.png)
+
     >**Note**: You also have the option of denying requests.
 
 1. Sign out of the Azure portal as **aaduser3**.
@@ -286,19 +288,27 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 
 1. On the **AdatumLab500-04 \| Access reviews** blade, under the **Global Reader Review** header, click the **Global Reader** entry. 
 
+    ![image](../images/az-500-lab5-6.png)
+
 1. On the **Access review details** blade, examine the **Overview** page and note that the **Progress** charts shows a single users in the **Not reviewed** category. 
 
 1. On the **Access review details** blade, in the **Manage** section, click on **Results**. Note that aaduser2 is listed as having access to this role.
+ 
+    ![image](../images/az-500-lab5-7.png)
 
 1. Click on **view** on **aaduser2** line to view a detailed audit log with entries representing PIM activities that involve that user.
 
 1. Navigate back to the **AdatumLab500-04 \| Access reviews** blade.
 
 1. On the the **AdatumLab500-04 \| Access reviews** blade, in the **Tasks** section, click on **Review access** and then, click the **Global Reader Review** entry. 
+   
+   ![image](../images/az-500-lab5-8.png)
 
 1. On the **Global Reader Review** blade, click the **aaduser2** entry. 
 
 1. In the **Reason** text box, type a rationale for approval and then click either **Approve** to maintain the current role membership or **Deny** to revoke it. 
+
+   ![image](../images/az-500-lab5-9.png)
 
 1. Navigate back to the **Azure AD Privileged Identity Management** blade and, in the **Manage** section, click on **Azure AD roles**.
 
