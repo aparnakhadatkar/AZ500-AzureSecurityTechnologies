@@ -275,6 +275,8 @@ In this exercise, you will complete the following task:
 
 ## Task 1: Assign the Service Desk Virtual Machine Contributor permissions. 
 
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
+
 1. On the **Resource groups** blade, click on the **AZ500LAB01** resource group entry.
 
 1. On the **AZ500Lab01** blade, click on **Access control (IAM)**.
@@ -286,7 +288,7 @@ In this exercise, you will complete the following task:
    |Setting|Value|
    |---|---|
    |Role|select **Job function roles**|
-   |Role |Search and select **Virtual Machine Contributor**|
+   |In Search bar |Search and select **Virtual Machine Contributor**, click **Next** |
    |Assign access to (Under Members Pane)|**User, group, or service principal**|
    |Select (+Select Members)|**Service Desk**|
 
