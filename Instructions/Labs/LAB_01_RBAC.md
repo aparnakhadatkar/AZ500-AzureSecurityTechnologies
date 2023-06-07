@@ -45,7 +45,7 @@ In this task, you will create a user account for Joseph Price.
 
 1. In the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-      ![image](../images/az500-1-3.png)
+      ![image](../images/az-500-lab1-image1.png)
 
 1. On the **Overview** blade of the Azure Active Directory tenant, in the **Manage** section, select **Users**, and then select **+ New user**, then, in the drop-down menu, click on **Create new user**.
 
@@ -56,13 +56,13 @@ In this task, you will create a user account for Joseph Price.
    |User principal name|**Joseph**|
    |Display Name|**Joseph Price**|
 
-     ![image](../images/az500-1-4.png)
-
 1. Click on the copy icon next to the **User principal name** to copy the full username.
 
 1. Ensure that the **Auto-generate** password is selected, and click on the copy icon next to **Password**. You would need to provide this password, along with the user name to Joseph. 
 
 1. Click on **Review + create**, and then click on **Create**.
+
+      ![image](../images/az-500-lab1-image2.png)
 
 1. Refresh the **Users \| All users** blade to verify the new user was created in your Azure AD tenant.
 
@@ -92,7 +92,7 @@ In this task, you will create the *Senior Admins* group, add the user account of
 
 1. Back on the **New Group** blade, click on **Create**.
 
-    ![image](../images/az500-1-7.png)
+    ![image](../images/az-500-lab1-image3.png)
 
 > **Result:** You used the Azure Portal to create a user and a group, and assigned the user to the group. 
 
@@ -298,7 +298,7 @@ In this exercise, you will complete the following task:
 
 1. On the **AZ500Lab01 \| Access control (IAM)** blade, click on the **Check access** button under check access, and then in the **Search by name or email address** text box, type **Dylan Williams**.
 
-      ![image](../images/az500-1-8.png)
+      ![image](../images/az-500-lab1-image6.png)
 
 1. In the list of search results, select the user account of Dylan Williams and, on the **Dylan Williams assignments - AZ500Lab01** blade, view the newly created assignment.
 
