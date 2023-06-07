@@ -268,21 +268,23 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
 11. In the Azure portal, in the **Search resources, services, and docs text box** at the top of the Azure portal page, type **Multifactor Authentication** and press the Enter key. On the **Multifactor Authentication | Getting started** blade.
 
-12. In the **Settings** section, click on **Fraud alert**.
+12. From left navigation pane under **Settings** section, click on **Fraud alert**.
 
 13. On the **Multi-Factor Authentication \| Fraud alert** blade, configure the following settings:
 
-   |Setting|Value|
-   |---|---|
-   |Allow users to submit fraud alerts|**On**|
-   |Automatically block users who report fraud|**On**|
-   |Code to report fraud during initial greeting|**0**|
+     |Setting|Value|
+     |---|---|
+     |Allow users to submit fraud alerts|**On**|
+     |Automatically block users who report fraud|**On**|
+     |Code to report fraud during initial greeting|**0**|
 
 14. Click on **Save**
 
     >**Note**: At this point, you have enabled MFA for aaduser1 and setup fraud alert settings. 
 
-15. Navigate back to the **AdatumLab500-04** Azure Active Directory tenant blade, in the **Manage** section, click on **Properties**, next click on the **Manage Security defaults** link at the bottom of the blade, on the **Enable Security Defaults** blade, click on **No**. Select **My Organization is using Conditonal Access** as the reason and and then click on **Save**.
+15. Navigate back to the **AdatumLab500-04** Azure Active Directory tenant blade, in the **Manage** section, click on **Properties**, next click on the **Manage Security defaults** link at the bottom of the blade,
+
+16. On the **Security Defaults** blade, click on **Disable**, select **My Organization is using Conditonal Access** as the reason and and then click on **Save**.
 
     >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directories + subscriptions** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role in the Azure AD tenant.
 
