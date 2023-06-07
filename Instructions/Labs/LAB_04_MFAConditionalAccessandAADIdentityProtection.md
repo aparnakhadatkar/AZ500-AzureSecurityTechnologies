@@ -410,7 +410,7 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
 14. On the **Security \| Getting started** blade, in the **Protect** section, click on **Conditional Access**.
 
-15. On the **Conditional Access \| Policies** blade, click on the ellipsis next to **AZ500Policy1**, click on **Delete**, and, when prompted to confirm, click on **Yes**.
+15. On the **Conditional Access \| Overview** blade, from left navigation pane select **Policies** click on the ellipsis next to **AZ500Policy1**, click on **Delete**, and, when prompted to confirm, click on **Yes**.
 
     >**Note**: Result: In this exercise you implement a conditional access policy to require MFA when a user signs into the Azure portal. 
 
