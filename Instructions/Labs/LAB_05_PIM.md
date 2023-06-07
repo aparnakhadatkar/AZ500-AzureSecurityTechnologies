@@ -47,7 +47,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. On the **Add assignments** blade, in the **Select role** drop-down, select **Billing Administrator**.
 
-1. Click the **No member selected** link, on the **Select a member** blade, click on **aaduser2**, and then click on **Select**.
+1. Under Select member(s), click the **No member selected** link, on the **Select a member** blade, click on **aaduser2**, and then click on **Select**.
 
 1. Back on the **Add assignments** blade, click on **Next**. 
 
