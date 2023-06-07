@@ -146,8 +146,8 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
    |Setting|Value|
    |---|---|
-   |User name|**aaduser1**|
-   |Name|**aaduser1**|
+   |User principal name|**aaduser1**|
+   |Display name|**aaduser1**|
    |Password|ensure that the option **Auto-generate password** is selected and click on **Show Password**|
    |Groups|**0 groups selected**|
    |Assignments|click on **User**, then click on **Global administrator**, and click on **Select**|
