@@ -77,11 +77,11 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. Click on **Edit**.
 
-1. On the **Activation** tab, enable the **Require approval to activate** check box.
+1. On the **Activation** tab, enable the **Require approval to activate (1)** check box.
 
-1. Click **Select approvers(s)**, on the **Select a member** blade, click on **aaduser3**, and then click on **Select**.
+1. Click **Select approvers(s)**, on the **Select a member** blade, click on **aaduser3 (3)**, and then click on **Select**, click on **Next:Assignment (4)**.
 
-1. Click on **Next:Assignment**.
+  ![image](../images/az-500-lab5-3.png)
 
 1. Clear the **Allow permanent eligible assignment** check box, leaving all other settings with their default values.
 
