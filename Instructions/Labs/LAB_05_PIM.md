@@ -277,7 +277,7 @@ In this task, you will reduce the risk associated with "stale" role assignments.
    |Frequency|**One time**|
    |End Date|end of the current month|
    |Role, Select Privileged Role(s)|**Global Reader**|
-   |Reviewers|**Selected users**|
+   |Reviewers|**Selected user(s) or group(s)**|
    |Select reviewers|your account|
 
 1. On the **Create an access review** blade, click on **Start**.
