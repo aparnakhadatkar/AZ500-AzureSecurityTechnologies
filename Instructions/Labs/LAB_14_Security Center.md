@@ -48,7 +48,7 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
 1. On the **Settings \| Azure Defender plans** blade, select **Enable all plans** and click **Save** to save any changes.
 
-1. From the left navigation pane, under the **Settings** section click on **Workflow Automation** and  click **+ Add workflow automation**.
+1. Navigate back to the **Microsoft Defender for Cloud** Home page, from the left navigation pane, under the **Settings** section click on **Workflow Automation** and  click **+ Add workflow automation**.
 
 1. On the **Add workflow automation** blade, review the available settings and click **Cancel**.
 
