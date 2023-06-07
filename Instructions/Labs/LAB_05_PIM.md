@@ -73,15 +73,17 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. On the **AdatumLab500-04 \| Roles** blade, click the **Global reader** role entry. 
 
+    ![image](../images/az-500-lab5-03.png)
+
 1. On the **Global Reader \| Assignments** blade, click on **Settings** icon in the toolbar of the blade and review configuration settings for the role, including Azure Multi-Factor Authentication requirements.
 
 1. Click on **Edit**.
 
 1. On the **Activation** tab, enable the **Require approval to activate (1)** check box.
 
-1. Click **Select approvers(s)**, on the **Select a member** blade, click on **aaduser3 (3)**, and then click on **Select**, click on **Next:Assignment (4)**.
+1. Click **Select approvers(s) (2)**, on the **Select a member** blade, click on **aaduser3 (3)**, and then click on **Select**, click on **Next:Assignment (4)**.
 
-  ![image](../images/az-500-lab5-3.png)
+    ![image](../images/az-500-lab5-(3).png)
 
 1. Clear the **Allow permanent eligible assignment** check box, leaving all other settings with their default values.
 
