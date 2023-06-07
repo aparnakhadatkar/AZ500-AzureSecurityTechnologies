@@ -366,7 +366,7 @@ In this task, you will review conditional access policy settings and create a po
    
 	 ![image](../images/az-500-lab1b-e3-t1-4.png)
 	 
-   - Set the **Enable policy** to **On**.
+   - Set the **Policy enforcement** to **Enable**.
 
         ![image](../images/az-500-lab1b-e3-t1-5.png)
  
