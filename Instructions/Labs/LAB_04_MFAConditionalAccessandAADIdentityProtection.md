@@ -148,7 +148,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
    |---|---|
    |User principal name|**aaduser1**|
    |Display name|**aaduser1**|
-   |Password|ensure that the option **Auto-generate password** is selected and click on **Show Password**|
+   |Password|ensure that the option **Auto-generate password** is selected|
    |Groups|**0 groups selected**|
    |Assignments|click on **User**, then click on **Global administrator**, and click on **Select**|
    |Properties>Usage Location|**United States**|  
@@ -163,8 +163,8 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
    |Setting|Value|
    |---|---|
-   |User name|**aaduser2**|
-   |Name|**aaduser2**|
+   |User principal name|**aaduser2**|
+   |Display name|**aaduser2**|
    |Password|ensure that the option **Auto-generate password** is selected and click on **Show Password**|
    |Groups|**0 groups selected**|
    |Assignments|**None**|
@@ -178,8 +178,8 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
    |Setting|Value|
    |---|---|
-   |User name|**aaduser3**|
-   |Name|**aaduser3**|
+   |User principal name|**aaduser3**|
+   |Display name|**aaduser3**|
    |Password|ensure that the option **Auto-generate password** is selected and click on **Show Password**|
    |Groups|**0 groups selected**|
    |Assignments|**User**|
