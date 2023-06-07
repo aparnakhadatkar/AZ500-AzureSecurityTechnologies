@@ -251,7 +251,9 @@ In this task, you will install AD Connect on the virtual machine.
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-3. In the Azure portal, on the **AdatumSync \| Overview** blade, scroll down and click **Azure AD Connect**.
+3. In the Azure portal, on the **AdatumSync \| Overview** blade, scroll down and click **Go to Azure AD Connect**.
+
+4. On **AAD Connect \| Get started** blade, from left navigation pane select **Connect Sync**
 
 4. Go to the **AAD Connect \| Connect Sync** blade, click the **Download Azure AD Connect** link. You will be redirected to the **Microsoft Azure Active Directory Connect** download page.
 
