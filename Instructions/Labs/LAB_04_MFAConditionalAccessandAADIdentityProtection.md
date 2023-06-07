@@ -454,13 +454,17 @@ In this task, you will create a user risk policy.
 
    - On the **Users** blade, switch to the **Exclude** tab, click on **Select excluded users**, select your user account, and then click on **Select**. 
 
-     ![image](../images/Lab-04_Ex4_Task2.png)
+     ![image](../images/az-500-lab1b-e4-task2.png)
      
    - Under User risk click on **User risk**; on the **User risk** blade, select **Low and above**, and then click on **Done**. 
+   
+       ![image](../images/az-500-lab1b-e4-task2-1.png)
 
    - Under Access click on **Block access**; on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click on **Done**.
 
-   - Set **Enforce policy** to **On** and click on **Save**.
+       ![image](../images/az-500-lab1b-e4-task2-2.png)
+
+   - Set **Policy Enforcement** to **Enable** and click on **Save**.
 
 ### Task 3: Configure sign-in risk policy
 
