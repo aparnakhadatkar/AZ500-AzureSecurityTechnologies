@@ -277,10 +277,10 @@ In this task, you will install AD Connect on the virtual machine.
 
 12. In the **AD forest account** window, ensure that the option to **Create new AD account** is selected, specify the following credentials, and click **OK**:
 
-   |Setting|Value|
-   |---|---|
-   |User Name|**ADATUM\\Student**|
-   |Password|**Pa55w.rd1234**|
+     |Setting|Value|
+     |---|---|
+     |User Name|**ADATUM\\Student**|
+     |Password|**Pa55w.rd1234**|
 
 13. Back on the **Connect your directories** page, ensure that the **adatum.com** entry appears as a configured directory and click **Next**
 
