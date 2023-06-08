@@ -257,7 +257,7 @@ In this task, you will create a storage account with a file share and obtain the
     
     >**Note**: **DeploymentID** can be found under the **Environment Details** tab.
 
-4. On the **Basics** tab of the **Create storage account** blade, click **Review + Create** and wait for the validation process to complete, and then click **Create**.
+4. On the **Basics** tab of the **Create storage account** blade, click **Review** and wait for the validation process to complete, and then click **Create**.
 
     >**Note**: Wait for the Storage account to be created. This should take about 2 minutes.
 
