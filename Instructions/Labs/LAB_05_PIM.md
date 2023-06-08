@@ -45,9 +45,11 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. On the **AdatumLab500-04 \| Roles** blade, click on **+ Add assignments**.
 
-1. On the **Add assignments** blade, in the **Select role** drop-down, select **Billing Administrator**.
+1. On the **Add assignments** blade, in the **Select role** drop-down, select **Billing Administrator (1)**.
 
-1. Click the **No member selected** link, on the **Select a member** blade, click on **aaduser2**, and then click on **Select**.
+1. Under Select member(s), click the **No member selected (2)** link, on the **Select a member** blade, click on **aaduser2 (3)**, and then click on **Select (4)**.
+
+    ![image](../images/az-500-lab5-(1).png)
 
 1. Back on the **Add assignments** blade, click on **Next**. 
 
@@ -55,7 +57,9 @@ In this task, you will make a user eligible for an Azure AD directory role.
  
 1. Back on the **AdatumLab500-04 \| Roles** blade, in the **Manage** section, click on **Assignments**.
 
-1. Back on the **AdatumLab500-04 \| Assignments** blade, note the tabs for **Eligible assignments**, **Active assignments**, and **Expired assignments**.
+1. Back on the **AdatumLab500-04 \| Assignments (1)** blade, note the tabs for **Eligible assignments (2)**, **Active assignments (3)**, and **Expired assignments (4)**.
+
+    ![image](../images/az-500-lab5-2.png)
 
 1. Verify on the **Eligible assignments** tab that **aaduser2** is shown as a **Billing administrator**. 
 
@@ -69,15 +73,17 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. On the **AdatumLab500-04 \| Roles** blade, click the **Global reader** role entry. 
 
+    ![image](../images/az-500-lab5-03.png)
+
 1. On the **Global Reader \| Assignments** blade, click on **Settings** icon in the toolbar of the blade and review configuration settings for the role, including Azure Multi-Factor Authentication requirements.
 
 1. Click on **Edit**.
 
-1. On the **Activation** tab, enable the **Require approval to activate** check box.
+1. On the **Activation** tab, enable the **Require approval to activate (1)** check box.
 
-1. Click **Select approvers(s)**, on the **Select a member** blade, click on **aaduser3**, and then click on **Select**.
+1. Click **Select approvers(s) (2)**, on the **Select a member** blade, click on **aaduser3 (3)**, and then click on **Select**, click on **Next:Assignment (4)**.
 
-1. Click on **Next:Assignment**.
+    ![image](../images/az-500-lab5-(3).png)
 
 1. Clear the **Allow permanent eligible assignment** check box, leaving all other settings with their default values.
 
@@ -95,9 +101,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. Ensure the **Assignment type** is **Eligible** and review the eligible duration settings.
 
-   ![image](../images/Lab-05_Ex1_Task2.png)
-
-16. Click on **Assign**.
+1. Click on **Assign**.
 
     >**Note**: User aaduser2 is eligible for the Global Reader role. 
  
@@ -116,6 +120,8 @@ In this task, you will make a user eligible for an Azure AD directory role.
 1. Click on **Next**. 
 
 1. Review the **Assignment type** settings and click on **Assign**.
+
+1. From left navigation pane, Select **Assignments** under **Manage**.
 
 1. On the **Assignments** page on the **Eligible Assignments** tab, select **Update** for the **aaduser2** assignment. Select **Permanently Eligible** and **Save**.
 
@@ -187,7 +193,7 @@ In this task, you will activate a role that requires approval.
 
 1. On the **My roles \| Azure AD roles** blade, locate the **Security Administrator** role, and click on **Activate**. 
 
-1. Click the warning **Additional verification required. Click to continue**. 
+1. If warning is displayed, click the warning **Additional verification required. Click to continue**. 
 
 1. Follow the instructions to verify your identity.
 
@@ -205,7 +211,7 @@ In this task, you will activate a role that requires approval.
 
 1. Sign into the Azure portal as **aaduser3**.
 
-    >**Note**: If you run into problems with authenticating by using any of the user accounts, you can sign in to the Azure AD tenant by using your user account to reset their passwords or reconfigure their sign-in options by disabling the User risk policy and Sign-in risk policy.
+    >**Note**: If you run into problems with authenticating by using any of the user accounts, you can sign in to the Azure AD tenant by using your user account and  navigate to Azure AD identity protection reconfigure their sign-in options by disabling **Policy Enforcement** of User risk policy and Sign-in risk policy, if prompted kindly updated you're password and sign in to Azure portal
 
 1. In the Azure portal, navigate to **Azure AD Privileged Identity Management**.
 
@@ -213,7 +219,9 @@ In this task, you will activate a role that requires approval.
 
 1. On the **Approve requests \| Azure AD roles** blade, in the **Requests for role activations** section, select the checkbox for the entry representing the role activation request to the **Global Reader** role by **aaduser2**.
 
-1. Click on **Approve**. On the **Approve Request** blade, in the **Justification** text box, type a reason for activation, note the start and end times, and then click on **Confirm**. 
+1. Click on **Approve** and on the **Approve Request** blade, in the **Justification** text box, type a reason for activation, note the start and end times, and then click on **Confirm**. 
+
+    ![image](../images/az-500-lab5-4.png)
 
     >**Note**: You also have the option of denying requests.
 
@@ -271,28 +279,38 @@ In this task, you will reduce the risk associated with "stale" role assignments.
    |Frequency|**One time**|
    |End Date|end of the current month|
    |Role, Select Privileged Role(s)|**Global Reader**|
-   |Reviewers|**Selected users**|
+   |Reviewers|**Selected user(s) or group(s)**|
    |Select reviewers|your account|
 
 1. On the **Create an access review** blade, click on **Start**.
  
     >**Note**: It will take about a minute for the review to deploy and appear on the **AdatumLab500-04 \| Access reviews** blade. You might have to refresh the web page. The review status will be **Active**. 
 
-1. On the **AdatumLab500-04 \| Access reviews** blade, under the **Global Reader Review** header, click the **Global Reader** entry. 
+1. On the **AdatumLab500-04 \| Access reviews (1)** blade, under the **Global Reader Review** header, click the **Global Reader (2)** entry. 
+
+    ![image](../images/az-500-lab5-(6).png)
 
 1. On the **Access review details** blade, examine the **Overview** page and note that the **Progress** charts shows a single users in the **Not reviewed** category. 
 
-1. On the **Access review details** blade, in the **Manage** section, click on **Results**. Note that aaduser2 is listed as having access to this role.
+1. On the **Access review details** blade, in the **Manage** section, click on **Results (1)**. Note that **aaduser2 (2)** is listed as having access to this role.
+ 
+    ![image](../images/az-500-lab5-7.png)
+    
+     >**Note**: You may need to wait for few minutes and refresh the page to see the entry.
 
 1. Click on **view** on **aaduser2** line to view a detailed audit log with entries representing PIM activities that involve that user.
 
 1. Navigate back to the **AdatumLab500-04 \| Access reviews** blade.
 
-1. On the the **AdatumLab500-04 \| Access reviews** blade, in the **Tasks** section, click on **Review access** and then, click the **Global Reader Review** entry. 
+1. On the the **AdatumLab500-04 \| Access reviews** blade, in the **Tasks** section, click on **Review access (1)** and then, click the **Global Reader Review (2)** entry. 
+   
+   ![image](../images/az-500-lab5-8.png)
+   
+    >**Note**: You may need to wait for few minutes and refresh the page to see the entry.
 
-1. On the **Global Reader Review** blade, click the **aaduser2** entry. 
+1. On the **Global Reader Review** blade, click the **aaduser2 (1)** entry and in the **Reason (2)** text box, type a rationale for approval and then click either **Approve (3)** to maintain the current role membership or **Deny** to revoke it. 
 
-1. In the **Reason** text box, type a rationale for approval and then click either **Approve** to maintain the current role membership or **Deny** to revoke it. 
+   ![image](../images/az-500-lab5-(9).png)
 
 1. Navigate back to the **Azure AD Privileged Identity Management** blade and, in the **Manage** section, click on **Azure AD roles**.
 
@@ -320,6 +338,6 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 1. Notice you can retrieve detailed information, including **Time**, **Requestor**, **Action**, **Resource name**, **Scope**, **Primary Target** and **Subject**. 
 
-> Result: You have configured an access review and reviewed audit information.
+   >**Result**: You have configured an access review and reviewed audit information.
 
 **You have successfully completed the lab. Please click on next to go to the next lab.**
