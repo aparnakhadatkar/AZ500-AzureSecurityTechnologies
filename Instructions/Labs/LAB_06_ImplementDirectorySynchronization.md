@@ -156,8 +156,8 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
    |Setting|Value|
    |---|---|
-   |User name|**syncadmin**|
-   |Name|**syncadmin**|
+   |User principal name|**syncadmin**|
+   |Display name|**syncadmin**|
    |Password|ensure that the option **Auto-generate password** is selected |
    
    >**Note**: Record the full user name. You can copy its value by clicking the **Copy to clipboard** button on the right hand side of the drop-down list displaying the domain name. 
