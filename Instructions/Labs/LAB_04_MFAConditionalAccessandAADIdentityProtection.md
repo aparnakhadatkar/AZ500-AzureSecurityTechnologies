@@ -368,11 +368,11 @@ In this task, you will review conditional access policy settings and create a po
 	
    - Under **Grant**, click on **0 controls selected** in the **Access controls** section, on the **Grant** blade, select the **Require multifactor authentication** checkbox and click on **Select**.
    
-	![image](../images/az-500-lab1b-e3-t1-4.png)
+      ![image](../images/az-500-lab1b-e3-t1-4.png)
 	 
    - Set the **Enable Policy** to **On**.
 
-        ![image](../images/az-500-lab1b-e3-t1-5.png)
+      ![image](../images/az-500-lab1b-e3-t1-5.png)
  
  6. On the **New** blade, click on **Create**. 
 
