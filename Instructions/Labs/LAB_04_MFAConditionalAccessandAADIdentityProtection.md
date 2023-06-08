@@ -358,7 +358,7 @@ In this task, you will review conditional access policy settings and create a po
 	
    - Under **Conditions**, click on **0 conditions selected**. On the right side under **Sign-in risk**, click on **Not configured** >> on the **Sign-in risk** blade, review the risk levels but do not make any changes and close the **Sign-in risk** blade.
 
-      ![image](../images/az-500-lab1b-e3-t1-2.png)
+      ![image](../images/az-500-lab1b-e3-t1-3.png)
 	
    - Under **Device platforms**, click on **Not configured** >> review the device platforms that can be included and click on **Done**.
 
