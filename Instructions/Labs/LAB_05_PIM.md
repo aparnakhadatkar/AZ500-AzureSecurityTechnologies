@@ -295,6 +295,8 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 1. On the **Access review details** blade, in the **Manage** section, click on **Results**. Note that aaduser2 is listed as having access to this role.
  
     ![image](../images/az-500-lab5-7.png)
+    
+     >**Note**: You may need to wait for few minutes and refresh the page to see the entry.
 
 1. Click on **view** on **aaduser2** line to view a detailed audit log with entries representing PIM activities that involve that user.
 
@@ -303,6 +305,8 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 1. On the the **AdatumLab500-04 \| Access reviews** blade, in the **Tasks** section, click on **Review access** and then, click the **Global Reader Review** entry. 
    
    ![image](../images/az-500-lab5-8.png)
+   
+    >**Note**: You may need to wait for few minutes and refresh the page to see the entry.
 
 1. On the **Global Reader Review** blade, click the **aaduser2** entry. 
 
