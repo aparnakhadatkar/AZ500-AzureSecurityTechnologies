@@ -226,7 +226,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 8. In **Server Manager**, click **Tools** and, in the drop-down menu, click **Active Directory Administrative Center**.
 
-    ![image](../images/Lab-06_Ex3_Task1.png)
+    ![image](../images/AD-01.png)
 
 9. In **Active Directory Administrative Center**, click **adatum (local)**, in the **Tasks** pane, under the domain name **adatum (local)** click **New**, and, in the cascading menu, click **Organizational Unit**.
 
