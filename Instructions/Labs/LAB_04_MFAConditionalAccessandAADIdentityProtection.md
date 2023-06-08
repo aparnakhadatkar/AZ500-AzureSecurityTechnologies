@@ -151,7 +151,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
 1. On the **Users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**.
 
-1. On **Create new user** blade,  under **Basics** tab specify the following settings (leave all others with their default values) and click on **Next:Properties>**
+1. On **Create new user** blade,  under **Basics** tab specify the following settings (leave all others with their default values) and click on **Next:Properties>**.
 
    |Setting|Value|
    |---|---|
@@ -167,11 +167,11 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
 1. On **Create new user** blade, under **Assignments** tab  click **+ Add role** and on Directory roles search for **Global administrator** click select.
 
-1. click on **Review + Create** and **Create**
+1. click on **Review + Create** and **Create**.
 
 1. Back on the **Users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**. 
 
-1. On **Create new user** blade,  under **Basics** tab specify the following settings (leave all others with their default values) and click on **Next:Properties>**
+1. On **Create new user** blade,  under **Basics** tab specify the following settings (leave all others with their default values) and click on **Next:Properties>**.
 
    |Setting|Value|
    |---|---|
@@ -189,7 +189,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
   
 1. Back on the **Users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**. 
 
-1. On **Create new user** blade,  under **Basics** tab specify the following settings (leave all others with their default values) and click on **Next:Properties>**
+1. On **Create new user** blade,  under **Basics** tab specify the following settings (leave all others with their default values) and click on **Next:Properties>**.
 
    |Setting|Value|
    |---|---|
@@ -251,7 +251,7 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
     ![image](../images/az-500-lab1b-t5-(1).png)
 
-1. On the **AdatumLab500-04 \| Overview** page, switch to the **users (1)** tab
+1. On the **AdatumLab500-04 \| Overview** page, switch to the **users (1)** tab.
 
     >**Note**: This will open a new browser tab, displaying **multi-factor authentication** page. 
     
@@ -351,7 +351,7 @@ In this task, you will review conditional access policy settings and create a po
 
 1. On the **New** blade, configure the following settings:
 
-   - In the **Name** text box, type **AZ500Policy1**
+   - In the **Name** text box, type **AZ500Policy1**.
 	
    - Under **Assignments**, select **Users** click on **Specfic Users (1)** link. On the right side under Include >> click **Select users and groups (2)** checkbox >> enable **Users and groups (3)** checkbox >> under **Select**, click **0 users and groups selected (4)** select **aaduser2 (5)**, and click on **Select (6)**.
 
@@ -497,7 +497,7 @@ In this task, you will configure a sign-in risk policy.
 
 ### Task 4: Simulate risk events against the Azure AD Identity Protection policies 
 
-> Before you start this task, ensure that the template deployment you started in Exercise 1 has completed. The deployment includes an Azure VM named **az500-04-vm1**. 
+Before you start this task, ensure that the template deployment you started in Exercise 1 has completed. The deployment includes an Azure VM named **az500-04-vm1**. 
 
 1. In the Azure portal, set the **Directory + subscription** filter to the Azure AD tenant associated with the Azure subscription into which you deployed the **az500-04-vm1** Azure VM.
 
