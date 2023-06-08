@@ -153,7 +153,6 @@ In this task, you will create a network security group with two outbound securit
 	
 	![image](../images/Lab-12_Ex1_Task3_2.png)
 	
-1. On the **Add outbound security rule** blade, click **Add** to create the new outbound rule.
 
     >**Note**: This rule overrides a default rule in all network security groups that allows outbound internet communication. 
 
