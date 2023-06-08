@@ -101,7 +101,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. Ensure the **Assignment type** is **Eligible** and review the eligible duration settings.
 
-16. Click on **Assign**.
+1. Click on **Assign**.
 
     >**Note**: User aaduser2 is eligible for the Global Reader role. 
  
@@ -286,13 +286,13 @@ In this task, you will reduce the risk associated with "stale" role assignments.
  
     >**Note**: It will take about a minute for the review to deploy and appear on the **AdatumLab500-04 \| Access reviews** blade. You might have to refresh the web page. The review status will be **Active**. 
 
-1. On the **AdatumLab500-04 \| Access reviews** blade, under the **Global Reader Review** header, click the **Global Reader** entry. 
+1. On the **AdatumLab500-04 \| Access reviews (1)** blade, under the **Global Reader Review** header, click the **Global Reader (2)** entry. 
 
     ![image](../images/az-500-lab5-(6).png)
 
 1. On the **Access review details** blade, examine the **Overview** page and note that the **Progress** charts shows a single users in the **Not reviewed** category. 
 
-1. On the **Access review details** blade, in the **Manage** section, click on **Results**. Note that aaduser2 is listed as having access to this role.
+1. On the **Access review details** blade, in the **Manage** section, click on **Results (1)**. Note that **aaduser2 (2)** is listed as having access to this role.
  
     ![image](../images/az-500-lab5-7.png)
     
@@ -302,15 +302,13 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 
 1. Navigate back to the **AdatumLab500-04 \| Access reviews** blade.
 
-1. On the the **AdatumLab500-04 \| Access reviews** blade, in the **Tasks** section, click on **Review access** and then, click the **Global Reader Review** entry. 
+1. On the the **AdatumLab500-04 \| Access reviews** blade, in the **Tasks** section, click on **Review access (1)** and then, click the **Global Reader Review (2)** entry. 
    
    ![image](../images/az-500-lab5-8.png)
    
     >**Note**: You may need to wait for few minutes and refresh the page to see the entry.
 
-1. On the **Global Reader Review** blade, click the **aaduser2** entry. 
-
-1. In the **Reason** text box, type a rationale for approval and then click either **Approve** to maintain the current role membership or **Deny** to revoke it. 
+1. On the **Global Reader Review** blade, click the **aaduser2 (1)** entry and in the **Reason (2)** text box, type a rationale for approval and then click either **Approve (3)** to maintain the current role membership or **Deny** to revoke it. 
 
    ![image](../images/az-500-lab5-(9).png)
 
