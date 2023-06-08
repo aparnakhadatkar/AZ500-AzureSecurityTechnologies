@@ -228,9 +228,6 @@ In this task, you will create a network security group with one inbound security
     |Priority|**1200**|                                                    
     |Name|**Allow-RDP-All**|
 
-8. On the **Add inbound security rule** blade, click **Add** to create the new inbound rule. 
-
-    >**Note**: Now you will associate the network security group with the Public subnet.
 
 9. On the **Subnets** blade, select **+ Associate** and specify the following settings in the **Associate subnet** section and then click **OK**:
 
