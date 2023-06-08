@@ -140,8 +140,6 @@ In this task, you will add your custom DNS name to the new Azure AD tenant.
 
     >**Note**: You will not be able to complete the validation process because you do not own the **adatum.com** DNS domain name. However, this will not prevent you from synchronizing the **adatum.com** AD DS domain with the Azure AD tenant. You will use for this purpose the initial DNS name of the Azure AD tenant (the name ending with the **onmicrosoft.com** suffix), which you identified in the previous task. Keep in mind that, as a result, the DNS domain name of the AD DS domain and the DNS name of the Azure AD tenant will differ. This means that Adatum users will need to use different names when signing in to the AD DS domain and when signing in to Azure AD tenant.
 
-     ![image](../images/Lab-06_Ex2_Task2.png)
-
 ### Task 3: Create an Azure AD user with the Global Administrator role
 
 In this task, you will add a new Azure AD user and assign them to the Global Administrator role. 
@@ -236,16 +234,16 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 13. In the **Create User** window, create a new user account with the following settings (leave others with their existing values) and click **OK**:
 
-   |Setting|Value|
-   |---|---|
-   |Full Name|**aduser1**|
-   |User UPN logon|**aduser1**|
-   |User SamAccountName logon|**aduser1**|
-   |Password|**Pa55w.rd1234**|
-   |Confirm Password|**Pa55w.rd1234**|
-   |Other password options|**Password never expires**|
+     |Setting|Value|
+     |---|---|
+     |Full Name|**aduser1**|
+     |User UPN logon|**aduser1**|
+     |User SamAccountName logon|**aduser1**|
+     |Password|**Pa55w.rd1234**|
+     |Confirm Password|**Pa55w.rd1234**|
+     |Password options| Checkbox **Other password options** and select **Password never expires**|
 
-   ![image](../images/Lab-06_Ex3_Task2.png)
+     ![image](../images/Lab-06_Ex3_Task2.png)
 
 ### Task 2: Install Azure AD Connect
 
