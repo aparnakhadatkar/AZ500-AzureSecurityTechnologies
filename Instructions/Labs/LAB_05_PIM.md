@@ -338,6 +338,6 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 1. Notice you can retrieve detailed information, including **Time**, **Requestor**, **Action**, **Resource name**, **Scope**, **Primary Target** and **Subject**. 
 
-> Result: You have configured an access review and reviewed audit information.
+   >**Result**: You have configured an access review and reviewed audit information.
 
 **You have successfully completed the lab. Please click on next to go to the next lab.**
