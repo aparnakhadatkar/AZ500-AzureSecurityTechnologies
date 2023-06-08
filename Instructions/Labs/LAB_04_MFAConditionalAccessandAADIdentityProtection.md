@@ -126,6 +126,8 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 
 1. In the **Directories + subscriptions** blade, click on the newly created tenant, **AdatumLab500-04** and click on the **Switch** button to set it as the current directory.
 
+    ![image](../images/switch.png)
+
     >**Note**: You may need to refresh the browser window if the **AdatumLab500-04** entry does not appear in the **Directories + subscriptions** filter list.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key. On the **AdatumLab500-04** blade, in the **Manage** section, click on **Licenses**.
@@ -134,7 +136,7 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 
 1. On the **Activate** blade, in the **Azure AD Premium P2** section, click on **Free Trial** and then click on **Activate**.
 
-   ![image](../images/az-500-lab1b-01.png)
+    ![image](../images/az-500-lab1b-01.png)
 
 ### Task 3: Create Azure AD users and groups.
 
