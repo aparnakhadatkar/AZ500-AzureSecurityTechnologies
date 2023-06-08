@@ -150,22 +150,24 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 2. On the **Users \| All users** blade, click **+ New User** and then from the drop-down list, select **Create new user**. 
 
-3. On the **New user** blade, ensure that the **Create user** option is selected, specify the following settings (leave all others with their default values) and click **Create**:
+3. On **Create new user** blade,  under **Basics** tab specify the following settings (leave all others with their default values) and click on **Next:Properties>**
 
    |Setting|Value|
    |---|---|
    |User name|**syncadmin**|
    |Name|**syncadmin**|
-   |Password|ensure that the option **Auto-generate password** is selected and click **Show Password**|
-   |Groups|**0 groups selected**|
-   |Usage Location (bottom of Properties tab)|**United States**|  
-   |Assignments (+Add Role)|click **User**, then click **Global administrator**, and click **Select**|
+   |Password|ensure that the option **Auto-generate password** is selected |
    
+   >**Note**: Record the full user name. You can copy its value by clicking the **Copy to clipboard** button on the right hand side of the drop-down list displaying the domain name. 
 
-    >**Note**: Record the full user name. You can copy its value by clicking the **Copy to clipboard** button on the right hand side of the drop-down list displaying the domain name. 
+   >**Note**: Record the user's password. You will need this later in this lab. 
 
-    >**Note**: Record the user's password. You will need this later in this lab. 
+4. On **Create new user** blade, under **Properties** tab, specify **Usage Location** as **United States** and  click on **Next:Assignments>**.
 
+5. On **Create new user** blade, under **Assignments** tab  click **+ Add role** and on Directory roles search for **Global administrator** click select.
+
+6. click on **Review + Create** and **Create**   
+   
     >**Note**: An Azure AD user with the Global Administrator role is required in order to implement Azure AD Connect.
 
 4. Open an InPrivate browser window.
