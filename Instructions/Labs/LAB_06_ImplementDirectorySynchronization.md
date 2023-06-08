@@ -116,6 +116,8 @@ In this task, you will create a new Azure AD tenant to use in this lab.
 
 5. Click **Review + create** and then click **Create**.
 
+6. Add Captcha code on **Help us prove you're not a robot** blade and then click on **Submit** button.
+
     >**Note**: Wait for the new tenant to be created. Use the **Notification** icon to monitor the deployment status. 
 
 ### Task 2: Add a custom DNS name to the new Azure AD tenant
