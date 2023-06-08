@@ -224,11 +224,11 @@ Before you start this task, ensure that the template deployment you started in t
 
 1. In the **Internet Explorer Enhanced Security Configuration** dialog box, set both options to **Off** and click **OK**.
 
-1. In **Server Manager**, click **Tools** and, in the drop-down menu, click **Active Directory Administrative Center**.
+1. In **Server Manager**, click **Tools (1)** and, in the drop-down menu, click **Active Directory Administrative Center (2)**.
 
     ![image](../images/AD-01.png)
 
-1. In **Active Directory Administrative Center**, click **adatum (local)**, in the **Tasks** pane, under the domain name **adatum (local)** click **New**, and, in the cascading menu, click **Organizational Unit**.
+1. In **Active Directory Administrative Center**, click **adatum (local)**, in the **Tasks (1)** pane, under the domain name **adatum (local) (2)** click **New (3)**, and, in the cascading menu, click **Organizational Unit (4)**.
 
     ![image](../images/AD1.png)
 
@@ -236,7 +236,7 @@ Before you start this task, ensure that the template deployment you started in t
 
 1. Double-click the newly created **ToSync** organizational unit such that its content appears in the details pane of the Active Directory Administrative Center console. 
 
-1. In the **Tasks** pane, within the **ToSync** section, click **New**, and, in the cascading menu, click **User**.
+1. In the **Tasks** pane, within the **ToSync (1)** section, click **New (2)**, and, in the cascading menu, click **User (3)**.
 
      ![image](../images/AD(2).png)
 
