@@ -499,8 +499,6 @@ In this task, you will configure a sign-in risk policy.
 3. On the **Virtual machines** blade, click on the **az500-04-vm1** entry. 
 
 4. On the **Overview** page for the virtual machine, select the **Connect** button.
-
-   ![image](../images/Download_RDP.png)
    
 5. On the RDP tab, select the **Download RDP File** button.
 
