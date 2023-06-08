@@ -34,6 +34,11 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create a virtual machine by using an ARM template. This virtual machine will be used in the last exercise for this lab. 
 
+1. If you are not logged in already, click on the Azure portal shortcut that is available on the desktop and log in with Azure credentials.
+
+   - Username: <inject key="Username" enableCopy="false" />
+   - Password: <inject key="Password" enableCopy="false" />
+
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **custom template** and select **Deploy a custom template** under the list of **Services**.
 
     ![image](../images/az-500-lab1b-1.png)
