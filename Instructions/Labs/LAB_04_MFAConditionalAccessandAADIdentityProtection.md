@@ -427,7 +427,7 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
      >**Note**: Result: In this exercise you implement a conditional access policy to require MFA when a user signs into the Azure portal. 
 
->Result: You have configured and tested Azure AD conditional access.
+     >**Result**: You have configured and tested Azure AD conditional access.
 
 ## Exercise 4: Implement Azure AD Identity Protection
 
