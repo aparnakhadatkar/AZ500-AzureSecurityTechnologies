@@ -219,7 +219,7 @@ In this task, you will activate a role that requires approval.
 
 1. On the **Approve requests \| Azure AD roles** blade, in the **Requests for role activations** section, select the checkbox for the entry representing the role activation request to the **Global Reader** role by **aaduser2**.
 
-1. Click on **Approve**. On the **Approve Request** blade, in the **Justification** text box, type a reason for activation, note the start and end times, and then click on **Confirm**. 
+1. Click on **Approve** and on the **Approve Request** blade, in the **Justification** text box, type a reason for activation, note the start and end times, and then click on **Confirm**. 
 
     ![image](../images/az-500-lab5-4.png)
 
