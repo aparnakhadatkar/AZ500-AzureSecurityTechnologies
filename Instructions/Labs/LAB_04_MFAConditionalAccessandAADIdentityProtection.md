@@ -36,6 +36,8 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **custom template** and select **Deploy a custom template** under the list of **Services**.
 
+    ![image](../images/az-500-lab1b-1.png)
+
     >**Note**: You can also select **Template Deployment (deploy using custom templates)** from the **Marketplace** list.
 
 2. On the **Custom deployment** blade, click on the **Build your own template in the editor** option.
@@ -132,7 +134,7 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 
 5. On the **Activate** blade, in the **Azure AD Premium P2** section, click on **Free Trial** and then click on **Activate**.
 
-   ![image](../images/Lab-04_Ex2_Task2.png)
+   ![image](../images/az-500-lab1b-01.png)
 
 ### Task 3: Create Azure AD users and groups.
 
@@ -240,7 +242,7 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
 5. On the **multi-factor authentication** page, click on the **service settings (1)** tab. Review **verification options (2)**. Note that **Text message to phone**, **Notification through mobile app**, and **Verification code from mobile app or hardware token** are enabled. Click on **Save** and then click on **close**.
 
-    ![image](../images/az-500-lab1b-t5-1.png)
+    ![image](../images/az-500-lab1b-t5-(1).png)
 
 6. On the **AdatumLab500-04 \| Overview** page, switch to the **users (1)** tab
 
