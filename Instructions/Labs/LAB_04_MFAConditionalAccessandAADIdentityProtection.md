@@ -346,9 +346,9 @@ In this task, you will review conditional access policy settings and create a po
 
    - In the **Name** text box, type **AZ500Policy1**
 	
-   - Under **Assignments**, select **Users** click on **Specfic Users (1)** link. On the right side under Include >> Select **users and groups checkbox (2)** >> enable **Users and groups (3)** checkbox >> under **Select**, select **0 users and groups selected (4)** click on **aaduser2 (5)**, and click on **Select (6)**.
+   - Under **Assignments**, select **Users** click on **Specfic Users (1)** link. On the right side under Include >> click **Select users and groups (2)** checkbox >> enable **Users and groups (3)** checkbox >> under **Select**, click **0 users and groups selected (4)** select **aaduser2 (5)**, and click on **Select (6)**.
 
-	![image](../images/az-500-lab1-conditional1.png)
+      ![image](../images/az-500-lab1-conditional1.png)
 	
    - Under **Cloud apps or actions**, click on **No cloud apps, actions, or authentication contexts selected**. On the right side under Include >> click on **Select apps** checkbox >> under Select, click on None >> on the **Select** blade, click on **Microsoft Azure Management**, and click on **Select**.
 
