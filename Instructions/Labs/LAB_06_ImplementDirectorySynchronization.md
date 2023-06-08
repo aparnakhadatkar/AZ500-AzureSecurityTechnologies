@@ -205,7 +205,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 4. On the **Overview** page for the virtual machine, select the **Connect** button.
   
-5. In the **IP address** parameter, select **Load balancer public IP address**, then click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
+5. In the **IP address** parameter, select **Load balancer public IP address**, then click **Download RDP File** and open the RDP file that was just downloaded. When a dialog appears asking if you want to connect, select **Connect**. When prompted to authenticate, provide the following credentials:
 
    |Setting|Value|
    |---|---|
