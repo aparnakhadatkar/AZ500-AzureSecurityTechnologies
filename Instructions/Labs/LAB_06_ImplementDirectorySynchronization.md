@@ -226,15 +226,19 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 8. In **Server Manager**, click **Tools** and, in the drop-down menu, click **Active Directory Administrative Center**.
 
-   ![image](../images/Lab-06_Ex3_Task1.png)
+    ![image](../images/Lab-06_Ex3_Task1.png)
 
 9. In **Active Directory Administrative Center**, click **adatum (local)**, in the **Tasks** pane, under the domain name **adatum (local)** click **New**, and, in the cascading menu, click **Organizational Unit**.
+
+    ![image](../images/AD1.png)
 
 10. In the **Create Organizational Unit** window, in the **Name** text box, type **ToSync** and click **OK**.
 
 11. Double-click the newly created **ToSync** organizational unit such that its content appears in the details pane of the Active Directory Administrative Center console. 
 
 12. In the **Tasks** pane, within the **ToSync** section, click **New**, and, in the cascading menu, click **User**.
+
+     ![image](../images/AD(2).png)
 
 13. In the **Create User** window, create a new user account with the following settings (leave others with their existing values) and click **OK**:
 
