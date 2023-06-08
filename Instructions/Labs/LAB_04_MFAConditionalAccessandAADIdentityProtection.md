@@ -502,8 +502,9 @@ In this task, you will configure a sign-in risk policy.
    
 5. On the RDP tab, select the **Download RDP File** button.
 
-6. Open the RDP file that was just downloaded. When a dialog appears asking if you want to connect, select **Connect**.
+   ![image](../images/Download_RDP.png)
 
+6. Open the RDP file that was just downloaded. When a dialog appears asking if you want to connect, select **Connect**.
 
 7. Enter the following username and password. Then select **OK**.
 
