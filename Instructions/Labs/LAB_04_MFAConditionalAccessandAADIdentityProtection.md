@@ -154,13 +154,13 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
    >**Note**: Record the user's password. You will need this later in this lab. 
 
-3. On **Create new user** blade, under **Properties** tab   specify Usage Location as **United States** and  click on **Next:Assignments>** 
+3. On **Create new user** blade, under **Properties** tab   specify Usage Location as **United States** and  click on **Next:Assignments>**. 
 
 3. On **Create new user** blade, under **Assignments** tab  click **+ Add role** and on Directory roles search for **Global administrator** click select.
 
 4. click on **Review + Create** and **Create**
 
-4. Back on the **Users \| All users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**. 
+4. Back on the **Users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**. 
 
 3. On **Create new user** blade,  under **Basics** tab specify the following settings (leave all others with their default values) and click on **Next:Properties>**
 
@@ -178,7 +178,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
 4. click on **Review + Create** and **Create**.
   
-6. Back on the **Users \| All users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**. 
+6. Back on the **Users** blade, click on **+ New User** and then from the drop-down menu select **Create new user**. 
 
 3. On **Create new user** blade,  under **Basics** tab specify the following settings (leave all others with their default values) and click on **Next:Properties>**
 
