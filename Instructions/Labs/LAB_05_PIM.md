@@ -288,7 +288,7 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 
 1. On the **AdatumLab500-04 \| Access reviews** blade, under the **Global Reader Review** header, click the **Global Reader** entry. 
 
-    ![image](../images/az-500-lab5-6.png)
+    ![image](../images/az-500-lab5-(6).png)
 
 1. On the **Access review details** blade, examine the **Overview** page and note that the **Progress** charts shows a single users in the **Not reviewed** category. 
 
@@ -308,7 +308,7 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 
 1. In the **Reason** text box, type a rationale for approval and then click either **Approve** to maintain the current role membership or **Deny** to revoke it. 
 
-   ![image](../images/az-500-lab5-9.png)
+   ![image](../images/az-500-lab5-(9).png)
 
 1. Navigate back to the **Azure AD Privileged Identity Management** blade and, in the **Manage** section, click on **Azure AD roles**.
 
