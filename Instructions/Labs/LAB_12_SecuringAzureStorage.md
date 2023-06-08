@@ -176,9 +176,7 @@ In this task, you will create a network security group with two outbound securit
 	
 	![image](../images/Lab-12_Ex1_Task3_3.png)
 	
-1. On the **Add inbound security rule** blade, click **Add** to create the new inbound rule. 
 
-    >**Note**: Now you will associate the network security group with the Private subnet.
 
 1. On the **Subnets** blade, select **+ Associate** and specify the following settings in the **Associate subnet** section and then click **OK**:
 
