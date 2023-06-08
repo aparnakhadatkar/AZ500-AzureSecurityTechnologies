@@ -148,7 +148,7 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 1. On the **AdatumSync** Azure AD tenant blade, in the **Manage** section, click **Users**.
 
-2. On the **Users \| All users** blade, click **+ New User** and then from the drop-down list, select **Create new user**. 
+2. On the **Users** blade, click **+ New User** and then from the drop-down list, select **Create new user**. 
 
 3. On **Create new user** blade,  under **Basics** tab specify the following settings (leave all others with their default values) and click on **Next:Properties>**
 
