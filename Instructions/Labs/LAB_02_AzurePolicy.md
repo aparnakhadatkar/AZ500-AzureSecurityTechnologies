@@ -95,7 +95,7 @@ In this task, you will test the Allowed Locations policy assignment.
 
     > **Note**: If the **Deployment Failed** warning does not appear, click on **Previous** and wait a few more minutes.
 
-1. Perform from the 3rd steps, and, in the **Region** drop-down list, select **(Europe) UK South**.
+1. Perform from the 3rd steps, and, in the **Region** drop-down list, select **UK South**.
 
 1. Click on **Review + create**, verify that validation passed, click on **Create**, and verify that the virtual network was created successfully. 
 
