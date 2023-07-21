@@ -67,9 +67,9 @@ In this task, you will create an Allowed Locations policy assignment and specify
 
 1. Click on **Review + create**, followed by **Create** to create the policy assignment. 
 
-   >**Note**: You will see a notification that the assignment was successful, and that the assignment might take around 30 minutes to complete.
+   >**Note**: You will see a notification that the assignment was successful, and that the assignment might take around 5-15 minutes to complete.
 
-   >**Note**: The reason the Azure policy assignment might take up to 30 minutes to take effect is that is has to replicate globally. Typically this takes only a few minutes.  If the next task fails, simply wait a few minutes and attempt its steps again.
+   >**Note**: The reason the Azure policy assignment might take up to 5-15 minutes to take effect is that is has to replicate globally. Typically this takes only a few minutes.  If the next task fails, simply wait a few minutes and attempt its steps again.
 
 ## Task 2: Test the Allowed Locations policy assignment
 
@@ -91,11 +91,11 @@ In this task, you will test the Allowed Locations policy assignment.
 
 1. Click on **Review + create**. 
 
-1. On the **Review + create** a tab of the **Create virtual network** blade note the **Validation failed** message. 
+1. On the **Review + create** , than click on **Create**, a tab of the **Create virtual network** blade note the **Deployment failed** message. 
 
-    > **Note**: If the **Validation Failed** warning does not appear, click on **Previous** and wait a few more minutes.
+    > **Note**: If the **Deployment Failed** warning does not appear, click on **Previous** and wait a few more minutes.
 
-1. Click on the **Previous** tab, on the **Create virtual network** blade, click on the **Basics** tab, and, in the **Region** drop-down list, select **(Europe) UK South**.
+1. Perform from the 3rd steps, and, in the **Region** drop-down list, select **(Europe) UK South**.
 
 1. Click on **Review + create**, verify that validation passed, click on **Create**, and verify that the virtual network was created successfully. 
 
