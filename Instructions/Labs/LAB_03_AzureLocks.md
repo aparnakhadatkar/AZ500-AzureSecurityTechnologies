@@ -49,7 +49,7 @@ In this task, you will add a read-only lock to the storage account. This will pr
 
 1. On the **AZ500LAB03** resource group blade, in the list of resources, select the new storage account. 
 
-1. From left navigation pane under the **Settings** section, click on the "Locks" icon.
+1. From left navigation pane under the **Settings** section, click on the **Locks** icon.
 
 1. Click on **+ Add** and specify the following settings:
 
@@ -78,7 +78,7 @@ In this task, you will add a read-only lock to the storage account. This will pr
 
 1. On the storage account blade, from left navigation pane select **Overview** and, on the **Overview** blade, click on **Delete**.
 
-1. On the **Delete storage account** blade, review the notification that resembles the following text: 
+1. On the **Delete storage account** blade, enter the storage account name, select **Delete**, and click on **Confirm delete** button, now you'll recieve a notification which states:
 
    > **'xxxxxx' can't be deleted because this resource or its parent has a delete lock. Locks must be removed before this resource can be deleted"**
 

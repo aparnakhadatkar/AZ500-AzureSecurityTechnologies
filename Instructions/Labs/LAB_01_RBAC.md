@@ -35,15 +35,7 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create a user account for Joseph Price.
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
-
-1.If you have not logged in , using the following credentials to sign in:
- 
- - Username: <inject key="Username" enableCopy="false" />
- - Password: <inject key="Password" enableCopy="false" />
-
-
-1. In the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
+1. In the Azure Portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
       ![image](../images/az-500-lab1-image1.png)
 
@@ -56,9 +48,9 @@ In this task, you will create a user account for Joseph Price.
    |User principal name|**Joseph (1)**|
    |Display Name|**Joseph Price (2)**|
 
-1. Click on the **copy icon (3)** next to the **User principal name** to copy the full username.
+1. Click on the **copy icon (3)** next to the **User principal name** to copy the full username, and pasted it somewhere.
 
-1. Ensure that the **Auto-generate (4)** password is selected, and click on the copy icon next to **Password (5)**. You would need to provide this password, along with the user name to Joseph. 
+1. Ensure that the **Auto-generate (4)** password is selected, and click on the copy icon next to **Password (5)** and paste it somewhere. You would need to provide this password, along with the user name to Joseph. 
 
 1. Click on **Review + create (6)**, and then click on **Create**.
 
