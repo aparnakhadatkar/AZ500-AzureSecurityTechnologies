@@ -32,7 +32,7 @@ In this task, you will create a storage account for the lab.
 1. In the PowerShell session within the Cloud Shell pane, run the following to create a storage account in the newly created resource group:
     
     ```powershell
-    New-AzStorageAccount -ResourceGroupName AZ500LAB03 -Name (Get-Random -Maximum 999999999999999) -Location  EastUS -SkuName Standard_LRS -Kind StorageV2 
+    New-AzStorageAccount -ResourceGroupName AZ500LAB03-<inject key="DeploymentID" enableCopy="false"/> -Name (Get-Random -Maximum 999999999999999) -Location  EastUS -SkuName Standard_LRS -Kind StorageV2 
     ```
 
    >**Note**:  Wait until the storage account is created. This might take a couple of minutes. 
@@ -45,9 +45,9 @@ In this task, you will add a read-only lock to the storage account. This will pr
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
-1. On the **Resource groups** blade, select the **AZ500LAB03** resource group entry.
+1. On the **Resource groups** blade, select the **AZ500LAB03-<inject key="DeploymentID" enableCopy="false"/>** resource group entry.
 
-1. On the **AZ500LAB03** resource group blade, in the list of resources, select the new storage account. 
+1. On the **AZ500LAB03-<inject key="DeploymentID" enableCopy="false"/>** resource group blade, in the list of resources, select the new storage account. 
 
 1. From left navigation pane under the **Settings** section, click on the **Locks** icon.
 
