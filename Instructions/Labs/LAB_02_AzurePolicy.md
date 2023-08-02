@@ -34,7 +34,7 @@ In this task, you will create an Allowed Locations policy assignment and specify
 
 1. In the **Search** text box, type **Allowed locations**. 
 
-   >**Note**: The **Allowed locations** policy allows you to restrict location of resources, not resource groups. To restrict locations of resource groups, you can use the **Allowed locations for resource groups** policy.
+   >**Note**: The **Allowed locations** policy allows you to restrict the location of resources, not resource groups. To restrict locations of resource groups, you can use the **Allowed locations for resource groups** policy.
 
 1. Click on the **Allowed locations** policy definition to display its details.
 
@@ -47,7 +47,7 @@ In this task, you will create an Allowed Locations policy assignment and specify
    |Setting|Value|
    |---|---|
    |Subscription|select your Azure subscription|
-   |Resource group|**AZ500Lab02**|
+   |Resource group|**AZ500Lab02-<inject key="DeploymentID" enableCopy="false"/>**|
 
 1. Click on **Select**.
 
@@ -55,7 +55,7 @@ In this task, you will create an Allowed Locations policy assignment and specify
 
    |Setting|Value|
    |---|---|
-   |Assignment name|**Allow UK South for AZ500LAB02**|
+   |Assignment name|**Allow UK South for AZ500LAB02-<inject key="DeploymentID" enableCopy="false"/>**|
    |Description|**Allow resources to be created in UK South Only for AZ500LAB02**|
    |Policy enforcement|**Enabled**|
 
@@ -67,9 +67,9 @@ In this task, you will create an Allowed Locations policy assignment and specify
 
 1. Click on **Review + create**, followed by **Create** to create the policy assignment. 
 
-   >**Note**: You will see a notification that the assignment was successful, and that the assignment might take around 5-15 minutes to complete.
+   >**Note**: You will see a notification that the assignment was successful and that the assignment might take around 5-15 minutes to complete.
 
-   >**Note**: The reason the Azure policy assignment might take up to 5-15 minutes to take effect is that is has to replicate globally. Typically this takes only a few minutes.  If the next task fails, simply wait a few minutes and attempt its steps again.
+   >**Note**: The reason the Azure policy assignment might take up to 5-15 minutes to take effect is that it has to replicate globally. Typically this takes only a few minutes.  If the next task fails, simply wait a few minutes and attempt its steps again.
 
 ## Task 2: Test the Allowed Locations policy assignment
 
@@ -85,7 +85,7 @@ In this task, you will test the Allowed Locations policy assignment.
 
     |Setting|Value|
     |---|---|
-    |Resource group|**AZ500Lab02**|
+    |Resource group|**AZ500Lab02-<inject key="DeploymentID" enableCopy="false"/>**|
     |Name|**myVnet**|
     |Region|**(US) East US**|
 
@@ -99,7 +99,7 @@ In this task, you will test the Allowed Locations policy assignment.
 
 1. Click on **Review + create**, verify that validation passed, click on **Create**, and verify that the virtual network was created successfully. 
 
-> Exercise results: In this exercise, you learned to apply an Azure policy by selecting a built-in policy definitions and assigning it to a resource group.
+> Exercise results: In this exercise, you learned to apply an Azure policy by selecting built-in policy definitions and assigning it to a resource group.
 > 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Click the (...) icon located at the upper right corner of the lab guide section and navigate to the Lab Validation Page.
@@ -107,3 +107,4 @@ In this task, you will test the Allowed Locations policy assignment.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
+**You have successfully completed the lab**
