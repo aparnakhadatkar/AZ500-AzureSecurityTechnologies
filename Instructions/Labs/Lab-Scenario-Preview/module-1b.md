@@ -1,6 +1,9 @@
 # Lab Scenario Preview: AZ-500: Manage Identity and Access - Part B
 
 ## Lab 04: MFA, Conditional Access and AAD Identity Protection
+
+### Lab overview
+
 You have been asked to create a proof of concept of features that enhance Azure Active Directory (Azure AD) authentication. Specifically, you want to evaluate:
 - Azure AD multi-factor authentication
 - Azure AD conditional access
@@ -8,7 +11,8 @@ You have been asked to create a proof of concept of features that enhance Azure 
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-### Lab Objectives
+### Objectives
+
 In this lab, you will complete the following exercises:
 - Exercise 1: Deploy an Azure VM by using an Azure Resource Manager template
 - Exercise 2: Implement Azure MFA
@@ -17,9 +21,12 @@ In this lab, you will complete the following exercises:
 
 ### Architecture Diagram
 
-![image](https://user-images.githubusercontent.com/91347931/157518628-8b4a9efe-0086-4ec0-825e-3d062748fa63.png)
+![](media/AZ-500-LSP-Mod-1b-1.png)
 
 ## Lab 05: Azure AD Privileged Identity Management
+
+### Lab overview
+
 You have been asked to create a proof of concept that uses Azure Privileged Identity Management (PIM) to enable just-in-time administration and control the number of users who can perform privileged operations. The specific requirements are:
 - Create a permanent assignment of the aaduser2 Azure AD user to the Security Administrator role. 
 - Configure the aaduser2 Azure AD user to be eligible for the Billing Administrator and Global Reader roles.
@@ -30,7 +37,7 @@ You have been asked to create a proof of concept that uses Azure Privileged Iden
 
 > Before you proceed, ensure that you have completed Lab 04: MFA, Conditional Access and AAD Identity Protection . You will need the Azure AD tenant, AdatumLab500-04, and the aaduser1, aaduser2, and aaduser3 user accounts.
 
-### Lab objectives
+### Objectives
 In this lab, you will complete the following exercises:
 - Exercise 1: Configure PIM users and roles.
 - Exercise 2: Activate PIM roles with and without approval.
@@ -38,9 +45,12 @@ In this lab, you will complete the following exercises:
 
 ### Architecture Diagram
 
-![image](https://user-images.githubusercontent.com/91347931/157522920-264ce57e-5c55-4a9d-8f35-e046e1a1e219.png)
+![](media/AZ-500-LSP-Mod-1b-2.png)
 
 ## Lab 06: Implement Directory Synchronization
+
+### Lab overview
+
 You have been asked to create a proof of concept demonstrating how to integrate the on-premises Active Directory Domain Services (AD DS) environment with an Azure Active Directory (Azure AD) tenant. Specifically, you want to:
 - Implement a single-domain AD DS forest by deploying an Azure VM hosting an AD DS domain controller
 - Create and configure an Azure AD tenant
@@ -48,7 +58,7 @@ You have been asked to create a proof of concept demonstrating how to integrate 
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-### Lab objectives
+### Objectives
 In this lab, you will complete the following exercises:
 - Exercise 1: Deploy an Azure VM hosting an Active Directory domain controller
 - Exercise 2: Create and configure an Azure Active Directory tenant
@@ -56,6 +66,6 @@ In this lab, you will complete the following exercises:
 
 ### Architecture Diagram
 
-![image](https://user-images.githubusercontent.com/91347931/157525374-8f740f14-c2db-47b3-98f8-7feb9bc122b5.png)
+![](media/AZ-500-LSP-Mod-1b-3.png)
 
 
