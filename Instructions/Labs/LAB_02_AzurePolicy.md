@@ -9,6 +9,8 @@ You have been asked to create a proof of concept showing how Azure policy can be
 In this lab, you will complete the following:
 - Exercise 1: Implement Azure Policy.
 
+## Estimated timing: 20 minutes
+
 ## Architecture Diagram
 
 ![image](https://user-images.githubusercontent.com/91347931/157511920-19c1f06c-86bd-440d-80ac-d96aa27aefff.png)
