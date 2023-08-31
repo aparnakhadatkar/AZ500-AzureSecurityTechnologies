@@ -12,6 +12,8 @@ In this lab, you will complete the following exercises:
 - Exercise 2: Create and configure an Azure Active Directory tenant
 - Exercise 3: Synchronize Active Directory forest with an Azure Active Directory tenant
 
+## Estimated timing: 50 minutes
+
 ## Architecture Diagram
 
 ![image](https://user-images.githubusercontent.com/91347931/157525374-8f740f14-c2db-47b3-98f8-7feb9bc122b5.png)
