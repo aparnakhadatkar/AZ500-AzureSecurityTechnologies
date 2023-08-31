@@ -12,6 +12,8 @@ You have been asked to create a proof of concept of Microsoft Sentinel-based thr
 In this lab, you will complete the following exercise:
 - Exercise 1: Implement Microsoft Sentinel
 
+## Estimated timing: 30 minutes
+
 ## Architecture Diagram
 
 ![image](https://user-images.githubusercontent.com/91347931/157538440-4953be73-90be-4edd-bd23-b678326ba637.png)
@@ -21,7 +23,6 @@ In this lab, you will complete the following exercise:
 
 # Exercise 1: Implement Microsoft Sentinel
 
-### Estimated timing: 30 minutes
 
 In this exercise, you will complete the following tasks:
 

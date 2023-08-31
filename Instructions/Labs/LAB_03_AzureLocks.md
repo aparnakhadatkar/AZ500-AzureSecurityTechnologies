@@ -9,6 +9,8 @@ You have been asked to create a proof of concept showing how resource locks can 
 In this lab, you will complete the following exercise:
 - Exercise 1: Resource Manager Locks
 
+## Estimated timing: 20 minutes
+
 ## Architecture Diagram
 
 ![image](https://user-images.githubusercontent.com/91347931/157514986-1bf6a9ea-4c7f-4487-bcd7-542648f8dc95.png)

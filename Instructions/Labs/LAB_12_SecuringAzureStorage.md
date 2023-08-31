@@ -10,13 +10,14 @@ You have been asked to create a proof of concept to demonstrate securing Azure f
 In this lab, you will complete the following exercise:
 - Exercise 1: Service endpoints and security storage
 
+## Estimated timing: 45 minutes
+
 ## Architecture Diagram
 
 ![image](https://user-images.githubusercontent.com/91347931/157534883-29664a05-85d1-4c70-99a7-f16d2360755d.png)
 
 ## Exercise 1: Service endpoints and security storage
 
-### Estimated timing: 45 minutes
 
 In this exercise, you will complete the following tasks:
 
