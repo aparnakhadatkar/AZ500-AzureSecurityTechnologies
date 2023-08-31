@@ -15,6 +15,8 @@ You have been asked to deploy a proof of concept with Azure Container Registry a
 In this lab, you will complete the following exercise:
 - Exercise 1: Configuring and Securing ACR and AKS
 
+## Estimated timing: 45 minutes
+
 ## Architecture Diagram
 
 ![image](https://user-images.githubusercontent.com/91347931/157532250-1104a829-792a-4b6d-beff-fe976e2d5d4b.png)
@@ -25,7 +27,6 @@ In this lab, you will complete the following exercise:
 
 # Exercise 1: Configuring and Securing ACR and AKS
 
-## Estimated timing: 45 minutes
 
 > For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is region to use for you class. 
 
